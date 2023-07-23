@@ -350,15 +350,14 @@ using namespace daisy::seed;
 
 #define MAX_DELAY static_cast<size_t>(48000 * 3.f) // Max delay of 3 seconds which is 20 bpm
 Delayy delay;
-Switch ON_BUTTON;                                   // The on/off button
-Switch TEMPO_BUTTON;                                // The tap tempo button
+Switch ON_BUTTON;                                  // The on/off button
+Switch TEMPO_BUTTON;                               // The tap tempo button
 Switch headSwitches[4];                            // One switch for each head
 static DaisySeed hw;                               // The daisy seed harfware
+static CrossFade cfade;                            // Used to blend the wet/dry and maintain a constant mixed volume 
 
-static CrossFade cfade;                                 // Used to blend the wet/dry and maintain a constant mixed volume 
 
-
-float MAX_FEEDBACK = 1.1f;         // Max value of feedback knob, maxFeedback=1 -> forever repeats but no selfoscillation, values over 1 allow runaway feedback fun
+float MAX_FEEDBACK = 1.1f;        // Max value of feedback knob, maxFeedback=1 -> forever repeats but no selfoscillation, values over 1 allow runaway feedback fun
 float drywet_ratio = 0.5f;        // Drywet_ratio=0.0 is effect off
 const float MAX_DELAY_SEC = 3.0f; // Max amount of seconds allowed to get 20 bpm
 const float MIN_DELAY_SEC = 0.6f; // Min amount of seconds allowed to get 100 bpm
@@ -369,18 +368,13 @@ TimerHandle TIMER;                // Timer that will be used to calculate bpm
 TimerHandle::Config* configPtr;   // Pointer to config for timer, need because for some reason it wont let me create a config in global scope, so I create in main and point this to it
 Parameter feedbackKnob;
 
-// Initializes all the delays with the current value of hardware
-void InitDelays(float samplerate);
 // Sets the delays when there is a change
-void SetDelays();
-// Checks if TAPPING is occuring, updates bpm
 void CheckTempo();
 // Initialize buttons for the delay heads to the pins we want
 void InitHeadButtons();
 // Processes the controls and updates values that changed
 void ProcessControls();
-// Kills all delays (but doesnt delete them from delay line)
-void StopAllDelays();
+
 
 static void AudioCallback(AudioHandle::InputBuffer  in,
                           AudioHandle::OutputBuffer out,
@@ -436,7 +430,7 @@ int main(void)
     hw.Init();
 
     // Setting up serial and printing
-    hw.StartLog();
+    //hw.StartLog();
 
     // Initialize the button to D28, Pin 35 to be the on/off button
     ON_BUTTON.Init(hw.GetPin(28),1000);
@@ -551,8 +545,8 @@ void CheckTempo()
                 BPM = -33.3333f*(seconds)+120; // Set the BPM for the delays 
                 // Set all delays to new bpm
             }
-            else
-                hw.PrintLine("Under .6");
+            //else
+                //hw.PrintLine("Under .6");
 
 
             

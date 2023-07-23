@@ -46,7 +46,7 @@ float Delayy::process(float in)
 
     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
         if(DELAY_ON[i])
-            allDelaySignals = DELAYS[i].process(in);
+            allDelaySignals += DELAYS[i].process(in);
 
     return allDelaySignals;
     
@@ -54,7 +54,7 @@ float Delayy::process(float in)
 
 void Delayy::toggleHead(const int& headNumber)
 {
-    if(headNumber > NUM_OF_DELAY_HEADS || headNumber < 0)
+    if(headNumber >= NUM_OF_DELAY_HEADS || headNumber < 0)
         return;
     else
         DELAY_ON[headNumber] = !DELAY_ON[headNumber];

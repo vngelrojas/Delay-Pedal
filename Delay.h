@@ -42,10 +42,12 @@ class Delayy
         void setBPM(const int& bpm);
         void setFeedback(const float& feed);
         float process(float in);
+        void toggleHead(const int& headNumber);
     private:
         DelayLine<float, MAX_DELAY>  delayMems[NUM_OF_DELAY_HEADS]; // Array of 4 delay lines for each of the 4 heads
-        DelayHead DELAYS[NUM_OF_DELAY_HEADS];                                    // This creates a delay structure to store delay parameters
-        bool DELAY_ON[NUM_OF_DELAY_HEADS];                                      // Each delay head will be turned on/off independently
+        DelayHead DELAYS[NUM_OF_DELAY_HEADS];                       // This creates a delay structure to store delay parameters
+        bool DELAY_ON[NUM_OF_DELAY_HEADS];                          // Each delay head will be turned on/off independently
+        int bpm;
         
 
     
