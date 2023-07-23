@@ -4,6 +4,8 @@ TARGET = MyNewProject
 # Sources
 CPP_SOURCES = MyNewProject.cpp
 
+CPP_HEADERS = Delay.h
+
 # Library Locations
 LIBDAISY_DIR = ../../libDaisy/
 DAISYSP_DIR = ../../DaisySP/

@@ -1,5 +1,6 @@
 #include "daisysp.h"
 #include "daisy_seed.h"
+#include "Delay.h"
 
 using namespace daisysp;
 using namespace daisy;
