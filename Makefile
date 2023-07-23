@@ -2,7 +2,8 @@
 TARGET = MyNewProject
 
 # Sources
-CPP_SOURCES = MyNewProject.cpp
+CPP_SOURCES = MyNewProject.cpp \
+			  Delay.cpp
 
 CPP_HEADERS = Delay.h
 
