@@ -6,13 +6,12 @@ using namespace daisysp;
 using namespace daisy;
 using namespace daisy::seed;
 
-#define MAX_DELAY static_cast<size_t>(48000 * 3.f) // Max delay of 3 seconds which is 20 bpm
 Delayy delay;
-Switch ON_BUTTON;                                  // The on/off button
-Switch TEMPO_BUTTON;                               // The tap tempo button
-Switch headSwitches[4];                            // One switch for each head
-static DaisySeed hw;                               // The daisy seed harfware
-static CrossFade cfade;                            // Used to blend the wet/dry and maintain a constant mixed volume 
+Switch ON_BUTTON;                 // The on/off button
+Switch TEMPO_BUTTON;              // The tap tempo button
+Switch headSwitches[4];           // One switch for each head
+static DaisySeed hw;              // The daisy seed harfware
+static CrossFade cfade;           // Used to blend the wet/dry and maintain a constant mixed volume 
 
 
 float MAX_FEEDBACK = 1.1f;        // Max value of feedback knob, maxFeedback=1 -> forever repeats but no selfoscillation, values over 1 allow runaway feedback fun
@@ -45,7 +44,6 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
         // Check for tempo change
         CheckTempo();
         // Set delays with new bpm
-        // SetDelays();     
         delay.setBPM(BPM);       
 
 
@@ -54,7 +52,6 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
         if(ON_BUTTON.Pressed() && !onButtonWasPressed)
         {
             onButtonWasPressed = true; // set the flag to indicate that the button was pressed
-            // StopAllDelays();
             delay.stopAll();
         }
 
@@ -228,7 +225,6 @@ void InitHeadButtons()
 
 void ProcessControls()
 {
-    //FEEDBACK = feedbackKnob.Process();
     delay.setFeedback(feedbackKnob.Process());
 
     for(int i = 0; i < 4;i++)
@@ -237,7 +233,6 @@ void ProcessControls()
         if(headSwitches[i].RisingEdge())
         {
             delay.toggleHead(i);
-            // DELAY_ON[i] = !DELAY_ON[i];
         }
     }
 }
