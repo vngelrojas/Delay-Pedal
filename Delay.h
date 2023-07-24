@@ -14,10 +14,10 @@ class Delayy
     private:
         struct DelayHead
         {
-            DelayLine<float, MAX_DELAY> *delay;                     // Will point to a delayMem
-            float currentDelay;                                     // The current delay 
-            float delayTarget;                                      // The delay target that currentDelay will ramp up/down to 
-            float feedback;                                         // Feedback level of the delay
+            DelayLine<float, MAX_DELAY> *delay; // Will point to a delayMem
+            float currentDelay;                 // The current delay 
+            float delayTarget;                  // The delay target that currentDelay will ramp up/down to 
+            float feedback;                     // Feedback level of the delay
 
             float process(float in)
             {
@@ -37,17 +37,46 @@ class Delayy
             }
         };
     public:
+        /**
+         * @brief Constructs the delay heads
+         */
         Delayy();
+        /**
+         * @brief Stops all the delays from playing but does not delete their sound, 
+         * meaning if you toggle a head, it will keep playing previous input
+         * 
+         */
         void stopAll();
+        /**
+         * @brief Sets the bpm for delay
+         * 
+         * @param bpm The new bpm for delay
+         */
         void setBPM(const int& bpm);
+        /**
+         * @brief Set the Feedback of delay
+         * 
+         * @param feed The new feedback for delay
+         */
         void setFeedback(const float& feed);
+        /**
+         * @brief Will proccess all delays using delayline class from DaisySP
+         * 
+         * @param in Current audio input
+         * @return Summation of all processed delay signals
+         */
         float process(float in);
+        /**
+         * @brief Will toggle on/off a single delay head
+         * 
+         * @param headNumber The delay head to toggle on/off
+         */
         void toggleHead(const int& headNumber);
     private:
-        DelayLine<float, MAX_DELAY>  delayMems[NUM_OF_DELAY_HEADS]; // Array of 4 delay lines for each of the 4 heads
-        DelayHead DELAYS[NUM_OF_DELAY_HEADS];                       // This creates a delay structure to store delay parameters
-        bool DELAY_ON[NUM_OF_DELAY_HEADS];                          // Each delay head will be turned on/off independently
-        int bpm;
+        DelayLine<float, MAX_DELAY>  delayMems[NUM_OF_DELAY_HEADS]; // Delay lines that delay heads will use
+        DelayHead delayHeads[NUM_OF_DELAY_HEADS];                   // Array of however many delays you want 
+        bool delayHeadOn[NUM_OF_DELAY_HEADS];                       // Each delay head will be turned on/off independently
+        int bpm;                                                    // The bpm being used being used by all heads, might be useful if you add other features that need bpm
         
 
     
