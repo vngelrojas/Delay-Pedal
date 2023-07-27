@@ -73,8 +73,8 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
     
 
         all_delay_signals = delay.process(in[0][i]);
-        float filter = tone.process(in[0][i]);
-        filter = balance.Process(filter,in[0][1]*2.5f);
+        // float filter = tone.process(in[0][i]);
+        // filter = balance.Process(filter,in[0][1]*2.5f);
 
 
         nonConstInput = in[0][i];
@@ -82,7 +82,7 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
 		// Use a crossfade object to maintain a constant power while mixing the delayed/raw audio mix
 		cfade.SetPos(drywet_ratio);
 		final_mix = cfade.Process(nonConstInput, all_delay_signals);
-		out[0][i]  = out [1][i] = filter;//final_mix; // this sends 'final_mix' to the left and right output
+		out[0][i]  = out [1][i] = final_mix;//filter; // this sends 'final_mix' to the left and right output
     }
 }
 
