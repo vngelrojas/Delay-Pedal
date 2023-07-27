@@ -28,6 +28,7 @@ volatile bool TAPPING = false;    // True when user is TAPPING
 TimerHandle TIMER;                // Timer that will be used to calculate bpm
 TimerHandle::Config* configPtr;   // Pointer to config for timer, need because for some reason it wont let me create a config in global scope, so I create in main and point this to it
 Parameter feedbackKnob;
+Parameter toneKnob;
 
 // Sets the delays when there is a change
 void CheckTempo();
@@ -73,8 +74,11 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
     
 
         all_delay_signals = delay.process(in[0][i]);
-        // float filter = tone.process(in[0][i]);
-        // filter = balance.Process(filter,in[0][1]*2.5f);
+        float preFilter = all_delay_signals;
+        all_delay_signals = tone.process(all_delay_signals);
+        all_delay_signals = balance.Process(all_delay_signals,preFilter*2.5f);
+
+
 
 
         nonConstInput = in[0][i];
@@ -139,6 +143,17 @@ int main(void)
     fbk.Init(hw.adc.GetPtr(0),hw.AudioSampleRate());
     feedbackKnob.Init(fbk,0.00,MAX_FEEDBACK,Parameter::LINEAR);
     //*******************************************************************************
+
+    //Tone Knob INIT*****************************************************************
+    AdcChannelConfig toneConfig;
+    toneConfig.InitSingle(hw.GetPin(16));
+    hw.adc.Init(&toneConfig,1);
+
+    AnalogControl tne;
+    tne.Init(hw.adc.GetPtr(1),hw.AudioSampleRate());
+    toneKnob.Init(tne,-1,1,Parameter::LINEAR);
+    //*******************************************************************************
+
 
     balance.Init(48000);
     hw.adc.Start();
