@@ -28,10 +28,18 @@ class ToneFilter
          * @return float 
          */
         float process(float in);
+        /**
+         * @brief Gets the factor to multiply to signal by in sound balanceing. 
+         * Makes HP less harsh and LP louder
+         * 
+         * @return Factor to multiply signal by 
+         */
+        float getFactor();
     private:
         Tone lowPassFilter;
         ATone highPassFilter;
         bool lowPassOn;
         bool highPassOn;
+        float factor;
 };
 

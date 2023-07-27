@@ -11,6 +11,7 @@ ToneFilter::ToneFilter(float sampleRate)
     highPassFilter.SetFreq(hpFreq);
     lowPassOn = false;
     highPassOn = false;
+    factor = 1.f;
 }
 
 void ToneFilter::setFreq(float knobValue)
@@ -21,6 +22,8 @@ void ToneFilter::setFreq(float knobValue)
         lowPassFilter.SetFreq(lpFreq);
         lowPassOn = true;
         highPassOn = false;
+        // As knobValue goes closer -1, factor increases
+        factor = 1.f + (-1.f*knobValue/3.5f);
     }
     else
     {
@@ -28,6 +31,8 @@ void ToneFilter::setFreq(float knobValue)
         highPassFilter.SetFreq(hpFreq);
         lowPassOn = false;
         highPassOn = true;
+        // As knobValue gets closer to 1, factor decreases 
+        factor = 1.f-knobValue/1.75f;
     }
 }
 
@@ -40,4 +45,9 @@ float ToneFilter::process(float in)
         return lowPassFilter.Process(in);
     else
         return highPassFilter.Process(in);
+}
+
+float ToneFilter::getFactor()
+{
+    return factor;
 }

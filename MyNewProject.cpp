@@ -76,7 +76,7 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
         all_delay_signals = delay.process(in[0][i]);
         float preFilter = all_delay_signals;
         all_delay_signals = tone.process(all_delay_signals);
-        all_delay_signals = balance.Process(all_delay_signals,preFilter);
+        all_delay_signals = balance.Process(all_delay_signals,preFilter*tone.getFactor());
 
 
 
@@ -132,30 +132,25 @@ int main(void)
     //*********************************************************************************************************
 
 
-    //FEEDBACK KNOB INIT*************************************************************
-    // Configure the knob to pin D15
-    AdcChannelConfig adcConfig;
-    adcConfig.InitSingle(hw.GetPin(15));
-    //hw.adc.Init(&adcConfig,1);
-    
-    
-    //*******************************************************************************
-
-    //Tone Knob INIT*****************************************************************
+    //KNOB INIT************************************************************************
+    AdcChannelConfig fbkConfig;
+    fbkConfig.InitSingle(A0);
     AdcChannelConfig toneConfig;
-    
     toneConfig.InitSingle(A1);
-    AdcChannelConfig configs [2] = {adcConfig,toneConfig};
+
+    // If adding more knobs, create config above, and update  array and # of configs
+    AdcChannelConfig configs [2] = {fbkConfig,toneConfig};
     hw.adc.Init(configs,2);
+
+    AnalogControl fbk;
+    fbk.Init(hw.adc.GetPtr(0),hw.AudioSampleRate());
+    feedbackKnob.Init(fbk,0.00,MAX_FEEDBACK,Parameter::LINEAR);
 
     AnalogControl tne;
     tne.Init(hw.adc.GetPtr(1),hw.AudioSampleRate());
     toneKnob.Init(tne,-1.f,1.f,Parameter::LINEAR);
 
-    AnalogControl fbk;
-    // Init the analog control to the same pin, D15, which is ADC channel 0 on the datasheet
-    fbk.Init(hw.adc.GetPtr(0),hw.AudioSampleRate());
-    feedbackKnob.Init(fbk,0.00,MAX_FEEDBACK,Parameter::LINEAR);
+
     //*******************************************************************************
 
 
