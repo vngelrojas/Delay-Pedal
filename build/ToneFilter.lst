@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s 			page 1
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -37,46 +37,41 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s 			page 1
   32              		@ args = 0, pretend = 0, frame = 0
   33              		@ frame_needed = 0, uses_anonymous_args = 0
   34              		.loc 1 3 1 is_stmt 0 view .LVU1
-  35 0000 10B5     		push	{r4, lr}
-  36              		.cfi_def_cfa_offset 8
-  37              		.cfi_offset 4, -8
-  38              		.cfi_offset 14, -4
-  39 0002 2DED028B 		vpush.64	{d8}
-  40              		.cfi_def_cfa_offset 16
-  41              		.cfi_offset 80, -16
-  42              		.cfi_offset 81, -12
-  43              		.loc 1 3 1 view .LVU2
-  44 0006 B0EE408A 		vmov.f32	s16, s0
-  45 000a 0446     		mov	r4, r0
-  46              	.LVL1:
-  47              	.LBB9:
-  48              	.LBB10:
-  49              	.LBI10:
-  50              		.file 2 "../../DaisySP//Source/Filters/tone.h"
+  35 0000 38B5     		push	{r3, r4, r5, lr}
+  36              		.cfi_def_cfa_offset 16
+  37              		.cfi_offset 3, -16
+  38              		.cfi_offset 4, -12
+  39              		.cfi_offset 5, -8
+  40              		.cfi_offset 14, -4
+  41 0002 0446     		mov	r4, r0
+  42              	.LVL1:
+  43              	.LBB19:
+  44              	.LBI19:
+  45              		.file 2 "../../DaisySP//Source/Filters/tone.h"
    1:../../DaisySP//Source/Filters/tone.h **** #pragma once
    2:../../DaisySP//Source/Filters/tone.h **** #ifndef DSY_TONE_H
    3:../../DaisySP//Source/Filters/tone.h **** #define DSY_TONE_H
    4:../../DaisySP//Source/Filters/tone.h **** 
    5:../../DaisySP//Source/Filters/tone.h **** #include <stdint.h>
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s 			page 2
-
-
    6:../../DaisySP//Source/Filters/tone.h **** #ifdef __cplusplus
    7:../../DaisySP//Source/Filters/tone.h **** 
    8:../../DaisySP//Source/Filters/tone.h **** namespace daisysp
    9:../../DaisySP//Source/Filters/tone.h **** {
   10:../../DaisySP//Source/Filters/tone.h **** /** A first-order recursive low-pass filter with variable frequency response.
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 2
+
+
   11:../../DaisySP//Source/Filters/tone.h **** */
   12:../../DaisySP//Source/Filters/tone.h **** class Tone
   13:../../DaisySP//Source/Filters/tone.h **** {
   14:../../DaisySP//Source/Filters/tone.h ****   public:
   15:../../DaisySP//Source/Filters/tone.h ****     Tone() {}
-  51              		.loc 2 15 5 is_stmt 1 view .LVU3
-  52              		.loc 2 15 5 is_stmt 0 view .LVU4
-  53              	.LBE10:
-  54              	.LBB11:
-  55              	.LBI11:
-  56              		.file 3 "../../DaisySP//Source/Filters/atone.h"
+  46              		.loc 2 15 5 is_stmt 1 view .LVU2
+  47              		.loc 2 15 5 is_stmt 0 view .LVU3
+  48              	.LBE19:
+  49              	.LBB20:
+  50              	.LBI20:
+  51              		.file 3 "../../DaisySP//Source/Filters/atone.h"
    1:../../DaisySP//Source/Filters/atone.h **** #pragma once
    2:../../DaisySP//Source/Filters/atone.h **** #ifndef DSY_ATONE_H
    3:../../DaisySP//Source/Filters/atone.h **** #define DSY_ATONE_H
@@ -99,64 +94,49 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s 			page 1
   20:../../DaisySP//Source/Filters/atone.h **** {
   21:../../DaisySP//Source/Filters/atone.h ****   public:
   22:../../DaisySP//Source/Filters/atone.h ****     ATone() {}
-  57              		.loc 3 22 5 is_stmt 1 view .LVU5
-  58              		.loc 3 22 5 is_stmt 0 view .LVU6
-  59              	.LBE11:
+  52              		.loc 3 22 5 is_stmt 1 view .LVU4
+  53              		.loc 3 22 5 is_stmt 0 view .LVU5
+  54              	.LBE20:
+  55              	.LBB21:
    4:ToneFilter.cpp **** {
    5:ToneFilter.cpp ****     lowPassFilter.Init(sampleRate);
-  60              		.loc 1 5 5 is_stmt 1 view .LVU7
-  61              		.loc 1 5 23 is_stmt 0 view .LVU8
-  62 000c FFF7FEFF 		bl	_ZN7daisysp4Tone4InitEf
-  63              	.LVL2:
+  56              		.loc 1 5 5 is_stmt 1 view .LVU6
+  57              	.LBE21:
+   3:ToneFilter.cpp **** {
+  58              		.loc 1 3 1 is_stmt 0 view .LVU7
+  59 0004 2DED028B 		vpush.64	{d8}
+  60              		.cfi_def_cfa_offset 24
+  61              		.cfi_offset 80, -24
+  62              		.cfi_offset 81, -20
+   3:ToneFilter.cpp **** {
+  63              		.loc 1 3 1 view .LVU8
+  64 0008 B0EE408A 		vmov.f32	s16, s0
+  65              	.LBB26:
    6:ToneFilter.cpp ****     highPassFilter.Init(sampleRate); 
-  64              		.loc 1 6 5 is_stmt 1 view .LVU9
-  65              		.loc 1 6 24 is_stmt 0 view .LVU10
-  66 0010 04F11C00 		add	r0, r4, #28
-  67 0014 B0EE480A 		vmov.f32	s0, s16
-  68 0018 FFF7FEFF 		bl	_ZN7daisysp5ATone4InitEf
-  69              	.LVL3:
-  70              	.LBE9:
-   7:ToneFilter.cpp **** }
-  71              		.loc 1 7 1 view .LVU11
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s 			page 3
+  66              		.loc 1 6 24 view .LVU9
+  67 000c 04F11C05 		add	r5, r4, #28
+   5:ToneFilter.cpp ****     highPassFilter.Init(sampleRate); 
+  68              		.loc 1 5 23 view .LVU10
+  69 0010 FFF7FEFF 		bl	_ZN7daisysp4Tone4InitEf
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 3
 
 
-  72 001c 2046     		mov	r0, r4
-  73 001e BDEC028B 		vldm	sp!, {d8}
-  74              		.cfi_restore 80
-  75              		.cfi_restore 81
-  76              		.cfi_def_cfa_offset 8
-  77              	.LVL4:
-  78              		.loc 1 7 1 view .LVU12
-  79 0022 10BD     		pop	{r4, pc}
-  80              		.loc 1 7 1 view .LVU13
-  81              		.cfi_endproc
-  82              	.LFE4789:
-  84              		.global	_ZN10ToneFilterC1Ef
-  85              		.thumb_set _ZN10ToneFilterC1Ef,_ZN10ToneFilterC2Ef
-  86              		.section	.text._ZN10ToneFilter7setFreqEf,"ax",%progbits
-  87              		.align	1
-  88              		.p2align 2,,3
-  89              		.global	_ZN10ToneFilter7setFreqEf
-  90              		.syntax unified
-  91              		.thumb
-  92              		.thumb_func
-  93              		.fpu fpv5-d16
-  95              	_ZN10ToneFilter7setFreqEf:
-  96              	.LVL5:
-  97              	.LFB4791:
-   8:ToneFilter.cpp **** 
-   9:ToneFilter.cpp **** void ToneFilter::setFreq(float freq)
-  10:ToneFilter.cpp **** {
-  98              		.loc 1 10 1 is_stmt 1 view -0
-  99              		.cfi_startproc
- 100              		@ args = 0, pretend = 0, frame = 0
- 101              		@ frame_needed = 0, uses_anonymous_args = 0
- 102              		@ link register save eliminated.
-  11:ToneFilter.cpp ****     lowPassFilter.SetFreq(freq);
- 103              		.loc 1 11 5 view .LVU15
- 104              	.LBB12:
- 105              	.LBI12:
+  70              	.LVL2:
+  71              		.loc 1 6 5 is_stmt 1 view .LVU11
+  72              		.loc 1 6 24 is_stmt 0 view .LVU12
+  73 0014 2846     		mov	r0, r5
+  74 0016 B0EE480A 		vmov.f32	s0, s16
+  75 001a FFF7FEFF 		bl	_ZN7daisysp5ATone4InitEf
+  76              	.LVL3:
+   7:ToneFilter.cpp ****     // Set filters to extreme to not affect audio at the very start 
+   8:ToneFilter.cpp ****     float lpFreq = 1000000.0f;
+  77              		.loc 1 8 5 is_stmt 1 view .LVU13
+   9:ToneFilter.cpp ****     float hpFreq = 0.f;
+  78              		.loc 1 9 5 view .LVU14
+  10:ToneFilter.cpp ****     lowPassFilter.SetFreq(lpFreq);
+  79              		.loc 1 10 5 view .LVU15
+  80              	.LBB22:
+  81              	.LBI22:
   16:../../DaisySP//Source/Filters/tone.h ****     ~Tone() {}
   17:../../DaisySP//Source/Filters/tone.h ****     /** Initializes the Tone module.
   18:../../DaisySP//Source/Filters/tone.h ****         sample_rate - The sample rate of the audio engine being run. 
@@ -174,133 +154,480 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s 			page 1
   30:../../DaisySP//Source/Filters/tone.h ****         \param freq - frequency value in Hz. Range: Any positive value.
   31:../../DaisySP//Source/Filters/tone.h ****     */
   32:../../DaisySP//Source/Filters/tone.h ****     inline void SetFreq(float &freq)
- 106              		.loc 2 32 17 view .LVU16
- 107              	.LBB13:
+  82              		.loc 2 32 17 view .LVU16
+  83              	.LBB23:
   33:../../DaisySP//Source/Filters/tone.h ****     {
   34:../../DaisySP//Source/Filters/tone.h ****         freq_ = freq;
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s 			page 4
-
-
- 108              		.loc 2 34 9 view .LVU17
- 109              		.loc 2 34 15 is_stmt 0 view .LVU18
- 110 0000 80ED030A 		vstr.32	s0, [r0, #12]
+  84              		.loc 2 34 9 view .LVU17
+  85              		.loc 2 34 15 is_stmt 0 view .LVU18
+  86 001e 084B     		ldr	r3, .L4
   35:../../DaisySP//Source/Filters/tone.h ****         CalculateCoefficients();
- 111              		.loc 2 35 9 is_stmt 1 view .LVU19
- 112              		.loc 2 35 30 is_stmt 0 view .LVU20
- 113 0004 FFF7FEBF 		b	_ZN7daisysp4Tone21CalculateCoefficientsEv
- 114              	.LVL6:
- 115              		.loc 2 35 30 view .LVU21
- 116              	.LBE13:
- 117              	.LBE12:
- 118              		.cfi_endproc
- 119              	.LFE4791:
- 121              		.section	.text._ZN10ToneFilter7processEf,"ax",%progbits
- 122              		.align	1
- 123              		.p2align 2,,3
- 124              		.global	_ZN10ToneFilter7processEf
- 125              		.syntax unified
- 126              		.thumb
- 127              		.thumb_func
- 128              		.fpu fpv5-d16
- 130              	_ZN10ToneFilter7processEf:
- 131              	.LVL7:
- 132              	.LFB4792:
-  12:ToneFilter.cpp **** }
-  13:ToneFilter.cpp **** 
-  14:ToneFilter.cpp **** float ToneFilter::process(float in)
-  15:ToneFilter.cpp **** {
- 133              		.loc 1 15 1 is_stmt 1 view -0
- 134              		.cfi_startproc
- 135              		@ args = 0, pretend = 0, frame = 8
- 136              		@ frame_needed = 0, uses_anonymous_args = 0
-  16:ToneFilter.cpp ****     return lowPassFilter.Process(in);
- 137              		.loc 1 16 5 view .LVU23
-  15:ToneFilter.cpp ****     return lowPassFilter.Process(in);
- 138              		.loc 1 15 1 is_stmt 0 view .LVU24
- 139 0000 00B5     		push	{lr}
- 140              		.cfi_def_cfa_offset 4
- 141              		.cfi_offset 14, -4
- 142 0002 83B0     		sub	sp, sp, #12
- 143              		.cfi_def_cfa_offset 16
- 144              		.loc 1 16 33 view .LVU25
- 145 0004 01A9     		add	r1, sp, #4
-  15:ToneFilter.cpp ****     return lowPassFilter.Process(in);
- 146              		.loc 1 15 1 view .LVU26
- 147 0006 8DED010A 		vstr.32	s0, [sp, #4]
- 148              		.loc 1 16 33 view .LVU27
- 149 000a FFF7FEFF 		bl	_ZN7daisysp4Tone7ProcessERf
- 150              	.LVL8:
-  17:ToneFilter.cpp **** }...
- 151              		.loc 1 17 1 view .LVU28
- 152 000e 03B0     		add	sp, sp, #12
- 153              		.cfi_def_cfa_offset 4
- 154              		@ sp needed
- 155 0010 5DF804FB 		ldr	pc, [sp], #4
- 156              		.cfi_endproc
- 157              	.LFE4792:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s 			page 5
+  87              		.loc 2 35 30 view .LVU19
+  88 0020 2046     		mov	r0, r4
+  34:../../DaisySP//Source/Filters/tone.h ****         CalculateCoefficients();
+  89              		.loc 2 34 15 view .LVU20
+  90 0022 E360     		str	r3, [r4, #12]	@ float
+  91              		.loc 2 35 9 is_stmt 1 view .LVU21
+  92              		.loc 2 35 30 is_stmt 0 view .LVU22
+  93 0024 FFF7FEFF 		bl	_ZN7daisysp4Tone21CalculateCoefficientsEv
+  94              	.LVL4:
+  95              		.loc 2 35 30 view .LVU23
+  96              	.LBE23:
+  97              	.LBE22:
+  11:ToneFilter.cpp ****     highPassFilter.SetFreq(hpFreq);
+  98              		.loc 1 11 5 is_stmt 1 view .LVU24
+  99              	.LBB24:
+ 100              	.LBI24:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 4
 
 
- 159              		.text
- 160              	.Letext0:
- 161              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
- 162              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
- 163              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
- 164              		.file 7 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
- 165              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
- 166              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 167              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
- 168              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
- 169              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
- 170              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
- 171              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
- 172              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
- 173              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
- 174              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
- 175              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
- 176              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
- 177              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
- 178              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
- 179              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
- 180              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
- 181              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
- 182              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
- 183              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
- 184              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
- 185              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
- 186              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 187              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
- 188              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 189              		.file 32 "../../DaisySP//Source/Control/adenv.h"
- 190              		.file 33 "../../DaisySP//Source/Utility/dsp.h"
- 191              		.file 34 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
- 192              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
- 193              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
- 194              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
- 195              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
- 196              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
- 197              		.file 40 "../../libDaisy//src/daisy_core.h"
- 198              		.file 41 "../../libDaisy//src/util/wav_format.h"
- 199              		.file 42 "../../libDaisy//src/dev/max11300.h"
- 200              		.file 43 "../../libDaisy//src/daisy_seed.h"
- 201              		.file 44 "ToneFilter.h"
- 202              		.file 45 "<built-in>"
- 203              		.file 46 "../../libDaisy//src/dev/sr_595.h"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s 			page 6
+  23:../../DaisySP//Source/Filters/atone.h ****     ~ATone() {}
+  24:../../DaisySP//Source/Filters/atone.h ****     /** Initializes the ATone module.
+  25:../../DaisySP//Source/Filters/atone.h ****         \param sample_rate - The sample rate of the audio engine being run. 
+  26:../../DaisySP//Source/Filters/atone.h ****     */
+  27:../../DaisySP//Source/Filters/atone.h ****     void Init(float sample_rate);
+  28:../../DaisySP//Source/Filters/atone.h **** 
+  29:../../DaisySP//Source/Filters/atone.h **** 
+  30:../../DaisySP//Source/Filters/atone.h ****     /** Processes one sample through the filter and returns one sample.
+  31:../../DaisySP//Source/Filters/atone.h ****         \param in - input signal 
+  32:../../DaisySP//Source/Filters/atone.h ****     */
+  33:../../DaisySP//Source/Filters/atone.h ****     float Process(float &in);
+  34:../../DaisySP//Source/Filters/atone.h **** 
+  35:../../DaisySP//Source/Filters/atone.h ****     /** Sets the cutoff frequency or half-way point of the filter.
+  36:../../DaisySP//Source/Filters/atone.h ****         \param freq - frequency value in Hz. Range: Any positive value.
+  37:../../DaisySP//Source/Filters/atone.h ****     */
+  38:../../DaisySP//Source/Filters/atone.h ****     inline void SetFreq(float &freq)
+ 101              		.loc 3 38 17 view .LVU25
+ 102              	.LBB25:
+  39:../../DaisySP//Source/Filters/atone.h ****     {
+  40:../../DaisySP//Source/Filters/atone.h ****         freq_ = freq;
+ 103              		.loc 3 40 9 view .LVU26
+ 104              		.loc 3 40 15 is_stmt 0 view .LVU27
+ 105 0028 0023     		movs	r3, #0
+  41:../../DaisySP//Source/Filters/atone.h ****         CalculateCoefficients();
+ 106              		.loc 3 41 30 view .LVU28
+ 107 002a 2846     		mov	r0, r5
+  40:../../DaisySP//Source/Filters/atone.h ****         CalculateCoefficients();
+ 108              		.loc 3 40 15 view .LVU29
+ 109 002c A362     		str	r3, [r4, #40]	@ float
+ 110              		.loc 3 41 9 is_stmt 1 view .LVU30
+ 111              		.loc 3 41 30 is_stmt 0 view .LVU31
+ 112 002e FFF7FEFF 		bl	_ZN7daisysp5ATone21CalculateCoefficientsEv
+ 113              	.LVL5:
+ 114              		.loc 3 41 30 view .LVU32
+ 115              	.LBE25:
+ 116              	.LBE24:
+  12:ToneFilter.cpp ****     lowPassOn = false;
+ 117              		.loc 1 12 5 is_stmt 1 view .LVU33
+  13:ToneFilter.cpp ****     highPassOn = false;
+ 118              		.loc 1 13 5 view .LVU34
+  12:ToneFilter.cpp ****     lowPassOn = false;
+ 119              		.loc 1 12 15 is_stmt 0 view .LVU35
+ 120 0032 0023     		movs	r3, #0
+ 121              	.LBE26:
+  14:ToneFilter.cpp **** }
+ 122              		.loc 1 14 1 view .LVU36
+ 123 0034 2046     		mov	r0, r4
+ 124              	.LBB27:
+  12:ToneFilter.cpp ****     lowPassOn = false;
+ 125              		.loc 1 12 15 view .LVU37
+ 126 0036 A386     		strh	r3, [r4, #52]	@ movhi
+ 127              	.LVL6:
+  12:ToneFilter.cpp ****     lowPassOn = false;
+ 128              		.loc 1 12 15 view .LVU38
+ 129              	.LBE27:
+ 130              		.loc 1 14 1 view .LVU39
+ 131 0038 BDEC028B 		vldm	sp!, {d8}
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 5
+
+
+ 132              		.cfi_restore 80
+ 133              		.cfi_restore 81
+ 134              		.cfi_def_cfa_offset 16
+ 135              	.LVL7:
+ 136              		.loc 1 14 1 view .LVU40
+ 137 003c 38BD     		pop	{r3, r4, r5, pc}
+ 138              	.LVL8:
+ 139              	.L5:
+ 140              		.loc 1 14 1 view .LVU41
+ 141 003e 00BF     		.align	2
+ 142              	.L4:
+ 143 0040 00247449 		.word	1232348160
+ 144              		.cfi_endproc
+ 145              	.LFE4789:
+ 147              		.global	_ZN10ToneFilterC1Ef
+ 148              		.thumb_set _ZN10ToneFilterC1Ef,_ZN10ToneFilterC2Ef
+ 149              		.section	.text._ZN10ToneFilter7setFreqEf,"ax",%progbits
+ 150              		.align	1
+ 151              		.p2align 2,,3
+ 152              		.global	_ZN10ToneFilter7setFreqEf
+ 153              		.syntax unified
+ 154              		.thumb
+ 155              		.thumb_func
+ 156              		.fpu fpv5-d16
+ 158              	_ZN10ToneFilter7setFreqEf:
+ 159              	.LVL9:
+ 160              	.LFB4791:
+  15:ToneFilter.cpp **** 
+  16:ToneFilter.cpp **** void ToneFilter::setFreq(float knobValue)
+  17:ToneFilter.cpp **** {
+ 161              		.loc 1 17 1 is_stmt 1 view -0
+ 162              		.cfi_startproc
+ 163              		@ args = 0, pretend = 0, frame = 0
+ 164              		@ frame_needed = 0, uses_anonymous_args = 0
+  18:ToneFilter.cpp ****     if(knobValue < 0.00f)
+ 165              		.loc 1 18 5 view .LVU43
+ 166              	.LBB28:
+ 167 0000 B5EEC00A 		vcmpe.f32	s0, #0
+ 168              	.LBE28:
+  17:ToneFilter.cpp ****     if(knobValue < 0.00f)
+ 169              		.loc 1 17 1 is_stmt 0 view .LVU44
+ 170 0004 F0EE407A 		vmov.f32	s15, s0
+ 171              	.LBB41:
+ 172              		.loc 1 18 5 view .LVU45
+ 173 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 174              	.LBE41:
+  17:ToneFilter.cpp ****     if(knobValue < 0.00f)
+ 175              		.loc 1 17 1 view .LVU46
+ 176 000c 10B5     		push	{r4, lr}
+ 177              		.cfi_def_cfa_offset 8
+ 178              		.cfi_offset 4, -8
+ 179              		.cfi_offset 14, -4
+  17:ToneFilter.cpp ****     if(knobValue < 0.00f)
+ 180              		.loc 1 17 1 view .LVU47
+ 181 000e 0446     		mov	r4, r0
+ 182              	.LBB42:
+ 183              		.loc 1 18 5 view .LVU48
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 6
+
+
+ 184 0010 17D4     		bmi	.L13
+ 185              	.LBB29:
+  19:ToneFilter.cpp ****     {
+  20:ToneFilter.cpp ****         float lpFreq = 5000.0f*(powf(10,2*knobValue))+100.f;
+  21:ToneFilter.cpp ****         lowPassFilter.SetFreq(lpFreq);
+  22:ToneFilter.cpp ****         lowPassOn = true;
+  23:ToneFilter.cpp ****         highPassOn = false;
+  24:ToneFilter.cpp ****     }
+  25:ToneFilter.cpp ****     else
+  26:ToneFilter.cpp ****     {
+  27:ToneFilter.cpp ****         float hpFreq = 5000.0f*powf(10,2.f*knobValue-2);
+ 186              		.loc 1 27 9 is_stmt 1 view .LVU49
+ 187              		.loc 1 27 36 is_stmt 0 view .LVU50
+ 188 0012 B0EE007A 		vmov.f32	s14, #2.0e+0
+ 189 0016 F8EE000A 		vmov.f32	s1, #-2.0e+0
+ 190 001a B2EE040A 		vmov.f32	s0, #1.0e+1
+ 191              	.LVL10:
+ 192              		.loc 1 27 36 view .LVU51
+ 193 001e E7EE870A 		vfma.f32	s1, s15, s14
+ 194 0022 FFF7FEFF 		bl	powf
+ 195              	.LVL11:
+  28:ToneFilter.cpp ****         highPassFilter.SetFreq(hpFreq);
+ 196              		.loc 1 28 9 is_stmt 1 view .LVU52
+ 197              	.LBB30:
+ 198              	.LBI30:
+  38:../../DaisySP//Source/Filters/atone.h ****     {
+ 199              		.loc 3 38 17 view .LVU53
+ 200              	.LBB31:
+  40:../../DaisySP//Source/Filters/atone.h ****         CalculateCoefficients();
+ 201              		.loc 3 40 9 view .LVU54
+ 202              	.LBE31:
+ 203              	.LBE30:
+  27:ToneFilter.cpp ****         highPassFilter.SetFreq(hpFreq);
+ 204              		.loc 1 27 31 is_stmt 0 view .LVU55
+ 205 0026 DFED117A 		vldr.32	s15, .L14
+ 206              	.LBB34:
+ 207              	.LBB32:
+ 208              		.loc 3 41 30 view .LVU56
+ 209 002a 04F11C00 		add	r0, r4, #28
+ 210              	.LVL12:
+ 211              		.loc 3 41 30 view .LVU57
+ 212              	.LBE32:
+ 213              	.LBE34:
+  27:ToneFilter.cpp ****         highPassFilter.SetFreq(hpFreq);
+ 214              		.loc 1 27 31 view .LVU58
+ 215 002e 20EE270A 		vmul.f32	s0, s0, s15
+ 216              	.LVL13:
+ 217              	.LBB35:
+ 218              	.LBB33:
+  40:../../DaisySP//Source/Filters/atone.h ****         CalculateCoefficients();
+ 219              		.loc 3 40 15 view .LVU59
+ 220 0032 84ED0A0A 		vstr.32	s0, [r4, #40]
+ 221              		.loc 3 41 9 is_stmt 1 view .LVU60
+ 222              		.loc 3 41 30 is_stmt 0 view .LVU61
+ 223 0036 FFF7FEFF 		bl	_ZN7daisysp5ATone21CalculateCoefficientsEv
+ 224              	.LVL14:
+ 225              		.loc 3 41 30 view .LVU62
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 7
+
+
+ 226              	.LBE33:
+ 227              	.LBE35:
+  29:ToneFilter.cpp ****         lowPassOn = false;
+ 228              		.loc 1 29 9 is_stmt 1 view .LVU63
+  30:ToneFilter.cpp ****         highPassOn = true;
+ 229              		.loc 1 30 9 view .LVU64
+  29:ToneFilter.cpp ****         lowPassOn = false;
+ 230              		.loc 1 29 19 is_stmt 0 view .LVU65
+ 231 003a 4FF48073 		mov	r3, #256
+ 232 003e A386     		strh	r3, [r4, #52]	@ movhi
+  29:ToneFilter.cpp ****         lowPassOn = false;
+ 233              		.loc 1 29 19 view .LVU66
+ 234              	.LBE29:
+ 235              	.LBE42:
+  31:ToneFilter.cpp ****     }
+  32:ToneFilter.cpp **** }
+ 236              		.loc 1 32 1 view .LVU67
+ 237 0040 10BD     		pop	{r4, pc}
+ 238              	.LVL15:
+ 239              	.L13:
+ 240              	.LBB43:
+ 241              	.LBB36:
+  20:ToneFilter.cpp ****         lowPassFilter.SetFreq(lpFreq);
+ 242              		.loc 1 20 9 is_stmt 1 view .LVU68
+  20:ToneFilter.cpp ****         lowPassFilter.SetFreq(lpFreq);
+ 243              		.loc 1 20 37 is_stmt 0 view .LVU69
+ 244 0042 70EE000A 		vadd.f32	s1, s0, s0
+ 245 0046 B2EE040A 		vmov.f32	s0, #1.0e+1
+ 246              	.LVL16:
+  20:ToneFilter.cpp ****         lowPassFilter.SetFreq(lpFreq);
+ 247              		.loc 1 20 37 view .LVU70
+ 248 004a FFF7FEFF 		bl	powf
+ 249              	.LVL17:
+  20:ToneFilter.cpp ****         lowPassFilter.SetFreq(lpFreq);
+ 250              		.loc 1 20 54 view .LVU71
+ 251 004e 9FED077A 		vldr.32	s14, .L14
+ 252 0052 DFED077A 		vldr.32	s15, .L14+4
+ 253              	.LBB37:
+ 254              	.LBB38:
+ 255              		.loc 2 35 30 view .LVU72
+ 256 0056 2046     		mov	r0, r4
+ 257              	.LBE38:
+ 258              	.LBE37:
+  20:ToneFilter.cpp ****         lowPassFilter.SetFreq(lpFreq);
+ 259              		.loc 1 20 54 view .LVU73
+ 260 0058 E0EE077A 		vfma.f32	s15, s0, s14
+ 261              	.LVL18:
+  21:ToneFilter.cpp ****         lowPassOn = true;
+ 262              		.loc 1 21 9 is_stmt 1 view .LVU74
+ 263              	.LBB40:
+ 264              	.LBI37:
+  32:../../DaisySP//Source/Filters/tone.h ****     {
+ 265              		.loc 2 32 17 view .LVU75
+ 266              	.LBB39:
+  34:../../DaisySP//Source/Filters/tone.h ****         CalculateCoefficients();
+ 267              		.loc 2 34 9 view .LVU76
+  34:../../DaisySP//Source/Filters/tone.h ****         CalculateCoefficients();
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 8
+
+
+ 268              		.loc 2 34 15 is_stmt 0 view .LVU77
+ 269 005c C4ED037A 		vstr.32	s15, [r4, #12]
+ 270              		.loc 2 35 9 is_stmt 1 view .LVU78
+ 271              		.loc 2 35 30 is_stmt 0 view .LVU79
+ 272 0060 FFF7FEFF 		bl	_ZN7daisysp4Tone21CalculateCoefficientsEv
+ 273              	.LVL19:
+ 274              		.loc 2 35 30 view .LVU80
+ 275              	.LBE39:
+ 276              	.LBE40:
+  22:ToneFilter.cpp ****         highPassOn = false;
+ 277              		.loc 1 22 9 is_stmt 1 view .LVU81
+  23:ToneFilter.cpp ****     }
+ 278              		.loc 1 23 9 view .LVU82
+  22:ToneFilter.cpp ****         highPassOn = false;
+ 279              		.loc 1 22 19 is_stmt 0 view .LVU83
+ 280 0064 0123     		movs	r3, #1
+ 281 0066 A386     		strh	r3, [r4, #52]	@ movhi
+  22:ToneFilter.cpp ****         highPassOn = false;
+ 282              		.loc 1 22 19 view .LVU84
+ 283              	.LBE36:
+ 284              	.LBE43:
+ 285              		.loc 1 32 1 view .LVU85
+ 286 0068 10BD     		pop	{r4, pc}
+ 287              	.LVL20:
+ 288              	.L15:
+ 289              		.loc 1 32 1 view .LVU86
+ 290 006a 00BF     		.align	2
+ 291              	.L14:
+ 292 006c 00409C45 		.word	1167867904
+ 293 0070 0000C842 		.word	1120403456
+ 294              		.cfi_endproc
+ 295              	.LFE4791:
+ 297              		.section	.text._ZN10ToneFilter7processEf,"ax",%progbits
+ 298              		.align	1
+ 299              		.p2align 2,,3
+ 300              		.global	_ZN10ToneFilter7processEf
+ 301              		.syntax unified
+ 302              		.thumb
+ 303              		.thumb_func
+ 304              		.fpu fpv5-d16
+ 306              	_ZN10ToneFilter7processEf:
+ 307              	.LVL21:
+ 308              	.LFB4792:
+  33:ToneFilter.cpp **** 
+  34:ToneFilter.cpp **** float ToneFilter::process(float in)
+  35:ToneFilter.cpp **** {
+ 309              		.loc 1 35 1 is_stmt 1 view -0
+ 310              		.cfi_startproc
+ 311              		@ args = 0, pretend = 0, frame = 8
+ 312              		@ frame_needed = 0, uses_anonymous_args = 0
+  36:ToneFilter.cpp ****     // Incase this is called before the tone knob is read freq is set OR somehow both are on 
+  37:ToneFilter.cpp ****     if((!lowPassOn && !highPassOn) || (lowPassOn && highPassOn))
+ 313              		.loc 1 37 5 view .LVU88
+  35:ToneFilter.cpp ****     // Incase this is called before the tone knob is read freq is set OR somehow both are on 
+ 314              		.loc 1 35 1 is_stmt 0 view .LVU89
+ 315 0000 00B5     		push	{lr}
+ 316              		.cfi_def_cfa_offset 4
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 9
+
+
+ 317              		.cfi_offset 14, -4
+ 318              		.loc 1 37 5 view .LVU90
+ 319 0002 90F83420 		ldrb	r2, [r0, #52]	@ zero_extendqisi2
+  35:ToneFilter.cpp ****     // Incase this is called before the tone knob is read freq is set OR somehow both are on 
+ 320              		.loc 1 35 1 view .LVU91
+ 321 0006 83B0     		sub	sp, sp, #12
+ 322              		.cfi_def_cfa_offset 16
+  35:ToneFilter.cpp ****     // Incase this is called before the tone knob is read freq is set OR somehow both are on 
+ 323              		.loc 1 35 1 view .LVU92
+ 324 0008 8DED010A 		vstr.32	s0, [sp, #4]
+ 325              		.loc 1 37 5 view .LVU93
+ 326 000c 6AB1     		cbz	r2, .L23
+ 327              		.loc 1 37 50 discriminator 4 view .LVU94
+ 328 000e 90F83530 		ldrb	r3, [r0, #53]	@ zero_extendqisi2
+ 329 0012 2BB9     		cbnz	r3, .L19
+  38:ToneFilter.cpp ****         return in;
+  39:ToneFilter.cpp ****     else if(lowPassOn)
+ 330              		.loc 1 39 10 is_stmt 1 view .LVU95
+  40:ToneFilter.cpp ****         return lowPassFilter.Process(in);
+ 331              		.loc 1 40 9 view .LVU96
+ 332              		.loc 1 40 37 is_stmt 0 view .LVU97
+ 333 0014 01A9     		add	r1, sp, #4
+ 334 0016 FFF7FEFF 		bl	_ZN7daisysp4Tone7ProcessERf
+ 335              	.LVL22:
+  41:ToneFilter.cpp ****     else
+  42:ToneFilter.cpp ****         return highPassFilter.Process(in);
+  43:ToneFilter.cpp **** }...
+ 336              		.loc 1 43 1 view .LVU98
+ 337 001a 03B0     		add	sp, sp, #12
+ 338              		.cfi_remember_state
+ 339              		.cfi_def_cfa_offset 4
+ 340              		@ sp needed
+ 341 001c 5DF804FB 		ldr	pc, [sp], #4
+ 342              	.LVL23:
+ 343              	.L19:
+ 344              		.cfi_restore_state
+  38:ToneFilter.cpp ****         return in;
+ 345              		.loc 1 38 9 is_stmt 1 view .LVU99
+  38:ToneFilter.cpp ****         return in;
+ 346              		.loc 1 38 16 is_stmt 0 view .LVU100
+ 347 0020 9DED010A 		vldr.32	s0, [sp, #4]
+ 348              	.LVL24:
+ 349              		.loc 1 43 1 view .LVU101
+ 350 0024 03B0     		add	sp, sp, #12
+ 351              		.cfi_remember_state
+ 352              		.cfi_def_cfa_offset 4
+ 353              		@ sp needed
+ 354 0026 5DF804FB 		ldr	pc, [sp], #4
+ 355              	.LVL25:
+ 356              	.L23:
+ 357              		.cfi_restore_state
+  37:ToneFilter.cpp ****     if((!lowPassOn && !highPassOn) || (lowPassOn && highPassOn))
+ 358              		.loc 1 37 20 discriminator 1 view .LVU102
+ 359 002a 90F83520 		ldrb	r2, [r0, #53]	@ zero_extendqisi2
+ 360 002e 002A     		cmp	r2, #0
+ 361 0030 F6D0     		beq	.L19
+  39:ToneFilter.cpp ****     else if(lowPassOn)
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 10
+
+
+ 362              		.loc 1 39 10 is_stmt 1 view .LVU103
+  42:ToneFilter.cpp ****         return highPassFilter.Process(in);
+ 363              		.loc 1 42 9 view .LVU104
+  42:ToneFilter.cpp ****         return highPassFilter.Process(in);
+ 364              		.loc 1 42 38 is_stmt 0 view .LVU105
+ 365 0032 01A9     		add	r1, sp, #4
+ 366 0034 1C30     		adds	r0, r0, #28
+ 367              	.LVL26:
+  42:ToneFilter.cpp ****         return highPassFilter.Process(in);
+ 368              		.loc 1 42 38 view .LVU106
+ 369 0036 FFF7FEFF 		bl	_ZN7daisysp5ATone7ProcessERf
+ 370              	.LVL27:
+ 371              		.loc 1 43 1 view .LVU107
+ 372 003a 03B0     		add	sp, sp, #12
+ 373              		.cfi_def_cfa_offset 4
+ 374              		@ sp needed
+ 375 003c 5DF804FB 		ldr	pc, [sp], #4
+ 376              		.cfi_endproc
+ 377              	.LFE4792:
+ 379              		.text
+ 380              	.Letext0:
+ 381              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 382              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 383              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 384              		.file 7 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 385              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 386              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 387              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 388              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 389              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 390              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 391              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 392              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 393              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 394              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 395              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 396              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 397              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 398              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
+ 399              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 400              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 401              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 402              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 403              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 404              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 405              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 406              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 407              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 408              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 409              		.file 32 "../../DaisySP//Source/Control/adenv.h"
+ 410              		.file 33 "../../DaisySP//Source/Utility/dsp.h"
+ 411              		.file 34 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 412              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 413              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 414              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 415              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 416              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 11
+
+
+ 417              		.file 40 "../../libDaisy//src/daisy_core.h"
+ 418              		.file 41 "../../libDaisy//src/util/wav_format.h"
+ 419              		.file 42 "../../libDaisy//src/dev/max11300.h"
+ 420              		.file 43 "../../libDaisy//src/daisy_seed.h"
+ 421              		.file 44 "ToneFilter.h"
+ 422              		.file 45 "<built-in>"
+ 423              		.file 46 "../../libDaisy//src/dev/sr_595.h"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ToneFilter.cpp
-C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s:17     .text._ZN10ToneFilterC2Ef:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s:26     .text._ZN10ToneFilterC2Ef:00000000 _ZN10ToneFilterC2Ef
-C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s:26     .text._ZN10ToneFilterC2Ef:00000000 _ZN10ToneFilterC1Ef
-C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s:87     .text._ZN10ToneFilter7setFreqEf:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s:95     .text._ZN10ToneFilter7setFreqEf:00000000 _ZN10ToneFilter7setFreqEf
-C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s:122    .text._ZN10ToneFilter7processEf:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccRxO9pi.s:130    .text._ZN10ToneFilter7processEf:00000000 _ZN10ToneFilter7processEf
+C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s:17     .text._ZN10ToneFilterC2Ef:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s:26     .text._ZN10ToneFilterC2Ef:00000000 _ZN10ToneFilterC2Ef
+C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s:143    .text._ZN10ToneFilterC2Ef:00000040 $d
+C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s:26     .text._ZN10ToneFilterC2Ef:00000000 _ZN10ToneFilterC1Ef
+C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s:150    .text._ZN10ToneFilter7setFreqEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s:158    .text._ZN10ToneFilter7setFreqEf:00000000 _ZN10ToneFilter7setFreqEf
+C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s:292    .text._ZN10ToneFilter7setFreqEf:0000006c $d
+C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s:298    .text._ZN10ToneFilter7processEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccemPfVn.s:306    .text._ZN10ToneFilter7processEf:00000000 _ZN10ToneFilter7processEf
 
 UNDEFINED SYMBOLS
 _ZN7daisysp4Tone4InitEf
 _ZN7daisysp5ATone4InitEf
 _ZN7daisysp4Tone21CalculateCoefficientsEv
+_ZN7daisysp5ATone21CalculateCoefficientsEv
+powf
 _ZN7daisysp4Tone7ProcessERf
+_ZN7daisysp5ATone7ProcessERf

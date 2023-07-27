@@ -76,7 +76,7 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
         all_delay_signals = delay.process(in[0][i]);
         float preFilter = all_delay_signals;
         all_delay_signals = tone.process(all_delay_signals);
-        all_delay_signals = balance.Process(all_delay_signals,preFilter*2.5f);
+        all_delay_signals = balance.Process(all_delay_signals,preFilter);
 
 
 
@@ -136,22 +136,26 @@ int main(void)
     // Configure the knob to pin D15
     AdcChannelConfig adcConfig;
     adcConfig.InitSingle(hw.GetPin(15));
-    hw.adc.Init(&adcConfig,1);
+    //hw.adc.Init(&adcConfig,1);
     
-    AnalogControl fbk;
-    // Init the analog control to the same pin, D15, which is ADC channel 0 on the datasheet
-    fbk.Init(hw.adc.GetPtr(0),hw.AudioSampleRate());
-    feedbackKnob.Init(fbk,0.00,MAX_FEEDBACK,Parameter::LINEAR);
+    
     //*******************************************************************************
 
     //Tone Knob INIT*****************************************************************
     AdcChannelConfig toneConfig;
-    toneConfig.InitSingle(hw.GetPin(16));
-    hw.adc.Init(&toneConfig,1);
+    
+    toneConfig.InitSingle(A1);
+    AdcChannelConfig configs [2] = {adcConfig,toneConfig};
+    hw.adc.Init(configs,2);
 
     AnalogControl tne;
     tne.Init(hw.adc.GetPtr(1),hw.AudioSampleRate());
-    toneKnob.Init(tne,-1,1,Parameter::LINEAR);
+    toneKnob.Init(tne,-1.f,1.f,Parameter::LINEAR);
+
+    AnalogControl fbk;
+    // Init the analog control to the same pin, D15, which is ADC channel 0 on the datasheet
+    fbk.Init(hw.adc.GetPtr(0),hw.AudioSampleRate());
+    feedbackKnob.Init(fbk,0.00,MAX_FEEDBACK,Parameter::LINEAR);
     //*******************************************************************************
 
 
@@ -248,22 +252,16 @@ void InitHeadButtons()
 
 void ProcessControls()
 {
-    //delay.setFeedback(feedbackKnob.Process());
-    //delay.setFeedback(.5);
-    float tone_val = feedbackKnob.Process()* -1.f;
-    tone.setFreq(5000.0f*(powf(10,2*tone_val))+100.f);
+    delay.setFeedback(feedbackKnob.Process());
+    tone.setFreq(toneKnob.Process());
 
 
     for(int i = 0; i < 4;i++)
     {
         headSwitches[i].Debounce();
         if(headSwitches[i].RisingEdge())
-        {
-            
-            // std::string val = std::to_string(tone_val);
-            // char * tab2 = new char [val.length()+1];
-            // strcpy (tab2, val.c_str());
-            hw.PrintLine("Tone knob val : %f",5000.0f*(powf(10,2*tone_val))+100.f);
+        {            
+            hw.PrintLine("tone knob val: %f",toneKnob.Process());
             delay.toggleHead(i);
         }
     }

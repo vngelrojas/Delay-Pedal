@@ -33,8 +33,8 @@ void ToneFilter::setFreq(float knobValue)
 
 float ToneFilter::process(float in)
 {
-    // Incase this is called before the tone knob is read freq is set 
-    if(!lowPassOn && !highPassOn)
+    // Incase this is called before the tone knob is read freq is set OR somehow both are on 
+    if((!lowPassOn && !highPassOn) || (lowPassOn && highPassOn))
         return in;
     else if(lowPassOn)
         return lowPassFilter.Process(in);

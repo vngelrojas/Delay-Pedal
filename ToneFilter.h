@@ -18,9 +18,9 @@ class ToneFilter
         /**
          * @brief Set the Freq of filters
          * 
-         * @param freq The freq to set
+         * @param knobValue Value from -1 to 1
          */
-        void setFreq(float freq);
+        void setFreq(float knobValue);
         /**
          * @brief 
          * 
@@ -31,5 +31,7 @@ class ToneFilter
     private:
         Tone lowPassFilter;
         ATone highPassFilter;
+        bool lowPassOn;
+        bool highPassOn;
 };
 

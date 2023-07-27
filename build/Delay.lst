@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
   47              		.cfi_offset 14, -4
   48 0002 1349     		ldr	r1, .L9
    6:Delay.cpp     **** {
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 2
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 2
 
 
   49              		.loc 1 6 1 view .LVU4
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
   31:../../DaisySP//Source/Utility/delayline.h ****     {
   32:../../DaisySP//Source/Utility/delayline.h ****         for(size_t i = 0; i < max_size; i++)
   70              		.loc 2 32 29 view .LVU8
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 3
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 3
 
 
   71 0010 124B     		ldr	r3, .L9+12
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  114              		.loc 2 37 20 view .LVU18
  115              	.LBE29:
  116              	.LBE32:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 4
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 4
 
 
  117              	.LBE35:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  156 0058 70DC0500 		.word	384112
  157 005c 0089FEFF 		.word	-96000
  158              		.cfi_endproc
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 5
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 5
 
 
  159              	.LFE4790:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  202              	.LBE40:
   26:Delay.cpp     **** }
  203              		.loc 1 26 1 is_stmt 0 view .LVU51
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 6
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 6
 
 
  204 000a 7047     		bx	lr
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  247              	.LVL10:
  248              	.L13:
  249              		.loc 1 36 9 is_stmt 1 discriminator 2 view .LVU62
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 7
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 7
 
 
  250              		.loc 1 36 39 is_stmt 0 discriminator 2 view .LVU63
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  299              		.syntax unified
  300              		.thumb
  301              		.thumb_func
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 8
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 8
 
 
  302              		.fpu fpv5-d16
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  346              		.loc 1 42 23 view .LVU98
  347              		.loc 1 43 9 view .LVU99
  348              		.loc 1 43 32 is_stmt 0 view .LVU100
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 9
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 9
 
 
  349 0020 0360     		str	r3, [r0]	@ float
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  392              		.cfi_def_cfa_offset 28
  393              		.cfi_offset 4, -28
  394              		.cfi_offset 5, -24
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 10
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 10
 
 
  395              		.cfi_offset 6, -20
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
   10:Delay.h       **** //extern DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS  delayMems[4];
   11:Delay.h       **** 
   12:Delay.h       **** 
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 11
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 11
 
 
   13:Delay.h       **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
   30:../../DaisySP//Source/Utility/dsp.h **** c/o stephen mccaul
   31:../../DaisySP//Source/Utility/dsp.h **** */
   32:../../DaisySP//Source/Utility/dsp.h **** inline float fmax(float a, float b)
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 12
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 12
 
 
   33:../../DaisySP//Source/Utility/dsp.h **** {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
   87:../../DaisySP//Source/Utility/dsp.h **** }
   88:../../DaisySP//Source/Utility/dsp.h **** 
   89:../../DaisySP//Source/Utility/dsp.h **** /** From http://openaudio.blogspot.com/2017/02/faster-log10-and-pow.html
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 13
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 13
 
 
   90:../../DaisySP//Source/Utility/dsp.h **** No approximation, pow10f(x) gives a 90% speed increase over powf(10.f, x)
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  443              	.LBE58:
  444              	.LBB63:
  445              	.LBB64:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 14
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 14
 
 
   38:../../DaisySP//Source/Utility/delayline.h ****     }
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
   66:../../DaisySP//Source/Utility/delayline.h ****     }
   67:../../DaisySP//Source/Utility/delayline.h **** 
   68:../../DaisySP//Source/Utility/delayline.h ****     /** returns the next sample of type T in the delay line, interpolated if necessary.
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 15
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 15
 
 
   69:../../DaisySP//Source/Utility/delayline.h ****     */
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  509 005e 77EEC77A 		vsub.f32	s15, s15, s14
  510              	.LVL28:
   56:../../DaisySP//Source/Utility/delayline.h ****                                                            : max_size - 1;
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 16
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 16
 
 
  511              		.loc 2 56 60 view .LVU145
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  556 0074 01F1010E 		add	lr, r1, #1
   72:../../DaisySP//Source/Utility/delayline.h ****         T b = line_[(write_ptr_ + delay_ + 1) % max_size];
  557              		.loc 2 72 43 view .LVU156
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 17
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 17
 
 
  558 0078 A4FB0179 		umull	r7, r9, r4, r1
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
   72:../../DaisySP//Source/Utility/delayline.h ****         T b = line_[(write_ptr_ + delay_ + 1) % max_size];
  605              		.loc 2 72 11 view .LVU168
  606 00a6 91ED037A 		vldr.32	s14, [r1, #12]
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 18
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 18
 
 
  607              	.LVL31:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  653 00d4 00000000 		.word	0
  654 00d8 74DC0500 		.word	384116
  655 00dc 17B75139 		.word	961656599
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 19
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 19
 
 
  656 00e0 F1197605 		.word	91625969
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  705              		.text
  706              	.Letext0:
  707              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 20
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 20
 
 
  708              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
@@ -1181,27 +1181,27 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 1
  745              		.file 43 "../../libDaisy//src/daisy_seed.h"
  746              		.file 44 "../../libDaisy//src/dev/sr_595.h"
  747              		.file 45 "<built-in>"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s 			page 21
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s 			page 21
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Delay.cpp
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:17     .text._ZN6DelayyC2Ev:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC2Ev
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:154    .text._ZN6DelayyC2Ev:00000050 $d
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC1Ev
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:164    .text._ZN6Delayy7stopAllEv:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:172    .text._ZN6Delayy7stopAllEv:00000000 _ZN6Delayy7stopAllEv
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:209    .text._ZN6Delayy6setBPMERKi:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:217    .text._ZN6Delayy6setBPMERKi:00000000 _ZN6Delayy6setBPMERKi
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:289    .text._ZN6Delayy6setBPMERKi:00000050 $d
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:296    .text._ZN6Delayy11setFeedbackERKf:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:304    .text._ZN6Delayy11setFeedbackERKf:00000000 _ZN6Delayy11setFeedbackERKf
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:360    .text._ZN6Delayy7processEf:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:368    .text._ZN6Delayy7processEf:00000000 _ZN6Delayy7processEf
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:651    .text._ZN6Delayy7processEf:000000cc $d
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:662    .text._ZN6Delayy10toggleHeadERKi:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:670    .text._ZN6Delayy10toggleHeadERKi:00000000 _ZN6Delayy10toggleHeadERKi
-C:\Users\vngel\AppData\Local\Temp\cccNZrrB.s:701    .text._ZN6Delayy10toggleHeadERKi:00000014 $d
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:17     .text._ZN6DelayyC2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC2Ev
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:154    .text._ZN6DelayyC2Ev:00000050 $d
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC1Ev
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:164    .text._ZN6Delayy7stopAllEv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:172    .text._ZN6Delayy7stopAllEv:00000000 _ZN6Delayy7stopAllEv
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:209    .text._ZN6Delayy6setBPMERKi:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:217    .text._ZN6Delayy6setBPMERKi:00000000 _ZN6Delayy6setBPMERKi
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:289    .text._ZN6Delayy6setBPMERKi:00000050 $d
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:296    .text._ZN6Delayy11setFeedbackERKf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:304    .text._ZN6Delayy11setFeedbackERKf:00000000 _ZN6Delayy11setFeedbackERKf
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:360    .text._ZN6Delayy7processEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:368    .text._ZN6Delayy7processEf:00000000 _ZN6Delayy7processEf
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:651    .text._ZN6Delayy7processEf:000000cc $d
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:662    .text._ZN6Delayy10toggleHeadERKi:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:670    .text._ZN6Delayy10toggleHeadERKi:00000000 _ZN6Delayy10toggleHeadERKi
+C:\Users\vngel\AppData\Local\Temp\ccp0bI5D.s:701    .text._ZN6Delayy10toggleHeadERKi:00000014 $d
 
 NO UNDEFINED SYMBOLS
