@@ -1,4 +1,5 @@
 #include "Delay.h"
+DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS  delayMems[NUM_OF_DELAY_HEADS];
 
 Delayy::Delayy()
 {

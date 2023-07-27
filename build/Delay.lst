@@ -1,0 +1,385 @@
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cczGE38V.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"Delay.cpp"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.section	.text.__tcf_0,"ax",%progbits
+  17              		.align	1
+  18              		.p2align 2,,3
+  19              		.arch armv7e-m
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  23              		.fpu fpv5-d16
+  25              	__tcf_0:
+  26              	.LFB5361:
+  27              		.file 1 "Delay.cpp"
+   1:Delay.cpp     **** #include "Delay.h"
+   2:Delay.cpp     **** DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS  delayMems[NUM_OF_DELAY_HEADS];
+  28              		.loc 1 2 44 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              		.loc 1 2 44 is_stmt 0 view .LVU1
+  34 0000 7047     		bx	lr
+  35              		.cfi_endproc
+  36              	.LFE5361:
+  38 0002 00BF     		.section	.text._ZN6DelayyC2Ev,"ax",%progbits
+  39              		.align	1
+  40              		.p2align 2,,3
+  41              		.global	_ZN6DelayyC2Ev
+  42              		.syntax unified
+  43              		.thumb
+  44              		.thumb_func
+  45              		.fpu fpv5-d16
+  47              	_ZN6DelayyC2Ev:
+  48              	.LVL0:
+  49              	.LFB4790:
+   3:Delay.cpp     **** 
+   4:Delay.cpp     **** Delayy::Delayy()
+  50              		.loc 1 4 1 is_stmt 1 view -0
+  51              		.cfi_startproc
+  52              		@ args = 0, pretend = 0, frame = 0
+  53              		@ frame_needed = 0, uses_anonymous_args = 0
+  54              		@ link register save eliminated.
+  55              	.LBB23:
+   5:Delay.cpp     **** {
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cczGE38V.s 			page 2
+
+
+   6:Delay.cpp     ****     for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
+  56              		.loc 1 6 5 view .LVU3
+  57              	.LBB24:
+  58              		.loc 1 6 22 view .LVU4
+  59              	.LBE24:
+   7:Delay.cpp     ****     {
+   8:Delay.cpp     ****         // Initialize delay line
+   9:Delay.cpp     ****         delayMems[i].Init();
+  10:Delay.cpp     ****         // For the current head, point its delayline ptr to one from delayMems
+  11:Delay.cpp     ****         delayHeads[i].delay = &delayMems[i];
+  12:Delay.cpp     ****         // Init the feedback
+  13:Delay.cpp     ****         delayHeads[i].feedback = 0; 
+  14:Delay.cpp     ****         // Make sure they are all off
+  15:Delay.cpp     ****         delayHeadOn[i] = false;
+  16:Delay.cpp     ****     }
+  17:Delay.cpp     ****     bpm = 20;
+  60              		.loc 1 17 5 view .LVU5
+  61              		.loc 1 17 9 is_stmt 0 view .LVU6
+  62 0000 1423     		movs	r3, #20
+  63 0002 0360     		str	r3, [r0]
+  64              	.LBE23:
+  18:Delay.cpp     **** }
+  65              		.loc 1 18 1 view .LVU7
+  66 0004 7047     		bx	lr
+  67              		.cfi_endproc
+  68              	.LFE4790:
+  70              		.global	_ZN6DelayyC1Ev
+  71              		.thumb_set _ZN6DelayyC1Ev,_ZN6DelayyC2Ev
+  72 0006 00BF     		.section	.text._ZN6Delayy7stopAllEv,"ax",%progbits
+  73              		.align	1
+  74              		.p2align 2,,3
+  75              		.global	_ZN6Delayy7stopAllEv
+  76              		.syntax unified
+  77              		.thumb
+  78              		.thumb_func
+  79              		.fpu fpv5-d16
+  81              	_ZN6Delayy7stopAllEv:
+  82              	.LVL1:
+  83              	.LFB4792:
+  19:Delay.cpp     **** 
+  20:Delay.cpp     **** void Delayy::stopAll()
+  21:Delay.cpp     **** {
+  84              		.loc 1 21 1 is_stmt 1 view -0
+  85              		.cfi_startproc
+  86              		@ args = 0, pretend = 0, frame = 0
+  87              		@ frame_needed = 0, uses_anonymous_args = 0
+  88              		@ link register save eliminated.
+  22:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
+  89              		.loc 1 22 5 view .LVU9
+  90              		.loc 1 22 21 view .LVU10
+  23:Delay.cpp     ****         delayHeadOn[i] = false;
+  24:Delay.cpp     **** }
+  91              		.loc 1 24 1 is_stmt 0 view .LVU11
+  92 0000 7047     		bx	lr
+  93              		.cfi_endproc
+  94              	.LFE4792:
+  96 0002 00BF     		.section	.text._ZN6Delayy6setBPMERKi,"ax",%progbits
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cczGE38V.s 			page 3
+
+
+  97              		.align	1
+  98              		.p2align 2,,3
+  99              		.global	_ZN6Delayy6setBPMERKi
+ 100              		.syntax unified
+ 101              		.thumb
+ 102              		.thumb_func
+ 103              		.fpu fpv5-d16
+ 105              	_ZN6Delayy6setBPMERKi:
+ 106              	.LVL2:
+ 107              	.LFB4793:
+  25:Delay.cpp     **** 
+  26:Delay.cpp     **** void Delayy::setBPM(const int& bpm)
+  27:Delay.cpp     **** {
+ 108              		.loc 1 27 1 is_stmt 1 view -0
+ 109              		.cfi_startproc
+ 110              		@ args = 0, pretend = 0, frame = 0
+ 111              		@ frame_needed = 0, uses_anonymous_args = 0
+ 112              		@ link register save eliminated.
+  28:Delay.cpp     ****     this->bpm = bpm;
+ 113              		.loc 1 28 5 view .LVU13
+ 114              		.loc 1 28 17 is_stmt 0 view .LVU14
+ 115 0000 0B68     		ldr	r3, [r1]
+ 116              		.loc 1 28 15 view .LVU15
+ 117 0002 0360     		str	r3, [r0]
+  29:Delay.cpp     ****     for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
+ 118              		.loc 1 29 5 is_stmt 1 view .LVU16
+ 119              	.LVL3:
+ 120              		.loc 1 29 22 view .LVU17
+  30:Delay.cpp     ****     {
+  31:Delay.cpp     ****         //The (i+0.25-i*0.75) just sets the delay intervals to 
+  32:Delay.cpp     ****         // (1/16 note, 1/8 note, dotted 1/8 note, 1/4 note - or 0.25,0.5,0.75,1) for i=0,1,2,3
+  33:Delay.cpp     ****         // The 2880000/BPM sets BPM of delay 
+  34:Delay.cpp     ****         delayHeads[i].delayTarget = (i+0.25-i*0.75)* 2880000/bpm;
+  35:Delay.cpp     ****     }
+  36:Delay.cpp     **** }
+ 121              		.loc 1 36 1 is_stmt 0 view .LVU18
+ 122 0004 7047     		bx	lr
+ 123              		.cfi_endproc
+ 124              	.LFE4793:
+ 126 0006 00BF     		.section	.text._ZN6Delayy11setFeedbackERKf,"ax",%progbits
+ 127              		.align	1
+ 128              		.p2align 2,,3
+ 129              		.global	_ZN6Delayy11setFeedbackERKf
+ 130              		.syntax unified
+ 131              		.thumb
+ 132              		.thumb_func
+ 133              		.fpu fpv5-d16
+ 135              	_ZN6Delayy11setFeedbackERKf:
+ 136              	.LVL4:
+ 137              	.LFB4794:
+  37:Delay.cpp     **** 
+  38:Delay.cpp     **** void Delayy::setFeedback(const float& feed)                           
+  39:Delay.cpp     **** {
+ 138              		.loc 1 39 1 is_stmt 1 view -0
+ 139              		.cfi_startproc
+ 140              		@ args = 0, pretend = 0, frame = 0
+ 141              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cczGE38V.s 			page 4
+
+
+ 142              		@ link register save eliminated.
+  40:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
+ 143              		.loc 1 40 5 view .LVU20
+ 144              		.loc 1 40 23 view .LVU21
+  41:Delay.cpp     ****         delayHeads[i].feedback = feed;
+  42:Delay.cpp     **** }
+ 145              		.loc 1 42 1 is_stmt 0 view .LVU22
+ 146 0000 7047     		bx	lr
+ 147              		.cfi_endproc
+ 148              	.LFE4794:
+ 150 0002 00BF     		.section	.text._ZN6Delayy7processEf,"ax",%progbits
+ 151              		.align	1
+ 152              		.p2align 2,,3
+ 153              		.global	_ZN6Delayy7processEf
+ 154              		.syntax unified
+ 155              		.thumb
+ 156              		.thumb_func
+ 157              		.fpu fpv5-d16
+ 159              	_ZN6Delayy7processEf:
+ 160              	.LVL5:
+ 161              	.LFB4795:
+  43:Delay.cpp     **** 
+  44:Delay.cpp     **** float Delayy::process(float in)
+  45:Delay.cpp     **** {
+ 162              		.loc 1 45 1 is_stmt 1 view -0
+ 163              		.cfi_startproc
+ 164              		@ args = 0, pretend = 0, frame = 0
+ 165              		@ frame_needed = 0, uses_anonymous_args = 0
+ 166              		@ link register save eliminated.
+  46:Delay.cpp     ****     float allDelaySignals = 0;
+ 167              		.loc 1 46 5 view .LVU24
+  47:Delay.cpp     **** 
+  48:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
+ 168              		.loc 1 48 5 view .LVU25
+ 169              		.loc 1 48 23 view .LVU26
+  49:Delay.cpp     ****         if(delayHeadOn[i])
+  50:Delay.cpp     ****             allDelaySignals += delayHeads[i].process(in);
+  51:Delay.cpp     **** 
+  52:Delay.cpp     ****     return allDelaySignals;
+ 170              		.loc 1 52 5 view .LVU27
+  53:Delay.cpp     ****     
+  54:Delay.cpp     **** }
+ 171              		.loc 1 54 1 is_stmt 0 view .LVU28
+ 172 0000 9FED010A 		vldr.32	s0, .L8
+ 173              	.LVL6:
+ 174              		.loc 1 54 1 view .LVU29
+ 175 0004 7047     		bx	lr
+ 176              	.L9:
+ 177 0006 00BF     		.align	2
+ 178              	.L8:
+ 179 0008 00000000 		.word	0
+ 180              		.cfi_endproc
+ 181              	.LFE4795:
+ 183              		.section	.text._ZN6Delayy10toggleHeadERKi,"ax",%progbits
+ 184              		.align	1
+ 185              		.p2align 2,,3
+ 186              		.global	_ZN6Delayy10toggleHeadERKi
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cczGE38V.s 			page 5
+
+
+ 187              		.syntax unified
+ 188              		.thumb
+ 189              		.thumb_func
+ 190              		.fpu fpv5-d16
+ 192              	_ZN6Delayy10toggleHeadERKi:
+ 193              	.LFB5367:
+ 194              		.cfi_startproc
+ 195              		@ args = 0, pretend = 0, frame = 0
+ 196              		@ frame_needed = 0, uses_anonymous_args = 0
+ 197              		@ link register save eliminated.
+ 198 0000 7047     		bx	lr
+ 199              		.cfi_endproc
+ 200              	.LFE5367:
+ 202 0002 00BF     		.section	.text.startup._GLOBAL__sub_I_delayMems,"ax",%progbits
+ 203              		.align	1
+ 204              		.p2align 2,,3
+ 205              		.syntax unified
+ 206              		.thumb
+ 207              		.thumb_func
+ 208              		.fpu fpv5-d16
+ 210              	_GLOBAL__sub_I_delayMems:
+ 211              	.LFB5365:
+  55:Delay.cpp     **** 
+  56:Delay.cpp     **** void Delayy::toggleHead(const int& headNumber)
+  57:Delay.cpp     **** {
+  58:Delay.cpp     ****     if(headNumber >= NUM_OF_DELAY_HEADS || headNumber < 0)
+  59:Delay.cpp     ****         return;
+  60:Delay.cpp     ****     else
+  61:Delay.cpp     ****         delayHeadOn[headNumber] = !delayHeadOn[headNumber];
+  62:Delay.cpp     **** }...
+ 212              		.loc 1 62 1 is_stmt 1 view -0
+ 213              		.cfi_startproc
+ 214              		@ args = 0, pretend = 0, frame = 0
+ 215              		@ frame_needed = 0, uses_anonymous_args = 0
+ 216              		@ link register save eliminated.
+ 217              	.LVL7:
+ 218              	.LBB25:
+ 219              	.LBI25:
+ 220              		.loc 1 62 1 view .LVU31
+ 221              	.LBB26:
+   2:Delay.cpp     **** Delayy::Delayy()
+ 222              		.loc 1 2 44 is_stmt 0 view .LVU32
+ 223 0000 024A     		ldr	r2, .L12
+ 224 0002 0020     		movs	r0, #0
+ 225 0004 0249     		ldr	r1, .L12+4
+ 226 0006 FFF7FEBF 		b	__aeabi_atexit
+ 227              	.LVL8:
+ 228              	.L13:
+ 229 000a 00BF     		.align	2
+ 230              	.L12:
+ 231 000c 00000000 		.word	__dso_handle
+ 232 0010 00000000 		.word	__tcf_0
+ 233              	.LBE26:
+ 234              	.LBE25:
+ 235              		.cfi_endproc
+ 236              	.LFE5365:
+ 238              		.section	.init_array,"aw",%init_array
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cczGE38V.s 			page 6
+
+
+ 239              		.align	2
+ 240 0000 00000000 		.word	_GLOBAL__sub_I_delayMems(target1)
+ 241              		.global	delayMems
+ 242              		.section	.sdram_bss,"aw"
+ 243              		.align	2
+ 246              	delayMems:
+ 247              		.text
+ 248              	.Letext0:
+ 249              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 250              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 251              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 252              		.file 5 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 253              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 254              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 255              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 256              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 257              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 258              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 259              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 260              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 261              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 262              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 263              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 264              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 265              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 266              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
+ 267              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 268              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 269              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 270              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 271              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 272              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 273              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 274              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 275              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 276              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 277              		.file 30 "../../DaisySP//Source/Control/adenv.h"
+ 278              		.file 31 "../../DaisySP//Source/Utility/dsp.h"
+ 279              		.file 32 "../../DaisySP//Source/Utility/delayline.h"
+ 280              		.file 33 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 281              		.file 34 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 282              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 283              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 284              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 285              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 286              		.file 39 "../../libDaisy//src/daisy_core.h"
+ 287              		.file 40 "../../libDaisy//src/util/wav_format.h"
+ 288              		.file 41 "../../libDaisy//src/dev/max11300.h"
+ 289              		.file 42 "../../libDaisy//src/daisy_seed.h"
+ 290              		.file 43 "Delay.h"
+ 291              		.file 44 "../../libDaisy//src/dev/sr_595.h"
+ 292              		.file 45 "<built-in>"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cczGE38V.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 Delay.cpp
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:17     .text.__tcf_0:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:25     .text.__tcf_0:00000000 __tcf_0
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:39     .text._ZN6DelayyC2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:47     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC2Ev
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:47     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC1Ev
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:73     .text._ZN6Delayy7stopAllEv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:81     .text._ZN6Delayy7stopAllEv:00000000 _ZN6Delayy7stopAllEv
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:97     .text._ZN6Delayy6setBPMERKi:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:105    .text._ZN6Delayy6setBPMERKi:00000000 _ZN6Delayy6setBPMERKi
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:127    .text._ZN6Delayy11setFeedbackERKf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:135    .text._ZN6Delayy11setFeedbackERKf:00000000 _ZN6Delayy11setFeedbackERKf
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:151    .text._ZN6Delayy7processEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:159    .text._ZN6Delayy7processEf:00000000 _ZN6Delayy7processEf
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:179    .text._ZN6Delayy7processEf:00000008 $d
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:184    .text._ZN6Delayy10toggleHeadERKi:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:192    .text._ZN6Delayy10toggleHeadERKi:00000000 _ZN6Delayy10toggleHeadERKi
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:203    .text.startup._GLOBAL__sub_I_delayMems:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:210    .text.startup._GLOBAL__sub_I_delayMems:00000000 _GLOBAL__sub_I_delayMems
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:231    .text.startup._GLOBAL__sub_I_delayMems:0000000c $d
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:239    .init_array:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cczGE38V.s:246    .sdram_bss:00000000 delayMems
+
+UNDEFINED SYMBOLS
+__aeabi_atexit
+__dso_handle

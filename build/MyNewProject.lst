@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -16,19 +16,68 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   13              		.text
   14              	.Ltext0:
   15              		.cfi_sections	.debug_frame
-  16              		.section	.text._ZN7daisysp9CrossFadeD2Ev,"axG",%progbits,_ZN7daisysp9CrossFadeD5Ev,comdat
+  16              		.section	.text._ZN7daisysp7BalanceD2Ev,"axG",%progbits,_ZN7daisysp7BalanceD5Ev,comdat
   17              		.align	1
   18              		.p2align 2,,3
-  19              		.weak	_ZN7daisysp9CrossFadeD2Ev
+  19              		.weak	_ZN7daisysp7BalanceD2Ev
   20              		.arch armv7e-m
   21              		.syntax unified
   22              		.thumb
   23              		.thumb_func
   24              		.fpu fpv5-d16
-  26              	_ZN7daisysp9CrossFadeD2Ev:
+  26              	_ZN7daisysp7BalanceD2Ev:
   27              	.LVL0:
-  28              	.LFB2952:
-  29              		.file 1 "../../DaisySP//Source/Dynamics/crossfade.h"
+  28              	.LFB2920:
+  29              		.file 1 "../../DaisySP//Source/Dynamics/balance.h"
+   1:../../DaisySP//Source/Dynamics/balance.h **** 
+   2:../../DaisySP//Source/Dynamics/balance.h **** #pragma once
+   3:../../DaisySP//Source/Dynamics/balance.h **** #ifndef DSY_BALANCE_H
+   4:../../DaisySP//Source/Dynamics/balance.h **** #define DSY_BALANCE_H
+   5:../../DaisySP//Source/Dynamics/balance.h **** 
+   6:../../DaisySP//Source/Dynamics/balance.h **** #include <stdint.h>
+   7:../../DaisySP//Source/Dynamics/balance.h **** #ifdef __cplusplus
+   8:../../DaisySP//Source/Dynamics/balance.h **** 
+   9:../../DaisySP//Source/Dynamics/balance.h **** namespace daisysp
+  10:../../DaisySP//Source/Dynamics/balance.h **** {
+  11:../../DaisySP//Source/Dynamics/balance.h **** /** Balances two sound sources. Sig is boosted to the level of comp.
+  12:../../DaisySP//Source/Dynamics/balance.h **** 
+  13:../../DaisySP//Source/Dynamics/balance.h ****     *Original author(s) : Barry Vercoe, john ffitch, Gabriel Maldonado
+  14:../../DaisySP//Source/Dynamics/balance.h **** 
+  15:../../DaisySP//Source/Dynamics/balance.h ****     *Year: 1991
+  16:../../DaisySP//Source/Dynamics/balance.h **** 
+  17:../../DaisySP//Source/Dynamics/balance.h ****     *Ported from soundpipe by Ben Sergentanis, May 2020
+  18:../../DaisySP//Source/Dynamics/balance.h **** */
+  19:../../DaisySP//Source/Dynamics/balance.h **** class Balance
+  20:../../DaisySP//Source/Dynamics/balance.h **** {
+  21:../../DaisySP//Source/Dynamics/balance.h ****   public:
+  22:../../DaisySP//Source/Dynamics/balance.h ****     Balance() {}
+  23:../../DaisySP//Source/Dynamics/balance.h ****     ~Balance() {}
+  30              		.loc 1 23 5 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+  35              		.loc 1 23 17 is_stmt 0 view .LVU1
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 2
+
+
+  36 0000 7047     		bx	lr
+  37              		.cfi_endproc
+  38              	.LFE2920:
+  40              		.weak	_ZN7daisysp7BalanceD1Ev
+  41              		.thumb_set _ZN7daisysp7BalanceD1Ev,_ZN7daisysp7BalanceD2Ev
+  42 0002 00BF     		.section	.text._ZN7daisysp9CrossFadeD2Ev,"axG",%progbits,_ZN7daisysp9CrossFadeD5Ev,comdat
+  43              		.align	1
+  44              		.p2align 2,,3
+  45              		.weak	_ZN7daisysp9CrossFadeD2Ev
+  46              		.syntax unified
+  47              		.thumb
+  48              		.thumb_func
+  49              		.fpu fpv5-d16
+  51              	_ZN7daisysp9CrossFadeD2Ev:
+  52              	.LVL1:
+  53              	.LFB2952:
+  54              		.file 2 "../../DaisySP//Source/Dynamics/crossfade.h"
    1:../../DaisySP//Source/Dynamics/crossfade.h **** #pragma once
    2:../../DaisySP//Source/Dynamics/crossfade.h **** #ifndef DSY_CROSSFADE_H
    3:../../DaisySP//Source/Dynamics/crossfade.h **** #define DSY_CROSSFADE_H
@@ -58,9 +107,6 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   27:../../DaisySP//Source/Dynamics/crossfade.h ****     Original author: Paul Batchelor
   28:../../DaisySP//Source/Dynamics/crossfade.h **** 
   29:../../DaisySP//Source/Dynamics/crossfade.h ****     Ported from Soundpipe by Andrew Ikenberry
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 2
-
-
   30:../../DaisySP//Source/Dynamics/crossfade.h **** 
   31:../../DaisySP//Source/Dynamics/crossfade.h ****     added curve option for constant power, etc.
   32:../../DaisySP//Source/Dynamics/crossfade.h **** */
@@ -69,29 +115,32 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   35:../../DaisySP//Source/Dynamics/crossfade.h ****   public:
   36:../../DaisySP//Source/Dynamics/crossfade.h ****     CrossFade() {}
   37:../../DaisySP//Source/Dynamics/crossfade.h ****     ~CrossFade() {}
-  30              		.loc 1 37 5 view -0
-  31              		.cfi_startproc
-  32              		@ args = 0, pretend = 0, frame = 0
-  33              		@ frame_needed = 0, uses_anonymous_args = 0
-  34              		@ link register save eliminated.
-  35              		.loc 1 37 19 is_stmt 0 view .LVU1
-  36 0000 7047     		bx	lr
-  37              		.cfi_endproc
-  38              	.LFE2952:
-  40              		.weak	_ZN7daisysp9CrossFadeD1Ev
-  41              		.thumb_set _ZN7daisysp9CrossFadeD1Ev,_ZN7daisysp9CrossFadeD2Ev
-  42 0002 00BF     		.section	.text._ZN5daisy11TimerHandleD2Ev,"axG",%progbits,_ZN5daisy11TimerHandleD5Ev,comdat
-  43              		.align	1
-  44              		.p2align 2,,3
-  45              		.weak	_ZN5daisy11TimerHandleD2Ev
-  46              		.syntax unified
-  47              		.thumb
-  48              		.thumb_func
-  49              		.fpu fpv5-d16
-  51              	_ZN5daisy11TimerHandleD2Ev:
-  52              	.LVL1:
-  53              	.LFB3673:
-  54              		.file 2 "../../libDaisy//src/per/tim.h"
+  55              		.loc 2 37 5 is_stmt 1 view -0
+  56              		.cfi_startproc
+  57              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 3
+
+
+  58              		@ frame_needed = 0, uses_anonymous_args = 0
+  59              		@ link register save eliminated.
+  60              		.loc 2 37 19 is_stmt 0 view .LVU3
+  61 0000 7047     		bx	lr
+  62              		.cfi_endproc
+  63              	.LFE2952:
+  65              		.weak	_ZN7daisysp9CrossFadeD1Ev
+  66              		.thumb_set _ZN7daisysp9CrossFadeD1Ev,_ZN7daisysp9CrossFadeD2Ev
+  67              		.section	.text._ZN5daisy11TimerHandleD2Ev,"axG",%progbits,_ZN5daisy11TimerHandleD5Ev,comdat
+  68              		.align	1
+  69              		.p2align 2,,3
+  70              		.weak	_ZN5daisy11TimerHandleD2Ev
+  71              		.syntax unified
+  72              		.thumb
+  73              		.thumb_func
+  74              		.fpu fpv5-d16
+  76              	_ZN5daisy11TimerHandleD2Ev:
+  77              	.LVL2:
+  78              	.LFB3673:
+  79              		.file 3 "../../libDaisy//src/per/tim.h"
    1:../../libDaisy//src/per/tim.h **** #pragma once
    2:../../libDaisy//src/per/tim.h **** #ifndef DSY_TIM_H
    3:../../libDaisy//src/per/tim.h **** #define DSY_TIM_H
@@ -118,9 +167,6 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   24:../../libDaisy//src/per/tim.h ****  ** the Config::enable_irq must be set to true when initializing for the interrupts
   25:../../libDaisy//src/per/tim.h ****  ** to turn on and function.
   26:../../libDaisy//src/per/tim.h ****  **
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 3
-
-
   27:../../libDaisy//src/per/tim.h ****  ** @todo Fix issues with realtime getters, and wrapping of the timer(s).
   28:../../libDaisy//src/per/tim.h ****  **     - This very noticeable with default settings for the 16-bit counters.
   29:../../libDaisy//src/per/tim.h ****  ** @todo Other General purpose timers
@@ -132,6 +178,9 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   35:../../libDaisy//src/per/tim.h ****  ** @todo Advanced timers (TIM1/TIM8)
   36:../../libDaisy//src/per/tim.h ****  ** */
   37:../../libDaisy//src/per/tim.h **** class TimerHandle
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 4
+
+
   38:../../libDaisy//src/per/tim.h **** {
   39:../../libDaisy//src/per/tim.h ****   public:
   40:../../libDaisy//src/per/tim.h ****     /** @brief Configuration struct for the Peripheral
@@ -178,9 +227,6 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   81:../../libDaisy//src/per/tim.h ****         }
   82:../../libDaisy//src/per/tim.h ****     };
   83:../../libDaisy//src/per/tim.h **** 
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 4
-
-
   84:../../libDaisy//src/per/tim.h ****     /** @brief Return values for TIM funcitons. */
   85:../../libDaisy//src/per/tim.h ****     enum class Result
   86:../../libDaisy//src/per/tim.h ****     {
@@ -192,35 +238,38 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   92:../../libDaisy//src/per/tim.h ****      *   period. This requires that Config::enable_irq is true before Init
   93:../../libDaisy//src/per/tim.h ****      *  @param data pointer to arbitrary user-provided data
   94:../../libDaisy//src/per/tim.h ****     */
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 5
+
+
   95:../../libDaisy//src/per/tim.h ****     typedef void (*PeriodElapsedCallback)(void* data);
   96:../../libDaisy//src/per/tim.h **** 
   97:../../libDaisy//src/per/tim.h ****     TimerHandle() : pimpl_(nullptr) {}
   98:../../libDaisy//src/per/tim.h ****     TimerHandle(const TimerHandle& other) = default;
   99:../../libDaisy//src/per/tim.h ****     TimerHandle& operator=(const TimerHandle& other) = default;
  100:../../libDaisy//src/per/tim.h ****     ~TimerHandle() {}
-  55              		.loc 2 100 5 is_stmt 1 view -0
-  56              		.cfi_startproc
-  57              		@ args = 0, pretend = 0, frame = 0
-  58              		@ frame_needed = 0, uses_anonymous_args = 0
-  59              		@ link register save eliminated.
-  60              		.loc 2 100 21 is_stmt 0 view .LVU3
-  61 0000 7047     		bx	lr
-  62              		.cfi_endproc
-  63              	.LFE3673:
-  65              		.weak	_ZN5daisy11TimerHandleD1Ev
-  66              		.thumb_set _ZN5daisy11TimerHandleD1Ev,_ZN5daisy11TimerHandleD2Ev
-  67              		.section	.text._ZN5daisy6SwitchD2Ev,"axG",%progbits,_ZN5daisy6SwitchD5Ev,comdat
-  68              		.align	1
-  69              		.p2align 2,,3
-  70              		.weak	_ZN5daisy6SwitchD2Ev
-  71              		.syntax unified
-  72              		.thumb
-  73              		.thumb_func
-  74              		.fpu fpv5-d16
-  76              	_ZN5daisy6SwitchD2Ev:
-  77              	.LVL2:
-  78              	.LFB3866:
-  79              		.file 3 "../../libDaisy//src/hid/switch.h"
+  80              		.loc 3 100 5 is_stmt 1 view -0
+  81              		.cfi_startproc
+  82              		@ args = 0, pretend = 0, frame = 0
+  83              		@ frame_needed = 0, uses_anonymous_args = 0
+  84              		@ link register save eliminated.
+  85              		.loc 3 100 21 is_stmt 0 view .LVU5
+  86 0000 7047     		bx	lr
+  87              		.cfi_endproc
+  88              	.LFE3673:
+  90              		.weak	_ZN5daisy11TimerHandleD1Ev
+  91              		.thumb_set _ZN5daisy11TimerHandleD1Ev,_ZN5daisy11TimerHandleD2Ev
+  92              		.section	.text._ZN5daisy6SwitchD2Ev,"axG",%progbits,_ZN5daisy6SwitchD5Ev,comdat
+  93              		.align	1
+  94              		.p2align 2,,3
+  95              		.weak	_ZN5daisy6SwitchD2Ev
+  96              		.syntax unified
+  97              		.thumb
+  98              		.thumb_func
+  99              		.fpu fpv5-d16
+ 101              	_ZN5daisy6SwitchD2Ev:
+ 102              	.LVL3:
+ 103              	.LFB3866:
+ 104              		.file 4 "../../libDaisy//src/hid/switch.h"
    1:../../libDaisy//src/hid/switch.h **** #pragma once
    2:../../libDaisy//src/hid/switch.h **** #ifndef DSY_SWITCH_H
    3:../../libDaisy//src/hid/switch.h **** #define DSY_SWITCH_H
@@ -238,9 +287,6 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   15:../../libDaisy//src/hid/switch.h ****     @ingroup controls
   16:../../libDaisy//src/hid/switch.h **** */
   17:../../libDaisy//src/hid/switch.h **** class Switch
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 5
-
-
   18:../../libDaisy//src/hid/switch.h **** {
   19:../../libDaisy//src/hid/switch.h ****   public:
   20:../../libDaisy//src/hid/switch.h ****     /** Specifies the expected behavior of the switch */
@@ -252,6 +298,9 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   26:../../libDaisy//src/hid/switch.h ****     /** Specifies whether the pressed is HIGH or LOW. */
   27:../../libDaisy//src/hid/switch.h ****     enum Polarity
   28:../../libDaisy//src/hid/switch.h ****     {
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 6
+
+
   29:../../libDaisy//src/hid/switch.h ****         POLARITY_NORMAL,   /**< & */
   30:../../libDaisy//src/hid/switch.h ****         POLARITY_INVERTED, /**< & */
   31:../../libDaisy//src/hid/switch.h ****     };
@@ -266,29 +315,29 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   40:../../libDaisy//src/hid/switch.h **** 
   41:../../libDaisy//src/hid/switch.h ****     Switch() {}
   42:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
-  80              		.loc 3 42 5 is_stmt 1 view -0
-  81              		.cfi_startproc
-  82              		@ args = 0, pretend = 0, frame = 0
-  83              		@ frame_needed = 0, uses_anonymous_args = 0
-  84              		@ link register save eliminated.
-  85              		.loc 3 42 16 is_stmt 0 view .LVU5
-  86 0000 7047     		bx	lr
-  87              		.cfi_endproc
-  88              	.LFE3866:
-  90              		.weak	_ZN5daisy6SwitchD1Ev
-  91              		.thumb_set _ZN5daisy6SwitchD1Ev,_ZN5daisy6SwitchD2Ev
-  92              		.section	.text._ZN5daisy9ParameterD2Ev,"axG",%progbits,_ZN5daisy9ParameterD5Ev,comdat
-  93              		.align	1
-  94              		.p2align 2,,3
-  95              		.weak	_ZN5daisy9ParameterD2Ev
-  96              		.syntax unified
-  97              		.thumb
-  98              		.thumb_func
-  99              		.fpu fpv5-d16
- 101              	_ZN5daisy9ParameterD2Ev:
- 102              	.LVL3:
- 103              	.LFB3915:
- 104              		.file 4 "../../libDaisy//src/hid/parameter.h"
+ 105              		.loc 4 42 5 is_stmt 1 view -0
+ 106              		.cfi_startproc
+ 107              		@ args = 0, pretend = 0, frame = 0
+ 108              		@ frame_needed = 0, uses_anonymous_args = 0
+ 109              		@ link register save eliminated.
+ 110              		.loc 4 42 16 is_stmt 0 view .LVU7
+ 111 0000 7047     		bx	lr
+ 112              		.cfi_endproc
+ 113              	.LFE3866:
+ 115              		.weak	_ZN5daisy6SwitchD1Ev
+ 116              		.thumb_set _ZN5daisy6SwitchD1Ev,_ZN5daisy6SwitchD2Ev
+ 117              		.section	.text._ZN5daisy9ParameterD2Ev,"axG",%progbits,_ZN5daisy9ParameterD5Ev,comdat
+ 118              		.align	1
+ 119              		.p2align 2,,3
+ 120              		.weak	_ZN5daisy9ParameterD2Ev
+ 121              		.syntax unified
+ 122              		.thumb
+ 123              		.thumb_func
+ 124              		.fpu fpv5-d16
+ 126              	_ZN5daisy9ParameterD2Ev:
+ 127              	.LVL4:
+ 128              	.LFB3915:
+ 129              		.file 5 "../../libDaisy//src/hid/parameter.h"
    1:../../libDaisy//src/hid/parameter.h **** #pragma once
    2:../../libDaisy//src/hid/parameter.h **** #include <stdint.h>
    3:../../libDaisy//src/hid/parameter.h **** #include "hid/ctrl.h"
@@ -298,9 +347,6 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
    7:../../libDaisy//src/hid/parameter.h **** /** @addtogroup controls
    8:../../libDaisy//src/hid/parameter.h ****     @{
    9:../../libDaisy//src/hid/parameter.h **** */
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 6
-
-
   10:../../libDaisy//src/hid/parameter.h **** 
   11:../../libDaisy//src/hid/parameter.h **** /**      Simple parameter mapping tool that takes a 0-1 input from an hid_ctrl. */
   12:../../libDaisy//src/hid/parameter.h **** class Parameter
@@ -312,6 +358,9 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   18:../../libDaisy//src/hid/parameter.h ****         LINEAR,      /**< Linear curve */
   19:../../libDaisy//src/hid/parameter.h ****         EXPONENTIAL, /**< Exponential curve */
   20:../../libDaisy//src/hid/parameter.h ****         LOGARITHMIC, /**<  Logarithmic curve */
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 7
+
+
   21:../../libDaisy//src/hid/parameter.h ****         CUBE,        /**< Cubic curve */
   22:../../libDaisy//src/hid/parameter.h ****         LAST,        /**< Final enum element. */
   23:../../libDaisy//src/hid/parameter.h ****     };
@@ -319,14 +368,14 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   25:../../libDaisy//src/hid/parameter.h ****     Parameter() {}
   26:../../libDaisy//src/hid/parameter.h ****     /** Destructor */
   27:../../libDaisy//src/hid/parameter.h ****     ~Parameter() {}
- 105              		.loc 4 27 5 is_stmt 1 view -0
- 106              		.cfi_startproc
- 107              		@ args = 0, pretend = 0, frame = 0
- 108              		@ frame_needed = 0, uses_anonymous_args = 0
- 109              		@ link register save eliminated.
- 110              	.LBB134:
- 111              	.LBI134:
- 112              		.file 5 "../../libDaisy//src/hid/ctrl.h"
+ 130              		.loc 5 27 5 is_stmt 1 view -0
+ 131              		.cfi_startproc
+ 132              		@ args = 0, pretend = 0, frame = 0
+ 133              		@ frame_needed = 0, uses_anonymous_args = 0
+ 134              		@ link register save eliminated.
+ 135              	.LBB145:
+ 136              	.LBI145:
+ 137              		.file 6 "../../libDaisy//src/hid/ctrl.h"
    1:../../libDaisy//src/hid/ctrl.h **** #pragma once
    2:../../libDaisy//src/hid/ctrl.h **** #ifndef DSY_KNOB_H
    3:../../libDaisy//src/hid/ctrl.h **** #define DSY_KNOB_H /**< & */
@@ -350,30 +399,30 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   21:../../libDaisy//src/hid/ctrl.h ****     AnalogControl() {}
   22:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
   23:../../libDaisy//src/hid/ctrl.h ****     ~AnalogControl() {}
- 113              		.loc 5 23 5 view .LVU7
- 114              		.loc 5 23 5 is_stmt 0 view .LVU8
- 115              	.LBE134:
- 116              		.loc 4 27 19 view .LVU9
- 117 0000 7047     		bx	lr
- 118              		.cfi_endproc
- 119              	.LFE3915:
- 121              		.weak	_ZN5daisy9ParameterD1Ev
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 7
+ 138              		.loc 6 23 5 view .LVU9
+ 139              		.loc 6 23 5 is_stmt 0 view .LVU10
+ 140              	.LBE145:
+ 141              		.loc 5 27 19 view .LVU11
+ 142 0000 7047     		bx	lr
+ 143              		.cfi_endproc
+ 144              	.LFE3915:
+ 146              		.weak	_ZN5daisy9ParameterD1Ev
+ 147              		.thumb_set _ZN5daisy9ParameterD1Ev,_ZN5daisy9ParameterD2Ev
+ 148 0002 00BF     		.section	.text._ZN5daisy9DaisySeedD2Ev,"axG",%progbits,_ZN5daisy9DaisySeedD5Ev,comdat
+ 149              		.align	1
+ 150              		.p2align 2,,3
+ 151              		.weak	_ZN5daisy9DaisySeedD2Ev
+ 152              		.syntax unified
+ 153              		.thumb
+ 154              		.thumb_func
+ 155              		.fpu fpv5-d16
+ 157              	_ZN5daisy9DaisySeedD2Ev:
+ 158              	.LVL5:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 8
 
 
- 122              		.thumb_set _ZN5daisy9ParameterD1Ev,_ZN5daisy9ParameterD2Ev
- 123 0002 00BF     		.section	.text._ZN5daisy9DaisySeedD2Ev,"axG",%progbits,_ZN5daisy9DaisySeedD5Ev,comdat
- 124              		.align	1
- 125              		.p2align 2,,3
- 126              		.weak	_ZN5daisy9DaisySeedD2Ev
- 127              		.syntax unified
- 128              		.thumb
- 129              		.thumb_func
- 130              		.fpu fpv5-d16
- 132              	_ZN5daisy9DaisySeedD2Ev:
- 133              	.LVL4:
- 134              	.LFB4783:
- 135              		.file 6 "../../libDaisy//src/daisy_seed.h"
+ 159              	.LFB4783:
+ 160              		.file 7 "../../libDaisy//src/daisy_seed.h"
    1:../../libDaisy//src/daisy_seed.h **** #pragma once
    2:../../libDaisy//src/daisy_seed.h **** #ifndef DSY_SEED_H
    3:../../libDaisy//src/daisy_seed.h **** #define DSY_SEED_H
@@ -396,14 +445,14 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   20:../../libDaisy//src/daisy_seed.h ****   public:
   21:../../libDaisy//src/daisy_seed.h ****     DaisySeed() {}
   22:../../libDaisy//src/daisy_seed.h ****     ~DaisySeed() {}
- 136              		.loc 6 22 5 is_stmt 1 view -0
- 137              		.cfi_startproc
- 138              		@ args = 0, pretend = 0, frame = 0
- 139              		@ frame_needed = 0, uses_anonymous_args = 0
- 140              		@ link register save eliminated.
- 141              	.LBB135:
- 142              	.LBI135:
- 143              		.file 7 "../../libDaisy//src/sys/system.h"
+ 161              		.loc 7 22 5 is_stmt 1 view -0
+ 162              		.cfi_startproc
+ 163              		@ args = 0, pretend = 0, frame = 0
+ 164              		@ frame_needed = 0, uses_anonymous_args = 0
+ 165              		@ link register save eliminated.
+ 166              	.LBB146:
+ 167              	.LBI146:
+ 168              		.file 8 "../../libDaisy//src/sys/system.h"
    1:../../libDaisy//src/sys/system.h **** #ifndef DSY_SYSTEM_H
    2:../../libDaisy//src/sys/system.h **** #define DSY_SYSTEM_H
    3:../../libDaisy//src/sys/system.h **** 
@@ -418,9 +467,6 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   12:../../libDaisy//src/sys/system.h ****  ** This includes the Clock tree, MPU, global DMA initialization,
   13:../../libDaisy//src/sys/system.h ****  ** cache handling, and any other necessary global initiailzation
   14:../../libDaisy//src/sys/system.h ****  **
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 8
-
-
   15:../../libDaisy//src/sys/system.h ****  ** @author shensley
   16:../../libDaisy//src/sys/system.h ****  ** @ingroup system
   17:../../libDaisy//src/sys/system.h ****  */
@@ -432,6 +478,9 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   23:../../libDaisy//src/sys/system.h ****     {
   24:../../libDaisy//src/sys/system.h ****         /** Specifies the system clock frequency that feeds APB/AHB clocks, etc. */
   25:../../libDaisy//src/sys/system.h ****         enum class SysClkFreq
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 9
+
+
   26:../../libDaisy//src/sys/system.h ****         {
   27:../../libDaisy//src/sys/system.h ****             FREQ_400MHZ,
   28:../../libDaisy//src/sys/system.h ****             FREQ_480MHZ,
@@ -478,4 +527,3032 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.s 			page 1
   69:../../libDaisy//src/sys/system.h ****         SRAM_D1,
   70:../../libDaisy//src/sys/system.h ****         SRAM_D2,
   71:../../libDaisy//src/sys/system.h ****         SRAM_D3,
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccEi4PCs.
+  72:../../libDaisy//src/sys/system.h ****         SDRAM,
+  73:../../libDaisy//src/sys/system.h ****         QSPI,
+  74:../../libDaisy//src/sys/system.h ****         INVALID_ADDRESS,
+  75:../../libDaisy//src/sys/system.h ****     };
+  76:../../libDaisy//src/sys/system.h **** 
+  77:../../libDaisy//src/sys/system.h ****     System() {}
+  78:../../libDaisy//src/sys/system.h ****     ~System() {}
+ 169              		.loc 8 78 5 view .LVU13
+ 170              		.loc 8 78 5 is_stmt 0 view .LVU14
+ 171              	.LBE146:
+ 172              	.LBB147:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 10
+
+
+ 173              	.LBI147:
+ 174              		.file 9 "../../libDaisy//src/hid/usb.h"
+   1:../../libDaisy//src/hid/usb.h **** #pragma once
+   2:../../libDaisy//src/hid/usb.h **** #ifndef DSY_HID_USB_H
+   3:../../libDaisy//src/hid/usb.h **** #define DSY_HID_USB_H
+   4:../../libDaisy//src/hid/usb.h **** #include <stdint.h>
+   5:../../libDaisy//src/hid/usb.h **** #include <stdlib.h>
+   6:../../libDaisy//src/hid/usb.h **** 
+   7:../../libDaisy//src/hid/usb.h **** namespace daisy
+   8:../../libDaisy//src/hid/usb.h **** /** @addtogroup human_interface
+   9:../../libDaisy//src/hid/usb.h ****     @{
+  10:../../libDaisy//src/hid/usb.h **** */
+  11:../../libDaisy//src/hid/usb.h **** 
+  12:../../libDaisy//src/hid/usb.h **** {
+  13:../../libDaisy//src/hid/usb.h **** /** 
+  14:../../libDaisy//src/hid/usb.h ****     @brief Interface for initializing and using the USB Peripherals on the daisy
+  15:../../libDaisy//src/hid/usb.h ****     @author Stephen Hensley
+  16:../../libDaisy//src/hid/usb.h ****     @date December 2019
+  17:../../libDaisy//src/hid/usb.h **** */
+  18:../../libDaisy//src/hid/usb.h **** class UsbHandle
+  19:../../libDaisy//src/hid/usb.h **** {
+  20:../../libDaisy//src/hid/usb.h ****   public:
+  21:../../libDaisy//src/hid/usb.h ****     /** Return values for USBHandle Functions */
+  22:../../libDaisy//src/hid/usb.h ****     enum class Result
+  23:../../libDaisy//src/hid/usb.h ****     {
+  24:../../libDaisy//src/hid/usb.h ****         OK,
+  25:../../libDaisy//src/hid/usb.h ****         ERR,
+  26:../../libDaisy//src/hid/usb.h ****     };
+  27:../../libDaisy//src/hid/usb.h **** 
+  28:../../libDaisy//src/hid/usb.h ****     /** Specified which of the two USB Peripherals to initialize. */
+  29:../../libDaisy//src/hid/usb.h ****     enum UsbPeriph
+  30:../../libDaisy//src/hid/usb.h ****     {
+  31:../../libDaisy//src/hid/usb.h ****         FS_INTERNAL, /**< Internal pin */
+  32:../../libDaisy//src/hid/usb.h ****         FS_EXTERNAL, /**< FS External D+ pin is Pin 38 (GPIO32). FS External D- pin is Pin 37 (GPIO
+  33:../../libDaisy//src/hid/usb.h ****         FS_BOTH,     /**< Both */
+  34:../../libDaisy//src/hid/usb.h ****     };
+  35:../../libDaisy//src/hid/usb.h **** 
+  36:../../libDaisy//src/hid/usb.h **** 
+  37:../../libDaisy//src/hid/usb.h ****     /** Function called upon reception of a buffer */
+  38:../../libDaisy//src/hid/usb.h ****     typedef void (*ReceiveCallback)(uint8_t* buff, uint32_t* len);
+  39:../../libDaisy//src/hid/usb.h **** 
+  40:../../libDaisy//src/hid/usb.h ****     UsbHandle() {}
+  41:../../libDaisy//src/hid/usb.h **** 
+  42:../../libDaisy//src/hid/usb.h ****     ~UsbHandle() {}
+ 175              		.loc 9 42 5 is_stmt 1 view .LVU15
+ 176              		.loc 9 42 5 is_stmt 0 view .LVU16
+ 177              	.LBE147:
+ 178              	.LBB148:
+ 179              	.LBI148:
+ 180              		.file 10 "../../libDaisy//src/per/adc.h"
+   1:../../libDaisy//src/per/adc.h **** #pragma once
+   2:../../libDaisy//src/per/adc.h **** #ifndef DSY_ADC_H
+   3:../../libDaisy//src/per/adc.h **** #define DSY_ADC_H /**< Macro */
+   4:../../libDaisy//src/per/adc.h **** #include <stdint.h>
+   5:../../libDaisy//src/per/adc.h **** #include <stdlib.h>
+   6:../../libDaisy//src/per/adc.h **** #include "daisy_core.h"
+   7:../../libDaisy//src/per/adc.h **** #include "per/gpio.h"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 11
+
+
+   8:../../libDaisy//src/per/adc.h **** 
+   9:../../libDaisy//src/per/adc.h **** #define DSY_ADC_MAX_CHANNELS 16 /**< Maximum number of ADC channels */
+  10:../../libDaisy//src/per/adc.h **** 
+  11:../../libDaisy//src/per/adc.h **** namespace daisy
+  12:../../libDaisy//src/per/adc.h **** {
+  13:../../libDaisy//src/per/adc.h **** /** @addtogroup per_analog
+  14:../../libDaisy//src/per/adc.h ****     @{
+  15:../../libDaisy//src/per/adc.h **** */
+  16:../../libDaisy//src/per/adc.h **** 
+  17:../../libDaisy//src/per/adc.h **** /* While there may not be many configuration options here,
+  18:../../libDaisy//src/per/adc.h **** using a struct like this allows us to add more configuration
+  19:../../libDaisy//src/per/adc.h **** later without breaking existing functionality.
+  20:../../libDaisy//src/per/adc.h **** */
+  21:../../libDaisy//src/per/adc.h **** 
+  22:../../libDaisy//src/per/adc.h **** /** @brief   Configuration Structure for an ADC Channel 
+  23:../../libDaisy//src/per/adc.h ****  *  @details This can be used to configure a a single input, 
+  24:../../libDaisy//src/per/adc.h ****  *           or a multiplexed input, allowing up to 8 inputs on 
+  25:../../libDaisy//src/per/adc.h ****  *           one channel.
+  26:../../libDaisy//src/per/adc.h ****  *  @note    Sharing data lines to multiple muxes _is_ possible, but
+  27:../../libDaisy//src/per/adc.h ****  *           each channel sharing data lines must be set to the maximum
+  28:../../libDaisy//src/per/adc.h ****  *           number of channels, even if some multiplexers have fewer
+  29:../../libDaisy//src/per/adc.h ****  *           inputs connected.
+  30:../../libDaisy//src/per/adc.h **** */
+  31:../../libDaisy//src/per/adc.h **** struct AdcChannelConfig
+  32:../../libDaisy//src/per/adc.h **** {
+  33:../../libDaisy//src/per/adc.h ****     /** Which pin to use for multiplexing */
+  34:../../libDaisy//src/per/adc.h ****     enum MuxPin
+  35:../../libDaisy//src/per/adc.h ****     {
+  36:../../libDaisy//src/per/adc.h ****         MUX_SEL_0,    /**< & */
+  37:../../libDaisy//src/per/adc.h ****         MUX_SEL_1,    /**< & */
+  38:../../libDaisy//src/per/adc.h ****         MUX_SEL_2,    /**< & */
+  39:../../libDaisy//src/per/adc.h ****         MUX_SEL_LAST, /**< & */
+  40:../../libDaisy//src/per/adc.h ****     };
+  41:../../libDaisy//src/per/adc.h **** 
+  42:../../libDaisy//src/per/adc.h ****     /** Initializes a single ADC pin as an ADC. 
+  43:../../libDaisy//src/per/adc.h ****     \param pin Pin to init.
+  44:../../libDaisy//src/per/adc.h ****      */
+  45:../../libDaisy//src/per/adc.h ****     void InitSingle(dsy_gpio_pin pin);
+  46:../../libDaisy//src/per/adc.h **** 
+  47:../../libDaisy//src/per/adc.h ****     /** 
+  48:../../libDaisy//src/per/adc.h ****     Initializes a single ADC pin as a Multiplexed ADC.
+  49:../../libDaisy//src/per/adc.h ****     Requires a CD405X Multiplexer connected to the pin.
+  50:../../libDaisy//src/per/adc.h ****     You only need to supply the mux pins that are required,
+  51:../../libDaisy//src/per/adc.h ****     e.g. a 4052 mux would only require mux_0 and mux_1.
+  52:../../libDaisy//src/per/adc.h ****     Internal Callbacks handle the pin addressing.
+  53:../../libDaisy//src/per/adc.h ****     \param mux_channels must be 1-8
+  54:../../libDaisy//src/per/adc.h ****     \param mux_0 First mux pin
+  55:../../libDaisy//src/per/adc.h ****     \param mux_1 Second mux pin
+  56:../../libDaisy//src/per/adc.h ****     \param mux_2 Third mux pin
+  57:../../libDaisy//src/per/adc.h ****     \param adc_pin &
+  58:../../libDaisy//src/per/adc.h ****     */
+  59:../../libDaisy//src/per/adc.h ****     void InitMux(dsy_gpio_pin adc_pin,
+  60:../../libDaisy//src/per/adc.h ****                  size_t       mux_channels,
+  61:../../libDaisy//src/per/adc.h ****                  dsy_gpio_pin mux_0,
+  62:../../libDaisy//src/per/adc.h ****                  dsy_gpio_pin mux_1 = {DSY_GPIOX, 0},
+  63:../../libDaisy//src/per/adc.h ****                  dsy_gpio_pin mux_2 = {DSY_GPIOX, 0});
+  64:../../libDaisy//src/per/adc.h **** 
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 12
+
+
+  65:../../libDaisy//src/per/adc.h ****     dsy_gpio pin_;                   /**< & */
+  66:../../libDaisy//src/per/adc.h ****     dsy_gpio mux_pin_[MUX_SEL_LAST]; /**< & */
+  67:../../libDaisy//src/per/adc.h ****     uint8_t  mux_channels_;          /**< & */
+  68:../../libDaisy//src/per/adc.h **** };
+  69:../../libDaisy//src/per/adc.h **** 
+  70:../../libDaisy//src/per/adc.h **** /**
+  71:../../libDaisy//src/per/adc.h ****    @brief Handler for analog to digital conversion
+  72:../../libDaisy//src/per/adc.h **** */
+  73:../../libDaisy//src/per/adc.h **** class AdcHandle
+  74:../../libDaisy//src/per/adc.h **** {
+  75:../../libDaisy//src/per/adc.h ****   public:
+  76:../../libDaisy//src/per/adc.h ****     /** Supported oversampling amounts */
+  77:../../libDaisy//src/per/adc.h ****     enum OverSampling
+  78:../../libDaisy//src/per/adc.h ****     {
+  79:../../libDaisy//src/per/adc.h ****         OVS_NONE, /**< & */
+  80:../../libDaisy//src/per/adc.h ****         OVS_4,    /**< & */
+  81:../../libDaisy//src/per/adc.h ****         OVS_8,    /**< & */
+  82:../../libDaisy//src/per/adc.h ****         OVS_16,   /**< & */
+  83:../../libDaisy//src/per/adc.h ****         OVS_32,   /**< & */
+  84:../../libDaisy//src/per/adc.h ****         OVS_64,   /**< & */
+  85:../../libDaisy//src/per/adc.h ****         OVS_128,  /**< & */
+  86:../../libDaisy//src/per/adc.h ****         OVS_256,  /**< & */
+  87:../../libDaisy//src/per/adc.h ****         OVS_512,  /**< & */
+  88:../../libDaisy//src/per/adc.h ****         OVS_1024, /**< & */
+  89:../../libDaisy//src/per/adc.h ****         OVS_LAST, /**< & */
+  90:../../libDaisy//src/per/adc.h ****     };
+  91:../../libDaisy//src/per/adc.h **** 
+  92:../../libDaisy//src/per/adc.h ****     AdcHandle() {}
+  93:../../libDaisy//src/per/adc.h ****     ~AdcHandle() {}
+ 181              		.loc 10 93 5 is_stmt 1 view .LVU17
+ 182              		.loc 10 93 5 is_stmt 0 view .LVU18
+ 183              	.LBE148:
+ 184              	.LBB149:
+ 185              	.LBI149:
+ 186              		.file 11 "../../libDaisy//src/hid/audio.h"
+   1:../../libDaisy//src/hid/audio.h **** #ifndef DSY_AUDIO_H
+   2:../../libDaisy//src/hid/audio.h **** #define DSY_AUDIO_H /**< & */
+   3:../../libDaisy//src/hid/audio.h **** 
+   4:../../libDaisy//src/hid/audio.h **** #include "per/sai.h"
+   5:../../libDaisy//src/hid/audio.h **** 
+   6:../../libDaisy//src/hid/audio.h **** namespace daisy
+   7:../../libDaisy//src/hid/audio.h **** {
+   8:../../libDaisy//src/hid/audio.h **** /** @brief Audio Engine Handle
+   9:../../libDaisy//src/hid/audio.h ****  *  @ingroup audio 
+  10:../../libDaisy//src/hid/audio.h ****  *  @details This class allows for higher level access to an audio engine.
+  11:../../libDaisy//src/hid/audio.h ****  *           If you're using a SOM like the DaisySeed or DaisyPatchSM (or any 
+  12:../../libDaisy//src/hid/audio.h ****  *            board that includes one of those objects) then the intialization
+  13:../../libDaisy//src/hid/audio.h ****  *            is already taken  care of.
+  14:../../libDaisy//src/hid/audio.h ****  *           If you're setting up your own custom hardware, or need to make changes
+  15:../../libDaisy//src/hid/audio.h ****  *           you will have to take the following steps:
+  16:../../libDaisy//src/hid/audio.h ****  *             1. Create and Initialize an SaiHandle or two depending on your requirements
+  17:../../libDaisy//src/hid/audio.h ****  *             2. Initialize the Audio Handle with the desired settings and the Initialized SaiHand
+  18:../../libDaisy//src/hid/audio.h ****  *             3. If the connected codec requires special configuration or initialization, do so
+  19:../../libDaisy//src/hid/audio.h ****  *             4. Write a callback method using either the AudioCallback or the InterleavingAudioCa
+  20:../../libDaisy//src/hid/audio.h ****  *             5. Start the Audio using one of the StartAudio function
+  21:../../libDaisy//src/hid/audio.h ****  */
+  22:../../libDaisy//src/hid/audio.h **** class AudioHandle
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 13
+
+
+  23:../../libDaisy//src/hid/audio.h **** {
+  24:../../libDaisy//src/hid/audio.h ****   public:
+  25:../../libDaisy//src/hid/audio.h ****     /** Manually configurable details about the Audio Engine */
+  26:../../libDaisy//src/hid/audio.h ****     /** TODO: Figure out how to get samplerate in here. */
+  27:../../libDaisy//src/hid/audio.h ****     struct Config
+  28:../../libDaisy//src/hid/audio.h ****     {
+  29:../../libDaisy//src/hid/audio.h ****         /** number of samples to process per callback */
+  30:../../libDaisy//src/hid/audio.h ****         size_t blocksize;
+  31:../../libDaisy//src/hid/audio.h **** 
+  32:../../libDaisy//src/hid/audio.h ****         /**< Sample rate of audio */
+  33:../../libDaisy//src/hid/audio.h ****         SaiHandle::Config::SampleRate samplerate;
+  34:../../libDaisy//src/hid/audio.h **** 
+  35:../../libDaisy//src/hid/audio.h ****         /** factor for adjustment before and after callback for hardware that may have extra headro
+  36:../../libDaisy//src/hid/audio.h ****         float postgain;
+  37:../../libDaisy//src/hid/audio.h **** 
+  38:../../libDaisy//src/hid/audio.h ****         /** factor for additional one-sided compensation to audio path for hardware that may
+  39:../../libDaisy//src/hid/audio.h ****          *  have unequal input/output ranges
+  40:../../libDaisy//src/hid/audio.h ****          */
+  41:../../libDaisy//src/hid/audio.h ****         float output_compensation;
+  42:../../libDaisy//src/hid/audio.h **** 
+  43:../../libDaisy//src/hid/audio.h ****         /** Sets default values for config struct */
+  44:../../libDaisy//src/hid/audio.h ****         Config()
+  45:../../libDaisy//src/hid/audio.h ****         : blocksize(48),
+  46:../../libDaisy//src/hid/audio.h ****           samplerate(SaiHandle::Config::SampleRate::SAI_48KHZ),
+  47:../../libDaisy//src/hid/audio.h ****           postgain(1.f),
+  48:../../libDaisy//src/hid/audio.h ****           output_compensation(1.f)
+  49:../../libDaisy//src/hid/audio.h ****         {
+  50:../../libDaisy//src/hid/audio.h ****         }
+  51:../../libDaisy//src/hid/audio.h ****     };
+  52:../../libDaisy//src/hid/audio.h **** 
+  53:../../libDaisy//src/hid/audio.h ****     enum class Result
+  54:../../libDaisy//src/hid/audio.h ****     {
+  55:../../libDaisy//src/hid/audio.h ****         OK,
+  56:../../libDaisy//src/hid/audio.h ****         ERR,
+  57:../../libDaisy//src/hid/audio.h ****     };
+  58:../../libDaisy//src/hid/audio.h **** 
+  59:../../libDaisy//src/hid/audio.h ****     /** Non-Interleaving input buffer
+  60:../../libDaisy//src/hid/audio.h ****      * Buffer arranged by float[chn][sample] 
+  61:../../libDaisy//src/hid/audio.h ****      * const so that the user can't modify the input
+  62:../../libDaisy//src/hid/audio.h ****      */
+  63:../../libDaisy//src/hid/audio.h ****     typedef const float* const* InputBuffer;
+  64:../../libDaisy//src/hid/audio.h **** 
+  65:../../libDaisy//src/hid/audio.h ****     /** Non-Interleaving output buffer
+  66:../../libDaisy//src/hid/audio.h ****      * Arranged by float[chn][sample] 
+  67:../../libDaisy//src/hid/audio.h ****      */
+  68:../../libDaisy//src/hid/audio.h ****     typedef float** OutputBuffer;
+  69:../../libDaisy//src/hid/audio.h **** 
+  70:../../libDaisy//src/hid/audio.h ****     /** Type for a Non-Interleaving audio callback 
+  71:../../libDaisy//src/hid/audio.h ****      * Non-Interleaving audio callbacks in daisy will be of this type
+  72:../../libDaisy//src/hid/audio.h ****      */
+  73:../../libDaisy//src/hid/audio.h ****     typedef void (*AudioCallback)(InputBuffer  in,
+  74:../../libDaisy//src/hid/audio.h ****                                   OutputBuffer out,
+  75:../../libDaisy//src/hid/audio.h ****                                   size_t       size);
+  76:../../libDaisy//src/hid/audio.h **** 
+  77:../../libDaisy//src/hid/audio.h ****     /** Interleaving Input buffer
+  78:../../libDaisy//src/hid/audio.h ****      ** audio is prepared as { L0, R0, L1, R1, . . . LN, RN }]
+  79:../../libDaisy//src/hid/audio.h ****      ** this is const, as the user shouldn't modify it
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 14
+
+
+  80:../../libDaisy//src/hid/audio.h ****     */
+  81:../../libDaisy//src/hid/audio.h ****     typedef const float* InterleavingInputBuffer;
+  82:../../libDaisy//src/hid/audio.h **** 
+  83:../../libDaisy//src/hid/audio.h ****     /** Interleaving Output buffer 
+  84:../../libDaisy//src/hid/audio.h ****      ** audio is prepared as { L0, R0, L1, R1, . . . LN, RN }
+  85:../../libDaisy//src/hid/audio.h ****     */
+  86:../../libDaisy//src/hid/audio.h ****     typedef float* InterleavingOutputBuffer;
+  87:../../libDaisy//src/hid/audio.h **** 
+  88:../../libDaisy//src/hid/audio.h ****     /** Interleaving Audio Callback 
+  89:../../libDaisy//src/hid/audio.h ****      * Interleaving audio callbacks in daisy must be of this type
+  90:../../libDaisy//src/hid/audio.h ****      */
+  91:../../libDaisy//src/hid/audio.h ****     typedef void (*InterleavingAudioCallback)(InterleavingInputBuffer  in,
+  92:../../libDaisy//src/hid/audio.h ****                                               InterleavingOutputBuffer out,
+  93:../../libDaisy//src/hid/audio.h ****                                               size_t                   size);
+  94:../../libDaisy//src/hid/audio.h **** 
+  95:../../libDaisy//src/hid/audio.h ****     AudioHandle() : pimpl_(nullptr) {}
+  96:../../libDaisy//src/hid/audio.h ****     ~AudioHandle() {}
+ 187              		.loc 11 96 5 is_stmt 1 view .LVU19
+ 188              		.loc 11 96 5 is_stmt 0 view .LVU20
+ 189              	.LBE149:
+ 190              		.loc 7 22 19 view .LVU21
+ 191 0000 7047     		bx	lr
+ 192              		.cfi_endproc
+ 193              	.LFE4783:
+ 195              		.weak	_ZN5daisy9DaisySeedD1Ev
+ 196              		.thumb_set _ZN5daisy9DaisySeedD1Ev,_ZN5daisy9DaisySeedD2Ev
+ 197 0002 00BF     		.section	.text._ZN10ToneFilterD2Ev,"axG",%progbits,_ZN10ToneFilterD5Ev,comdat
+ 198              		.align	1
+ 199              		.p2align 2,,3
+ 200              		.weak	_ZN10ToneFilterD2Ev
+ 201              		.syntax unified
+ 202              		.thumb
+ 203              		.thumb_func
+ 204              		.fpu fpv5-d16
+ 206              	_ZN10ToneFilterD2Ev:
+ 207              	.LVL6:
+ 208              	.LFB5358:
+ 209              		.file 12 "ToneFilter.h"
+   1:ToneFilter.h  **** #pragma once
+   2:ToneFilter.h  **** #include "daisysp.h"
+   3:ToneFilter.h  **** #include "daisy_seed.h"
+   4:ToneFilter.h  **** 
+   5:ToneFilter.h  **** using namespace daisysp;
+   6:ToneFilter.h  **** using namespace daisy;
+   7:ToneFilter.h  **** using namespace daisy::seed;
+   8:ToneFilter.h  **** 
+   9:ToneFilter.h  **** class ToneFilter
+ 210              		.loc 12 9 7 is_stmt 1 view -0
+ 211              		.cfi_startproc
+ 212              		@ args = 0, pretend = 0, frame = 0
+ 213              		@ frame_needed = 0, uses_anonymous_args = 0
+ 214              		@ link register save eliminated.
+ 215              	.LBB150:
+ 216              	.LBI150:
+ 217              		.file 13 "../../DaisySP//Source/Filters/atone.h"
+   1:../../DaisySP//Source/Filters/atone.h **** #pragma once
+   2:../../DaisySP//Source/Filters/atone.h **** #ifndef DSY_ATONE_H
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 15
+
+
+   3:../../DaisySP//Source/Filters/atone.h **** #define DSY_ATONE_H
+   4:../../DaisySP//Source/Filters/atone.h **** 
+   5:../../DaisySP//Source/Filters/atone.h **** #include <stdint.h>
+   6:../../DaisySP//Source/Filters/atone.h **** #ifdef __cplusplus
+   7:../../DaisySP//Source/Filters/atone.h **** 
+   8:../../DaisySP//Source/Filters/atone.h **** namespace daisysp
+   9:../../DaisySP//Source/Filters/atone.h **** {
+  10:../../DaisySP//Source/Filters/atone.h **** /** A first-order recursive high-pass filter with variable frequency response.
+  11:../../DaisySP//Source/Filters/atone.h ****      Original Author(s): Barry Vercoe, John FFitch, Gabriel Maldonado
+  12:../../DaisySP//Source/Filters/atone.h **** 
+  13:../../DaisySP//Source/Filters/atone.h ****      Year: 1991
+  14:../../DaisySP//Source/Filters/atone.h **** 
+  15:../../DaisySP//Source/Filters/atone.h ****      Original Location: Csound -- OOps/ugens5.c
+  16:../../DaisySP//Source/Filters/atone.h **** 
+  17:../../DaisySP//Source/Filters/atone.h ****      Ported from soundpipe by Ben Sergentanis, May 2020
+  18:../../DaisySP//Source/Filters/atone.h ****     */
+  19:../../DaisySP//Source/Filters/atone.h **** class ATone
+  20:../../DaisySP//Source/Filters/atone.h **** {
+  21:../../DaisySP//Source/Filters/atone.h ****   public:
+  22:../../DaisySP//Source/Filters/atone.h ****     ATone() {}
+  23:../../DaisySP//Source/Filters/atone.h ****     ~ATone() {}
+ 218              		.loc 13 23 5 view .LVU23
+ 219              		.loc 13 23 5 is_stmt 0 view .LVU24
+ 220              	.LBE150:
+ 221              	.LBB151:
+ 222              	.LBI151:
+ 223              		.file 14 "../../DaisySP//Source/Filters/tone.h"
+   1:../../DaisySP//Source/Filters/tone.h **** #pragma once
+   2:../../DaisySP//Source/Filters/tone.h **** #ifndef DSY_TONE_H
+   3:../../DaisySP//Source/Filters/tone.h **** #define DSY_TONE_H
+   4:../../DaisySP//Source/Filters/tone.h **** 
+   5:../../DaisySP//Source/Filters/tone.h **** #include <stdint.h>
+   6:../../DaisySP//Source/Filters/tone.h **** #ifdef __cplusplus
+   7:../../DaisySP//Source/Filters/tone.h **** 
+   8:../../DaisySP//Source/Filters/tone.h **** namespace daisysp
+   9:../../DaisySP//Source/Filters/tone.h **** {
+  10:../../DaisySP//Source/Filters/tone.h **** /** A first-order recursive low-pass filter with variable frequency response.
+  11:../../DaisySP//Source/Filters/tone.h **** */
+  12:../../DaisySP//Source/Filters/tone.h **** class Tone
+  13:../../DaisySP//Source/Filters/tone.h **** {
+  14:../../DaisySP//Source/Filters/tone.h ****   public:
+  15:../../DaisySP//Source/Filters/tone.h ****     Tone() {}
+  16:../../DaisySP//Source/Filters/tone.h ****     ~Tone() {}
+ 224              		.loc 14 16 5 is_stmt 1 view .LVU25
+ 225              		.loc 14 16 5 is_stmt 0 view .LVU26
+ 226              	.LBE151:
+ 227              		.loc 12 9 7 view .LVU27
+ 228 0000 7047     		bx	lr
+ 229              		.cfi_endproc
+ 230              	.LFE5358:
+ 232              		.weak	_ZN10ToneFilterD1Ev
+ 233              		.thumb_set _ZN10ToneFilterD1Ev,_ZN10ToneFilterD2Ev
+ 234 0002 00BF     		.section	.text.__tcf_0,"ax",%progbits
+ 235              		.align	1
+ 236              		.p2align 2,,3
+ 237              		.syntax unified
+ 238              		.thumb
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 16
+
+
+ 239              		.thumb_func
+ 240              		.fpu fpv5-d16
+ 242              	__tcf_0:
+ 243              	.LFB5360:
+ 244              		.file 15 "MyNewProject.cpp"
+   1:MyNewProject.cpp **** 
+   2:MyNewProject.cpp **** #include "Delay.h"
+   3:MyNewProject.cpp **** #include "ToneFilter.h"
+   4:MyNewProject.cpp **** 
+   5:MyNewProject.cpp **** 
+   6:MyNewProject.cpp **** using namespace daisysp;
+   7:MyNewProject.cpp **** using namespace daisy;
+   8:MyNewProject.cpp **** using namespace daisy::seed;
+   9:MyNewProject.cpp **** 
+  10:MyNewProject.cpp **** Delayy delay;
+  11:MyNewProject.cpp **** ToneFilter tone(48000.f);
+  12:MyNewProject.cpp **** static Balance balance;
+  13:MyNewProject.cpp **** 
+  14:MyNewProject.cpp **** Switch ON_BUTTON;                 // The on/off button
+  15:MyNewProject.cpp **** Switch TEMPO_BUTTON;              // The tap tempo button
+  16:MyNewProject.cpp **** Switch headSwitches[4];           // One switch for each head
+ 245              		.loc 15 16 8 is_stmt 1 view -0
+ 246              		.cfi_startproc
+ 247              		@ args = 0, pretend = 0, frame = 0
+ 248              		@ frame_needed = 0, uses_anonymous_args = 0
+ 249              		@ link register save eliminated.
+ 250              		.loc 15 16 8 is_stmt 0 view .LVU29
+ 251 0000 7047     		bx	lr
+ 252              		.cfi_endproc
+ 253              	.LFE5360:
+ 255 0002 00BF     		.section	.text._Z10CheckTempov,"ax",%progbits
+ 256              		.align	1
+ 257              		.p2align 2,,3
+ 258              		.global	_Z10CheckTempov
+ 259              		.syntax unified
+ 260              		.thumb
+ 261              		.thumb_func
+ 262              		.fpu fpv5-d16
+ 264              	_Z10CheckTempov:
+ 265              	.LFB4791:
+  17:MyNewProject.cpp **** static DaisySeed hw;              // The daisy seed harfware
+  18:MyNewProject.cpp **** static CrossFade cfade;           // Used to blend the wet/dry and maintain a constant mixed volume
+  19:MyNewProject.cpp **** 
+  20:MyNewProject.cpp **** 
+  21:MyNewProject.cpp **** float MAX_FEEDBACK = 1.1f;        // Max value of feedback knob, maxFeedback=1 -> forever repeats b
+  22:MyNewProject.cpp **** float drywet_ratio = 0.5f;        // Drywet_ratio=0.0 is effect off
+  23:MyNewProject.cpp **** const float MAX_DELAY_SEC = 3.0f; // Max amount of seconds allowed to get 20 bpm
+  24:MyNewProject.cpp **** const float MIN_DELAY_SEC = 0.6f; // Min amount of seconds allowed to get 100 bpm
+  25:MyNewProject.cpp **** bool onButtonWasPressed = false;  // Flag for turning on/off delays, replace with onButton.risingEd
+  26:MyNewProject.cpp **** volatile float BPM = 20.0f;       // The BPM of delays
+  27:MyNewProject.cpp **** volatile bool TAPPING = false;    // True when user is TAPPING
+  28:MyNewProject.cpp **** TimerHandle TIMER;                // Timer that will be used to calculate bpm
+  29:MyNewProject.cpp **** TimerHandle::Config* configPtr;   // Pointer to config for timer, need because for some reason it w
+  30:MyNewProject.cpp **** Parameter feedbackKnob;
+  31:MyNewProject.cpp **** 
+  32:MyNewProject.cpp **** // Sets the delays when there is a change
+  33:MyNewProject.cpp **** void CheckTempo();
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 17
+
+
+  34:MyNewProject.cpp **** // Initialize buttons for the delay heads to the pins we want
+  35:MyNewProject.cpp **** void InitHeadButtons();
+  36:MyNewProject.cpp **** // Processes the controls and updates values that changed
+  37:MyNewProject.cpp **** void ProcessControls();
+  38:MyNewProject.cpp **** 
+  39:MyNewProject.cpp **** 
+  40:MyNewProject.cpp **** static void AudioCallback(AudioHandle::InputBuffer  in,
+  41:MyNewProject.cpp ****                           AudioHandle::OutputBuffer out,
+  42:MyNewProject.cpp ****                           size_t                    size)
+  43:MyNewProject.cpp **** {
+  44:MyNewProject.cpp ****     for(size_t i = 0; i < size; i++)
+  45:MyNewProject.cpp ****     {
+  46:MyNewProject.cpp ****         // 
+  47:MyNewProject.cpp ****         ProcessControls();
+  48:MyNewProject.cpp ****         // Check for tempo change
+  49:MyNewProject.cpp ****         CheckTempo();
+  50:MyNewProject.cpp ****         // Set delays with new bpm
+  51:MyNewProject.cpp ****         delay.setBPM(BPM);       
+  52:MyNewProject.cpp **** 
+  53:MyNewProject.cpp **** 
+  54:MyNewProject.cpp ****         ON_BUTTON.Debounce();
+  55:MyNewProject.cpp ****         // Check if the button is pressed and was not previously pressed
+  56:MyNewProject.cpp ****         if(ON_BUTTON.Pressed() && !onButtonWasPressed)
+  57:MyNewProject.cpp ****         {
+  58:MyNewProject.cpp ****             onButtonWasPressed = true; // set the flag to indicate that the button was pressed
+  59:MyNewProject.cpp ****             delay.stopAll();
+  60:MyNewProject.cpp ****         }
+  61:MyNewProject.cpp **** 
+  62:MyNewProject.cpp ****         // Check if the button was released
+  63:MyNewProject.cpp ****         if(!ON_BUTTON.Pressed() && onButtonWasPressed)
+  64:MyNewProject.cpp ****         {
+  65:MyNewProject.cpp ****             onButtonWasPressed = false; // reset the flag
+  66:MyNewProject.cpp ****         }
+  67:MyNewProject.cpp **** 
+  68:MyNewProject.cpp ****         float final_mix = 0;         // The final float value that will be outputted
+  69:MyNewProject.cpp **** 	    float all_delay_signals = 0; // Summation of all delay signals
+  70:MyNewProject.cpp ****         float nonConstInput;         // Will store the a copy of input float value at in[channel][i
+  71:MyNewProject.cpp ****                                      // Needed because cfade.SetPos requieres non-const  
+  72:MyNewProject.cpp **** 
+  73:MyNewProject.cpp ****     
+  74:MyNewProject.cpp **** 
+  75:MyNewProject.cpp ****         all_delay_signals = delay.process(in[0][i]);
+  76:MyNewProject.cpp ****         float filter = tone.process(in[0][i]);
+  77:MyNewProject.cpp ****         filter = balance.Process(filter,in[0][1]*2.5f);
+  78:MyNewProject.cpp **** 
+  79:MyNewProject.cpp **** 
+  80:MyNewProject.cpp ****         nonConstInput = in[0][i];
+  81:MyNewProject.cpp **** 
+  82:MyNewProject.cpp **** 		// Use a crossfade object to maintain a constant power while mixing the delayed/raw audio mix
+  83:MyNewProject.cpp **** 		cfade.SetPos(drywet_ratio);
+  84:MyNewProject.cpp **** 		final_mix = cfade.Process(nonConstInput, all_delay_signals);
+  85:MyNewProject.cpp **** 		out[0][i]  = out [1][i] = filter;//final_mix; // this sends 'final_mix' to the left and right out
+  86:MyNewProject.cpp ****     }
+  87:MyNewProject.cpp **** }
+  88:MyNewProject.cpp **** 
+  89:MyNewProject.cpp **** int main(void)
+  90:MyNewProject.cpp **** {
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 18
+
+
+  91:MyNewProject.cpp ****     // Initialize seed hardware.
+  92:MyNewProject.cpp ****     hw.Init();
+  93:MyNewProject.cpp **** 
+  94:MyNewProject.cpp ****     // Setting up serial and printing
+  95:MyNewProject.cpp ****     hw.StartLog();
+  96:MyNewProject.cpp **** 
+  97:MyNewProject.cpp ****     // Initialize the button to D28, Pin 35 to be the on/off button
+  98:MyNewProject.cpp ****     ON_BUTTON.Init(hw.GetPin(28),1000);
+  99:MyNewProject.cpp ****     // Init tap temp Button to D25, pin 32
+ 100:MyNewProject.cpp ****     TEMPO_BUTTON.Init(hw.GetPin(25),1000);
+ 101:MyNewProject.cpp ****     // Init the head on/off buttons
+ 102:MyNewProject.cpp ****     InitHeadButtons();
+ 103:MyNewProject.cpp **** 
+ 104:MyNewProject.cpp **** 
+ 105:MyNewProject.cpp ****     //set blocksize.
+ 106:MyNewProject.cpp ****     hw.SetAudioBlockSize(4);
+ 107:MyNewProject.cpp ****     hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
+ 108:MyNewProject.cpp **** 
+ 109:MyNewProject.cpp ****     // Set params for CrossFade object
+ 110:MyNewProject.cpp ****     cfade.Init();
+ 111:MyNewProject.cpp ****     // Sets crossfade to maintain constant power, which will maintain a constant volume as we go fr
+ 112:MyNewProject.cpp ****     cfade.SetCurve(CROSSFADE_CPOW);
+ 113:MyNewProject.cpp **** 
+ 114:MyNewProject.cpp ****     // Start callback
+ 115:MyNewProject.cpp ****     hw.StartAudio(AudioCallback);
+ 116:MyNewProject.cpp **** 
+ 117:MyNewProject.cpp ****     //TIMER****************************************************************************************
+ 118:MyNewProject.cpp ****     TimerHandle::Config config;                             // Config for the timer
+ 119:MyNewProject.cpp ****     config.dir = TimerHandle::Config::CounterDir::UP;       // Set it to count up 
+ 120:MyNewProject.cpp ****     config.periph = TimerHandle::Config::Peripheral::TIM_2; // Use timer 2 which is 32 bit counter
+ 121:MyNewProject.cpp ****     config.enable_irq = 1;                                  // Enable interrupt for user based call
+ 122:MyNewProject.cpp ****     configPtr = &config;                                    // Point our global config to the one w
+ 123:MyNewProject.cpp **** 
+ 124:MyNewProject.cpp ****     // Init the timer with our config
+ 125:MyNewProject.cpp ****     TIMER.Init(config);
+ 126:MyNewProject.cpp ****     // Make sure the timer is off
+ 127:MyNewProject.cpp ****     TIMER.Stop();
+ 128:MyNewProject.cpp ****     //*********************************************************************************************
+ 129:MyNewProject.cpp **** 
+ 130:MyNewProject.cpp **** 
+ 131:MyNewProject.cpp ****     //FEEDBACK KNOB INIT*************************************************************
+ 132:MyNewProject.cpp ****     // Configure the knob to pin D15
+ 133:MyNewProject.cpp ****     AdcChannelConfig adcConfig;
+ 134:MyNewProject.cpp ****     adcConfig.InitSingle(hw.GetPin(15));
+ 135:MyNewProject.cpp ****     hw.adc.Init(&adcConfig,1);
+ 136:MyNewProject.cpp ****     
+ 137:MyNewProject.cpp ****     AnalogControl fbk;
+ 138:MyNewProject.cpp ****     // Init the analog control to the same pin, D15, which is ADC channel 0 on the datasheet
+ 139:MyNewProject.cpp ****     fbk.Init(hw.adc.GetPtr(0),hw.AudioSampleRate());
+ 140:MyNewProject.cpp ****     feedbackKnob.Init(fbk,0.00,MAX_FEEDBACK,Parameter::LINEAR);
+ 141:MyNewProject.cpp ****     //*******************************************************************************
+ 142:MyNewProject.cpp **** 
+ 143:MyNewProject.cpp ****     balance.Init(48000);
+ 144:MyNewProject.cpp ****     hw.adc.Start();
+ 145:MyNewProject.cpp **** 
+ 146:MyNewProject.cpp ****     while(1) 
+ 147:MyNewProject.cpp ****     {
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 19
+
+
+ 148:MyNewProject.cpp ****         //Not sure why the delay, taken from the Daisy petal MultiDelay.cpp example
+ 149:MyNewProject.cpp ****         System::Delay(6);
+ 150:MyNewProject.cpp **** 
+ 151:MyNewProject.cpp ****     }
+ 152:MyNewProject.cpp **** }
+ 153:MyNewProject.cpp **** 
+ 154:MyNewProject.cpp **** void CheckTempo()
+ 155:MyNewProject.cpp **** {
+ 266              		.loc 15 155 1 is_stmt 1 view -0
+ 267              		.cfi_startproc
+ 268              		@ args = 0, pretend = 0, frame = 0
+ 269              		@ frame_needed = 0, uses_anonymous_args = 0
+ 156:MyNewProject.cpp ****     
+ 157:MyNewProject.cpp **** 
+ 158:MyNewProject.cpp ****     uint32_t tick;    // The position of the counter when the second tap occurs
+ 270              		.loc 15 158 5 view .LVU31
+ 159:MyNewProject.cpp ****     uint32_t freq;    // The frequency of each tick of the timer in Hz.
+ 271              		.loc 15 159 5 view .LVU32
+ 160:MyNewProject.cpp ****     float seconds;    // The seconds elapsed between first and second tap
+ 272              		.loc 15 160 5 view .LVU33
+ 161:MyNewProject.cpp **** 
+ 162:MyNewProject.cpp **** 
+ 163:MyNewProject.cpp ****     tick = TIMER.GetTick();            
+ 273              		.loc 15 163 5 view .LVU34
+ 155:MyNewProject.cpp ****     
+ 274              		.loc 15 155 1 is_stmt 0 view .LVU35
+ 275 0000 10B5     		push	{r4, lr}
+ 276              		.cfi_def_cfa_offset 8
+ 277              		.cfi_offset 4, -8
+ 278              		.cfi_offset 14, -4
+ 279              		.loc 15 163 25 view .LVU36
+ 280 0002 3148     		ldr	r0, .L26
+ 155:MyNewProject.cpp ****     
+ 281              		.loc 15 155 1 view .LVU37
+ 282 0004 2DED028B 		vpush.64	{d8}
+ 283              		.cfi_def_cfa_offset 16
+ 284              		.cfi_offset 80, -16
+ 285              		.cfi_offset 81, -12
+ 286              		.loc 15 163 25 view .LVU38
+ 287 0008 FFF7FEFF 		bl	_ZN5daisy11TimerHandle7GetTickEv
+ 288              	.LVL7:
+ 289 000c 0346     		mov	r3, r0
+ 164:MyNewProject.cpp ****     freq = TIMER.GetFreq();    
+ 290              		.loc 15 164 25 view .LVU39
+ 291 000e 2E48     		ldr	r0, .L26
+ 163:MyNewProject.cpp ****     freq = TIMER.GetFreq();    
+ 292              		.loc 15 163 25 view .LVU40
+ 293 0010 08EE103A 		vmov	s16, r3	@ int
+ 294              	.LVL8:
+ 295              		.loc 15 164 5 is_stmt 1 view .LVU41
+ 296              		.loc 15 164 25 is_stmt 0 view .LVU42
+ 297 0014 FFF7FEFF 		bl	_ZN5daisy11TimerHandle7GetFreqEv
+ 298              	.LVL9:
+ 165:MyNewProject.cpp ****     seconds = (float)tick / (float)freq; // Calculating seconds from timer as recomended by documen
+ 299              		.loc 15 165 5 is_stmt 1 view .LVU43
+ 300              		.loc 15 165 29 is_stmt 0 view .LVU44
+ 301 0018 07EE900A 		vmov	s15, r0	@ int
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 20
+
+
+ 166:MyNewProject.cpp **** 
+ 167:MyNewProject.cpp ****     //Check if the timer has gone past our max delay, if so, abandon this tap tempo and keep the ol
+ 168:MyNewProject.cpp ****     if(seconds > MAX_DELAY_SEC && TAPPING)
+ 302              		.loc 15 168 32 view .LVU45
+ 303 001c B0EE087A 		vmov.f32	s14, #3.0e+0
+ 165:MyNewProject.cpp ****     seconds = (float)tick / (float)freq; // Calculating seconds from timer as recomended by documen
+ 304              		.loc 15 165 15 view .LVU46
+ 305 0020 B8EE488A 		vcvt.f32.u32	s16, s16
+ 306              	.LVL10:
+ 165:MyNewProject.cpp ****     seconds = (float)tick / (float)freq; // Calculating seconds from timer as recomended by documen
+ 307              		.loc 15 165 29 view .LVU47
+ 308 0024 F8EE677A 		vcvt.f32.u32	s15, s15
+ 165:MyNewProject.cpp ****     seconds = (float)tick / (float)freq; // Calculating seconds from timer as recomended by documen
+ 309              		.loc 15 165 13 view .LVU48
+ 310 0028 C8EE278A 		vdiv.f32	s17, s16, s15
+ 311              	.LVL11:
+ 312              		.loc 15 168 5 is_stmt 1 view .LVU49
+ 313              		.loc 15 168 32 is_stmt 0 view .LVU50
+ 314 002c F4EEC78A 		vcmpe.f32	s17, s14
+ 315 0030 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 316 0034 02DD     		ble	.L11
+ 317              		.loc 15 168 35 discriminator 1 view .LVU51
+ 318 0036 254C     		ldr	r4, .L26+4
+ 319 0038 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+ 320              		.loc 15 168 32 discriminator 1 view .LVU52
+ 321 003a 73BB     		cbnz	r3, .L24
+ 322              	.LVL12:
+ 323              	.L11:
+ 169:MyNewProject.cpp ****     {
+ 170:MyNewProject.cpp ****         //hw.PrintLine("Over 3 sec");
+ 171:MyNewProject.cpp ****         TIMER.DeInit();
+ 172:MyNewProject.cpp ****         TIMER.Init(*configPtr);
+ 173:MyNewProject.cpp **** 
+ 174:MyNewProject.cpp ****         // Turn the timer off
+ 175:MyNewProject.cpp ****         TIMER.Stop();
+ 176:MyNewProject.cpp ****         TAPPING = false;         // Reset the TAPPING flag 
+ 177:MyNewProject.cpp ****     }
+ 178:MyNewProject.cpp **** 
+ 179:MyNewProject.cpp ****     // Check if the button was clicked
+ 180:MyNewProject.cpp ****     TEMPO_BUTTON.Debounce();
+ 324              		.loc 15 180 5 is_stmt 1 view .LVU53
+ 325              		.loc 15 180 26 is_stmt 0 view .LVU54
+ 326 003c 244C     		ldr	r4, .L26+8
+ 327 003e 2046     		mov	r0, r4
+ 328 0040 FFF7FEFF 		bl	_ZN5daisy6Switch8DebounceEv
+ 329              	.LVL13:
+ 181:MyNewProject.cpp ****     if(TEMPO_BUTTON.RisingEdge() )
+ 330              		.loc 15 181 5 is_stmt 1 view .LVU55
+ 331              	.LBB152:
+ 332              	.LBI152:
+  43:../../libDaisy//src/hid/switch.h **** 
+  44:../../libDaisy//src/hid/switch.h ****     /** 
+  45:../../libDaisy//src/hid/switch.h ****     Initializes the switch object with a given port/pin combo.
+  46:../../libDaisy//src/hid/switch.h ****     \param pin port/pin object to tell the switch which hardware pin to use.
+  47:../../libDaisy//src/hid/switch.h ****     \param update_rate Does nothing. Backwards compatibility until next breaking update.
+  48:../../libDaisy//src/hid/switch.h ****     \param t switch type -- Default: TYPE_MOMENTARY
+  49:../../libDaisy//src/hid/switch.h ****     \param pol switch polarity -- Default: POLARITY_INVERTED
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 21
+
+
+  50:../../libDaisy//src/hid/switch.h ****     \param pu switch pull up/down -- Default: PULL_UP
+  51:../../libDaisy//src/hid/switch.h ****     */
+  52:../../libDaisy//src/hid/switch.h ****     void
+  53:../../libDaisy//src/hid/switch.h ****     Init(dsy_gpio_pin pin, float update_rate, Type t, Polarity pol, Pull pu);
+  54:../../libDaisy//src/hid/switch.h **** 
+  55:../../libDaisy//src/hid/switch.h ****     /**
+  56:../../libDaisy//src/hid/switch.h ****        Simplified Init.
+  57:../../libDaisy//src/hid/switch.h ****        \param pin port/pin object to tell the switch which hardware pin to use.
+  58:../../libDaisy//src/hid/switch.h ****        \param update_rate Left for backwards compatibility until next breaking change.
+  59:../../libDaisy//src/hid/switch.h ****     */
+  60:../../libDaisy//src/hid/switch.h ****     void Init(dsy_gpio_pin pin, float update_rate = 0.f);
+  61:../../libDaisy//src/hid/switch.h **** 
+  62:../../libDaisy//src/hid/switch.h ****     /** 
+  63:../../libDaisy//src/hid/switch.h ****     Called at update_rate to debounce and handle timing for the switch.
+  64:../../libDaisy//src/hid/switch.h ****     In order for events not to be missed, its important that the Edge/Pressed checks
+  65:../../libDaisy//src/hid/switch.h ****     be made at the same rate as the debounce function is being called.
+  66:../../libDaisy//src/hid/switch.h ****     */
+  67:../../libDaisy//src/hid/switch.h ****     void Debounce();
+  68:../../libDaisy//src/hid/switch.h **** 
+  69:../../libDaisy//src/hid/switch.h ****     /** \return true if a button was just pressed. */
+  70:../../libDaisy//src/hid/switch.h ****     inline bool RisingEdge() const { return updated_ ? state_ == 0x7f : false; }
+ 333              		.loc 4 70 17 view .LVU56
+ 334              	.LBB153:
+ 335              		.loc 4 70 38 view .LVU57
+ 336              		.loc 4 70 54 is_stmt 0 view .LVU58
+ 337 0044 2379     		ldrb	r3, [r4, #4]	@ zero_extendqisi2
+ 338 0046 2BB3     		cbz	r3, .L10
+ 339              	.LVL14:
+ 340              		.loc 4 70 54 view .LVU59
+ 341              	.LBE153:
+ 342              	.LBE152:
+ 343              		.loc 15 181 5 view .LVU60
+ 344 0048 A37A     		ldrb	r3, [r4, #10]	@ zero_extendqisi2
+ 345 004a 7F2B     		cmp	r3, #127
+ 346 004c 22D1     		bne	.L10
+ 182:MyNewProject.cpp ****     {
+ 183:MyNewProject.cpp ****         // The first tap
+ 184:MyNewProject.cpp ****         if(TAPPING == false)
+ 347              		.loc 15 184 9 is_stmt 1 view .LVU61
+ 348              		.loc 15 184 20 is_stmt 0 view .LVU62
+ 349 004e 1F4B     		ldr	r3, .L26+4
+ 350 0050 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 351              		.loc 15 184 9 view .LVU63
+ 352 0052 82B3     		cbz	r2, .L25
+ 185:MyNewProject.cpp ****         {
+ 186:MyNewProject.cpp ****             TAPPING = true; // Set the TAPPING flag
+ 187:MyNewProject.cpp **** 
+ 188:MyNewProject.cpp ****             // Start the timer and begin counting
+ 189:MyNewProject.cpp ****             TIMER.Start(); 
+ 190:MyNewProject.cpp **** 
+ 191:MyNewProject.cpp **** 
+ 192:MyNewProject.cpp ****         }
+ 193:MyNewProject.cpp ****         // The second tap
+ 194:MyNewProject.cpp ****         else 
+ 195:MyNewProject.cpp ****         {
+ 196:MyNewProject.cpp ****             TAPPING = false; // Reset TAPPING flag
+ 353              		.loc 15 196 13 is_stmt 1 view .LVU64
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 22
+
+
+ 354              		.loc 15 196 21 is_stmt 0 view .LVU65
+ 355 0054 0022     		movs	r2, #0
+ 197:MyNewProject.cpp **** 
+ 198:MyNewProject.cpp ****             // Stop the timer
+ 199:MyNewProject.cpp ****             TIMER.Stop();
+ 356              		.loc 15 199 23 view .LVU66
+ 357 0056 1C48     		ldr	r0, .L26
+ 196:MyNewProject.cpp **** 
+ 358              		.loc 15 196 21 view .LVU67
+ 359 0058 1A70     		strb	r2, [r3]
+ 360              		.loc 15 199 13 is_stmt 1 view .LVU68
+ 361              		.loc 15 199 23 is_stmt 0 view .LVU69
+ 362 005a FFF7FEFF 		bl	_ZN5daisy11TimerHandle4StopEv
+ 363              	.LVL15:
+ 200:MyNewProject.cpp ****             TIMER.DeInit();
+ 364              		.loc 15 200 13 is_stmt 1 view .LVU70
+ 365              		.loc 15 200 25 is_stmt 0 view .LVU71
+ 366 005e 1A48     		ldr	r0, .L26
+ 367 0060 FFF7FEFF 		bl	_ZN5daisy11TimerHandle6DeInitEv
+ 368              	.LVL16:
+ 201:MyNewProject.cpp ****             TIMER.Init(*configPtr);
+ 369              		.loc 15 201 13 is_stmt 1 view .LVU72
+ 370              		.loc 15 201 23 is_stmt 0 view .LVU73
+ 371 0064 1B4B     		ldr	r3, .L26+12
+ 372 0066 1848     		ldr	r0, .L26
+ 373 0068 1968     		ldr	r1, [r3]
+ 374 006a FFF7FEFF 		bl	_ZN5daisy11TimerHandle4InitERKNS0_6ConfigE
+ 375              	.LVL17:
+ 202:MyNewProject.cpp ****             // Turn the timer off
+ 203:MyNewProject.cpp ****             TIMER.Stop();
+ 376              		.loc 15 203 13 is_stmt 1 view .LVU74
+ 377              		.loc 15 203 23 is_stmt 0 view .LVU75
+ 378 006e 1648     		ldr	r0, .L26
+ 379 0070 FFF7FEFF 		bl	_ZN5daisy11TimerHandle4StopEv
+ 380              	.LVL18:
+ 204:MyNewProject.cpp **** 
+ 205:MyNewProject.cpp ****             // Only set new BPM if its greater than our minimum
+ 206:MyNewProject.cpp ****             if(seconds > MIN_DELAY_SEC )
+ 381              		.loc 15 206 13 is_stmt 1 view .LVU76
+ 382 0074 DFED187A 		vldr.32	s15, .L26+16
+ 383 0078 F4EEE78A 		vcmpe.f32	s17, s15
+ 384 007c F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 385 0080 08DD     		ble	.L10
+ 207:MyNewProject.cpp ****             {
+ 208:MyNewProject.cpp ****                 BPM = -33.3333f*(seconds)+120; // Set the BPM for the delays 
+ 386              		.loc 15 208 17 view .LVU77
+ 387              		.loc 15 208 42 is_stmt 0 view .LVU78
+ 388 0082 9FED167A 		vldr.32	s14, .L26+20
+ 389 0086 DFED167A 		vldr.32	s15, .L26+24
+ 390              		.loc 15 208 21 view .LVU79
+ 391 008a 164B     		ldr	r3, .L26+28
+ 392              		.loc 15 208 42 view .LVU80
+ 393 008c E8EE877A 		vfma.f32	s15, s17, s14
+ 394              		.loc 15 208 21 view .LVU81
+ 395 0090 C3ED007A 		vstr.32	s15, [r3]
+ 396              	.L10:
+ 209:MyNewProject.cpp ****                 // Set all delays to new bpm
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 23
+
+
+ 210:MyNewProject.cpp ****             }
+ 211:MyNewProject.cpp ****             //else
+ 212:MyNewProject.cpp ****                 //hw.PrintLine("Under .6");
+ 213:MyNewProject.cpp **** 
+ 214:MyNewProject.cpp **** 
+ 215:MyNewProject.cpp ****             
+ 216:MyNewProject.cpp ****         }
+ 217:MyNewProject.cpp ****     
+ 218:MyNewProject.cpp **** 
+ 219:MyNewProject.cpp ****     }
+ 220:MyNewProject.cpp **** 
+ 221:MyNewProject.cpp **** 
+ 222:MyNewProject.cpp **** }
+ 397              		.loc 15 222 1 view .LVU82
+ 398 0094 BDEC028B 		vldm	sp!, {d8}
+ 399              		.cfi_remember_state
+ 400              		.cfi_restore 80
+ 401              		.cfi_restore 81
+ 402              		.cfi_def_cfa_offset 8
+ 403 0098 10BD     		pop	{r4, pc}
+ 404              	.LVL19:
+ 405              	.L24:
+ 406              		.cfi_restore_state
+ 171:MyNewProject.cpp ****         TIMER.Init(*configPtr);
+ 407              		.loc 15 171 9 is_stmt 1 view .LVU83
+ 171:MyNewProject.cpp ****         TIMER.Init(*configPtr);
+ 408              		.loc 15 171 21 is_stmt 0 view .LVU84
+ 409 009a 0B48     		ldr	r0, .L26
+ 410              	.LVL20:
+ 171:MyNewProject.cpp ****         TIMER.Init(*configPtr);
+ 411              		.loc 15 171 21 view .LVU85
+ 412 009c FFF7FEFF 		bl	_ZN5daisy11TimerHandle6DeInitEv
+ 413              	.LVL21:
+ 172:MyNewProject.cpp **** 
+ 414              		.loc 15 172 9 is_stmt 1 view .LVU86
+ 172:MyNewProject.cpp **** 
+ 415              		.loc 15 172 19 is_stmt 0 view .LVU87
+ 416 00a0 0C4B     		ldr	r3, .L26+12
+ 417 00a2 0948     		ldr	r0, .L26
+ 418 00a4 1968     		ldr	r1, [r3]
+ 419 00a6 FFF7FEFF 		bl	_ZN5daisy11TimerHandle4InitERKNS0_6ConfigE
+ 420              	.LVL22:
+ 175:MyNewProject.cpp ****         TAPPING = false;         // Reset the TAPPING flag 
+ 421              		.loc 15 175 9 is_stmt 1 view .LVU88
+ 175:MyNewProject.cpp ****         TAPPING = false;         // Reset the TAPPING flag 
+ 422              		.loc 15 175 19 is_stmt 0 view .LVU89
+ 423 00aa 0748     		ldr	r0, .L26
+ 424 00ac FFF7FEFF 		bl	_ZN5daisy11TimerHandle4StopEv
+ 425              	.LVL23:
+ 176:MyNewProject.cpp ****     }
+ 426              		.loc 15 176 9 is_stmt 1 view .LVU90
+ 176:MyNewProject.cpp ****     }
+ 427              		.loc 15 176 17 is_stmt 0 view .LVU91
+ 428 00b0 0023     		movs	r3, #0
+ 429 00b2 2370     		strb	r3, [r4]
+ 430 00b4 C2E7     		b	.L11
+ 431              	.L25:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 24
+
+
+ 186:MyNewProject.cpp **** 
+ 432              		.loc 15 186 13 is_stmt 1 view .LVU92
+ 433              		.loc 15 222 1 is_stmt 0 view .LVU93
+ 434 00b6 BDEC028B 		vldm	sp!, {d8}
+ 435              		.cfi_restore 80
+ 436              		.cfi_restore 81
+ 437              		.cfi_def_cfa_offset 8
+ 186:MyNewProject.cpp **** 
+ 438              		.loc 15 186 21 view .LVU94
+ 439 00ba 0122     		movs	r2, #1
+ 189:MyNewProject.cpp **** 
+ 440              		.loc 15 189 24 view .LVU95
+ 441 00bc 0248     		ldr	r0, .L26
+ 442              		.loc 15 222 1 view .LVU96
+ 443 00be BDE81040 		pop	{r4, lr}
+ 444              		.cfi_restore 14
+ 445              		.cfi_restore 4
+ 446              		.cfi_def_cfa_offset 0
+ 186:MyNewProject.cpp **** 
+ 447              		.loc 15 186 21 view .LVU97
+ 448 00c2 1A70     		strb	r2, [r3]
+ 189:MyNewProject.cpp **** 
+ 449              		.loc 15 189 13 is_stmt 1 view .LVU98
+ 189:MyNewProject.cpp **** 
+ 450              		.loc 15 189 24 is_stmt 0 view .LVU99
+ 451 00c4 FFF7FEBF 		b	_ZN5daisy11TimerHandle5StartEv
+ 452              	.LVL24:
+ 453              	.L27:
+ 454              		.align	2
+ 455              	.L26:
+ 456 00c8 00000000 		.word	.LANCHOR0
+ 457 00cc 00000000 		.word	.LANCHOR1
+ 458 00d0 00000000 		.word	.LANCHOR3
+ 459 00d4 00000000 		.word	.LANCHOR2
+ 460 00d8 9A99193F 		.word	1058642330
+ 461 00dc 4D5505C2 		.word	-1039837875
+ 462 00e0 0000F042 		.word	1123024896
+ 463 00e4 00000000 		.word	.LANCHOR4
+ 464              		.cfi_endproc
+ 465              	.LFE4791:
+ 467              		.section	.text._Z15InitHeadButtonsv,"ax",%progbits
+ 468              		.align	1
+ 469              		.p2align 2,,3
+ 470              		.global	_Z15InitHeadButtonsv
+ 471              		.syntax unified
+ 472              		.thumb
+ 473              		.thumb_func
+ 474              		.fpu fpv5-d16
+ 476              	_Z15InitHeadButtonsv:
+ 477              	.LFB4792:
+ 223:MyNewProject.cpp **** 
+ 224:MyNewProject.cpp **** void InitHeadButtons()
+ 225:MyNewProject.cpp **** {
+ 478              		.loc 15 225 1 is_stmt 1 view -0
+ 479              		.cfi_startproc
+ 480              		@ args = 0, pretend = 0, frame = 8
+ 481              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 25
+
+
+ 226:MyNewProject.cpp ****     // Iterate through head switch array
+ 227:MyNewProject.cpp ****     for(int i = 0; i < 4;i++)
+ 482              		.loc 15 227 5 view .LVU101
+ 483              	.LVL25:
+ 484              	.LBB154:
+ 485              		.loc 15 227 22 view .LVU102
+ 486              	.LBE154:
+ 225:MyNewProject.cpp ****     // Iterate through head switch array
+ 487              		.loc 15 225 1 is_stmt 0 view .LVU103
+ 488 0000 30B5     		push	{r4, r5, lr}
+ 489              		.cfi_def_cfa_offset 12
+ 490              		.cfi_offset 4, -12
+ 491              		.cfi_offset 5, -8
+ 492              		.cfi_offset 14, -4
+ 493 0002 0B4D     		ldr	r5, .L32
+ 494 0004 83B0     		sub	sp, sp, #12
+ 495              		.cfi_def_cfa_offset 24
+ 225:MyNewProject.cpp ****     // Iterate through head switch array
+ 496              		.loc 15 225 1 view .LVU104
+ 497 0006 1524     		movs	r4, #21
+ 498              	.LVL26:
+ 499              	.L29:
+ 500              	.LBB155:
+ 228:MyNewProject.cpp ****     {
+ 229:MyNewProject.cpp ****         // Init buttons to D21 - D24
+ 230:MyNewProject.cpp ****         headSwitches[i].Init(hw.GetPin(21+i),1000);
+ 501              		.loc 15 230 9 is_stmt 1 discriminator 2 view .LVU105
+ 502              		.loc 15 230 29 is_stmt 0 discriminator 2 view .LVU106
+ 503 0008 2046     		mov	r0, r4
+ 227:MyNewProject.cpp ****     {
+ 504              		.loc 15 227 22 discriminator 2 view .LVU107
+ 505 000a 0134     		adds	r4, r4, #1
+ 506              		.loc 15 230 29 discriminator 2 view .LVU108
+ 507 000c FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
+ 508              	.LVL27:
+ 509 0010 0346     		mov	r3, r0	@ movhi
+ 227:MyNewProject.cpp ****     {
+ 510              		.loc 15 227 22 discriminator 2 view .LVU109
+ 511 0012 E4B2     		uxtb	r4, r4
+ 512              		.loc 15 230 29 discriminator 2 view .LVU110
+ 513 0014 2846     		mov	r0, r5
+ 514 0016 ADF80430 		strh	r3, [sp, #4]	@ movhi
+ 227:MyNewProject.cpp ****     {
+ 515              		.loc 15 227 22 discriminator 2 view .LVU111
+ 516 001a 1035     		adds	r5, r5, #16
+ 517              		.loc 15 230 29 discriminator 2 view .LVU112
+ 518 001c 9FED050A 		vldr.32	s0, .L32+4
+ 519 0020 0199     		ldr	r1, [sp, #4]
+ 520 0022 FFF7FEFF 		bl	_ZN5daisy6Switch4InitE12dsy_gpio_pinf
+ 521              	.LVL28:
+ 227:MyNewProject.cpp ****     {
+ 522              		.loc 15 227 5 is_stmt 1 discriminator 2 view .LVU113
+ 227:MyNewProject.cpp ****     {
+ 523              		.loc 15 227 22 discriminator 2 view .LVU114
+ 524 0026 192C     		cmp	r4, #25
+ 525 0028 EED1     		bne	.L29
+ 526              	.LBE155:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 26
+
+
+ 231:MyNewProject.cpp ****     }
+ 232:MyNewProject.cpp **** }
+ 527              		.loc 15 232 1 is_stmt 0 view .LVU115
+ 528 002a 03B0     		add	sp, sp, #12
+ 529              		.cfi_def_cfa_offset 12
+ 530              		@ sp needed
+ 531 002c 30BD     		pop	{r4, r5, pc}
+ 532              	.L33:
+ 533 002e 00BF     		.align	2
+ 534              	.L32:
+ 535 0030 00000000 		.word	.LANCHOR5
+ 536 0034 00007A44 		.word	1148846080
+ 537              		.cfi_endproc
+ 538              	.LFE4792:
+ 540              		.section	.text.startup.main,"ax",%progbits
+ 541              		.align	1
+ 542              		.p2align 2,,3
+ 543              		.global	main
+ 544              		.syntax unified
+ 545              		.thumb
+ 546              		.thumb_func
+ 547              		.fpu fpv5-d16
+ 549              	main:
+ 550              	.LFB4790:
+  90:MyNewProject.cpp ****     // Initialize seed hardware.
+ 551              		.loc 15 90 1 is_stmt 1 view -0
+ 552              		.cfi_startproc
+ 553              		@ Volatile: function does not return.
+ 554              		@ args = 0, pretend = 0, frame = 120
+ 555              		@ frame_needed = 0, uses_anonymous_args = 0
+  92:MyNewProject.cpp **** 
+ 556              		.loc 15 92 5 view .LVU117
+  90:MyNewProject.cpp ****     // Initialize seed hardware.
+ 557              		.loc 15 90 1 is_stmt 0 view .LVU118
+ 558 0000 00B5     		push	{lr}
+ 559              		.cfi_def_cfa_offset 4
+ 560              		.cfi_offset 14, -4
+  92:MyNewProject.cpp **** 
+ 561              		.loc 15 92 12 view .LVU119
+ 562 0002 0021     		movs	r1, #0
+  90:MyNewProject.cpp ****     // Initialize seed hardware.
+ 563              		.loc 15 90 1 view .LVU120
+ 564 0004 9FB0     		sub	sp, sp, #124
+ 565              		.cfi_def_cfa_offset 128
+  92:MyNewProject.cpp **** 
+ 566              		.loc 15 92 12 view .LVU121
+ 567 0006 4248     		ldr	r0, .L37
+ 568              	.LBB156:
+ 569              	.LBB157:
+  38:../../DaisySP//Source/Dynamics/crossfade.h ****     /** Initializes CrossFade module
+  39:../../DaisySP//Source/Dynamics/crossfade.h ****         Defaults
+  40:../../DaisySP//Source/Dynamics/crossfade.h ****         - current position = .5
+  41:../../DaisySP//Source/Dynamics/crossfade.h ****         - curve = linear
+  42:../../DaisySP//Source/Dynamics/crossfade.h ****     */
+  43:../../DaisySP//Source/Dynamics/crossfade.h ****     inline void Init(int curve)
+  44:../../DaisySP//Source/Dynamics/crossfade.h ****     {
+  45:../../DaisySP//Source/Dynamics/crossfade.h ****         pos_   = 0.5f;
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 27
+
+
+  46:../../DaisySP//Source/Dynamics/crossfade.h ****         curve_ = curve < CROSSFADE_LAST ? curve : CROSSFADE_LIN;
+  47:../../DaisySP//Source/Dynamics/crossfade.h ****     }
+  48:../../DaisySP//Source/Dynamics/crossfade.h **** 
+  49:../../DaisySP//Source/Dynamics/crossfade.h ****     /** Initialize with default linear curve 
+  50:../../DaisySP//Source/Dynamics/crossfade.h ****     */
+  51:../../DaisySP//Source/Dynamics/crossfade.h ****     inline void Init() { Init(CROSSFADE_LIN); }
+  52:../../DaisySP//Source/Dynamics/crossfade.h ****     /** processes CrossFade and returns single sample
+  53:../../DaisySP//Source/Dynamics/crossfade.h ****     */
+  54:../../DaisySP//Source/Dynamics/crossfade.h ****     float Process(float &in1, float &in2);
+  55:../../DaisySP//Source/Dynamics/crossfade.h **** 
+  56:../../DaisySP//Source/Dynamics/crossfade.h **** 
+  57:../../DaisySP//Source/Dynamics/crossfade.h ****     /** Sets position of CrossFade between two input signals
+  58:../../DaisySP//Source/Dynamics/crossfade.h ****         Input range: 0 to 1
+  59:../../DaisySP//Source/Dynamics/crossfade.h ****     */
+  60:../../DaisySP//Source/Dynamics/crossfade.h ****     inline void SetPos(float pos) { pos_ = pos; }
+  61:../../DaisySP//Source/Dynamics/crossfade.h ****     /** Sets current curve applied to CrossFade 
+  62:../../DaisySP//Source/Dynamics/crossfade.h ****     Expected input: See [Curve Options](##curve-options)
+  63:../../DaisySP//Source/Dynamics/crossfade.h ****     */
+  64:../../DaisySP//Source/Dynamics/crossfade.h ****     inline void SetCurve(uint8_t curve) { curve_ = curve; }
+ 570              		.loc 2 64 50 view .LVU122
+ 571 0008 0125     		movs	r5, #1
+ 572              	.LBE157:
+ 573              	.LBE156:
+  92:MyNewProject.cpp **** 
+ 574              		.loc 15 92 12 view .LVU123
+ 575 000a FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
+ 576              	.LVL29:
+  95:MyNewProject.cpp **** 
+ 577              		.loc 15 95 5 is_stmt 1 view .LVU124
+ 578              	.LBB159:
+ 579              	.LBI159:
+  23:../../libDaisy//src/daisy_seed.h **** 
+  24:../../libDaisy//src/daisy_seed.h ****     /** This function used to provide a pre-initialization configuraiton 
+  25:../../libDaisy//src/daisy_seed.h ****      *  it has since been deprecated, and does nothing.
+  26:../../libDaisy//src/daisy_seed.h ****      */
+  27:../../libDaisy//src/daisy_seed.h ****     void Configure();
+  28:../../libDaisy//src/daisy_seed.h **** 
+  29:../../libDaisy//src/daisy_seed.h ****     /** 
+  30:../../libDaisy//src/daisy_seed.h ****     Initializes the Daisy Seed and the following peripherals:
+  31:../../libDaisy//src/daisy_seed.h ****     SDRAM, QSPI, 24-bit 48kHz Audio via AK4556, Internal USB,
+  32:../../libDaisy//src/daisy_seed.h ****     as well as the built-in LED and Testpoint.
+  33:../../libDaisy//src/daisy_seed.h **** 
+  34:../../libDaisy//src/daisy_seed.h ****     ADCs, DACs, and other special peripherals (such as I2C, SPI, etc.)
+  35:../../libDaisy//src/daisy_seed.h ****     can be initialized using their specific initializers within libdaisy
+  36:../../libDaisy//src/daisy_seed.h ****     for a specific application.
+  37:../../libDaisy//src/daisy_seed.h ****     */
+  38:../../libDaisy//src/daisy_seed.h ****     void Init(bool boost = false);
+  39:../../libDaisy//src/daisy_seed.h **** 
+  40:../../libDaisy//src/daisy_seed.h ****     /** 
+  41:../../libDaisy//src/daisy_seed.h ****     Deinitializes all peripherals automatically handled by `Init`.
+  42:../../libDaisy//src/daisy_seed.h ****     */
+  43:../../libDaisy//src/daisy_seed.h ****     void DeInit();
+  44:../../libDaisy//src/daisy_seed.h **** 
+  45:../../libDaisy//src/daisy_seed.h ****     /** 
+  46:../../libDaisy//src/daisy_seed.h ****     Wait some ms before going on.
+  47:../../libDaisy//src/daisy_seed.h ****     \param del Delay time in ms.
+  48:../../libDaisy//src/daisy_seed.h ****     */
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 28
+
+
+  49:../../libDaisy//src/daisy_seed.h ****     void DelayMs(size_t del);
+  50:../../libDaisy//src/daisy_seed.h **** 
+  51:../../libDaisy//src/daisy_seed.h ****     /** 
+  52:../../libDaisy//src/daisy_seed.h ****     Returns the gpio_pin corresponding to the index 0-31.
+  53:../../libDaisy//src/daisy_seed.h ****     For the given GPIO on the Daisy Seed (labeled 1-32 in docs).
+  54:../../libDaisy//src/daisy_seed.h ****     */
+  55:../../libDaisy//src/daisy_seed.h ****     static dsy_gpio_pin GetPin(uint8_t pin_idx);
+  56:../../libDaisy//src/daisy_seed.h **** 
+  57:../../libDaisy//src/daisy_seed.h ****     /** Begins the audio for the seeds builtin audio.
+  58:../../libDaisy//src/daisy_seed.h ****     the specified callback will get called whenever
+  59:../../libDaisy//src/daisy_seed.h ****     new data is ready to be prepared.
+  60:../../libDaisy//src/daisy_seed.h ****     */
+  61:../../libDaisy//src/daisy_seed.h ****     void StartAudio(AudioHandle::InterleavingAudioCallback cb);
+  62:../../libDaisy//src/daisy_seed.h **** 
+  63:../../libDaisy//src/daisy_seed.h ****     /** Begins the audio for the seeds builtin audio.
+  64:../../libDaisy//src/daisy_seed.h ****     the specified callback will get called whenever
+  65:../../libDaisy//src/daisy_seed.h ****     new data is ready to be prepared.
+  66:../../libDaisy//src/daisy_seed.h ****     This will use the newer non-interleaved callback.
+  67:../../libDaisy//src/daisy_seed.h ****     */
+  68:../../libDaisy//src/daisy_seed.h ****     void StartAudio(AudioHandle::AudioCallback cb);
+  69:../../libDaisy//src/daisy_seed.h **** 
+  70:../../libDaisy//src/daisy_seed.h ****     /** Changes to a new interleaved callback
+  71:../../libDaisy//src/daisy_seed.h ****      */
+  72:../../libDaisy//src/daisy_seed.h ****     void ChangeAudioCallback(AudioHandle::InterleavingAudioCallback cb);
+  73:../../libDaisy//src/daisy_seed.h **** 
+  74:../../libDaisy//src/daisy_seed.h ****     /** Changes to a new multichannel callback
+  75:../../libDaisy//src/daisy_seed.h ****      */
+  76:../../libDaisy//src/daisy_seed.h ****     void ChangeAudioCallback(AudioHandle::AudioCallback cb);
+  77:../../libDaisy//src/daisy_seed.h **** 
+  78:../../libDaisy//src/daisy_seed.h ****     /** Stops the audio if it is running. */
+  79:../../libDaisy//src/daisy_seed.h ****     void StopAudio();
+  80:../../libDaisy//src/daisy_seed.h **** 
+  81:../../libDaisy//src/daisy_seed.h ****     /** Updates the Audio Sample Rate, and reinitializes.
+  82:../../libDaisy//src/daisy_seed.h ****      ** Audio must be stopped for this to work.
+  83:../../libDaisy//src/daisy_seed.h ****      */
+  84:../../libDaisy//src/daisy_seed.h ****     void SetAudioSampleRate(SaiHandle::Config::SampleRate samplerate);
+  85:../../libDaisy//src/daisy_seed.h **** 
+  86:../../libDaisy//src/daisy_seed.h ****     /** Returns the audio sample rate in Hz as a floating point number.
+  87:../../libDaisy//src/daisy_seed.h ****      */
+  88:../../libDaisy//src/daisy_seed.h ****     float AudioSampleRate();
+  89:../../libDaisy//src/daisy_seed.h **** 
+  90:../../libDaisy//src/daisy_seed.h ****     /** Sets the number of samples processed per channel by the audio callback.
+  91:../../libDaisy//src/daisy_seed.h ****      */
+  92:../../libDaisy//src/daisy_seed.h ****     void SetAudioBlockSize(size_t blocksize);
+  93:../../libDaisy//src/daisy_seed.h **** 
+  94:../../libDaisy//src/daisy_seed.h ****     /** Returns the number of samples per channel in a block of audio. */
+  95:../../libDaisy//src/daisy_seed.h ****     size_t AudioBlockSize();
+  96:../../libDaisy//src/daisy_seed.h **** 
+  97:../../libDaisy//src/daisy_seed.h ****     /** Returns the rate in Hz that the Audio callback is called */
+  98:../../libDaisy//src/daisy_seed.h ****     float AudioCallbackRate() const;
+  99:../../libDaisy//src/daisy_seed.h **** 
+ 100:../../libDaisy//src/daisy_seed.h ****     /** Sets the state of the built in LED
+ 101:../../libDaisy//src/daisy_seed.h ****      */
+ 102:../../libDaisy//src/daisy_seed.h ****     void SetLed(bool state);
+ 103:../../libDaisy//src/daisy_seed.h **** 
+ 104:../../libDaisy//src/daisy_seed.h ****     /** Sets the state of the test point near pin 10
+ 105:../../libDaisy//src/daisy_seed.h ****      */
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 29
+
+
+ 106:../../libDaisy//src/daisy_seed.h ****     void SetTestPoint(bool state);
+ 107:../../libDaisy//src/daisy_seed.h **** 
+ 108:../../libDaisy//src/daisy_seed.h ****     /** Print formatted debug log message
+ 109:../../libDaisy//src/daisy_seed.h ****      */
+ 110:../../libDaisy//src/daisy_seed.h ****     template <typename... VA>
+ 111:../../libDaisy//src/daisy_seed.h ****     static void Print(const char* format, VA... va)
+ 112:../../libDaisy//src/daisy_seed.h ****     {
+ 113:../../libDaisy//src/daisy_seed.h ****         Log::Print(format, va...);
+ 114:../../libDaisy//src/daisy_seed.h ****     }
+ 115:../../libDaisy//src/daisy_seed.h **** 
+ 116:../../libDaisy//src/daisy_seed.h ****     /** Print formatted debug log message with automatic line termination
+ 117:../../libDaisy//src/daisy_seed.h ****     */
+ 118:../../libDaisy//src/daisy_seed.h ****     template <typename... VA>
+ 119:../../libDaisy//src/daisy_seed.h ****     static void PrintLine(const char* format, VA... va)
+ 120:../../libDaisy//src/daisy_seed.h ****     {
+ 121:../../libDaisy//src/daisy_seed.h ****         Log::PrintLine(format, va...);
+ 122:../../libDaisy//src/daisy_seed.h ****     }
+ 123:../../libDaisy//src/daisy_seed.h **** 
+ 124:../../libDaisy//src/daisy_seed.h ****     /** Start the logging session. Optionally wait for terminal connection before proceeding.
+ 125:../../libDaisy//src/daisy_seed.h ****     */
+ 126:../../libDaisy//src/daisy_seed.h ****     static void StartLog(bool wait_for_pc = false)
+ 580              		.loc 7 126 17 view .LVU125
+ 581              	.LBB160:
+ 127:../../libDaisy//src/daisy_seed.h ****     {
+ 128:../../libDaisy//src/daisy_seed.h ****         Log::StartLog(wait_for_pc);
+ 582              		.loc 7 128 9 view .LVU126
+ 583              		.loc 7 128 22 is_stmt 0 view .LVU127
+ 584 000e 0020     		movs	r0, #0
+ 585 0010 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE8StartLogEb
+ 586              	.LVL30:
+ 587              		.loc 7 128 22 view .LVU128
+ 588              	.LBE160:
+ 589              	.LBE159:
+  98:MyNewProject.cpp ****     // Init tap temp Button to D25, pin 32
+ 590              		.loc 15 98 5 is_stmt 1 view .LVU129
+  98:MyNewProject.cpp ****     // Init tap temp Button to D25, pin 32
+ 591              		.loc 15 98 19 is_stmt 0 view .LVU130
+ 592 0014 1C20     		movs	r0, #28
+ 593 0016 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
+ 594              	.LVL31:
+ 595 001a 0346     		mov	r3, r0	@ movhi
+ 596 001c 9FED3D0A 		vldr.32	s0, .L37+4
+ 597              	.LBB161:
+ 598              	.LBB162:
+ 599              	.LBB163:
+  79:../../libDaisy//src/per/tim.h ****         {
+ 600              		.loc 3 79 27 view .LVU131
+ 601 0020 0024     		movs	r4, #0
+ 602              	.LBE163:
+ 603              	.LBE162:
+ 604              	.LBE161:
+  98:MyNewProject.cpp ****     // Init tap temp Button to D25, pin 32
+ 605              		.loc 15 98 19 view .LVU132
+ 606 0022 ADF80830 		strh	r3, [sp, #8]	@ movhi
+ 607 0026 0299     		ldr	r1, [sp, #8]
+ 608 0028 3B48     		ldr	r0, .L37+8
+ 609 002a FFF7FEFF 		bl	_ZN5daisy6Switch4InitE12dsy_gpio_pinf
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 30
+
+
+ 610              	.LVL32:
+ 100:MyNewProject.cpp ****     // Init the head on/off buttons
+ 611              		.loc 15 100 5 is_stmt 1 view .LVU133
+ 100:MyNewProject.cpp ****     // Init the head on/off buttons
+ 612              		.loc 15 100 22 is_stmt 0 view .LVU134
+ 613 002e 1920     		movs	r0, #25
+ 614 0030 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
+ 615              	.LVL33:
+ 616 0034 0346     		mov	r3, r0	@ movhi
+ 617 0036 9FED370A 		vldr.32	s0, .L37+4
+ 618 003a ADF80C30 		strh	r3, [sp, #12]	@ movhi
+ 619 003e 3748     		ldr	r0, .L37+12
+ 620 0040 0399     		ldr	r1, [sp, #12]
+ 621 0042 FFF7FEFF 		bl	_ZN5daisy6Switch4InitE12dsy_gpio_pinf
+ 622              	.LVL34:
+ 102:MyNewProject.cpp **** 
+ 623              		.loc 15 102 5 is_stmt 1 view .LVU135
+ 102:MyNewProject.cpp **** 
+ 624              		.loc 15 102 20 is_stmt 0 view .LVU136
+ 625 0046 FFF7FEFF 		bl	_Z15InitHeadButtonsv
+ 626              	.LVL35:
+ 106:MyNewProject.cpp ****     hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
+ 627              		.loc 15 106 5 is_stmt 1 view .LVU137
+ 106:MyNewProject.cpp ****     hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
+ 628              		.loc 15 106 25 is_stmt 0 view .LVU138
+ 629 004a 0421     		movs	r1, #4
+ 630 004c 3048     		ldr	r0, .L37
+ 631 004e FFF7FEFF 		bl	_ZN5daisy9DaisySeed17SetAudioBlockSizeEj
+ 632              	.LVL36:
+ 107:MyNewProject.cpp **** 
+ 633              		.loc 15 107 5 is_stmt 1 view .LVU139
+ 107:MyNewProject.cpp **** 
+ 634              		.loc 15 107 26 is_stmt 0 view .LVU140
+ 635 0052 0321     		movs	r1, #3
+ 636 0054 2E48     		ldr	r0, .L37
+ 637 0056 FFF7FEFF 		bl	_ZN5daisy9DaisySeed18SetAudioSampleRateENS_9SaiHandle6Config10SampleRateE
+ 638              	.LVL37:
+ 110:MyNewProject.cpp ****     // Sets crossfade to maintain constant power, which will maintain a constant volume as we go fr
+ 639              		.loc 15 110 5 is_stmt 1 view .LVU141
+ 640              	.LBB170:
+ 641              	.LBI170:
+  51:../../DaisySP//Source/Dynamics/crossfade.h ****     /** processes CrossFade and returns single sample
+ 642              		.loc 2 51 17 view .LVU142
+ 643              	.LBE170:
+  51:../../DaisySP//Source/Dynamics/crossfade.h ****     /** processes CrossFade and returns single sample
+ 644              		.loc 2 51 26 view .LVU143
+ 645              	.LBB175:
+ 646              	.LBB171:
+ 647              	.LBI171:
+  43:../../DaisySP//Source/Dynamics/crossfade.h ****     {
+ 648              		.loc 2 43 17 view .LVU144
+ 649              	.LBB172:
+  45:../../DaisySP//Source/Dynamics/crossfade.h ****         curve_ = curve < CROSSFADE_LAST ? curve : CROSSFADE_LIN;
+ 650              		.loc 2 45 9 view .LVU145
+  45:../../DaisySP//Source/Dynamics/crossfade.h ****         curve_ = curve < CROSSFADE_LAST ? curve : CROSSFADE_LIN;
+ 651              		.loc 2 45 16 is_stmt 0 view .LVU146
+ 652 005a 314B     		ldr	r3, .L37+16
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 31
+
+
+ 653 005c 4FF07C52 		mov	r2, #1056964608
+ 654              	.LBE172:
+ 655              	.LBE171:
+ 656              	.LBE175:
+ 115:MyNewProject.cpp **** 
+ 657              		.loc 15 115 18 view .LVU147
+ 658 0060 3049     		ldr	r1, .L37+20
+ 659 0062 2B48     		ldr	r0, .L37
+ 660              	.LBB176:
+ 661              	.LBB174:
+ 662              	.LBB173:
+  45:../../DaisySP//Source/Dynamics/crossfade.h ****         curve_ = curve < CROSSFADE_LAST ? curve : CROSSFADE_LIN;
+ 663              		.loc 2 45 16 view .LVU148
+ 664 0064 1A60     		str	r2, [r3]	@ float
+  46:../../DaisySP//Source/Dynamics/crossfade.h ****     }
+ 665              		.loc 2 46 9 is_stmt 1 view .LVU149
+ 666              	.LVL38:
+  46:../../DaisySP//Source/Dynamics/crossfade.h ****     }
+ 667              		.loc 2 46 9 is_stmt 0 view .LVU150
+ 668              	.LBE173:
+ 669              	.LBE174:
+ 670              	.LBE176:
+ 112:MyNewProject.cpp **** 
+ 671              		.loc 15 112 5 is_stmt 1 view .LVU151
+ 672              	.LBB177:
+ 673              	.LBI156:
+ 674              		.loc 2 64 17 view .LVU152
+ 675              	.LBB158:
+ 676              		.loc 2 64 43 view .LVU153
+ 677              		.loc 2 64 50 is_stmt 0 view .LVU154
+ 678 0066 1D71     		strb	r5, [r3, #4]
+ 679              	.LVL39:
+ 680              		.loc 2 64 50 view .LVU155
+ 681              	.LBE158:
+ 682              	.LBE177:
+ 115:MyNewProject.cpp **** 
+ 683              		.loc 15 115 5 is_stmt 1 view .LVU156
+ 115:MyNewProject.cpp **** 
+ 684              		.loc 15 115 18 is_stmt 0 view .LVU157
+ 685 0068 FFF7FEFF 		bl	_ZN5daisy9DaisySeed10StartAudioEPFvPKPKfPPfjE
+ 686              	.LVL40:
+ 118:MyNewProject.cpp ****     config.dir = TimerHandle::Config::CounterDir::UP;       // Set it to count up 
+ 687              		.loc 15 118 5 is_stmt 1 view .LVU158
+ 688              	.LBB178:
+ 689              	.LBI161:
+  75:../../libDaisy//src/per/tim.h ****         : periph(Peripheral::TIM_2),
+ 690              		.loc 3 75 9 view .LVU159
+ 691              	.LBB167:
+ 692              	.LBB164:
+  79:../../libDaisy//src/per/tim.h ****         {
+ 693              		.loc 3 79 27 is_stmt 0 view .LVU160
+ 694 006c 4FF0FF32 		mov	r2, #-1
+ 695              	.LBE164:
+ 696              	.LBE167:
+ 697              	.LBE178:
+ 122:MyNewProject.cpp **** 
+ 698              		.loc 15 122 15 view .LVU161
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 32
+
+
+ 699 0070 2D4B     		ldr	r3, .L37+24
+ 700 0072 05A9     		add	r1, sp, #20
+ 701              	.LVL41:
+ 125:MyNewProject.cpp ****     // Make sure the timer is off
+ 702              		.loc 15 125 15 view .LVU162
+ 703 0074 2D48     		ldr	r0, .L37+28
+ 704              	.LBB179:
+ 705              	.LBB168:
+ 706              	.LBB165:
+  79:../../libDaisy//src/per/tim.h ****         {
+ 707              		.loc 3 79 27 view .LVU163
+ 708 0076 0792     		str	r2, [sp, #28]
+ 709              	.LVL42:
+  79:../../libDaisy//src/per/tim.h ****         {
+ 710              		.loc 3 79 27 view .LVU164
+ 711              	.LBE165:
+ 712              	.LBE168:
+ 713              	.LBE179:
+ 119:MyNewProject.cpp ****     config.periph = TimerHandle::Config::Peripheral::TIM_2; // Use timer 2 which is 32 bit counter
+ 714              		.loc 15 119 5 is_stmt 1 view .LVU165
+ 120:MyNewProject.cpp ****     config.enable_irq = 1;                                  // Enable interrupt for user based call
+ 715              		.loc 15 120 5 view .LVU166
+ 121:MyNewProject.cpp ****     configPtr = &config;                                    // Point our global config to the one w
+ 716              		.loc 15 121 5 view .LVU167
+ 122:MyNewProject.cpp **** 
+ 717              		.loc 15 122 15 is_stmt 0 view .LVU168
+ 718 0078 1960     		str	r1, [r3]
+ 121:MyNewProject.cpp ****     configPtr = &config;                                    // Point our global config to the one w
+ 719              		.loc 15 121 23 view .LVU169
+ 720 007a 8DF82050 		strb	r5, [sp, #32]
+ 122:MyNewProject.cpp **** 
+ 721              		.loc 15 122 5 is_stmt 1 view .LVU170
+ 125:MyNewProject.cpp ****     // Make sure the timer is off
+ 722              		.loc 15 125 5 view .LVU171
+ 723              	.LBB180:
+ 724              	.LBB169:
+ 725              	.LBB166:
+  79:../../libDaisy//src/per/tim.h ****         {
+ 726              		.loc 3 79 27 is_stmt 0 view .LVU172
+ 727 007e CDE90544 		strd	r4, r4, [sp, #20]
+ 728              	.LBE166:
+ 729              	.LBE169:
+ 730              	.LBE180:
+ 125:MyNewProject.cpp ****     // Make sure the timer is off
+ 731              		.loc 15 125 15 view .LVU173
+ 732 0082 FFF7FEFF 		bl	_ZN5daisy11TimerHandle4InitERKNS0_6ConfigE
+ 733              	.LVL43:
+ 127:MyNewProject.cpp ****     //*********************************************************************************************
+ 734              		.loc 15 127 5 is_stmt 1 view .LVU174
+ 127:MyNewProject.cpp ****     //*********************************************************************************************
+ 735              		.loc 15 127 15 is_stmt 0 view .LVU175
+ 736 0086 2948     		ldr	r0, .L37+28
+ 737 0088 FFF7FEFF 		bl	_ZN5daisy11TimerHandle4StopEv
+ 738              	.LVL44:
+ 133:MyNewProject.cpp ****     adcConfig.InitSingle(hw.GetPin(15));
+ 739              		.loc 15 133 5 is_stmt 1 view .LVU176
+ 134:MyNewProject.cpp ****     hw.adc.Init(&adcConfig,1);
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 33
+
+
+ 740              		.loc 15 134 5 view .LVU177
+ 134:MyNewProject.cpp ****     hw.adc.Init(&adcConfig,1);
+ 741              		.loc 15 134 25 is_stmt 0 view .LVU178
+ 742 008c 0F20     		movs	r0, #15
+ 743 008e FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
+ 744              	.LVL45:
+ 745 0092 ADF81000 		strh	r0, [sp, #16]	@ movhi
+ 746 0096 0499     		ldr	r1, [sp, #16]
+ 747 0098 09A8     		add	r0, sp, #36
+ 748 009a FFF7FEFF 		bl	_ZN5daisy16AdcChannelConfig10InitSingleE12dsy_gpio_pin
+ 749              	.LVL46:
+ 135:MyNewProject.cpp ****     
+ 750              		.loc 15 135 5 is_stmt 1 view .LVU179
+ 135:MyNewProject.cpp ****     
+ 751              		.loc 15 135 16 is_stmt 0 view .LVU180
+ 752 009e 0423     		movs	r3, #4
+ 753 00a0 2A46     		mov	r2, r5
+ 754 00a2 2348     		ldr	r0, .L37+32
+ 755 00a4 09A9     		add	r1, sp, #36
+ 756 00a6 FFF7FEFF 		bl	_ZN5daisy9AdcHandle4InitEPNS_16AdcChannelConfigEjNS0_12OverSamplingE
+ 757              	.LVL47:
+ 137:MyNewProject.cpp ****     // Init the analog control to the same pin, D15, which is ADC channel 0 on the datasheet
+ 758              		.loc 15 137 5 is_stmt 1 view .LVU181
+ 759              	.LBB181:
+ 760              	.LBI181:
+  21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
+ 761              		.loc 6 21 5 view .LVU182
+  21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
+ 762              		.loc 6 21 5 is_stmt 0 view .LVU183
+ 763              	.LBE181:
+ 139:MyNewProject.cpp ****     feedbackKnob.Init(fbk,0.00,MAX_FEEDBACK,Parameter::LINEAR);
+ 764              		.loc 15 139 5 is_stmt 1 view .LVU184
+ 139:MyNewProject.cpp ****     feedbackKnob.Init(fbk,0.00,MAX_FEEDBACK,Parameter::LINEAR);
+ 765              		.loc 15 139 13 is_stmt 0 view .LVU185
+ 766 00aa 2146     		mov	r1, r4
+ 767 00ac 2048     		ldr	r0, .L37+32
+ 768 00ae FFF7FEFF 		bl	_ZNK5daisy9AdcHandle6GetPtrEh
+ 769              	.LVL48:
+ 770 00b2 0146     		mov	r1, r0
+ 771 00b4 1648     		ldr	r0, .L37
+ 772 00b6 0191     		str	r1, [sp, #4]
+ 773 00b8 FFF7FEFF 		bl	_ZN5daisy9DaisySeed15AudioSampleRateEv
+ 774              	.LVL49:
+ 775 00bc DFED1D0A 		vldr.32	s1, .L37+36
+ 776 00c0 2346     		mov	r3, r4
+ 777 00c2 2246     		mov	r2, r4
+ 778 00c4 0199     		ldr	r1, [sp, #4]
+ 779 00c6 0EA8     		add	r0, sp, #56
+ 780 00c8 FFF7FEFF 		bl	_ZN5daisy13AnalogControl4InitEPtfbbf
+ 781              	.LVL50:
+ 140:MyNewProject.cpp ****     //*******************************************************************************
+ 782              		.loc 15 140 5 is_stmt 1 view .LVU186
+ 140:MyNewProject.cpp ****     //*******************************************************************************
+ 783              		.loc 15 140 22 is_stmt 0 view .LVU187
+ 784 00cc 1A4B     		ldr	r3, .L37+40
+ 785 00ce 0DF1380C 		add	ip, sp, #56
+ 786 00d2 0DF1580E 		add	lr, sp, #88
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 34
+
+
+ 787 00d6 D3ED000A 		vldr.32	s1, [r3]
+ 788 00da 9FED180A 		vldr.32	s0, .L37+44
+ 789 00de BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
+ 790 00e2 AEE80F00 		stmia	lr!, {r0, r1, r2, r3}
+ 791 00e6 9CE80F00 		ldm	ip, {r0, r1, r2, r3}
+ 792 00ea 8EE80F00 		stm	lr, {r0, r1, r2, r3}
+ 793 00ee 2246     		mov	r2, r4
+ 794 00f0 16A9     		add	r1, sp, #88
+ 795 00f2 1348     		ldr	r0, .L37+48
+ 796 00f4 FFF7FEFF 		bl	_ZN5daisy9Parameter4InitENS_13AnalogControlEffNS0_5CurveE
+ 797              	.LVL51:
+ 798              	.LBB182:
+ 799              	.LBI182:
+ 800              		.loc 6 23 5 is_stmt 1 view .LVU188
+ 801              		.loc 6 23 5 is_stmt 0 view .LVU189
+ 802              	.LBE182:
+ 143:MyNewProject.cpp ****     hw.adc.Start();
+ 803              		.loc 15 143 5 is_stmt 1 view .LVU190
+ 143:MyNewProject.cpp ****     hw.adc.Start();
+ 804              		.loc 15 143 17 is_stmt 0 view .LVU191
+ 805 00f8 1248     		ldr	r0, .L37+52
+ 806 00fa 9FED130A 		vldr.32	s0, .L37+56
+ 807 00fe FFF7FEFF 		bl	_ZN7daisysp7Balance4InitEf
+ 808              	.LVL52:
+ 144:MyNewProject.cpp **** 
+ 809              		.loc 15 144 5 is_stmt 1 view .LVU192
+ 144:MyNewProject.cpp **** 
+ 810              		.loc 15 144 17 is_stmt 0 view .LVU193
+ 811 0102 0B48     		ldr	r0, .L37+32
+ 812 0104 FFF7FEFF 		bl	_ZN5daisy9AdcHandle5StartEv
+ 813              	.LVL53:
+ 814              	.L35:
+ 146:MyNewProject.cpp ****     {
+ 815              		.loc 15 146 5 is_stmt 1 discriminator 1 view .LVU194
+ 149:MyNewProject.cpp **** 
+ 816              		.loc 15 149 9 discriminator 1 view .LVU195
+ 149:MyNewProject.cpp **** 
+ 817              		.loc 15 149 22 is_stmt 0 discriminator 1 view .LVU196
+ 818 0108 0620     		movs	r0, #6
+ 819 010a FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
+ 820              	.LVL54:
+ 146:MyNewProject.cpp ****     {
+ 821              		.loc 15 146 5 is_stmt 1 discriminator 1 view .LVU197
+ 822 010e FBE7     		b	.L35
+ 823              	.L38:
+ 824              		.align	2
+ 825              	.L37:
+ 826 0110 00000000 		.word	.LANCHOR6
+ 827 0114 00007A44 		.word	1148846080
+ 828 0118 00000000 		.word	.LANCHOR7
+ 829 011c 00000000 		.word	.LANCHOR3
+ 830 0120 00000000 		.word	.LANCHOR8
+ 831 0124 00000000 		.word	_ZL13AudioCallbackPKPKfPPfj
+ 832 0128 00000000 		.word	.LANCHOR2
+ 833 012c 00000000 		.word	.LANCHOR0
+ 834 0130 18000000 		.word	.LANCHOR6+24
+ 835 0134 6F12033B 		.word	990057071
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 35
+
+
+ 836 0138 00000000 		.word	.LANCHOR9
+ 837 013c 00000000 		.word	0
+ 838 0140 00000000 		.word	.LANCHOR10
+ 839 0144 00000000 		.word	.LANCHOR11
+ 840 0148 00803B47 		.word	1195081728
+ 841              		.cfi_endproc
+ 842              	.LFE4790:
+ 844              		.section	.rodata._Z15ProcessControlsv.str1.4,"aMS",%progbits,1
+ 845              		.align	2
+ 846              	.LC0:
+ 847 0000 546F6E65 		.ascii	"Tone knob val : %f\000"
+ 847      206B6E6F 
+ 847      62207661 
+ 847      6C203A20 
+ 847      256600
+ 848              		.section	.text._Z15ProcessControlsv,"ax",%progbits
+ 849              		.align	1
+ 850              		.p2align 2,,3
+ 851              		.global	_Z15ProcessControlsv
+ 852              		.syntax unified
+ 853              		.thumb
+ 854              		.thumb_func
+ 855              		.fpu fpv5-d16
+ 857              	_Z15ProcessControlsv:
+ 858              	.LFB4793:
+ 233:MyNewProject.cpp **** 
+ 234:MyNewProject.cpp **** void ProcessControls()
+ 235:MyNewProject.cpp **** {
+ 859              		.loc 15 235 1 view -0
+ 860              		.cfi_startproc
+ 861              		@ args = 0, pretend = 0, frame = 8
+ 862              		@ frame_needed = 0, uses_anonymous_args = 0
+ 236:MyNewProject.cpp ****     //delay.setFeedback(feedbackKnob.Process());
+ 237:MyNewProject.cpp ****     //delay.setFeedback(.5);
+ 238:MyNewProject.cpp ****     float tone_val = feedbackKnob.Process()* -1.f;
+ 863              		.loc 15 238 5 view .LVU199
+ 235:MyNewProject.cpp ****     //delay.setFeedback(feedbackKnob.Process());
+ 864              		.loc 15 235 1 is_stmt 0 view .LVU200
+ 865 0000 10B5     		push	{r4, lr}
+ 866              		.cfi_def_cfa_offset 8
+ 867              		.cfi_offset 4, -8
+ 868              		.cfi_offset 14, -4
+ 869              		.loc 15 238 42 view .LVU201
+ 870 0002 2948     		ldr	r0, .L48
+ 871 0004 294C     		ldr	r4, .L48+4
+ 235:MyNewProject.cpp ****     //delay.setFeedback(feedbackKnob.Process());
+ 872              		.loc 15 235 1 view .LVU202
+ 873 0006 2DED028B 		vpush.64	{d8}
+ 874              		.cfi_def_cfa_offset 16
+ 875              		.cfi_offset 80, -16
+ 876              		.cfi_offset 81, -12
+ 877 000a 82B0     		sub	sp, sp, #8
+ 878              		.cfi_def_cfa_offset 24
+ 879              		.loc 15 238 42 view .LVU203
+ 880 000c FFF7FEFF 		bl	_ZN5daisy9Parameter7ProcessEv
+ 881              	.LVL55:
+ 882 0010 B0EE408A 		vmov.f32	s16, s0
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 36
+
+
+ 883              	.LVL56:
+ 239:MyNewProject.cpp ****     tone.setFreq(5000.0f*(powf(10,2*tone_val))+100.f);
+ 884              		.loc 15 239 5 is_stmt 1 view .LVU204
+ 885              		.loc 15 239 31 is_stmt 0 view .LVU205
+ 886 0014 B2EE040A 		vmov.f32	s0, #1.0e+1
+ 887              	.LVL57:
+ 238:MyNewProject.cpp ****     tone.setFreq(5000.0f*(powf(10,2*tone_val))+100.f);
+ 888              		.loc 15 238 47 view .LVU206
+ 889 0018 B1EE488A 		vneg.f32	s16, s16
+ 890              	.LVL58:
+ 891              		.loc 15 239 31 view .LVU207
+ 892 001c 38EE088A 		vadd.f32	s16, s16, s16
+ 893              	.LVL59:
+ 894              		.loc 15 239 31 view .LVU208
+ 895 0020 F0EE480A 		vmov.f32	s1, s16
+ 896 0024 FFF7FEFF 		bl	powf
+ 897              	.LVL60:
+ 898              		.loc 15 239 17 view .LVU209
+ 899 0028 9FED217A 		vldr.32	s14, .L48+8
+ 900 002c DFED217A 		vldr.32	s15, .L48+12
+ 901 0030 2148     		ldr	r0, .L48+16
+ 902 0032 E0EE077A 		vfma.f32	s15, s0, s14
+ 903 0036 B0EE670A 		vmov.f32	s0, s15
+ 904 003a FFF7FEFF 		bl	_ZN10ToneFilter7setFreqEf
+ 905              	.LVL61:
+ 240:MyNewProject.cpp **** 
+ 241:MyNewProject.cpp **** 
+ 242:MyNewProject.cpp ****     for(int i = 0; i < 4;i++)
+ 906              		.loc 15 242 5 is_stmt 1 view .LVU210
+ 907              	.LBB183:
+ 908              		.loc 15 242 13 is_stmt 0 view .LVU211
+ 909 003e 0023     		movs	r3, #0
+ 910              		.loc 15 242 22 view .LVU212
+ 911 0040 1846     		mov	r0, r3
+ 912              		.loc 15 242 13 view .LVU213
+ 913 0042 0193     		str	r3, [sp, #4]
+ 914              		.loc 15 242 22 is_stmt 1 view .LVU214
+ 915 0044 03E0     		b	.L41
+ 916              	.LVL62:
+ 917              	.L40:
+ 918              		.loc 15 242 5 discriminator 2 view .LVU215
+ 919 0046 0130     		adds	r0, r0, #1
+ 920              		.loc 15 242 22 is_stmt 0 discriminator 2 view .LVU216
+ 921 0048 0328     		cmp	r0, #3
+ 922              		.loc 15 242 5 discriminator 2 view .LVU217
+ 923 004a 0190     		str	r0, [sp, #4]
+ 924              		.loc 15 242 22 is_stmt 1 discriminator 2 view .LVU218
+ 925 004c 28DC     		bgt	.L47
+ 926              	.L41:
+ 243:MyNewProject.cpp ****     {
+ 244:MyNewProject.cpp ****         headSwitches[i].Debounce();
+ 927              		.loc 15 244 9 view .LVU219
+ 928              		.loc 15 244 33 is_stmt 0 view .LVU220
+ 929 004e 04EB0010 		add	r0, r4, r0, lsl #4
+ 930 0052 FFF7FEFF 		bl	_ZN5daisy6Switch8DebounceEv
+ 931              	.LVL63:
+ 245:MyNewProject.cpp ****         if(headSwitches[i].RisingEdge())
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 37
+
+
+ 932              		.loc 15 245 9 is_stmt 1 view .LVU221
+ 933              		.loc 15 245 26 is_stmt 0 view .LVU222
+ 934 0056 0198     		ldr	r0, [sp, #4]
+ 935              	.LVL64:
+ 936              	.LBB184:
+ 937              	.LBI184:
+ 938              		.loc 4 70 17 is_stmt 1 view .LVU223
+ 939              	.LBB185:
+ 940              		.loc 4 70 38 view .LVU224
+ 941              		.loc 4 70 45 is_stmt 0 view .LVU225
+ 942 0058 04EB0013 		add	r3, r4, r0, lsl #4
+ 943              		.loc 4 70 54 view .LVU226
+ 944 005c 1A79     		ldrb	r2, [r3, #4]	@ zero_extendqisi2
+ 945 005e 002A     		cmp	r2, #0
+ 946 0060 F1D0     		beq	.L40
+ 947              	.LBE185:
+ 948              	.LBE184:
+ 949              		.loc 15 245 9 view .LVU227
+ 950 0062 9B7A     		ldrb	r3, [r3, #10]	@ zero_extendqisi2
+ 951 0064 7F2B     		cmp	r3, #127
+ 952 0066 EED1     		bne	.L40
+ 246:MyNewProject.cpp ****         {
+ 247:MyNewProject.cpp ****             
+ 248:MyNewProject.cpp ****             // std::string val = std::to_string(tone_val);
+ 249:MyNewProject.cpp ****             // char * tab2 = new char [val.length()+1];
+ 250:MyNewProject.cpp ****             // strcpy (tab2, val.c_str());
+ 251:MyNewProject.cpp ****             hw.PrintLine("Tone knob val : %f",5000.0f*(powf(10,2*tone_val))+100.f);
+ 953              		.loc 15 251 13 is_stmt 1 view .LVU228
+ 954              		.loc 15 251 60 is_stmt 0 view .LVU229
+ 955 0068 F0EE480A 		vmov.f32	s1, s16
+ 956 006c B2EE040A 		vmov.f32	s0, #1.0e+1
+ 957 0070 FFF7FEFF 		bl	powf
+ 958              	.LVL65:
+ 959              		.loc 15 251 25 view .LVU230
+ 960 0074 9FED0E7A 		vldr.32	s14, .L48+8
+ 961 0078 DFED0E7A 		vldr.32	s15, .L48+12
+ 962              	.LBB186:
+ 963              	.LBB187:
+ 121:../../libDaisy//src/daisy_seed.h ****     }
+ 964              		.loc 7 121 23 view .LVU231
+ 965 007c 0F48     		ldr	r0, .L48+20
+ 966              	.LBE187:
+ 967              	.LBE186:
+ 968              		.loc 15 251 25 view .LVU232
+ 969 007e E0EE077A 		vfma.f32	s15, s0, s14
+ 970              	.LVL66:
+ 971              	.LBB189:
+ 972              	.LBI186:
+ 119:../../libDaisy//src/daisy_seed.h ****     {
+ 973              		.loc 7 119 17 is_stmt 1 view .LVU233
+ 974              	.LBB188:
+ 121:../../libDaisy//src/daisy_seed.h ****     }
+ 975              		.loc 7 121 23 is_stmt 0 view .LVU234
+ 976 0082 B7EEE77A 		vcvt.f64.f32	d7, s15
+ 977 0086 53EC172B 		vmov	r2, r3, d7
+ 978 008a FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
+ 979              	.LVL67:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 38
+
+
+ 121:../../libDaisy//src/daisy_seed.h ****     }
+ 980              		.loc 7 121 23 view .LVU235
+ 981              	.LBE188:
+ 982              	.LBE189:
+ 252:MyNewProject.cpp ****             delay.toggleHead(i);
+ 983              		.loc 15 252 13 is_stmt 1 view .LVU236
+ 984              		.loc 15 252 29 is_stmt 0 view .LVU237
+ 985 008e 0C48     		ldr	r0, .L48+24
+ 986 0090 01A9     		add	r1, sp, #4
+ 987 0092 FFF7FEFF 		bl	_ZN6Delayy10toggleHeadERKi
+ 988              	.LVL68:
+ 242:MyNewProject.cpp ****     {
+ 989              		.loc 15 242 5 view .LVU238
+ 990 0096 0198     		ldr	r0, [sp, #4]
+ 242:MyNewProject.cpp ****     {
+ 991              		.loc 15 242 5 is_stmt 1 view .LVU239
+ 992 0098 0130     		adds	r0, r0, #1
+ 242:MyNewProject.cpp ****     {
+ 993              		.loc 15 242 22 is_stmt 0 view .LVU240
+ 994 009a 0328     		cmp	r0, #3
+ 242:MyNewProject.cpp ****     {
+ 995              		.loc 15 242 5 view .LVU241
+ 996 009c 0190     		str	r0, [sp, #4]
+ 242:MyNewProject.cpp ****     {
+ 997              		.loc 15 242 22 is_stmt 1 view .LVU242
+ 998 009e D6DD     		ble	.L41
+ 999              	.L47:
+ 1000              	.LBE183:
+ 253:MyNewProject.cpp ****         }
+ 254:MyNewProject.cpp ****     }
+ 255:MyNewProject.cpp **** }
+ 1001              		.loc 15 255 1 is_stmt 0 view .LVU243
+ 1002 00a0 02B0     		add	sp, sp, #8
+ 1003              		.cfi_def_cfa_offset 16
+ 1004              		@ sp needed
+ 1005 00a2 BDEC028B 		vldm	sp!, {d8}
+ 1006              		.cfi_restore 80
+ 1007              		.cfi_restore 81
+ 1008              		.cfi_def_cfa_offset 8
+ 1009 00a6 10BD     		pop	{r4, pc}
+ 1010              	.L49:
+ 1011              		.align	2
+ 1012              	.L48:
+ 1013 00a8 00000000 		.word	.LANCHOR10
+ 1014 00ac 00000000 		.word	.LANCHOR5
+ 1015 00b0 00409C45 		.word	1167867904
+ 1016 00b4 0000C842 		.word	1120403456
+ 1017 00b8 00000000 		.word	.LANCHOR12
+ 1018 00bc 00000000 		.word	.LC0
+ 1019 00c0 00000000 		.word	.LANCHOR13
+ 1020              		.cfi_endproc
+ 1021              	.LFE4793:
+ 1023              		.section	.text._ZL13AudioCallbackPKPKfPPfj,"ax",%progbits
+ 1024              		.align	1
+ 1025              		.p2align 2,,3
+ 1026              		.syntax unified
+ 1027              		.thumb
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 39
+
+
+ 1028              		.thumb_func
+ 1029              		.fpu fpv5-d16
+ 1031              	_ZL13AudioCallbackPKPKfPPfj:
+ 1032              	.LVL69:
+ 1033              	.LFB4789:
+  43:MyNewProject.cpp ****     for(size_t i = 0; i < size; i++)
+ 1034              		.loc 15 43 1 is_stmt 1 view -0
+ 1035              		.cfi_startproc
+ 1036              		@ args = 0, pretend = 0, frame = 8
+ 1037              		@ frame_needed = 0, uses_anonymous_args = 0
+  44:MyNewProject.cpp ****     {
+ 1038              		.loc 15 44 5 view .LVU245
+ 1039              	.LBB190:
+  44:MyNewProject.cpp ****     {
+ 1040              		.loc 15 44 25 view .LVU246
+ 1041 0000 002A     		cmp	r2, #0
+ 1042 0002 75D0     		beq	.L64
+ 1043              	.LBE190:
+  43:MyNewProject.cpp ****     for(size_t i = 0; i < size; i++)
+ 1044              		.loc 15 43 1 is_stmt 0 view .LVU247
+ 1045 0004 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+ 1046              		.cfi_def_cfa_offset 36
+ 1047              		.cfi_offset 4, -36
+ 1048              		.cfi_offset 5, -32
+ 1049              		.cfi_offset 6, -28
+ 1050              		.cfi_offset 7, -24
+ 1051              		.cfi_offset 8, -20
+ 1052              		.cfi_offset 9, -16
+ 1053              		.cfi_offset 10, -12
+ 1054              		.cfi_offset 11, -8
+ 1055              		.cfi_offset 14, -4
+ 1056 0008 0546     		mov	r5, r0
+ 1057 000a 0E46     		mov	r6, r1
+ 1058 000c 9046     		mov	r8, r2
+ 1059              	.LBB203:
+  44:MyNewProject.cpp ****     {
+ 1060              		.loc 15 44 16 view .LVU248
+ 1061 000e 4FF0000B 		mov	fp, #0
+ 1062 0012 DFF8F890 		ldr	r9, .L68+24
+ 1063 0016 374F     		ldr	r7, .L68
+ 1064 0018 DFF8F4A0 		ldr	r10, .L68+28
+ 1065              	.LBE203:
+  43:MyNewProject.cpp ****     for(size_t i = 0; i < size; i++)
+ 1066              		.loc 15 43 1 view .LVU249
+ 1067 001c 2DED028B 		vpush.64	{d8}
+ 1068              		.cfi_def_cfa_offset 44
+ 1069              		.cfi_offset 80, -44
+ 1070              		.cfi_offset 81, -40
+ 1071 0020 83B0     		sub	sp, sp, #12
+ 1072              		.cfi_def_cfa_offset 56
+ 1073 0022 3DE0     		b	.L58
+ 1074              	.LVL70:
+ 1075              	.L57:
+ 1076              	.LBB204:
+ 1077              	.LBB191:
+  65:MyNewProject.cpp ****         }
+ 1078              		.loc 15 65 13 is_stmt 1 view .LVU250
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 40
+
+
+  63:MyNewProject.cpp ****         {
+ 1079              		.loc 15 63 33 is_stmt 0 view .LVU251
+ 1080 0024 3B78     		ldrb	r3, [r7]	@ zero_extendqisi2
+  65:MyNewProject.cpp ****         }
+ 1081              		.loc 15 65 32 view .LVU252
+ 1082 0026 0022     		movs	r2, #0
+  63:MyNewProject.cpp ****         {
+ 1083              		.loc 15 63 33 view .LVU253
+ 1084 0028 03B1     		cbz	r3, .L56
+  65:MyNewProject.cpp ****         }
+ 1085              		.loc 15 65 32 view .LVU254
+ 1086 002a 3A70     		strb	r2, [r7]
+ 1087              	.L56:
+  68:MyNewProject.cpp **** 	    float all_delay_signals = 0; // Summation of all delay signals
+ 1088              		.loc 15 68 9 is_stmt 1 discriminator 2 view .LVU255
+ 1089              	.LVL71:
+  69:MyNewProject.cpp ****         float nonConstInput;         // Will store the a copy of input float value at in[channel][i
+ 1090              		.loc 15 69 6 discriminator 2 view .LVU256
+  75:MyNewProject.cpp ****         float filter = tone.process(in[0][i]);
+ 1091              		.loc 15 75 42 is_stmt 0 discriminator 2 view .LVU257
+ 1092 002c 2B68     		ldr	r3, [r5]
+  69:MyNewProject.cpp ****         float nonConstInput;         // Will store the a copy of input float value at in[channel][i
+ 1093              		.loc 15 69 12 discriminator 2 view .LVU258
+ 1094 002e 0022     		movs	r2, #0
+  75:MyNewProject.cpp ****         float filter = tone.process(in[0][i]);
+ 1095              		.loc 15 75 42 discriminator 2 view .LVU259
+ 1096 0030 3148     		ldr	r0, .L68+4
+ 1097 0032 4FEA8B04 		lsl	r4, fp, #2
+ 1098 0036 03EB8B03 		add	r3, r3, fp, lsl #2
+  69:MyNewProject.cpp ****         float nonConstInput;         // Will store the a copy of input float value at in[channel][i
+ 1099              		.loc 15 69 12 discriminator 2 view .LVU260
+ 1100 003a 0092     		str	r2, [sp]	@ float
+  70:MyNewProject.cpp ****                                      // Needed because cfade.SetPos requieres non-const  
+ 1101              		.loc 15 70 9 is_stmt 1 discriminator 2 view .LVU261
+  75:MyNewProject.cpp ****         float filter = tone.process(in[0][i]);
+ 1102              		.loc 15 75 9 discriminator 2 view .LVU262
+ 1103              	.LBE191:
+  44:MyNewProject.cpp ****     {
+ 1104              		.loc 15 44 5 is_stmt 0 discriminator 2 view .LVU263
+ 1105 003c 0BF1010B 		add	fp, fp, #1
+ 1106              	.LVL72:
+ 1107              	.LBB200:
+  75:MyNewProject.cpp ****         float filter = tone.process(in[0][i]);
+ 1108              		.loc 15 75 42 discriminator 2 view .LVU264
+ 1109 0040 93ED000A 		vldr.32	s0, [r3]
+ 1110 0044 FFF7FEFF 		bl	_ZN6Delayy7processEf
+ 1111              	.LVL73:
+  76:MyNewProject.cpp ****         filter = balance.Process(filter,in[0][1]*2.5f);
+ 1112              		.loc 15 76 36 discriminator 2 view .LVU265
+ 1113 0048 2B68     		ldr	r3, [r5]
+ 1114 004a 2C48     		ldr	r0, .L68+8
+ 1115 004c 2344     		add	r3, r3, r4
+  75:MyNewProject.cpp ****         float filter = tone.process(in[0][i]);
+ 1116              		.loc 15 75 27 discriminator 2 view .LVU266
+ 1117 004e 8DED000A 		vstr.32	s0, [sp]
+  76:MyNewProject.cpp ****         filter = balance.Process(filter,in[0][1]*2.5f);
+ 1118              		.loc 15 76 9 is_stmt 1 discriminator 2 view .LVU267
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 41
+
+
+  76:MyNewProject.cpp ****         filter = balance.Process(filter,in[0][1]*2.5f);
+ 1119              		.loc 15 76 36 is_stmt 0 discriminator 2 view .LVU268
+ 1120 0052 93ED000A 		vldr.32	s0, [r3]
+ 1121 0056 FFF7FEFF 		bl	_ZN10ToneFilter7processEf
+ 1122              	.LVL74:
+  77:MyNewProject.cpp **** 
+ 1123              		.loc 15 77 9 is_stmt 1 discriminator 2 view .LVU269
+  77:MyNewProject.cpp **** 
+ 1124              		.loc 15 77 48 is_stmt 0 discriminator 2 view .LVU270
+ 1125 005a 2B68     		ldr	r3, [r5]
+  77:MyNewProject.cpp **** 
+ 1126              		.loc 15 77 33 discriminator 2 view .LVU271
+ 1127 005c F0EE047A 		vmov.f32	s15, #2.5e+0
+ 1128 0060 2748     		ldr	r0, .L68+12
+ 1129 0062 D3ED010A 		vldr.32	s1, [r3, #4]
+ 1130 0066 60EEA70A 		vmul.f32	s1, s1, s15
+ 1131 006a FFF7FEFF 		bl	_ZN7daisysp7Balance7ProcessEff
+ 1132              	.LVL75:
+  80:MyNewProject.cpp **** 
+ 1133              		.loc 15 80 32 discriminator 2 view .LVU272
+ 1134 006e 2B68     		ldr	r3, [r5]
+ 1135              	.LBB192:
+ 1136              	.LBB193:
+  60:../../DaisySP//Source/Dynamics/crossfade.h ****     /** Sets current curve applied to CrossFade 
+ 1137              		.loc 2 60 42 discriminator 2 view .LVU273
+ 1138 0070 2449     		ldr	r1, .L68+16
+ 1139              	.LBE193:
+ 1140              	.LBE192:
+  84:MyNewProject.cpp **** 		out[0][i]  = out [1][i] = filter;//final_mix; // this sends 'final_mix' to the left and right out
+ 1141              		.loc 15 84 28 discriminator 2 view .LVU274
+ 1142 0072 6A46     		mov	r2, sp
+  80:MyNewProject.cpp **** 
+ 1143              		.loc 15 80 32 discriminator 2 view .LVU275
+ 1144 0074 2344     		add	r3, r3, r4
+  84:MyNewProject.cpp **** 		out[0][i]  = out [1][i] = filter;//final_mix; // this sends 'final_mix' to the left and right out
+ 1145              		.loc 15 84 28 discriminator 2 view .LVU276
+ 1146 0076 2348     		ldr	r0, .L68+16
+  77:MyNewProject.cpp **** 
+ 1147              		.loc 15 77 33 discriminator 2 view .LVU277
+ 1148 0078 B0EE408A 		vmov.f32	s16, s0
+ 1149              	.LVL76:
+  80:MyNewProject.cpp **** 
+ 1150              		.loc 15 80 9 is_stmt 1 discriminator 2 view .LVU278
+  80:MyNewProject.cpp **** 
+ 1151              		.loc 15 80 32 is_stmt 0 discriminator 2 view .LVU279
+ 1152 007c 1B68     		ldr	r3, [r3]	@ float
+  80:MyNewProject.cpp **** 
+ 1153              		.loc 15 80 23 discriminator 2 view .LVU280
+ 1154 007e 0193     		str	r3, [sp, #4]	@ float
+  83:MyNewProject.cpp **** 		final_mix = cfade.Process(nonConstInput, all_delay_signals);
+ 1155              		.loc 15 83 3 is_stmt 1 discriminator 2 view .LVU281
+ 1156              	.LVL77:
+ 1157              	.LBB195:
+ 1158              	.LBI192:
+  60:../../DaisySP//Source/Dynamics/crossfade.h ****     /** Sets current curve applied to CrossFade 
+ 1159              		.loc 2 60 17 discriminator 2 view .LVU282
+ 1160              	.LBB194:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 42
+
+
+  60:../../DaisySP//Source/Dynamics/crossfade.h ****     /** Sets current curve applied to CrossFade 
+ 1161              		.loc 2 60 37 discriminator 2 view .LVU283
+  60:../../DaisySP//Source/Dynamics/crossfade.h ****     /** Sets current curve applied to CrossFade 
+ 1162              		.loc 2 60 42 is_stmt 0 discriminator 2 view .LVU284
+ 1163 0080 DAF80030 		ldr	r3, [r10]	@ float
+ 1164 0084 0B60     		str	r3, [r1]	@ float
+ 1165              	.LVL78:
+  60:../../DaisySP//Source/Dynamics/crossfade.h ****     /** Sets current curve applied to CrossFade 
+ 1166              		.loc 2 60 42 discriminator 2 view .LVU285
+ 1167              	.LBE194:
+ 1168              	.LBE195:
+  84:MyNewProject.cpp **** 		out[0][i]  = out [1][i] = filter;//final_mix; // this sends 'final_mix' to the left and right out
+ 1169              		.loc 15 84 3 is_stmt 1 discriminator 2 view .LVU286
+  84:MyNewProject.cpp **** 		out[0][i]  = out [1][i] = filter;//final_mix; // this sends 'final_mix' to the left and right out
+ 1170              		.loc 15 84 28 is_stmt 0 discriminator 2 view .LVU287
+ 1171 0086 01A9     		add	r1, sp, #4
+ 1172 0088 FFF7FEFF 		bl	_ZN7daisysp9CrossFade7ProcessERfS1_
+ 1173              	.LVL79:
+  85:MyNewProject.cpp ****     }
+ 1174              		.loc 15 85 3 is_stmt 1 discriminator 2 view .LVU288
+ 1175              	.LBE200:
+  44:MyNewProject.cpp ****     {
+ 1176              		.loc 15 44 25 is_stmt 0 discriminator 2 view .LVU289
+ 1177 008c D845     		cmp	r8, fp
+ 1178              	.LBB201:
+  85:MyNewProject.cpp ****     }
+ 1179              		.loc 15 85 14 discriminator 2 view .LVU290
+ 1180 008e D6E90032 		ldrd	r3, r2, [r6]
+  85:MyNewProject.cpp ****     }
+ 1181              		.loc 15 85 27 discriminator 2 view .LVU291
+ 1182 0092 2244     		add	r2, r2, r4
+  85:MyNewProject.cpp ****     }
+ 1183              		.loc 15 85 14 discriminator 2 view .LVU292
+ 1184 0094 2344     		add	r3, r3, r4
+  85:MyNewProject.cpp ****     }
+ 1185              		.loc 15 85 27 discriminator 2 view .LVU293
+ 1186 0096 82ED008A 		vstr.32	s16, [r2]
+  85:MyNewProject.cpp ****     }
+ 1187              		.loc 15 85 14 discriminator 2 view .LVU294
+ 1188 009a 83ED008A 		vstr.32	s16, [r3]
+ 1189              	.LBE201:
+  44:MyNewProject.cpp ****     {
+ 1190              		.loc 15 44 5 is_stmt 1 discriminator 2 view .LVU295
+ 1191              	.LVL80:
+  44:MyNewProject.cpp ****     {
+ 1192              		.loc 15 44 25 discriminator 2 view .LVU296
+ 1193 009e 22D0     		beq	.L67
+ 1194              	.LVL81:
+ 1195              	.L58:
+ 1196              	.LBB202:
+  47:MyNewProject.cpp ****         // Check for tempo change
+ 1197              		.loc 15 47 9 view .LVU297
+  47:MyNewProject.cpp ****         // Check for tempo change
+ 1198              		.loc 15 47 24 is_stmt 0 view .LVU298
+ 1199 00a0 FFF7FEFF 		bl	_Z15ProcessControlsv
+ 1200              	.LVL82:
+  49:MyNewProject.cpp ****         // Set delays with new bpm
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 43
+
+
+ 1201              		.loc 15 49 9 is_stmt 1 view .LVU299
+  49:MyNewProject.cpp ****         // Set delays with new bpm
+ 1202              		.loc 15 49 19 is_stmt 0 view .LVU300
+ 1203 00a4 FFF7FEFF 		bl	_Z10CheckTempov
+ 1204              	.LVL83:
+  51:MyNewProject.cpp **** 
+ 1205              		.loc 15 51 9 is_stmt 1 view .LVU301
+  51:MyNewProject.cpp **** 
+ 1206              		.loc 15 51 21 is_stmt 0 view .LVU302
+ 1207 00a8 174B     		ldr	r3, .L68+20
+ 1208 00aa 01A9     		add	r1, sp, #4
+ 1209 00ac 1248     		ldr	r0, .L68+4
+ 1210 00ae D3ED007A 		vldr.32	s15, [r3]
+ 1211 00b2 FDEEE77A 		vcvt.s32.f32	s15, s15
+ 1212 00b6 CDED017A 		vstr.32	s15, [sp, #4]	@ int
+ 1213 00ba FFF7FEFF 		bl	_ZN6Delayy6setBPMERKi
+ 1214              	.LVL84:
+  54:MyNewProject.cpp ****         // Check if the button is pressed and was not previously pressed
+ 1215              		.loc 15 54 9 is_stmt 1 view .LVU303
+  54:MyNewProject.cpp ****         // Check if the button is pressed and was not previously pressed
+ 1216              		.loc 15 54 27 is_stmt 0 view .LVU304
+ 1217 00be 1348     		ldr	r0, .L68+24
+ 1218 00c0 FFF7FEFF 		bl	_ZN5daisy6Switch8DebounceEv
+ 1219              	.LVL85:
+  56:MyNewProject.cpp ****         {
+ 1220              		.loc 15 56 9 is_stmt 1 view .LVU305
+ 1221              	.LBB196:
+ 1222              	.LBI196:
+  71:../../libDaisy//src/hid/switch.h **** 
+  72:../../libDaisy//src/hid/switch.h ****     /** \return true if the button was just released */
+  73:../../libDaisy//src/hid/switch.h ****     inline bool FallingEdge() const
+  74:../../libDaisy//src/hid/switch.h ****     {
+  75:../../libDaisy//src/hid/switch.h ****         return updated_ ? state_ == 0x80 : false;
+  76:../../libDaisy//src/hid/switch.h ****     }
+  77:../../libDaisy//src/hid/switch.h **** 
+  78:../../libDaisy//src/hid/switch.h ****     /** \return true if the button is held down (or if the toggle is on) */
+  79:../../libDaisy//src/hid/switch.h ****     inline bool Pressed() const { return state_ == 0xff; }
+ 1223              		.loc 4 79 17 view .LVU306
+ 1224              	.LBB197:
+ 1225              		.loc 4 79 35 view .LVU307
+ 1226              		.loc 4 79 35 is_stmt 0 view .LVU308
+ 1227              	.LBE197:
+ 1228              	.LBE196:
+  56:MyNewProject.cpp ****         {
+ 1229              		.loc 15 56 32 view .LVU309
+ 1230 00c4 99F80A30 		ldrb	r3, [r9, #10]	@ zero_extendqisi2
+ 1231 00c8 FF2B     		cmp	r3, #255
+ 1232 00ca ABD1     		bne	.L57
+  56:MyNewProject.cpp ****         {
+ 1233              		.loc 15 56 32 discriminator 1 view .LVU310
+ 1234 00cc 3B78     		ldrb	r3, [r7]	@ zero_extendqisi2
+ 1235 00ce 002B     		cmp	r3, #0
+ 1236 00d0 ACD1     		bne	.L56
+  58:MyNewProject.cpp ****             delay.stopAll();
+ 1237              		.loc 15 58 13 is_stmt 1 view .LVU311
+  58:MyNewProject.cpp ****             delay.stopAll();
+ 1238              		.loc 15 58 32 is_stmt 0 view .LVU312
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 44
+
+
+ 1239 00d2 0123     		movs	r3, #1
+  59:MyNewProject.cpp ****         }
+ 1240              		.loc 15 59 26 view .LVU313
+ 1241 00d4 0848     		ldr	r0, .L68+4
+  58:MyNewProject.cpp ****             delay.stopAll();
+ 1242              		.loc 15 58 32 view .LVU314
+ 1243 00d6 3B70     		strb	r3, [r7]
+  59:MyNewProject.cpp ****         }
+ 1244              		.loc 15 59 13 is_stmt 1 view .LVU315
+  59:MyNewProject.cpp ****         }
+ 1245              		.loc 15 59 26 is_stmt 0 view .LVU316
+ 1246 00d8 FFF7FEFF 		bl	_ZN6Delayy7stopAllEv
+ 1247              	.LVL86:
+  63:MyNewProject.cpp ****         {
+ 1248              		.loc 15 63 9 is_stmt 1 view .LVU317
+ 1249              	.LBB198:
+ 1250              	.LBI198:
+ 1251              		.loc 4 79 17 view .LVU318
+ 1252              	.LBB199:
+ 1253              		.loc 4 79 35 view .LVU319
+ 1254              		.loc 4 79 35 is_stmt 0 view .LVU320
+ 1255              	.LBE199:
+ 1256              	.LBE198:
+  63:MyNewProject.cpp ****         {
+ 1257              		.loc 15 63 33 view .LVU321
+ 1258 00dc 99F80A30 		ldrb	r3, [r9, #10]	@ zero_extendqisi2
+ 1259 00e0 FF2B     		cmp	r3, #255
+ 1260 00e2 A3D0     		beq	.L56
+ 1261 00e4 9EE7     		b	.L57
+ 1262              	.LVL87:
+ 1263              	.L67:
+  63:MyNewProject.cpp ****         {
+ 1264              		.loc 15 63 33 view .LVU322
+ 1265              	.LBE202:
+ 1266              	.LBE204:
+  87:MyNewProject.cpp **** 
+ 1267              		.loc 15 87 1 view .LVU323
+ 1268 00e6 03B0     		add	sp, sp, #12
+ 1269              		.cfi_def_cfa_offset 44
+ 1270              		@ sp needed
+ 1271 00e8 BDEC028B 		vldm	sp!, {d8}
+ 1272              		.cfi_restore 80
+ 1273              		.cfi_restore 81
+ 1274              		.cfi_def_cfa_offset 36
+ 1275              	.LVL88:
+  87:MyNewProject.cpp **** 
+ 1276              		.loc 15 87 1 view .LVU324
+ 1277 00ec BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 1278              	.LVL89:
+ 1279              	.L64:
+ 1280              		.cfi_def_cfa_offset 0
+ 1281              		.cfi_restore 4
+ 1282              		.cfi_restore 5
+ 1283              		.cfi_restore 6
+ 1284              		.cfi_restore 7
+ 1285              		.cfi_restore 8
+ 1286              		.cfi_restore 9
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 45
+
+
+ 1287              		.cfi_restore 10
+ 1288              		.cfi_restore 11
+ 1289              		.cfi_restore 14
+  87:MyNewProject.cpp **** 
+ 1290              		.loc 15 87 1 view .LVU325
+ 1291 00f0 7047     		bx	lr
+ 1292              	.L69:
+ 1293 00f2 00BF     		.align	2
+ 1294              	.L68:
+ 1295 00f4 00000000 		.word	.LANCHOR14
+ 1296 00f8 00000000 		.word	.LANCHOR13
+ 1297 00fc 00000000 		.word	.LANCHOR12
+ 1298 0100 00000000 		.word	.LANCHOR11
+ 1299 0104 00000000 		.word	.LANCHOR8
+ 1300 0108 00000000 		.word	.LANCHOR4
+ 1301 010c 00000000 		.word	.LANCHOR7
+ 1302 0110 00000000 		.word	.LANCHOR15
+ 1303              		.cfi_endproc
+ 1304              	.LFE4789:
+ 1306              		.section	.text.startup._GLOBAL__sub_I_delay,"ax",%progbits
+ 1307              		.align	1
+ 1308              		.p2align 2,,3
+ 1309              		.syntax unified
+ 1310              		.thumb
+ 1311              		.thumb_func
+ 1312              		.fpu fpv5-d16
+ 1314              	_GLOBAL__sub_I_delay:
+ 1315              	.LFB5361:
+ 1316              		.loc 15 255 1 is_stmt 1 view -0
+ 1317              		.cfi_startproc
+ 1318              		@ args = 0, pretend = 0, frame = 0
+ 1319              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1320              	.LBB239:
+ 1321              	.LBI239:
+ 1322              		.loc 15 255 1 view .LVU327
+ 1323              	.LVL90:
+ 1324              		.loc 15 255 1 is_stmt 0 view .LVU328
+ 1325              	.LBE239:
+ 1326 0000 70B5     		push	{r4, r5, r6, lr}
+ 1327              		.cfi_def_cfa_offset 16
+ 1328              		.cfi_offset 4, -16
+ 1329              		.cfi_offset 5, -12
+ 1330              		.cfi_offset 6, -8
+ 1331              		.cfi_offset 14, -4
+ 1332              	.LBB274:
+ 1333              	.LBB240:
+  11:MyNewProject.cpp **** static Balance balance;
+ 1334              		.loc 15 11 24 view .LVU329
+ 1335 0002 1F4E     		ldr	r6, .L72
+  11:MyNewProject.cpp **** static Balance balance;
+ 1336              		.loc 15 11 12 view .LVU330
+ 1337 0004 1F4C     		ldr	r4, .L72+4
+  10:MyNewProject.cpp **** ToneFilter tone(48000.f);
+ 1338              		.loc 15 10 8 view .LVU331
+ 1339 0006 2048     		ldr	r0, .L72+8
+ 1340 0008 FFF7FEFF 		bl	_ZN6DelayyC1Ev
+ 1341              	.LVL91:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 46
+
+
+  11:MyNewProject.cpp **** static Balance balance;
+ 1342              		.loc 15 11 24 view .LVU332
+ 1343 000c 9FED1F0A 		vldr.32	s0, .L72+12
+ 1344 0010 3046     		mov	r0, r6
+  14:MyNewProject.cpp **** Switch TEMPO_BUTTON;              // The tap tempo button
+ 1345              		.loc 15 14 8 view .LVU333
+ 1346 0012 1F4D     		ldr	r5, .L72+16
+  11:MyNewProject.cpp **** static Balance balance;
+ 1347              		.loc 15 11 24 view .LVU334
+ 1348 0014 FFF7FEFF 		bl	_ZN10ToneFilterC1Ef
+ 1349              	.LVL92:
+  11:MyNewProject.cpp **** static Balance balance;
+ 1350              		.loc 15 11 12 view .LVU335
+ 1351 0018 2246     		mov	r2, r4
+ 1352 001a 1E49     		ldr	r1, .L72+20
+ 1353 001c 3046     		mov	r0, r6
+ 1354 001e FFF7FEFF 		bl	__aeabi_atexit
+ 1355              	.LVL93:
+ 1356              	.LBB241:
+ 1357              	.LBI241:
+  22:../../DaisySP//Source/Dynamics/balance.h ****     ~Balance() {}
+ 1358              		.loc 1 22 5 is_stmt 1 view .LVU336
+  22:../../DaisySP//Source/Dynamics/balance.h ****     ~Balance() {}
+ 1359              		.loc 1 22 5 is_stmt 0 view .LVU337
+ 1360              	.LBE241:
+  12:MyNewProject.cpp **** 
+ 1361              		.loc 15 12 16 view .LVU338
+ 1362 0022 2246     		mov	r2, r4
+ 1363 0024 1C49     		ldr	r1, .L72+24
+ 1364 0026 1D48     		ldr	r0, .L72+28
+ 1365 0028 FFF7FEFF 		bl	__aeabi_atexit
+ 1366              	.LVL94:
+ 1367              	.LBB242:
+ 1368              	.LBI242:
+  41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
+ 1369              		.loc 4 41 5 is_stmt 1 view .LVU339
+  41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
+ 1370              		.loc 4 41 5 is_stmt 0 view .LVU340
+ 1371              	.LBE242:
+  14:MyNewProject.cpp **** Switch TEMPO_BUTTON;              // The tap tempo button
+ 1372              		.loc 15 14 8 view .LVU341
+ 1373 002c 2246     		mov	r2, r4
+ 1374 002e 2946     		mov	r1, r5
+ 1375 0030 1B48     		ldr	r0, .L72+32
+ 1376 0032 FFF7FEFF 		bl	__aeabi_atexit
+ 1377              	.LVL95:
+ 1378              	.LBB243:
+ 1379              	.LBI243:
+  41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
+ 1380              		.loc 4 41 5 is_stmt 1 view .LVU342
+  41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
+ 1381              		.loc 4 41 5 is_stmt 0 view .LVU343
+ 1382              	.LBE243:
+  15:MyNewProject.cpp **** Switch headSwitches[4];           // One switch for each head
+ 1383              		.loc 15 15 8 view .LVU344
+ 1384 0036 2246     		mov	r2, r4
+ 1385 0038 2946     		mov	r1, r5
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 47
+
+
+ 1386 003a 1A48     		ldr	r0, .L72+36
+ 1387 003c FFF7FEFF 		bl	__aeabi_atexit
+ 1388              	.LVL96:
+  16:MyNewProject.cpp **** static DaisySeed hw;              // The daisy seed harfware
+ 1389              		.loc 15 16 22 is_stmt 1 view .LVU345
+  16:MyNewProject.cpp **** static DaisySeed hw;              // The daisy seed harfware
+ 1390              		.loc 15 16 8 is_stmt 0 view .LVU346
+ 1391 0040 2246     		mov	r2, r4
+ 1392 0042 1949     		ldr	r1, .L72+40
+ 1393 0044 0020     		movs	r0, #0
+ 1394 0046 FFF7FEFF 		bl	__aeabi_atexit
+ 1395              	.LVL97:
+ 1396              	.LBB244:
+ 1397              	.LBI244:
+  21:../../libDaisy//src/daisy_seed.h ****     ~DaisySeed() {}
+ 1398              		.loc 7 21 5 is_stmt 1 view .LVU347
+ 1399              	.LBB245:
+ 1400              	.LBB246:
+ 1401              	.LBI246:
+ 1402              		.file 16 "../../libDaisy//src/per/qspi.h"
+   1:../../libDaisy//src/per/qspi.h **** #ifndef DSY_QSPI
+   2:../../libDaisy//src/per/qspi.h **** #define DSY_QSPI /**< Macro */
+   3:../../libDaisy//src/per/qspi.h **** 
+   4:../../libDaisy//src/per/qspi.h **** #ifndef UNIT_TEST // for unit tests, a dummy implementation
+   5:../../libDaisy//src/per/qspi.h **** 
+   6:../../libDaisy//src/per/qspi.h **** #include <cstdint>
+   7:../../libDaisy//src/per/qspi.h **** #include "daisy_core.h" // Added for dsy_gpio_pin typedef
+   8:../../libDaisy//src/per/qspi.h **** 
+   9:../../libDaisy//src/per/qspi.h **** #define DSY_QSPI_TEXT       \
+  10:../../libDaisy//src/per/qspi.h ****     __attribute__((section( \
+  11:../../libDaisy//src/per/qspi.h ****         ".qspiflash_text"))) /**< used for reading memory in memory_mapped mode. */
+  12:../../libDaisy//src/per/qspi.h **** #define DSY_QSPI_DATA       \
+  13:../../libDaisy//src/per/qspi.h ****     __attribute__((section( \
+  14:../../libDaisy//src/per/qspi.h ****         ".qspiflash_data"))) /**< used for reading memory in memory_mapped mode. */
+  15:../../libDaisy//src/per/qspi.h **** #define DSY_QSPI_BSS        \
+  16:../../libDaisy//src/per/qspi.h ****     __attribute__((section( \
+  17:../../libDaisy//src/per/qspi.h ****         ".qspiflash_bss"))) /**< used for reading memory in memory_mapped mode. */
+  18:../../libDaisy//src/per/qspi.h **** 
+  19:../../libDaisy//src/per/qspi.h **** namespace daisy
+  20:../../libDaisy//src/per/qspi.h **** {
+  21:../../libDaisy//src/per/qspi.h **** /** @addtogroup serial
+  22:../../libDaisy//src/per/qspi.h **** @{
+  23:../../libDaisy//src/per/qspi.h **** */
+  24:../../libDaisy//src/per/qspi.h **** 
+  25:../../libDaisy//src/per/qspi.h **** /** 
+  26:../../libDaisy//src/per/qspi.h ****  Driver for QSPI peripheral to interface with external flash memory. \n 
+  27:../../libDaisy//src/per/qspi.h ****     Currently supported QSPI Devices: \n 
+  28:../../libDaisy//src/per/qspi.h ****     * IS25LP080D
+  29:../../libDaisy//src/per/qspi.h **** */
+  30:../../libDaisy//src/per/qspi.h **** class QSPIHandle
+  31:../../libDaisy//src/per/qspi.h **** {
+  32:../../libDaisy//src/per/qspi.h ****   public:
+  33:../../libDaisy//src/per/qspi.h ****     enum Result
+  34:../../libDaisy//src/per/qspi.h ****     {
+  35:../../libDaisy//src/per/qspi.h ****         OK = 0,
+  36:../../libDaisy//src/per/qspi.h ****         ERR
+  37:../../libDaisy//src/per/qspi.h ****     };
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 48
+
+
+  38:../../libDaisy//src/per/qspi.h **** 
+  39:../../libDaisy//src/per/qspi.h ****     /** Indicates the current status of the module. 
+  40:../../libDaisy//src/per/qspi.h ****          *  Warnings are indicated by a leading W.
+  41:../../libDaisy//src/per/qspi.h ****          *  Errors are indicated by a leading E and cause an immediate exit.
+  42:../../libDaisy//src/per/qspi.h ****          * 
+  43:../../libDaisy//src/per/qspi.h ****          *  \param GOOD - No errors have been reported.
+  44:../../libDaisy//src/per/qspi.h ****          *  \param E_HAL_ERROR - HAL code did not return HAL_OK.
+  45:../../libDaisy//src/per/qspi.h ****          *  \param E_SWITCHING_MODES - An error was encountered while switching QSPI peripheral mod
+  46:../../libDaisy//src/per/qspi.h ****          *  \param E_INVALID_MODE - QSPI should not be written to while the program is executing fr
+  47:../../libDaisy//src/per/qspi.h ****          */
+  48:../../libDaisy//src/per/qspi.h ****     enum Status
+  49:../../libDaisy//src/per/qspi.h ****     {
+  50:../../libDaisy//src/per/qspi.h ****         GOOD = 0,
+  51:../../libDaisy//src/per/qspi.h ****         E_HAL_ERROR,
+  52:../../libDaisy//src/per/qspi.h ****         E_SWITCHING_MODES,
+  53:../../libDaisy//src/per/qspi.h ****         E_INVALID_MODE,
+  54:../../libDaisy//src/per/qspi.h ****     };
+  55:../../libDaisy//src/per/qspi.h **** 
+  56:../../libDaisy//src/per/qspi.h ****     /** Configuration structure for interfacing with QSPI Driver */
+  57:../../libDaisy//src/per/qspi.h ****     struct Config
+  58:../../libDaisy//src/per/qspi.h ****     {
+  59:../../libDaisy//src/per/qspi.h ****         /** Flash Devices supported. (Both of these are more-or-less the same, just different sizes
+  60:../../libDaisy//src/per/qspi.h ****         enum Device
+  61:../../libDaisy//src/per/qspi.h ****         {
+  62:../../libDaisy//src/per/qspi.h ****             IS25LP080D,  /**< & */
+  63:../../libDaisy//src/per/qspi.h ****             IS25LP064A,  /**< & */
+  64:../../libDaisy//src/per/qspi.h ****             DEVICE_LAST, /**< & */
+  65:../../libDaisy//src/per/qspi.h ****         };
+  66:../../libDaisy//src/per/qspi.h **** 
+  67:../../libDaisy//src/per/qspi.h ****         /** 
+  68:../../libDaisy//src/per/qspi.h ****         Modes of operation.
+  69:../../libDaisy//src/per/qspi.h ****         Memory Mapped mode: QSPI configured so that the QSPI can be
+  70:../../libDaisy//src/per/qspi.h ****         read from starting address 0x90000000. Writing is not
+  71:../../libDaisy//src/per/qspi.h ****         possible in this mode. \n 
+  72:../../libDaisy//src/per/qspi.h ****         Indirect Polling mode: Device driver enabled. 
+  73:../../libDaisy//src/per/qspi.h ****         */
+  74:../../libDaisy//src/per/qspi.h ****         enum Mode
+  75:../../libDaisy//src/per/qspi.h ****         {
+  76:../../libDaisy//src/per/qspi.h ****             MEMORY_MAPPED,    /**< & */
+  77:../../libDaisy//src/per/qspi.h ****             INDIRECT_POLLING, /**< & */
+  78:../../libDaisy//src/per/qspi.h ****             MODE_LAST,
+  79:../../libDaisy//src/per/qspi.h ****         };
+  80:../../libDaisy//src/per/qspi.h **** 
+  81:../../libDaisy//src/per/qspi.h ****         //SCK,  CE# (active low)
+  82:../../libDaisy//src/per/qspi.h ****         struct
+  83:../../libDaisy//src/per/qspi.h ****         {
+  84:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin io0; /**< & */
+  85:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin io1; /**< & */
+  86:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin io2; /**< & */
+  87:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin io3; /**< & */
+  88:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin clk; /**< & */
+  89:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin ncs; /**< & */
+  90:../../libDaisy//src/per/qspi.h ****         } pin_config;
+  91:../../libDaisy//src/per/qspi.h **** 
+  92:../../libDaisy//src/per/qspi.h ****         Device device;
+  93:../../libDaisy//src/per/qspi.h ****         Mode   mode;
+  94:../../libDaisy//src/per/qspi.h ****     };
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 49
+
+
+  95:../../libDaisy//src/per/qspi.h **** 
+  96:../../libDaisy//src/per/qspi.h ****     /** 
+  97:../../libDaisy//src/per/qspi.h ****         Initializes QSPI peripheral, and Resets, and prepares memory for access.
+  98:../../libDaisy//src/per/qspi.h ****         \param config should be populated with the mode, device and pin_config before calling this 
+  99:../../libDaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
+ 100:../../libDaisy//src/per/qspi.h ****         */
+ 101:../../libDaisy//src/per/qspi.h ****     Result Init(const Config& config);
+ 102:../../libDaisy//src/per/qspi.h **** 
+ 103:../../libDaisy//src/per/qspi.h ****     /** Returns the current config. */
+ 104:../../libDaisy//src/per/qspi.h ****     const Config& GetConfig() const;
+ 105:../../libDaisy//src/per/qspi.h **** 
+ 106:../../libDaisy//src/per/qspi.h ****     // Couldn't this just be called before anything else in init? That
+ 107:../../libDaisy//src/per/qspi.h ****     // would make manually calling it unnecessary.
+ 108:../../libDaisy//src/per/qspi.h ****     /** 
+ 109:../../libDaisy//src/per/qspi.h ****         Deinitializes the peripheral
+ 110:../../libDaisy//src/per/qspi.h ****         This should be called before reinitializing QSPI in a different mode.
+ 111:../../libDaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
+ 112:../../libDaisy//src/per/qspi.h ****         */
+ 113:../../libDaisy//src/per/qspi.h ****     Result DeInit();
+ 114:../../libDaisy//src/per/qspi.h **** 
+ 115:../../libDaisy//src/per/qspi.h ****     /** 
+ 116:../../libDaisy//src/per/qspi.h ****         Writes a single page to to the specified address on the QSPI chip.
+ 117:../../libDaisy//src/per/qspi.h ****         For IS25LP*, page size is 256 bytes.
+ 118:../../libDaisy//src/per/qspi.h ****         \param address Address to write to
+ 119:../../libDaisy//src/per/qspi.h ****         \param size Buffer size
+ 120:../../libDaisy//src/per/qspi.h ****         \param buffer Buffer to write
+ 121:../../libDaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
+ 122:../../libDaisy//src/per/qspi.h ****         */
+ 123:../../libDaisy//src/per/qspi.h ****     Result WritePage(uint32_t address, uint32_t size, uint8_t* buffer);
+ 124:../../libDaisy//src/per/qspi.h **** 
+ 125:../../libDaisy//src/per/qspi.h ****     /** 
+ 126:../../libDaisy//src/per/qspi.h ****         Writes data in buffer to to the QSPI. Starting at address to address+size 
+ 127:../../libDaisy//src/per/qspi.h ****         \param address Address to write to
+ 128:../../libDaisy//src/per/qspi.h ****         \param size Buffer size
+ 129:../../libDaisy//src/per/qspi.h ****         \param buffer Buffer to write
+ 130:../../libDaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
+ 131:../../libDaisy//src/per/qspi.h ****         */
+ 132:../../libDaisy//src/per/qspi.h ****     Result Write(uint32_t address, uint32_t size, uint8_t* buffer);
+ 133:../../libDaisy//src/per/qspi.h **** 
+ 134:../../libDaisy//src/per/qspi.h ****     /** 
+ 135:../../libDaisy//src/per/qspi.h ****         Erases the area specified on the chip.
+ 136:../../libDaisy//src/per/qspi.h ****         Erasures will happen by 4K, 32K or 64K increments.
+ 137:../../libDaisy//src/per/qspi.h ****         Smallest erase possible is 4kB at a time. (on IS25LP*)
+ 138:../../libDaisy//src/per/qspi.h ****         \param start_addr Address to begin erasing from
+ 139:../../libDaisy//src/per/qspi.h ****         \param end_addr  Address to stop erasing at
+ 140:../../libDaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
+ 141:../../libDaisy//src/per/qspi.h ****         */
+ 142:../../libDaisy//src/per/qspi.h ****     Result Erase(uint32_t start_addr, uint32_t end_addr);
+ 143:../../libDaisy//src/per/qspi.h **** 
+ 144:../../libDaisy//src/per/qspi.h ****     /**  
+ 145:../../libDaisy//src/per/qspi.h ****          Erases a single sector of the chip.  
+ 146:../../libDaisy//src/per/qspi.h ****         TODO: Document the size of this function. 
+ 147:../../libDaisy//src/per/qspi.h ****         \param address Address of sector to erase
+ 148:../../libDaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
+ 149:../../libDaisy//src/per/qspi.h ****         */
+ 150:../../libDaisy//src/per/qspi.h ****     Result EraseSector(uint32_t address);
+ 151:../../libDaisy//src/per/qspi.h **** 
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 50
+
+
+ 152:../../libDaisy//src/per/qspi.h ****     /** Returns the current class status. Useful for debugging.
+ 153:../../libDaisy//src/per/qspi.h ****      *  \returns Status
+ 154:../../libDaisy//src/per/qspi.h ****      */
+ 155:../../libDaisy//src/per/qspi.h ****     Status GetStatus();
+ 156:../../libDaisy//src/per/qspi.h **** 
+ 157:../../libDaisy//src/per/qspi.h ****     /** Returns a pointer to the actual memory used 
+ 158:../../libDaisy//src/per/qspi.h ****      *  The memory at this address is read-only
+ 159:../../libDaisy//src/per/qspi.h ****      *  to write to it use the Write function.
+ 160:../../libDaisy//src/per/qspi.h ****      * 
+ 161:../../libDaisy//src/per/qspi.h ****      *  \param offset returns the pointer starting this 
+ 162:../../libDaisy//src/per/qspi.h ****      *                many bytes into the memory
+ 163:../../libDaisy//src/per/qspi.h ****     */
+ 164:../../libDaisy//src/per/qspi.h ****     void* GetData(uint32_t offset = 0);
+ 165:../../libDaisy//src/per/qspi.h **** 
+ 166:../../libDaisy//src/per/qspi.h ****     QSPIHandle() : pimpl_(nullptr) {}
+ 1403              		.loc 16 166 5 view .LVU348
+ 1404              	.LBB247:
+ 1405              	.LBB248:
+ 1406              		.loc 16 166 34 is_stmt 0 view .LVU349
+ 1407 004a 0025     		movs	r5, #0
+ 1408 004c 1748     		ldr	r0, .L72+44
+ 1409              	.LBE248:
+ 1410              	.LBE247:
+ 1411              	.LBE246:
+ 1412              	.LBE245:
+ 1413              	.LBE244:
+  17:MyNewProject.cpp **** static CrossFade cfade;           // Used to blend the wet/dry and maintain a constant mixed volume
+ 1414              		.loc 15 17 18 view .LVU350
+ 1415 004e 2246     		mov	r2, r4
+ 1416 0050 1749     		ldr	r1, .L72+48
+ 1417              	.LBB262:
+ 1418              	.LBB261:
+ 1419              	.LBB251:
+ 1420              	.LBB250:
+ 1421              	.LBB249:
+ 1422              		.loc 16 166 34 view .LVU351
+ 1423 0052 0560     		str	r5, [r0]
+ 1424              	.LVL98:
+ 1425              		.loc 16 166 34 view .LVU352
+ 1426              	.LBE249:
+ 1427              	.LBE250:
+ 1428              	.LBE251:
+ 1429              	.LBB252:
+ 1430              	.LBI252:
+  95:../../libDaisy//src/hid/audio.h ****     ~AudioHandle() {}
+ 1431              		.loc 11 95 5 is_stmt 1 view .LVU353
+ 1432              	.LBB253:
+ 1433              	.LBB254:
+  95:../../libDaisy//src/hid/audio.h ****     ~AudioHandle() {}
+ 1434              		.loc 11 95 35 is_stmt 0 view .LVU354
+ 1435 0054 4561     		str	r5, [r0, #20]
+ 1436              	.LVL99:
+  95:../../libDaisy//src/hid/audio.h ****     ~AudioHandle() {}
+ 1437              		.loc 11 95 35 view .LVU355
+ 1438              	.LBE254:
+ 1439              	.LBE253:
+ 1440              	.LBE252:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 51
+
+
+ 1441              	.LBB255:
+ 1442              	.LBI255:
+  92:../../libDaisy//src/per/adc.h ****     ~AdcHandle() {}
+ 1443              		.loc 10 92 5 is_stmt 1 view .LVU356
+  92:../../libDaisy//src/per/adc.h ****     ~AdcHandle() {}
+ 1444              		.loc 10 92 5 is_stmt 0 view .LVU357
+ 1445              	.LBE255:
+ 1446              	.LBB256:
+ 1447              	.LBI256:
+ 1448              		.file 17 "../../libDaisy//src/per/dac.h"
+   1:../../libDaisy//src/per/dac.h **** #pragma once
+   2:../../libDaisy//src/per/dac.h **** #ifndef DSY_DAC_H
+   3:../../libDaisy//src/per/dac.h **** #define DSY_DAC_H
+   4:../../libDaisy//src/per/dac.h **** 
+   5:../../libDaisy//src/per/dac.h **** #include "daisy_core.h"
+   6:../../libDaisy//src/per/dac.h **** 
+   7:../../libDaisy//src/per/dac.h **** namespace daisy
+   8:../../libDaisy//src/per/dac.h **** {
+   9:../../libDaisy//src/per/dac.h **** /** @brief DAC handle for Built-in DAC Peripheral 
+  10:../../libDaisy//src/per/dac.h ****  *  @ingroup per_analog
+  11:../../libDaisy//src/per/dac.h ****  ** 
+  12:../../libDaisy//src/per/dac.h ****  ** For now only Normal Mode is supported,
+  13:../../libDaisy//src/per/dac.h ****  ** Sample and hold mode provides reduced power consumption, but requires a bit more setup.
+  14:../../libDaisy//src/per/dac.h ****  **
+  15:../../libDaisy//src/per/dac.h ****  ** For now connecting the DAC through other internal peripherals is also not supported.
+  16:../../libDaisy//src/per/dac.h ****  **
+  17:../../libDaisy//src/per/dac.h ****  ** Since the DAC channels have dedicated pins we don't need to pass in a pin config like with
+  18:../../libDaisy//src/per/dac.h ****  ** other modules. However, it is still important to not try to use the DAC pins for anything else.
+  19:../../libDaisy//src/per/dac.h ****  ** DAC Channel 1 is on PA4, and DAC Channel 2 is on PA5
+  20:../../libDaisy//src/per/dac.h ****  ***/
+  21:../../libDaisy//src/per/dac.h **** class DacHandle
+  22:../../libDaisy//src/per/dac.h **** {
+  23:../../libDaisy//src/per/dac.h ****   public:
+  24:../../libDaisy//src/per/dac.h ****     /** Return Values for the DacHandle class */
+  25:../../libDaisy//src/per/dac.h ****     enum class Result
+  26:../../libDaisy//src/per/dac.h ****     {
+  27:../../libDaisy//src/per/dac.h ****         OK,
+  28:../../libDaisy//src/per/dac.h ****         ERR,
+  29:../../libDaisy//src/per/dac.h ****     };
+  30:../../libDaisy//src/per/dac.h **** 
+  31:../../libDaisy//src/per/dac.h ****     /** Selects which channel(s) will be configured for use. */
+  32:../../libDaisy//src/per/dac.h ****     enum class Channel
+  33:../../libDaisy//src/per/dac.h ****     {
+  34:../../libDaisy//src/per/dac.h ****         ONE,
+  35:../../libDaisy//src/per/dac.h ****         TWO,
+  36:../../libDaisy//src/per/dac.h ****         BOTH,
+  37:../../libDaisy//src/per/dac.h ****     };
+  38:../../libDaisy//src/per/dac.h **** 
+  39:../../libDaisy//src/per/dac.h ****     /** Sets the Mode for the DAC channels.
+  40:../../libDaisy//src/per/dac.h ****      **
+  41:../../libDaisy//src/per/dac.h ****      ** Polling mode uses the blocking mode to transmit a single value at a time.
+  42:../../libDaisy//src/per/dac.h ****      **
+  43:../../libDaisy//src/per/dac.h ****      ** DMA mode uses a buffer, and periodically transmits it triggering a 
+  44:../../libDaisy//src/per/dac.h ****      ** callback to fill the buffer when it is ready for more samples.
+  45:../../libDaisy//src/per/dac.h ****      ***/
+  46:../../libDaisy//src/per/dac.h ****     enum class Mode
+  47:../../libDaisy//src/per/dac.h ****     {
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 52
+
+
+  48:../../libDaisy//src/per/dac.h ****         POLLING,
+  49:../../libDaisy//src/per/dac.h ****         DMA,
+  50:../../libDaisy//src/per/dac.h ****     };
+  51:../../libDaisy//src/per/dac.h **** 
+  52:../../libDaisy//src/per/dac.h ****     /** Sets the number of bits per sample transmitted out of the DAC.
+  53:../../libDaisy//src/per/dac.h ****      ** The output range will be: 0V - VDDA
+  54:../../libDaisy//src/per/dac.h ****      ** The resolution will be roughly: bitdepth / (VDDA - 0V) 
+  55:../../libDaisy//src/per/dac.h ****      ***/
+  56:../../libDaisy//src/per/dac.h ****     enum class BitDepth
+  57:../../libDaisy//src/per/dac.h ****     {
+  58:../../libDaisy//src/per/dac.h ****         BITS_8,
+  59:../../libDaisy//src/per/dac.h ****         BITS_12
+  60:../../libDaisy//src/per/dac.h ****     };
+  61:../../libDaisy//src/per/dac.h **** 
+  62:../../libDaisy//src/per/dac.h ****     /** Sets whether the DAC output is buffered for higher drive ability. */
+  63:../../libDaisy//src/per/dac.h ****     enum class BufferState
+  64:../../libDaisy//src/per/dac.h ****     {
+  65:../../libDaisy//src/per/dac.h ****         ENABLED,
+  66:../../libDaisy//src/per/dac.h ****         DISABLED,
+  67:../../libDaisy//src/per/dac.h ****     };
+  68:../../libDaisy//src/per/dac.h **** 
+  69:../../libDaisy//src/per/dac.h ****     /** Configuration structure for initializing the DAC structure. */
+  70:../../libDaisy//src/per/dac.h ****     struct Config
+  71:../../libDaisy//src/per/dac.h ****     {
+  72:../../libDaisy//src/per/dac.h ****         /** Target Samplerate in Hz used to configure the internal 
+  73:../../libDaisy//src/per/dac.h ****          ** timebase for DMA mode. Does nothing in POLLING mode.
+  74:../../libDaisy//src/per/dac.h ****          ** If the value is 0 at Init time this will default to 48000Hz 
+  75:../../libDaisy//src/per/dac.h ****          ** otherwise the driver will attempt meet the target.*/
+  76:../../libDaisy//src/per/dac.h ****         uint32_t target_samplerate;
+  77:../../libDaisy//src/per/dac.h **** 
+  78:../../libDaisy//src/per/dac.h ****         Channel     chn;
+  79:../../libDaisy//src/per/dac.h ****         Mode        mode;
+  80:../../libDaisy//src/per/dac.h ****         BitDepth    bitdepth;
+  81:../../libDaisy//src/per/dac.h ****         BufferState buff_state;
+  82:../../libDaisy//src/per/dac.h ****     };
+  83:../../libDaisy//src/per/dac.h **** 
+  84:../../libDaisy//src/per/dac.h ****     DacHandle() : pimpl_(nullptr) {}
+ 1449              		.loc 17 84 5 is_stmt 1 view .LVU358
+ 1450              	.LBB257:
+ 1451              	.LBB258:
+ 1452              		.loc 17 84 33 is_stmt 0 view .LVU359
+ 1453 0056 0562     		str	r5, [r0, #32]
+ 1454              	.LVL100:
+ 1455              		.loc 17 84 33 view .LVU360
+ 1456              	.LBE258:
+ 1457              	.LBE257:
+ 1458              	.LBE256:
+ 1459              	.LBB259:
+ 1460              	.LBI259:
+  40:../../libDaisy//src/hid/usb.h **** 
+ 1461              		.loc 9 40 5 is_stmt 1 view .LVU361
+  40:../../libDaisy//src/hid/usb.h **** 
+ 1462              		.loc 9 40 5 is_stmt 0 view .LVU362
+ 1463              	.LBE259:
+ 1464              	.LBB260:
+ 1465              	.LBI260:
+  77:../../libDaisy//src/sys/system.h ****     ~System() {}
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 53
+
+
+ 1466              		.loc 8 77 5 is_stmt 1 view .LVU363
+  77:../../libDaisy//src/sys/system.h ****     ~System() {}
+ 1467              		.loc 8 77 5 is_stmt 0 view .LVU364
+ 1468              	.LBE260:
+ 1469              	.LBE261:
+ 1470              	.LBE262:
+  17:MyNewProject.cpp **** static CrossFade cfade;           // Used to blend the wet/dry and maintain a constant mixed volume
+ 1471              		.loc 15 17 18 view .LVU365
+ 1472 0058 FFF7FEFF 		bl	__aeabi_atexit
+ 1473              	.LVL101:
+ 1474              	.LBB263:
+ 1475              	.LBI263:
+  36:../../DaisySP//Source/Dynamics/crossfade.h ****     ~CrossFade() {}
+ 1476              		.loc 2 36 5 is_stmt 1 view .LVU366
+  36:../../DaisySP//Source/Dynamics/crossfade.h ****     ~CrossFade() {}
+ 1477              		.loc 2 36 5 is_stmt 0 view .LVU367
+ 1478              	.LBE263:
+  18:MyNewProject.cpp **** 
+ 1479              		.loc 15 18 18 view .LVU368
+ 1480 005c 2246     		mov	r2, r4
+ 1481 005e 1549     		ldr	r1, .L72+52
+ 1482 0060 1548     		ldr	r0, .L72+56
+ 1483 0062 FFF7FEFF 		bl	__aeabi_atexit
+ 1484              	.LVL102:
+ 1485              	.LBB264:
+ 1486              	.LBI264:
+  97:../../libDaisy//src/per/tim.h ****     TimerHandle(const TimerHandle& other) = default;
+ 1487              		.loc 3 97 5 is_stmt 1 view .LVU369
+ 1488              	.LBB265:
+ 1489              	.LBB266:
+  97:../../libDaisy//src/per/tim.h ****     TimerHandle(const TimerHandle& other) = default;
+ 1490              		.loc 3 97 35 is_stmt 0 view .LVU370
+ 1491 0066 1548     		ldr	r0, .L72+60
+ 1492              	.LBE266:
+ 1493              	.LBE265:
+ 1494              	.LBE264:
+  28:MyNewProject.cpp **** TimerHandle::Config* configPtr;   // Pointer to config for timer, need because for some reason it w
+ 1495              		.loc 15 28 13 view .LVU371
+ 1496 0068 2246     		mov	r2, r4
+ 1497 006a 1549     		ldr	r1, .L72+64
+ 1498              	.LBB269:
+ 1499              	.LBB268:
+ 1500              	.LBB267:
+  97:../../libDaisy//src/per/tim.h ****     TimerHandle(const TimerHandle& other) = default;
+ 1501              		.loc 3 97 35 view .LVU372
+ 1502 006c 0560     		str	r5, [r0]
+ 1503              	.LVL103:
+  97:../../libDaisy//src/per/tim.h ****     TimerHandle(const TimerHandle& other) = default;
+ 1504              		.loc 3 97 35 view .LVU373
+ 1505              	.LBE267:
+ 1506              	.LBE268:
+ 1507              	.LBE269:
+  28:MyNewProject.cpp **** TimerHandle::Config* configPtr;   // Pointer to config for timer, need because for some reason it w
+ 1508              		.loc 15 28 13 view .LVU374
+ 1509 006e FFF7FEFF 		bl	__aeabi_atexit
+ 1510              	.LVL104:
+ 1511              	.LBB270:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 54
+
+
+ 1512              	.LBI270:
+  25:../../libDaisy//src/hid/parameter.h ****     /** Destructor */
+ 1513              		.loc 5 25 5 is_stmt 1 view .LVU375
+ 1514              	.LBB271:
+ 1515              	.LBB272:
+ 1516              	.LBI272:
+  21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
+ 1517              		.loc 6 21 5 view .LVU376
+  21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
+ 1518              		.loc 6 21 5 is_stmt 0 view .LVU377
+ 1519              	.LBE272:
+ 1520              	.LBE271:
+ 1521              	.LBE270:
+  30:MyNewProject.cpp **** 
+ 1522              		.loc 15 30 11 view .LVU378
+ 1523 0072 2246     		mov	r2, r4
+ 1524 0074 1349     		ldr	r1, .L72+68
+ 1525 0076 1448     		ldr	r0, .L72+72
+ 1526              	.LBE240:
+ 1527              	.LBE274:
+ 1528              		.loc 15 255 1 view .LVU379
+ 1529 0078 BDE87040 		pop	{r4, r5, r6, lr}
+ 1530              		.cfi_restore 14
+ 1531              		.cfi_restore 6
+ 1532              		.cfi_restore 5
+ 1533              		.cfi_restore 4
+ 1534              		.cfi_def_cfa_offset 0
+ 1535              	.LBB275:
+ 1536              	.LBB273:
+  30:MyNewProject.cpp **** 
+ 1537              		.loc 15 30 11 view .LVU380
+ 1538 007c FFF7FEBF 		b	__aeabi_atexit
+ 1539              	.LVL105:
+ 1540              	.L73:
+ 1541              		.align	2
+ 1542              	.L72:
+ 1543 0080 00000000 		.word	.LANCHOR12
+ 1544 0084 00000000 		.word	__dso_handle
+ 1545 0088 00000000 		.word	.LANCHOR13
+ 1546 008c 00803B47 		.word	1195081728
+ 1547 0090 00000000 		.word	_ZN5daisy6SwitchD1Ev
+ 1548 0094 00000000 		.word	_ZN10ToneFilterD1Ev
+ 1549 0098 00000000 		.word	_ZN7daisysp7BalanceD1Ev
+ 1550 009c 00000000 		.word	.LANCHOR11
+ 1551 00a0 00000000 		.word	.LANCHOR7
+ 1552 00a4 00000000 		.word	.LANCHOR3
+ 1553 00a8 00000000 		.word	__tcf_0
+ 1554 00ac 00000000 		.word	.LANCHOR6
+ 1555 00b0 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
+ 1556 00b4 00000000 		.word	_ZN7daisysp9CrossFadeD1Ev
+ 1557 00b8 00000000 		.word	.LANCHOR8
+ 1558 00bc 00000000 		.word	.LANCHOR0
+ 1559 00c0 00000000 		.word	_ZN5daisy11TimerHandleD1Ev
+ 1560 00c4 00000000 		.word	_ZN5daisy9ParameterD1Ev
+ 1561 00c8 00000000 		.word	.LANCHOR10
+ 1562              	.LBE273:
+ 1563              	.LBE275:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 55
+
+
+ 1564              		.cfi_endproc
+ 1565              	.LFE5361:
+ 1567              		.section	.init_array,"aw",%init_array
+ 1568              		.align	2
+ 1569 0000 00000000 		.word	_GLOBAL__sub_I_delay(target1)
+ 1570              		.global	feedbackKnob
+ 1571              		.global	configPtr
+ 1572              		.global	TIMER
+ 1573              		.global	TAPPING
+ 1574              		.global	BPM
+ 1575              		.global	onButtonWasPressed
+ 1576              		.global	drywet_ratio
+ 1577              		.global	MAX_FEEDBACK
+ 1578              		.global	headSwitches
+ 1579              		.global	TEMPO_BUTTON
+ 1580              		.global	ON_BUTTON
+ 1581              		.global	tone
+ 1582              		.global	delay
+ 1583              		.section	.bss.ON_BUTTON,"aw",%nobits
+ 1584              		.align	2
+ 1585              		.set	.LANCHOR7,. + 0
+ 1588              	ON_BUTTON:
+ 1589 0000 00000000 		.space	16
+ 1589      00000000 
+ 1589      00000000 
+ 1589      00000000 
+ 1590              		.section	.bss.TAPPING,"aw",%nobits
+ 1591              		.set	.LANCHOR1,. + 0
+ 1594              	TAPPING:
+ 1595 0000 00       		.space	1
+ 1596              		.section	.bss.TEMPO_BUTTON,"aw",%nobits
+ 1597              		.align	2
+ 1598              		.set	.LANCHOR3,. + 0
+ 1601              	TEMPO_BUTTON:
+ 1602 0000 00000000 		.space	16
+ 1602      00000000 
+ 1602      00000000 
+ 1602      00000000 
+ 1603              		.section	.bss.TIMER,"aw",%nobits
+ 1604              		.align	2
+ 1605              		.set	.LANCHOR0,. + 0
+ 1608              	TIMER:
+ 1609 0000 00000000 		.space	4
+ 1610              		.section	.bss._ZL2hw,"aw",%nobits
+ 1611              		.align	2
+ 1612              		.set	.LANCHOR6,. + 0
+ 1615              	_ZL2hw:
+ 1616 0000 00000000 		.space	60
+ 1616      00000000 
+ 1616      00000000 
+ 1616      00000000 
+ 1616      00000000 
+ 1617              		.section	.bss._ZL5cfade,"aw",%nobits
+ 1618              		.align	2
+ 1619              		.set	.LANCHOR8,. + 0
+ 1622              	_ZL5cfade:
+ 1623 0000 00000000 		.space	8
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 56
+
+
+ 1623      00000000 
+ 1624              		.section	.bss._ZL7balance,"aw",%nobits
+ 1625              		.align	2
+ 1626              		.set	.LANCHOR11,. + 0
+ 1629              	_ZL7balance:
+ 1630 0000 00000000 		.space	28
+ 1630      00000000 
+ 1630      00000000 
+ 1630      00000000 
+ 1630      00000000 
+ 1631              		.section	.bss.configPtr,"aw",%nobits
+ 1632              		.align	2
+ 1633              		.set	.LANCHOR2,. + 0
+ 1636              	configPtr:
+ 1637 0000 00000000 		.space	4
+ 1638              		.section	.bss.delay,"aw",%nobits
+ 1639              		.align	2
+ 1640              		.set	.LANCHOR13,. + 0
+ 1643              	delay:
+ 1644 0000 00000000 		.space	4
+ 1645              		.section	.bss.feedbackKnob,"aw",%nobits
+ 1646              		.align	2
+ 1647              		.set	.LANCHOR10,. + 0
+ 1650              	feedbackKnob:
+ 1651 0000 00000000 		.space	56
+ 1651      00000000 
+ 1651      00000000 
+ 1651      00000000 
+ 1651      00000000 
+ 1652              		.section	.bss.headSwitches,"aw",%nobits
+ 1653              		.align	2
+ 1654              		.set	.LANCHOR5,. + 0
+ 1657              	headSwitches:
+ 1658 0000 00000000 		.space	64
+ 1658      00000000 
+ 1658      00000000 
+ 1658      00000000 
+ 1658      00000000 
+ 1659              		.section	.bss.onButtonWasPressed,"aw",%nobits
+ 1660              		.set	.LANCHOR14,. + 0
+ 1663              	onButtonWasPressed:
+ 1664 0000 00       		.space	1
+ 1665              		.section	.bss.tone,"aw",%nobits
+ 1666              		.align	2
+ 1667              		.set	.LANCHOR12,. + 0
+ 1670              	tone:
+ 1671 0000 00000000 		.space	52
+ 1671      00000000 
+ 1671      00000000 
+ 1671      00000000 
+ 1671      00000000 
+ 1672              		.section	.data.BPM,"aw"
+ 1673              		.align	2
+ 1674              		.set	.LANCHOR4,. + 0
+ 1677              	BPM:
+ 1678 0000 0000A041 		.word	1101004800
+ 1679              		.section	.data.MAX_FEEDBACK,"aw"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 57
+
+
+ 1680              		.align	2
+ 1681              		.set	.LANCHOR9,. + 0
+ 1684              	MAX_FEEDBACK:
+ 1685 0000 CDCC8C3F 		.word	1066192077
+ 1686              		.section	.data.drywet_ratio,"aw"
+ 1687              		.align	2
+ 1688              		.set	.LANCHOR15,. + 0
+ 1691              	drywet_ratio:
+ 1692 0000 0000003F 		.word	1056964608
+ 1693              		.text
+ 1694              	.Letext0:
+ 1695              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 1696              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 1697              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 1698              		.file 21 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 1699              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 1700              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 1701              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 1702              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 1703              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 1704              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 1705              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 1706              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 1707              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 1708              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 1709              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 1710              		.file 33 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 1711              		.file 34 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 1712              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
+ 1713              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 1714              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 1715              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 1716              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 1717              		.file 40 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 1718              		.file 41 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 1719              		.file 42 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 1720              		.file 43 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 1721              		.file 44 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 1722              		.file 45 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 1723              		.file 46 "../../DaisySP//Source/Control/adenv.h"
+ 1724              		.file 47 "../../DaisySP//Source/Utility/dsp.h"
+ 1725              		.file 48 "../../DaisySP//Source/Utility/delayline.h"
+ 1726              		.file 49 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 1727              		.file 50 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 1728              		.file 51 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 1729              		.file 52 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 1730              		.file 53 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 1731              		.file 54 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 1732              		.file 55 "../../libDaisy//src/daisy_core.h"
+ 1733              		.file 56 "../../libDaisy//src/per/sai.h"
+ 1734              		.file 57 "../../libDaisy//src/hid/logger_impl.h"
+ 1735              		.file 58 "../../libDaisy//src/util/wav_format.h"
+ 1736              		.file 59 "../../libDaisy//src/dev/max11300.h"
+ 1737              		.file 60 "../../libDaisy//src/hid/logger.h"
+ 1738              		.file 61 "../../libDaisy//src/per/gpio.h"
+ 1739              		.file 62 "../../libDaisy//src/dev/sdram.h"
+ 1740              		.file 63 "Delay.h"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 58
+
+
+ 1741              		.file 64 "../../libDaisy//src/dev/sr_595.h"
+ 1742              		.file 65 "<built-in>"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 59
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 MyNewProject.cpp
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:17     .text._ZN7daisysp7BalanceD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:26     .text._ZN7daisysp7BalanceD2Ev:00000000 _ZN7daisysp7BalanceD2Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:26     .text._ZN7daisysp7BalanceD2Ev:00000000 _ZN7daisysp7BalanceD1Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:43     .text._ZN7daisysp9CrossFadeD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:51     .text._ZN7daisysp9CrossFadeD2Ev:00000000 _ZN7daisysp9CrossFadeD2Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:51     .text._ZN7daisysp9CrossFadeD2Ev:00000000 _ZN7daisysp9CrossFadeD1Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:68     .text._ZN5daisy11TimerHandleD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:76     .text._ZN5daisy11TimerHandleD2Ev:00000000 _ZN5daisy11TimerHandleD2Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:76     .text._ZN5daisy11TimerHandleD2Ev:00000000 _ZN5daisy11TimerHandleD1Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:93     .text._ZN5daisy6SwitchD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:101    .text._ZN5daisy6SwitchD2Ev:00000000 _ZN5daisy6SwitchD2Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:101    .text._ZN5daisy6SwitchD2Ev:00000000 _ZN5daisy6SwitchD1Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:118    .text._ZN5daisy9ParameterD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:126    .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD2Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:126    .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD1Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:149    .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:157    .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:157    .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:198    .text._ZN10ToneFilterD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:206    .text._ZN10ToneFilterD2Ev:00000000 _ZN10ToneFilterD2Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:206    .text._ZN10ToneFilterD2Ev:00000000 _ZN10ToneFilterD1Ev
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:235    .text.__tcf_0:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:242    .text.__tcf_0:00000000 __tcf_0
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:256    .text._Z10CheckTempov:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:264    .text._Z10CheckTempov:00000000 _Z10CheckTempov
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:456    .text._Z10CheckTempov:000000c8 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:468    .text._Z15InitHeadButtonsv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:476    .text._Z15InitHeadButtonsv:00000000 _Z15InitHeadButtonsv
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:535    .text._Z15InitHeadButtonsv:00000030 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:541    .text.startup.main:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:549    .text.startup.main:00000000 main
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:826    .text.startup.main:00000110 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1031   .text._ZL13AudioCallbackPKPKfPPfj:00000000 _ZL13AudioCallbackPKPKfPPfj
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:845    .rodata._Z15ProcessControlsv.str1.4:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:849    .text._Z15ProcessControlsv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:857    .text._Z15ProcessControlsv:00000000 _Z15ProcessControlsv
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1013   .text._Z15ProcessControlsv:000000a8 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1024   .text._ZL13AudioCallbackPKPKfPPfj:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1295   .text._ZL13AudioCallbackPKPKfPPfj:000000f4 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1307   .text.startup._GLOBAL__sub_I_delay:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1314   .text.startup._GLOBAL__sub_I_delay:00000000 _GLOBAL__sub_I_delay
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1543   .text.startup._GLOBAL__sub_I_delay:00000080 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1568   .init_array:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1650   .bss.feedbackKnob:00000000 feedbackKnob
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1636   .bss.configPtr:00000000 configPtr
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1608   .bss.TIMER:00000000 TIMER
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1594   .bss.TAPPING:00000000 TAPPING
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1677   .data.BPM:00000000 BPM
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1663   .bss.onButtonWasPressed:00000000 onButtonWasPressed
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1691   .data.drywet_ratio:00000000 drywet_ratio
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1684   .data.MAX_FEEDBACK:00000000 MAX_FEEDBACK
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1657   .bss.headSwitches:00000000 headSwitches
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1601   .bss.TEMPO_BUTTON:00000000 TEMPO_BUTTON
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1588   .bss.ON_BUTTON:00000000 ON_BUTTON
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1670   .bss.tone:00000000 tone
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 60
+
+
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1643   .bss.delay:00000000 delay
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1584   .bss.ON_BUTTON:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1595   .bss.TAPPING:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1597   .bss.TEMPO_BUTTON:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1604   .bss.TIMER:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1611   .bss._ZL2hw:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1615   .bss._ZL2hw:00000000 _ZL2hw
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1618   .bss._ZL5cfade:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1622   .bss._ZL5cfade:00000000 _ZL5cfade
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1625   .bss._ZL7balance:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1629   .bss._ZL7balance:00000000 _ZL7balance
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1632   .bss.configPtr:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1639   .bss.delay:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1646   .bss.feedbackKnob:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1653   .bss.headSwitches:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1664   .bss.onButtonWasPressed:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1666   .bss.tone:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1673   .data.BPM:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1680   .data.MAX_FEEDBACK:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s:1687   .data.drywet_ratio:00000000 $d
+                           .group:00000000 _ZN7daisysp7BalanceD5Ev
+                           .group:00000000 _ZN7daisysp9CrossFadeD5Ev
+                           .group:00000000 _ZN5daisy11TimerHandleD5Ev
+                           .group:00000000 _ZN5daisy6SwitchD5Ev
+                           .group:00000000 _ZN5daisy9ParameterD5Ev
+                           .group:00000000 _ZN5daisy9DaisySeedD5Ev
+                           .group:00000000 _ZN10ToneFilterD5Ev
+
+UNDEFINED SYMBOLS
+_ZN5daisy11TimerHandle7GetTickEv
+_ZN5daisy11TimerHandle7GetFreqEv
+_ZN5daisy6Switch8DebounceEv
+_ZN5daisy11TimerHandle4StopEv
+_ZN5daisy11TimerHandle6DeInitEv
+_ZN5daisy11TimerHandle4InitERKNS0_6ConfigE
+_ZN5daisy11TimerHandle5StartEv
+_ZN5daisy9DaisySeed6GetPinEh
+_ZN5daisy6Switch4InitE12dsy_gpio_pinf
+_ZN5daisy9DaisySeed4InitEb
+_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE8StartLogEb
+_ZN5daisy9DaisySeed17SetAudioBlockSizeEj
+_ZN5daisy9DaisySeed18SetAudioSampleRateENS_9SaiHandle6Config10SampleRateE
+_ZN5daisy9DaisySeed10StartAudioEPFvPKPKfPPfjE
+_ZN5daisy16AdcChannelConfig10InitSingleE12dsy_gpio_pin
+_ZN5daisy9AdcHandle4InitEPNS_16AdcChannelConfigEjNS0_12OverSamplingE
+_ZNK5daisy9AdcHandle6GetPtrEh
+_ZN5daisy9DaisySeed15AudioSampleRateEv
+_ZN5daisy13AnalogControl4InitEPtfbbf
+_ZN5daisy9Parameter4InitENS_13AnalogControlEffNS0_5CurveE
+_ZN7daisysp7Balance4InitEf
+_ZN5daisy9AdcHandle5StartEv
+_ZN5daisy6System5DelayEm
+_ZN5daisy9Parameter7ProcessEv
+powf
+_ZN10ToneFilter7setFreqEf
+_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
+_ZN6Delayy10toggleHeadERKi
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccCk7vWi.s 			page 61
+
+
+_ZN6Delayy7processEf
+_ZN10ToneFilter7processEf
+_ZN7daisysp7Balance7ProcessEff
+_ZN7daisysp9CrossFade7ProcessERfS1_
+_ZN6Delayy6setBPMERKi
+_ZN6Delayy7stopAllEv
+_ZN6DelayyC1Ev
+_ZN10ToneFilterC1Ef
+__aeabi_atexit
+__dso_handle

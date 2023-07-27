@@ -1,4 +1,4 @@
-build/MyNewProject.o: MyNewProject.cpp \
+build/Delay.o: Delay.cpp \
  ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
  ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h \
  ../../libDaisy//Drivers/CMSIS/Include/core_cm7.h \
@@ -215,8 +215,7 @@ build/MyNewProject.o: MyNewProject.cpp \
  ../../libDaisy//src/per/qspi.h \
  ../../libDaisy//src/util/VoctCalibration.h \
  ../../libDaisy//src/util/WaveTableLoader.h \
- ../../libDaisy//src/sys/fatfs.h ../../libDaisy//src/util/WavWriter.h \
- ToneFilter.h
+ ../../libDaisy//src/sys/fatfs.h ../../libDaisy//src/util/WavWriter.h
 ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
 ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h:
 ../../libDaisy//Drivers/CMSIS/Include/core_cm7.h:
@@ -465,4 +464,3 @@ Delay.h:
 ../../libDaisy//src/util/WaveTableLoader.h:
 ../../libDaisy//src/sys/fatfs.h:
 ../../libDaisy//src/util/WavWriter.h:
-ToneFilter.h:

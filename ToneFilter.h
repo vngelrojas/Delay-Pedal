@@ -20,7 +20,7 @@ class ToneFilter
          * 
          * @param freq The freq to set
          */
-        void setFreq(float &freq);
+        void setFreq(float freq);
         /**
          * @brief 
          * 

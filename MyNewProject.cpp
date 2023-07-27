@@ -1,14 +1,16 @@
-#include "daisysp.h"
-#include "daisy_seed.h"
+
 #include "Delay.h"
 #include "ToneFilter.h"
+
 
 using namespace daisysp;
 using namespace daisy;
 using namespace daisy::seed;
 
 Delayy delay;
-ToneFilter tone;
+ToneFilter tone(48000.f);
+static Balance balance;
+
 Switch ON_BUTTON;                 // The on/off button
 Switch TEMPO_BUTTON;              // The tap tempo button
 Switch headSwitches[4];           // One switch for each head
@@ -71,13 +73,16 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
     
 
         all_delay_signals = delay.process(in[0][i]);
+        float filter = tone.process(in[0][i]);
+        filter = balance.Process(filter,in[0][1]*2.5f);
+
 
         nonConstInput = in[0][i];
 
 		// Use a crossfade object to maintain a constant power while mixing the delayed/raw audio mix
 		cfade.SetPos(drywet_ratio);
 		final_mix = cfade.Process(nonConstInput, all_delay_signals);
-		out[0][i]  = out [1][i] = final_mix; // this sends 'final_mix' to the left and right output
+		out[0][i]  = out [1][i] = filter;//final_mix; // this sends 'final_mix' to the left and right output
     }
 }
 
@@ -87,7 +92,7 @@ int main(void)
     hw.Init();
 
     // Setting up serial and printing
-    //hw.StartLog();
+    hw.StartLog();
 
     // Initialize the button to D28, Pin 35 to be the on/off button
     ON_BUTTON.Init(hw.GetPin(28),1000);
@@ -135,6 +140,7 @@ int main(void)
     feedbackKnob.Init(fbk,0.00,MAX_FEEDBACK,Parameter::LINEAR);
     //*******************************************************************************
 
+    balance.Init(48000);
     hw.adc.Start();
 
     while(1) 
@@ -227,13 +233,22 @@ void InitHeadButtons()
 
 void ProcessControls()
 {
-    delay.setFeedback(feedbackKnob.Process());
+    //delay.setFeedback(feedbackKnob.Process());
+    //delay.setFeedback(.5);
+    float tone_val = feedbackKnob.Process()* -1.f;
+    tone.setFreq(5000.0f*(powf(10,2*tone_val))+100.f);
+
 
     for(int i = 0; i < 4;i++)
     {
         headSwitches[i].Debounce();
         if(headSwitches[i].RisingEdge())
         {
+            
+            // std::string val = std::to_string(tone_val);
+            // char * tab2 = new char [val.length()+1];
+            // strcpy (tab2, val.c_str());
+            hw.PrintLine("Tone knob val : %f",5000.0f*(powf(10,2*tone_val))+100.f);
             delay.toggleHead(i);
         }
     }

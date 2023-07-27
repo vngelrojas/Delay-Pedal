@@ -6,7 +6,12 @@ ToneFilter::ToneFilter(float sampleRate)
     highPassFilter.Init(sampleRate); 
 }
 
-void ToneFilter::setFreq(float& freq)
+void ToneFilter::setFreq(float freq)
 {
     lowPassFilter.SetFreq(freq);
+}
+
+float ToneFilter::process(float in)
+{
+    return lowPassFilter.Process(in);
 }

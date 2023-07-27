@@ -1,4 +1,4 @@
-build/MyNewProject.o: MyNewProject.cpp \
+build/ToneFilter.o: ToneFilter.cpp \
  ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
  ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h \
  ../../libDaisy//Drivers/CMSIS/Include/core_cm7.h \
@@ -93,7 +93,7 @@ build/MyNewProject.o: MyNewProject.cpp \
  ../../libDaisy//Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h \
  ../../libDaisy//Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h \
  ../../libDaisy//Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hcd.h \
- Delay.h ../../DaisySP//Source/daisysp.h \
+ ToneFilter.h ../../DaisySP//Source/daisysp.h \
  ../../DaisySP//Source/Control/adenv.h \
  ../../DaisySP//Source/Control/adsr.h \
  ../../DaisySP//Source/Control/line.h \
@@ -215,8 +215,7 @@ build/MyNewProject.o: MyNewProject.cpp \
  ../../libDaisy//src/per/qspi.h \
  ../../libDaisy//src/util/VoctCalibration.h \
  ../../libDaisy//src/util/WaveTableLoader.h \
- ../../libDaisy//src/sys/fatfs.h ../../libDaisy//src/util/WavWriter.h \
- ToneFilter.h
+ ../../libDaisy//src/sys/fatfs.h ../../libDaisy//src/util/WavWriter.h
 ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
 ../../libDaisy//Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h:
 ../../libDaisy//Drivers/CMSIS/Include/core_cm7.h:
@@ -311,7 +310,7 @@ build/MyNewProject.o: MyNewProject.cpp \
 ../../libDaisy//Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h:
 ../../libDaisy//Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h:
 ../../libDaisy//Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hcd.h:
-Delay.h:
+ToneFilter.h:
 ../../DaisySP//Source/daisysp.h:
 ../../DaisySP//Source/Control/adenv.h:
 ../../DaisySP//Source/Control/adsr.h:
@@ -465,4 +464,3 @@ Delay.h:
 ../../libDaisy//src/util/WaveTableLoader.h:
 ../../libDaisy//src/sys/fatfs.h:
 ../../libDaisy//src/util/WavWriter.h:
-ToneFilter.h:
