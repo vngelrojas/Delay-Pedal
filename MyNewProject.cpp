@@ -1,12 +1,14 @@
 #include "daisysp.h"
 #include "daisy_seed.h"
 #include "Delay.h"
+#include "ToneFilter.h"
 
 using namespace daisysp;
 using namespace daisy;
 using namespace daisy::seed;
 
 Delayy delay;
+ToneFilter tone;
 Switch ON_BUTTON;                 // The on/off button
 Switch TEMPO_BUTTON;              // The tap tempo button
 Switch headSwitches[4];           // One switch for each head

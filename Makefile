@@ -3,9 +3,11 @@ TARGET = MyNewProject
 
 # Sources
 CPP_SOURCES = MyNewProject.cpp \
-			  Delay.cpp
+			  Delay.cpp \
+			  ToneFilter.cpp
 
-CPP_HEADERS = Delay.h
+CPP_HEADERS = Delay.h \
+			  ToneFilter.h
 
 # Library Locations
 LIBDAISY_DIR = ../../libDaisy/
