@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
    8:../../DaisySP//Source/Filters/tone.h **** namespace daisysp
    9:../../DaisySP//Source/Filters/tone.h **** {
   10:../../DaisySP//Source/Filters/tone.h **** /** A first-order recursive low-pass filter with variable frequency response.
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 2
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 2
 
 
   11:../../DaisySP//Source/Filters/tone.h **** */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
    5:ToneFilter.cpp ****     highPassFilter.Init(sampleRate); 
   68              		.loc 1 5 23 view .LVU10
   69 0010 FFF7FEFF 		bl	_ZN7daisysp4Tone4InitEf
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 3
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 3
 
 
   70              	.LVL2:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
   98              		.loc 1 11 5 is_stmt 1 view .LVU24
   99              	.LBB24:
  100              	.LBI24:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 4
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 4
 
 
   23:../../DaisySP//Source/Filters/atone.h ****     ~ATone() {}
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
   12:ToneFilter.cpp ****     highPassOn = false;
  129              		.loc 1 12 15 view .LVU39
  130 003c A286     		strh	r2, [r4, #52]	@ movhi
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 5
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 5
 
 
   14:ToneFilter.cpp ****     factor = 1.f;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
  180              		.loc 1 19 5 view .LVU48
  181 0006 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
  182              	.LBE43:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 6
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 6
 
 
   18:ToneFilter.cpp ****     if(knobValue < 0.00f)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
  220              		.loc 3 41 30 view .LVU60
  221              	.LBE32:
  222              	.LBE34:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 7
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 7
 
 
   30:ToneFilter.cpp ****         highPassFilter.SetFreq(hpFreq);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
   35:ToneFilter.cpp ****     }
  265              		.loc 1 35 16 view .LVU77
  266              	.LBE36:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 8
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 8
 
 
  267              	.LBE45:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
  311              	.LBE40:
  312              	.LBE41:
   23:ToneFilter.cpp ****         highPassOn = false;
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 9
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 9
 
 
  313              		.loc 1 23 9 is_stmt 1 view .LVU93
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
  358              		.syntax unified
  359              		.thumb
  360              		.thumb_func
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 10
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 10
 
 
  361              		.fpu fpv5-d16
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
   43:ToneFilter.cpp ****     else if(lowPassOn)
  402              		.loc 1 43 9 is_stmt 1 view .LVU119
   43:ToneFilter.cpp ****     else if(lowPassOn)
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 11
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 11
 
 
  403              		.loc 1 43 16 is_stmt 0 view .LVU120
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
  451              		@ frame_needed = 0, uses_anonymous_args = 0
  452              		@ link register save eliminated.
   52:ToneFilter.cpp ****     return factor;
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 12
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 12
 
 
  453              		.loc 1 52 5 view .LVU129
@@ -713,22 +713,22 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 1
  502              		.file 44 "ToneFilter.h"
  503              		.file 45 "<built-in>"
  504              		.file 46 "../../libDaisy//src/dev/sr_595.h"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s 			page 13
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ToneFilter.cpp
-C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s:17     .text._ZN10ToneFilterC2Ef:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s:26     .text._ZN10ToneFilterC2Ef:00000000 _ZN10ToneFilterC2Ef
-C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s:148    .text._ZN10ToneFilterC2Ef:00000044 $d
-C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s:26     .text._ZN10ToneFilterC2Ef:00000000 _ZN10ToneFilterC1Ef
-C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s:155    .text._ZN10ToneFilter7setFreqEf:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s:163    .text._ZN10ToneFilter7setFreqEf:00000000 _ZN10ToneFilter7setFreqEf
-C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s:349    .text._ZN10ToneFilter7setFreqEf:000000a4 $d
-C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s:355    .text._ZN10ToneFilter7processEf:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s:363    .text._ZN10ToneFilter7processEf:00000000 _ZN10ToneFilter7processEf
-C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s:437    .text._ZN10ToneFilter9getFactorEv:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccFrlLGn.s:445    .text._ZN10ToneFilter9getFactorEv:00000000 _ZN10ToneFilter9getFactorEv
+C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s:17     .text._ZN10ToneFilterC2Ef:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s:26     .text._ZN10ToneFilterC2Ef:00000000 _ZN10ToneFilterC2Ef
+C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s:148    .text._ZN10ToneFilterC2Ef:00000044 $d
+C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s:26     .text._ZN10ToneFilterC2Ef:00000000 _ZN10ToneFilterC1Ef
+C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s:155    .text._ZN10ToneFilter7setFreqEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s:163    .text._ZN10ToneFilter7setFreqEf:00000000 _ZN10ToneFilter7setFreqEf
+C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s:349    .text._ZN10ToneFilter7setFreqEf:000000a4 $d
+C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s:355    .text._ZN10ToneFilter7processEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s:363    .text._ZN10ToneFilter7processEf:00000000 _ZN10ToneFilter7processEf
+C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s:437    .text._ZN10ToneFilter9getFactorEv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccKeRe0M.s:445    .text._ZN10ToneFilter9getFactorEv:00000000 _ZN10ToneFilter9getFactorEv
 
 UNDEFINED SYMBOLS
 _ZN7daisysp4Tone4InitEf

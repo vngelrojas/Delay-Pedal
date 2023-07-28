@@ -1,0 +1,1926 @@
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"TapTempo.cpp"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.section	.text._ZN8TapTempo25setSkippedTapThresholdLowEf,"ax",%progbits
+  17              		.align	1
+  18              		.p2align 2,,3
+  19              		.global	_ZN8TapTempo25setSkippedTapThresholdLowEf
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv5-d16
+  26              	_ZN8TapTempo25setSkippedTapThresholdLowEf:
+  27              	.LVL0:
+  28              	.LFB2541:
+  29              		.file 1 "TapTempo.cpp"
+   1:TapTempo.cpp  **** /*
+   2:TapTempo.cpp  ****  * TapTempo.cpp
+   3:TapTempo.cpp  ****  * An Arduino library that times consecutive button presses to calculate Beats Per Minute. Corrects
+   4:TapTempo.cpp  ****  *
+   5:TapTempo.cpp  ****  * Copyright (c) 2016 Damien Clarke
+   6:TapTempo.cpp  ****  * 
+   7:TapTempo.cpp  ****  * Permission is hereby granted, free of charge, to any person obtaining a copy
+   8:TapTempo.cpp  ****  * of this software and associated documentation files (the "Software"), to deal
+   9:TapTempo.cpp  ****  * in the Software without restriction, including without limitation the rights
+  10:TapTempo.cpp  ****  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  11:TapTempo.cpp  ****  * copies of the Software, and to permit persons to whom the Software is
+  12:TapTempo.cpp  ****  * furnished to do so, subject to the following conditions:
+  13:TapTempo.cpp  ****  * 
+  14:TapTempo.cpp  ****  * The above copyright notice and this permission notice shall be included in all
+  15:TapTempo.cpp  ****  * copies or substantial portions of the Software.
+  16:TapTempo.cpp  ****  * 
+  17:TapTempo.cpp  ****  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  18:TapTempo.cpp  ****  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  19:TapTempo.cpp  ****  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  20:TapTempo.cpp  ****  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  21:TapTempo.cpp  ****  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  22:TapTempo.cpp  ****  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  23:TapTempo.cpp  ****  * SOFTWARE.  
+  24:TapTempo.cpp  ****  */
+  25:TapTempo.cpp  **** 
+  26:TapTempo.cpp  **** 
+  27:TapTempo.cpp  **** #include "TapTempo.h"
+  28:TapTempo.cpp  **** 
+  29:TapTempo.cpp  **** 
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 2
+
+
+  30:TapTempo.cpp  **** void TapTempo::setSkippedTapThresholdLow(float threshold)
+  31:TapTempo.cpp  **** {
+  30              		.loc 1 31 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+  32:TapTempo.cpp  ****   if(threshold > 1.0 && threshold < 2.0)
+  35              		.loc 1 32 3 view .LVU1
+  36 0000 F7EE007A 		vmov.f32	s15, #1.0e+0
+  37 0004 B4EEE70A 		vcmpe.f32	s0, s15
+  38 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+  39 000c 08DD     		ble	.L1
+  40              		.loc 1 32 22 is_stmt 0 discriminator 1 view .LVU2
+  41 000e F0EE007A 		vmov.f32	s15, #2.0e+0
+  42 0012 B4EEE70A 		vcmpe.f32	s0, s15
+  43 0016 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+  33:TapTempo.cpp  ****     skippedTapThresholdLow = threshold;
+  44              		.loc 1 33 5 is_stmt 1 discriminator 1 view .LVU3
+  45              		.loc 1 33 28 is_stmt 0 discriminator 1 view .LVU4
+  46 001a 48BF     		it	mi
+  47 001c 80ED040A 		vstrmi.32	s0, [r0, #16]
+  48              	.L1:
+  34:TapTempo.cpp  **** }
+  49              		.loc 1 34 1 view .LVU5
+  50 0020 7047     		bx	lr
+  51              		.cfi_endproc
+  52              	.LFE2541:
+  54 0022 00BF     		.section	.text._ZN8TapTempo26setSkippedTapThresholdHighEf,"ax",%progbits
+  55              		.align	1
+  56              		.p2align 2,,3
+  57              		.global	_ZN8TapTempo26setSkippedTapThresholdHighEf
+  58              		.syntax unified
+  59              		.thumb
+  60              		.thumb_func
+  61              		.fpu fpv5-d16
+  63              	_ZN8TapTempo26setSkippedTapThresholdHighEf:
+  64              	.LVL1:
+  65              	.LFB2542:
+  35:TapTempo.cpp  **** 
+  36:TapTempo.cpp  **** void TapTempo::setSkippedTapThresholdHigh(float threshold)
+  37:TapTempo.cpp  **** {
+  66              		.loc 1 37 1 is_stmt 1 view -0
+  67              		.cfi_startproc
+  68              		@ args = 0, pretend = 0, frame = 0
+  69              		@ frame_needed = 0, uses_anonymous_args = 0
+  70              		@ link register save eliminated.
+  38:TapTempo.cpp  ****   if(threshold > 2.0 && threshold < 4.0)
+  71              		.loc 1 38 3 view .LVU7
+  72 0000 F0EE007A 		vmov.f32	s15, #2.0e+0
+  73 0004 B4EEE70A 		vcmpe.f32	s0, s15
+  74 0008 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+  75 000c 08DD     		ble	.L8
+  76              		.loc 1 38 22 is_stmt 0 discriminator 1 view .LVU8
+  77 000e F1EE007A 		vmov.f32	s15, #4.0e+0
+  78 0012 B4EEE70A 		vcmpe.f32	s0, s15
+  79 0016 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 3
+
+
+  39:TapTempo.cpp  ****     skippedTapThresholdHigh = threshold;
+  80              		.loc 1 39 5 is_stmt 1 discriminator 1 view .LVU9
+  81              		.loc 1 39 29 is_stmt 0 discriminator 1 view .LVU10
+  82 001a 48BF     		it	mi
+  83 001c 80ED050A 		vstrmi.32	s0, [r0, #20]
+  84              	.L8:
+  40:TapTempo.cpp  **** }
+  85              		.loc 1 40 1 view .LVU11
+  86 0020 7047     		bx	lr
+  87              		.cfi_endproc
+  88              	.LFE2542:
+  90 0022 00BF     		.section	.text._ZN8TapTempo6getBPMEv,"ax",%progbits
+  91              		.align	1
+  92              		.p2align 2,,3
+  93              		.global	_ZN8TapTempo6getBPMEv
+  94              		.syntax unified
+  95              		.thumb
+  96              		.thumb_func
+  97              		.fpu fpv5-d16
+  99              	_ZN8TapTempo6getBPMEv:
+ 100              	.LVL2:
+ 101              	.LFB2543:
+  41:TapTempo.cpp  **** 
+  42:TapTempo.cpp  **** float TapTempo::getBPM()
+  43:TapTempo.cpp  **** {
+ 102              		.loc 1 43 1 is_stmt 1 view -0
+ 103              		.cfi_startproc
+ 104              		@ args = 0, pretend = 0, frame = 0
+ 105              		@ frame_needed = 0, uses_anonymous_args = 0
+ 106              		@ link register save eliminated.
+  44:TapTempo.cpp  ****   return 60000.0 / beatLengthMS;
+ 107              		.loc 1 44 3 view .LVU13
+ 108              		.loc 1 44 18 is_stmt 0 view .LVU14
+ 109 0000 90ED097A 		vldr.32	s14, [r0, #36]	@ int
+ 110 0004 9FED046B 		vldr.64	d6, .L15
+ 111 0008 B8EE477B 		vcvt.f64.u32	d7, s14
+ 112 000c 86EE070B 		vdiv.f64	d0, d6, d7
+  45:TapTempo.cpp  **** }
+ 113              		.loc 1 45 1 view .LVU15
+ 114 0010 B7EEC00B 		vcvt.f32.f64	s0, d0
+ 115 0014 7047     		bx	lr
+ 116              	.L16:
+ 117 0016 00BF     		.align	3
+ 118              	.L15:
+ 119 0018 00000000 		.word	0
+ 120 001c 004CED40 		.word	1089293312
+ 121              		.cfi_endproc
+ 122              	.LFE2543:
+ 124              		.section	.text._ZN8TapTempo6setBPMEf,"ax",%progbits
+ 125              		.align	1
+ 126              		.p2align 2,,3
+ 127              		.global	_ZN8TapTempo6setBPMEf
+ 128              		.syntax unified
+ 129              		.thumb
+ 130              		.thumb_func
+ 131              		.fpu fpv5-d16
+ 133              	_ZN8TapTempo6setBPMEf:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 4
+
+
+ 134              	.LVL3:
+ 135              	.LFB2544:
+  46:TapTempo.cpp  **** 
+  47:TapTempo.cpp  **** float TapTempo::setBPM(float bpm)
+  48:TapTempo.cpp  **** {
+ 136              		.loc 1 48 1 is_stmt 1 view -0
+ 137              		.cfi_startproc
+ 138              		@ args = 0, pretend = 0, frame = 0
+ 139              		@ frame_needed = 0, uses_anonymous_args = 0
+ 140              		@ link register save eliminated.
+  49:TapTempo.cpp  ****   beatLengthMS = 60000 / bpm;
+ 141              		.loc 1 49 3 view .LVU17
+  48:TapTempo.cpp  ****   beatLengthMS = 60000 / bpm;
+ 142              		.loc 1 48 1 is_stmt 0 view .LVU18
+ 143 0000 B0EE407A 		vmov.f32	s14, s0
+ 144              		.loc 1 49 24 view .LVU19
+ 145 0004 DFED056A 		vldr.32	s13, .L18
+  50:TapTempo.cpp  ****   return 0.f;
+  51:TapTempo.cpp  **** }
+ 146              		.loc 1 51 1 view .LVU20
+ 147 0008 9FED050A 		vldr.32	s0, .L18+4
+ 148              	.LVL4:
+  49:TapTempo.cpp  ****   return 0.f;
+ 149              		.loc 1 49 24 view .LVU21
+ 150 000c C6EE877A 		vdiv.f32	s15, s13, s14
+  49:TapTempo.cpp  ****   return 0.f;
+ 151              		.loc 1 49 16 view .LVU22
+ 152 0010 FCEEE77A 		vcvt.u32.f32	s15, s15
+ 153 0014 C0ED097A 		vstr.32	s15, [r0, #36]	@ int
+  50:TapTempo.cpp  ****   return 0.f;
+ 154              		.loc 1 50 3 is_stmt 1 view .LVU23
+ 155              		.loc 1 51 1 is_stmt 0 view .LVU24
+ 156 0018 7047     		bx	lr
+ 157              	.L19:
+ 158 001a 00BF     		.align	2
+ 159              	.L18:
+ 160 001c 00606A47 		.word	1198153728
+ 161 0020 00000000 		.word	0
+ 162              		.cfi_endproc
+ 163              	.LFE2544:
+ 165              		.section	.text._ZN8TapTempo6onBeatEv,"ax",%progbits
+ 166              		.align	1
+ 167              		.p2align 2,,3
+ 168              		.global	_ZN8TapTempo6onBeatEv
+ 169              		.syntax unified
+ 170              		.thumb
+ 171              		.thumb_func
+ 172              		.fpu fpv5-d16
+ 174              	_ZN8TapTempo6onBeatEv:
+ 175              	.LVL5:
+ 176              	.LFB2545:
+  52:TapTempo.cpp  **** 
+  53:TapTempo.cpp  **** bool TapTempo::onBeat()
+  54:TapTempo.cpp  **** {
+ 177              		.loc 1 54 1 is_stmt 1 view -0
+ 178              		.cfi_startproc
+ 179              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 5
+
+
+ 180              		@ frame_needed = 0, uses_anonymous_args = 0
+  55:TapTempo.cpp  ****   return fmod((float)millisSinceReset, (float)beatLengthMS) < fmod((float)millisSinceResetOld, (flo
+ 181              		.loc 1 55 3 view .LVU26
+ 182              	.LBB18:
+ 183              	.LBB19:
+ 184              		.file 2 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+   1:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // -*- C++ -*- C forwarding header.
+   2:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+   3:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // Copyright (C) 1997-2020 Free Software Foundation, Inc.
+   4:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** //
+   5:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // This file is part of the GNU ISO C++ Library.  This library is free
+   6:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // software; you can redistribute it and/or modify it under the
+   7:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // terms of the GNU General Public License as published by the
+   8:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // Free Software Foundation; either version 3, or (at your option)
+   9:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // any later version.
+  10:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  11:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // This library is distributed in the hope that it will be useful,
+  12:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // but WITHOUT ANY WARRANTY; without even the implied warranty of
+  13:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  14:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // GNU General Public License for more details.
+  15:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  16:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // Under Section 7 of GPL version 3, you are granted additional
+  17:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // permissions described in the GCC Runtime Library Exception, version
+  18:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // 3.1, as published by the Free Software Foundation.
+  19:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  20:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // You should have received a copy of the GNU General Public License and
+  21:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // a copy of the GCC Runtime Library Exception along with this program;
+  22:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+  23:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // <http://www.gnu.org/licenses/>.
+  24:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  25:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** /** @file include/cmath
+  26:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  This is a Standard C++ Library file.  You should @c \#include this file
+  27:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  in your programs, rather than any of the @a *.h implementation files.
+  28:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *
+  29:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  This is the C++ version of the Standard C Library header @c math.h,
+  30:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  and its contents are (mostly) the same as that header, but are all
+  31:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  contained in the namespace @c std (except for names which are defined
+  32:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  as macros in C).
+  33:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  */
+  34:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  35:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** //
+  36:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // ISO C++ 14882: 26.5  C library
+  37:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** //
+  38:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  39:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #pragma GCC system_header
+  40:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  41:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <bits/c++config.h>
+  42:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <bits/cpp_type_traits.h>
+  43:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <ext/type_traits.h>
+  44:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #define _GLIBCXX_INCLUDE_NEXT_C_HEADERS
+  45:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include_next <math.h>
+  46:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef _GLIBCXX_INCLUDE_NEXT_C_HEADERS
+  47:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <bits/std_abs.h>
+  48:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  49:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef _GLIBCXX_CMATH
+  50:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #define _GLIBCXX_CMATH 1
+  51:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 6
+
+
+  52:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // Get rid of those macros defined in <math.h> in lieu of real functions.
+  53:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef div
+  54:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef acos
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef asin
+  56:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef atan
+  57:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef atan2
+  58:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef ceil
+  59:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef cos
+  60:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef cosh
+  61:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef exp
+  62:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef fabs
+  63:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef floor
+  64:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef fmod
+  65:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef frexp
+  66:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef ldexp
+  67:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef log
+  68:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef log10
+  69:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef modf
+  70:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef pow
+  71:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef sin
+  72:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef sinh
+  73:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef sqrt
+  74:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef tan
+  75:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef tanh
+  76:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  77:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** extern "C++"
+  78:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** {
+  79:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** namespace std _GLIBCXX_VISIBILITY(default)
+  80:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** {
+  81:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  82:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  83:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::acos;
+  84:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  85:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+  86:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+  87:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   acos(float __x)
+  88:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_acosf(__x); }
+  89:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  90:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+  91:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   acos(long double __x)
+  92:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_acosl(__x); }
+  93:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+  94:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  95:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+  96:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+  97:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+  98:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+  99:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     acos(_Tp __x)
+ 100:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_acos(__x); }
+ 101:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 102:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::asin;
+ 103:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 104:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 105:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 106:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   asin(float __x)
+ 107:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_asinf(__x); }
+ 108:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 7
+
+
+ 109:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 110:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   asin(long double __x)
+ 111:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_asinl(__x); }
+ 112:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 113:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 114:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 115:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 116:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 117:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 118:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     asin(_Tp __x)
+ 119:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_asin(__x); }
+ 120:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 121:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::atan;
+ 122:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 123:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 124:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 125:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   atan(float __x)
+ 126:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_atanf(__x); }
+ 127:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 128:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 129:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   atan(long double __x)
+ 130:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_atanl(__x); }
+ 131:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 132:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 133:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 134:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 135:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 136:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 137:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     atan(_Tp __x)
+ 138:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_atan(__x); }
+ 139:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 140:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::atan2;
+ 141:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 142:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 143:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 144:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   atan2(float __y, float __x)
+ 145:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_atan2f(__y, __x); }
+ 146:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 147:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 148:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   atan2(long double __y, long double __x)
+ 149:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_atan2l(__y, __x); }
+ 150:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 151:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 152:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp, typename _Up>
+ 153:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 154:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
+ 155:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     atan2(_Tp __y, _Up __x)
+ 156:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     {
+ 157:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
+ 158:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****       return atan2(__type(__y), __type(__x));
+ 159:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     }
+ 160:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 161:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::ceil;
+ 162:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 163:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 164:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 165:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   ceil(float __x)
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 8
+
+
+ 166:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_ceilf(__x); }
+ 167:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 168:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 169:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   ceil(long double __x)
+ 170:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_ceill(__x); }
+ 171:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 172:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 173:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 174:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 175:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+ 176:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 177:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     ceil(_Tp __x)
+ 178:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_ceil(__x); }
+ 179:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 180:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::cos;
+ 181:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 182:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 183:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 184:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   cos(float __x)
+ 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_cosf(__x); }
+ 186:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 187:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 188:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   cos(long double __x)
+ 189:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_cosl(__x); }
+ 190:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 191:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 192:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 193:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 194:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 195:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 196:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     cos(_Tp __x)
+ 197:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_cos(__x); }
+ 198:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 199:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::cosh;
+ 200:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 201:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 202:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 203:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   cosh(float __x)
+ 204:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_coshf(__x); }
+ 205:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 206:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 207:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   cosh(long double __x)
+ 208:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_coshl(__x); }
+ 209:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 210:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 211:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 212:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 213:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 214:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 215:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     cosh(_Tp __x)
+ 216:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_cosh(__x); }
+ 217:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 218:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::exp;
+ 219:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 220:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 221:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 222:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   exp(float __x)
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 9
+
+
+ 223:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_expf(__x); }
+ 224:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 225:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 226:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   exp(long double __x)
+ 227:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_expl(__x); }
+ 228:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 229:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 230:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 231:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 232:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 233:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 234:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     exp(_Tp __x)
+ 235:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_exp(__x); }
+ 236:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 237:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::fabs;
+ 238:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 239:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 240:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 241:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   fabs(float __x)
+ 242:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_fabsf(__x); }
+ 243:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 244:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 245:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   fabs(long double __x)
+ 246:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_fabsl(__x); }
+ 247:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 248:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 249:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 250:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 251:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 252:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 253:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     fabs(_Tp __x)
+ 254:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_fabs(__x); }
+ 255:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 256:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::floor;
+ 257:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 258:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 259:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 260:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   floor(float __x)
+ 261:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_floorf(__x); }
+ 262:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 263:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 264:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   floor(long double __x)
+ 265:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_floorl(__x); }
+ 266:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 267:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 268:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 269:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 270:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 271:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 272:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     floor(_Tp __x)
+ 273:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_floor(__x); }
+ 274:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 275:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::fmod;
+ 276:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 277:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 278:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 279:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   fmod(float __x, float __y)
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 10
+
+
+ 280:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_fmodf(__x, __y); }
+ 185              		.loc 2 280 27 is_stmt 0 view .LVU27
+ 186 0000 D0ED097A 		vldr.32	s15, [r0, #36]	@ int
+ 187 0004 F8EE670A 		vcvt.f32.u32	s1, s15
+ 188 0008 D0ED077A 		vldr.32	s15, [r0, #28]	@ int
+ 189              	.LBE19:
+ 190              	.LBE18:
+  54:TapTempo.cpp  ****   return fmod((float)millisSinceReset, (float)beatLengthMS) < fmod((float)millisSinceResetOld, (flo
+ 191              		.loc 1 54 1 view .LVU28
+ 192 000c 10B5     		push	{r4, lr}
+ 193              		.cfi_def_cfa_offset 8
+ 194              		.cfi_offset 4, -8
+ 195              		.cfi_offset 14, -4
+ 196 000e 0446     		mov	r4, r0
+ 197              	.LVL6:
+ 198              	.LBB23:
+ 199              	.LBI18:
+ 279:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_fmodf(__x, __y); }
+ 200              		.loc 2 279 3 is_stmt 1 view .LVU29
+ 201              	.LBB20:
+ 202              		.loc 2 280 5 view .LVU30
+ 203              		.loc 2 280 27 is_stmt 0 view .LVU31
+ 204 0010 B8EE670A 		vcvt.f32.u32	s0, s15
+ 205              	.LBE20:
+ 206              	.LBE23:
+  54:TapTempo.cpp  ****   return fmod((float)millisSinceReset, (float)beatLengthMS) < fmod((float)millisSinceResetOld, (flo
+ 207              		.loc 1 54 1 view .LVU32
+ 208 0014 2DED028B 		vpush.64	{d8}
+ 209              		.cfi_def_cfa_offset 16
+ 210              		.cfi_offset 80, -16
+ 211              		.cfi_offset 81, -12
+ 212              	.LBB24:
+ 213              	.LBB21:
+ 214              		.loc 2 280 27 view .LVU33
+ 215 0018 FFF7FEFF 		bl	fmodf
+ 216              	.LVL7:
+ 217              		.loc 2 280 27 view .LVU34
+ 218              	.LBE21:
+ 219              	.LBE24:
+ 220              		.loc 1 55 67 view .LVU35
+ 221 001c 236A     		ldr	r3, [r4, #32]
+ 222              	.LBB25:
+ 223              	.LBB22:
+ 224              		.loc 2 280 27 view .LVU36
+ 225 001e B0EE408A 		vmov.f32	s16, s0
+ 226              	.LBE22:
+ 227              	.LBE25:
+ 228              		.loc 1 55 67 view .LVU37
+ 229 0022 D4ED090A 		vldr.32	s1, [r4, #36]	@ int
+ 230              	.LVL8:
+ 231              	.LBB26:
+ 232              	.LBI26:
+ 279:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_fmodf(__x, __y); }
+ 233              		.loc 2 279 3 is_stmt 1 view .LVU38
+ 234              	.LBB27:
+ 235              		.loc 2 280 5 view .LVU39
+ 236              		.loc 2 280 27 is_stmt 0 view .LVU40
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 11
+
+
+ 237 0026 07EE903A 		vmov	s15, r3	@ int
+ 238 002a F8EE600A 		vcvt.f32.u32	s1, s1
+ 239 002e B8EE670A 		vcvt.f32.u32	s0, s15
+ 240 0032 FFF7FEFF 		bl	fmodf
+ 241              	.LVL9:
+ 242              		.loc 2 280 27 view .LVU41
+ 243              	.LBE27:
+ 244              	.LBE26:
+ 245              		.loc 1 55 115 view .LVU42
+ 246 0036 B4EEC80A 		vcmpe.f32	s0, s16
+  56:TapTempo.cpp  **** }
+ 247              		.loc 1 56 1 view .LVU43
+ 248 003a BDEC028B 		vldm	sp!, {d8}
+ 249              		.cfi_restore 80
+ 250              		.cfi_restore 81
+ 251              		.cfi_def_cfa_offset 8
+  55:TapTempo.cpp  **** }
+ 252              		.loc 1 55 115 view .LVU44
+ 253 003e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 254              		.loc 1 56 1 view .LVU45
+ 255 0042 CCBF     		ite	gt
+ 256 0044 0120     		movgt	r0, #1
+ 257 0046 0020     		movle	r0, #0
+ 258 0048 10BD     		pop	{r4, pc}
+ 259              		.loc 1 56 1 view .LVU46
+ 260              		.cfi_endproc
+ 261              	.LFE2545:
+ 263 004a 00BF     		.section	.text._ZN8TapTempo13isChainActiveEv,"ax",%progbits
+ 264              		.align	1
+ 265              		.p2align 2,,3
+ 266              		.global	_ZN8TapTempo13isChainActiveEv
+ 267              		.syntax unified
+ 268              		.thumb
+ 269              		.thumb_func
+ 270              		.fpu fpv5-d16
+ 272              	_ZN8TapTempo13isChainActiveEv:
+ 273              	.LVL10:
+ 274              	.LFB2546:
+  57:TapTempo.cpp  **** 
+  58:TapTempo.cpp  **** bool TapTempo::isChainActive()
+  59:TapTempo.cpp  **** {
+ 275              		.loc 1 59 1 is_stmt 1 view -0
+ 276              		.cfi_startproc
+ 277              		@ args = 0, pretend = 0, frame = 0
+ 278              		@ frame_needed = 0, uses_anonymous_args = 0
+  60:TapTempo.cpp  ****   return isChainActive(daisy::System::GetNow());
+ 279              		.loc 1 60 3 view .LVU48
+  59:TapTempo.cpp  ****   return isChainActive(daisy::System::GetNow());
+ 280              		.loc 1 59 1 is_stmt 0 view .LVU49
+ 281 0000 10B5     		push	{r4, lr}
+ 282              		.cfi_def_cfa_offset 8
+ 283              		.cfi_offset 4, -8
+ 284              		.cfi_offset 14, -4
+  59:TapTempo.cpp  ****   return isChainActive(daisy::System::GetNow());
+ 285              		.loc 1 59 1 view .LVU50
+ 286 0002 0446     		mov	r4, r0
+ 287              		.loc 1 60 23 view .LVU51
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 12
+
+
+ 288 0004 FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
+ 289              	.LVL11:
+ 290              	.LBB28:
+ 291              	.LBB29:
+  61:TapTempo.cpp  **** }
+  62:TapTempo.cpp  **** 
+  63:TapTempo.cpp  **** bool TapTempo::isChainActive(unsigned long ms)
+  64:TapTempo.cpp  **** {
+  65:TapTempo.cpp  ****   return lastTapMS + maxBeatLengthMS > ms && lastTapMS + (beatLengthMS * beatsUntilChainReset) > ms
+ 292              		.loc 1 65 10 view .LVU52
+ 293 0008 E26A     		ldr	r2, [r4, #44]
+ 294              		.loc 1 65 20 view .LVU53
+ 295 000a 2368     		ldr	r3, [r4]
+ 296              	.LVL12:
+ 297              		.loc 1 65 20 view .LVU54
+ 298              	.LBE29:
+ 299              	.LBI28:
+  63:TapTempo.cpp  **** {
+ 300              		.loc 1 63 6 is_stmt 1 view .LVU55
+ 301              	.LBB30:
+ 302              		.loc 1 65 3 view .LVU56
+ 303              		.loc 1 65 20 is_stmt 0 view .LVU57
+ 304 000c 1344     		add	r3, r3, r2
+ 305              		.loc 1 65 43 view .LVU58
+ 306 000e 9842     		cmp	r0, r3
+ 307 0010 08D2     		bcs	.L24
+ 308              		.loc 1 65 72 view .LVU59
+ 309 0012 636A     		ldr	r3, [r4, #36]
+ 310 0014 A168     		ldr	r1, [r4, #8]
+ 311              		.loc 1 65 56 view .LVU60
+ 312 0016 01FB0322 		mla	r2, r1, r3, r2
+ 313              		.loc 1 65 43 view .LVU61
+ 314 001a 9042     		cmp	r0, r2
+ 315 001c 2CBF     		ite	cs
+ 316 001e 0020     		movcs	r0, #0
+ 317              	.LVL13:
+ 318              		.loc 1 65 43 view .LVU62
+ 319 0020 0120     		movcc	r0, #1
+ 320              	.LVL14:
+ 321              		.loc 1 65 43 view .LVU63
+ 322              	.LBE30:
+ 323              	.LBE28:
+  61:TapTempo.cpp  **** }
+ 324              		.loc 1 61 1 view .LVU64
+ 325 0022 10BD     		pop	{r4, pc}
+ 326              	.LVL15:
+ 327              	.L24:
+ 328              	.LBB32:
+ 329              	.LBB31:
+ 330              		.loc 1 65 43 view .LVU65
+ 331 0024 0020     		movs	r0, #0
+ 332              	.LVL16:
+ 333              		.loc 1 65 43 view .LVU66
+ 334              	.LBE31:
+ 335              	.LBE32:
+  61:TapTempo.cpp  **** }
+ 336              		.loc 1 61 1 view .LVU67
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 13
+
+
+ 337 0026 10BD     		pop	{r4, pc}
+  61:TapTempo.cpp  **** }
+ 338              		.loc 1 61 1 view .LVU68
+ 339              		.cfi_endproc
+ 340              	.LFE2546:
+ 342              		.section	.text._ZN8TapTempo13isChainActiveEm,"ax",%progbits
+ 343              		.align	1
+ 344              		.p2align 2,,3
+ 345              		.global	_ZN8TapTempo13isChainActiveEm
+ 346              		.syntax unified
+ 347              		.thumb
+ 348              		.thumb_func
+ 349              		.fpu fpv5-d16
+ 351              	_ZN8TapTempo13isChainActiveEm:
+ 352              	.LVL17:
+ 353              	.LFB2547:
+  64:TapTempo.cpp  ****   return lastTapMS + maxBeatLengthMS > ms && lastTapMS + (beatLengthMS * beatsUntilChainReset) > ms
+ 354              		.loc 1 64 1 is_stmt 1 view -0
+ 355              		.cfi_startproc
+ 356              		@ args = 0, pretend = 0, frame = 0
+ 357              		@ frame_needed = 0, uses_anonymous_args = 0
+ 358              		@ link register save eliminated.
+ 359              		.loc 1 65 3 view .LVU70
+ 360              		.loc 1 65 10 is_stmt 0 view .LVU71
+ 361 0000 C36A     		ldr	r3, [r0, #44]
+ 362              		.loc 1 65 20 view .LVU72
+ 363 0002 0268     		ldr	r2, [r0]
+ 364 0004 1A44     		add	r2, r2, r3
+ 365              		.loc 1 65 43 view .LVU73
+ 366 0006 8A42     		cmp	r2, r1
+ 367 0008 08D9     		bls	.L28
+ 368              		.loc 1 65 72 discriminator 1 view .LVU74
+ 369 000a 426A     		ldr	r2, [r0, #36]
+ 370 000c 8068     		ldr	r0, [r0, #8]
+ 371              	.LVL18:
+ 372              		.loc 1 65 56 discriminator 1 view .LVU75
+ 373 000e 00FB0233 		mla	r3, r0, r2, r3
+ 374              		.loc 1 65 43 discriminator 1 view .LVU76
+ 375 0012 8B42     		cmp	r3, r1
+ 376 0014 94BF     		ite	ls
+ 377 0016 0020     		movls	r0, #0
+ 378 0018 0120     		movhi	r0, #1
+ 379 001a 7047     		bx	lr
+ 380              	.LVL19:
+ 381              	.L28:
+ 382              		.loc 1 65 43 view .LVU77
+ 383 001c 0020     		movs	r0, #0
+ 384              	.LVL20:
+  66:TapTempo.cpp  **** }
+ 385              		.loc 1 66 1 view .LVU78
+ 386 001e 7047     		bx	lr
+ 387              		.cfi_endproc
+ 388              	.LFE2547:
+ 390              		.section	.text._ZN8TapTempo12beatProgressEv,"ax",%progbits
+ 391              		.align	1
+ 392              		.p2align 2,,3
+ 393              		.global	_ZN8TapTempo12beatProgressEv
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 14
+
+
+ 394              		.syntax unified
+ 395              		.thumb
+ 396              		.thumb_func
+ 397              		.fpu fpv5-d16
+ 399              	_ZN8TapTempo12beatProgressEv:
+ 400              	.LVL21:
+ 401              	.LFB2548:
+  67:TapTempo.cpp  **** 
+  68:TapTempo.cpp  **** float TapTempo::beatProgress()
+  69:TapTempo.cpp  **** {
+ 402              		.loc 1 69 1 is_stmt 1 view -0
+ 403              		.cfi_startproc
+ 404              		@ args = 0, pretend = 0, frame = 0
+ 405              		@ frame_needed = 0, uses_anonymous_args = 0
+  70:TapTempo.cpp  ****   return fmod((float)millisSinceReset / (float)beatLengthMS, 1.0);
+ 406              		.loc 1 70 3 view .LVU80
+ 407              		.loc 1 70 15 is_stmt 0 view .LVU81
+ 408 0000 90ED077A 		vldr.32	s14, [r0, #28]	@ int
+ 409              	.LBB33:
+ 410              	.LBB34:
+ 281:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 282:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 283:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   fmod(long double __x, long double __y)
+ 284:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_fmodl(__x, __y); }
+ 285:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 286:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 287:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp, typename _Up>
+ 288:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 289:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
+ 290:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     fmod(_Tp __x, _Up __y)
+ 291:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     {
+ 292:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
+ 293:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****       return fmod(__type(__x), __type(__y));
+ 411              		.loc 2 293 18 view .LVU82
+ 412 0004 B7EE001B 		vmov.f64	d1, #1.0e+0
+ 413              	.LVL22:
+ 414              		.loc 2 293 18 view .LVU83
+ 415              	.LBE34:
+ 416              	.LBI33:
+ 290:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     {
+ 417              		.loc 2 290 5 is_stmt 1 view .LVU84
+ 418              	.LBE33:
+ 419              		.loc 1 70 41 is_stmt 0 view .LVU85
+ 420 0008 D0ED097A 		vldr.32	s15, [r0, #36]	@ int
+ 421              		.loc 1 70 15 view .LVU86
+ 422 000c B8EE477A 		vcvt.f32.u32	s14, s14
+ 423              	.LVL23:
+ 424              		.loc 1 70 41 view .LVU87
+ 425 0010 F8EE677A 		vcvt.f32.u32	s15, s15
+  69:TapTempo.cpp  ****   return fmod((float)millisSinceReset / (float)beatLengthMS, 1.0);
+ 426              		.loc 1 69 1 view .LVU88
+ 427 0014 08B5     		push	{r3, lr}
+ 428              		.cfi_def_cfa_offset 8
+ 429              		.cfi_offset 3, -8
+ 430              		.cfi_offset 14, -4
+ 431              		.loc 1 70 14 view .LVU89
+ 432 0016 87EE270A 		vdiv.f32	s0, s14, s15
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 15
+
+
+ 433              	.LVL24:
+ 434              	.LBB36:
+ 435              	.LBB35:
+ 436              		.loc 2 293 18 view .LVU90
+ 437 001a B7EEC00A 		vcvt.f64.f32	d0, s0
+ 438              	.LVL25:
+ 439              		.loc 2 293 18 view .LVU91
+ 440 001e FFF7FEFF 		bl	fmod
+ 441              	.LVL26:
+ 442              		.loc 2 293 18 view .LVU92
+ 443              	.LBE35:
+ 444              	.LBE36:
+  71:TapTempo.cpp  **** }
+ 445              		.loc 1 71 1 view .LVU93
+ 446 0022 B7EEC00B 		vcvt.f32.f64	s0, d0
+ 447 0026 08BD     		pop	{r3, pc}
+ 448              		.cfi_endproc
+ 449              	.LFE2548:
+ 451              		.section	.text._ZN8TapTempo13addTapToChainEm,"ax",%progbits
+ 452              		.align	1
+ 453              		.p2align 2,,3
+ 454              		.global	_ZN8TapTempo13addTapToChainEm
+ 455              		.syntax unified
+ 456              		.thumb
+ 457              		.thumb_func
+ 458              		.fpu fpv5-d16
+ 460              	_ZN8TapTempo13addTapToChainEm:
+ 461              	.LVL27:
+ 462              	.LFB2551:
+  72:TapTempo.cpp  **** 
+  73:TapTempo.cpp  **** void TapTempo::update(bool buttonDown)
+  74:TapTempo.cpp  **** {
+  75:TapTempo.cpp  ****   unsigned long ms = daisy::System::GetNow();
+  76:TapTempo.cpp  **** 
+  77:TapTempo.cpp  ****   // if a tap has occured...
+  78:TapTempo.cpp  ****   if(buttonDown && !buttonDownOld)
+  79:TapTempo.cpp  ****     tap(ms);
+  80:TapTempo.cpp  **** 
+  81:TapTempo.cpp  ****   buttonDownOld = buttonDown;
+  82:TapTempo.cpp  ****   millisSinceResetOld = millisSinceReset;
+  83:TapTempo.cpp  ****   millisSinceReset = ms - lastResetMS;
+  84:TapTempo.cpp  **** }
+  85:TapTempo.cpp  **** 
+  86:TapTempo.cpp  **** void TapTempo::tap(unsigned long ms)
+  87:TapTempo.cpp  **** {
+  88:TapTempo.cpp  ****   // start a new tap chain if last tap was over an amount of beats ago
+  89:TapTempo.cpp  ****   if(!isChainActive(ms))
+  90:TapTempo.cpp  ****     resetTapChain(ms);
+  91:TapTempo.cpp  **** 
+  92:TapTempo.cpp  ****   addTapToChain(ms);
+  93:TapTempo.cpp  **** }
+  94:TapTempo.cpp  **** 
+  95:TapTempo.cpp  **** void TapTempo::addTapToChain(unsigned long ms)
+  96:TapTempo.cpp  **** {
+ 463              		.loc 1 96 1 is_stmt 1 view -0
+ 464              		.cfi_startproc
+ 465              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 16
+
+
+ 466              		@ frame_needed = 0, uses_anonymous_args = 0
+  97:TapTempo.cpp  ****   // get time since last tap
+  98:TapTempo.cpp  ****   unsigned long duration = ms - lastTapMS;
+ 467              		.loc 1 98 3 view .LVU95
+  99:TapTempo.cpp  **** 
+ 100:TapTempo.cpp  ****   // reset beat to occur right now
+ 101:TapTempo.cpp  ****   lastTapMS = ms;
+ 102:TapTempo.cpp  **** 
+ 103:TapTempo.cpp  ****   tapsInChain++;
+ 468              		.loc 1 103 3 is_stmt 0 view .LVU96
+ 469 0000 C26D     		ldr	r2, [r0, #92]
+ 470              		.loc 1 103 14 view .LVU97
+ 471 0002 531C     		adds	r3, r2, #1
+  96:TapTempo.cpp  ****   // get time since last tap
+ 472              		.loc 1 96 1 view .LVU98
+ 473 0004 10B5     		push	{r4, lr}
+ 474              		.cfi_def_cfa_offset 8
+ 475              		.cfi_offset 4, -8
+ 476              		.cfi_offset 14, -4
+ 104:TapTempo.cpp  ****   if(tapsInChain == 1)
+ 477              		.loc 1 104 3 view .LVU99
+ 478 0006 012B     		cmp	r3, #1
+  98:TapTempo.cpp  **** 
+ 479              		.loc 1 98 17 view .LVU100
+ 480 0008 C46A     		ldr	r4, [r0, #44]
+ 103:TapTempo.cpp  ****   if(tapsInChain == 1)
+ 481              		.loc 1 103 14 view .LVU101
+ 482 000a C365     		str	r3, [r0, #92]
+ 101:TapTempo.cpp  **** 
+ 483              		.loc 1 101 13 view .LVU102
+ 484 000c C162     		str	r1, [r0, #44]
+  98:TapTempo.cpp  **** 
+ 485              		.loc 1 98 17 view .LVU103
+ 486 000e A1EB0401 		sub	r1, r1, r4
+ 487              	.LVL28:
+ 101:TapTempo.cpp  **** 
+ 488              		.loc 1 101 3 is_stmt 1 view .LVU104
+ 103:TapTempo.cpp  ****   if(tapsInChain == 1)
+ 489              		.loc 1 103 3 view .LVU105
+ 490              		.loc 1 104 3 view .LVU106
+ 491 0012 2CD0     		beq	.L31
+ 105:TapTempo.cpp  ****     return;
+ 106:TapTempo.cpp  ****   
+ 107:TapTempo.cpp  ****   // detect if last duration was approximately twice the length of the current beat length
+ 108:TapTempo.cpp  ****   // and if so then we've simply missed a beat and can halve the duration to get the real beat leng
+ 109:TapTempo.cpp  ****   if(skippedTapDetection
+ 492              		.loc 1 109 3 view .LVU107
+ 110:TapTempo.cpp  ****      && tapsInChain > 2
+ 493              		.loc 1 110 6 is_stmt 0 view .LVU108
+ 494 0014 90F86040 		ldrb	r4, [r0, #96]	@ zero_extendqisi2
+ 495 0018 022B     		cmp	r3, #2
+ 496 001a D4BF     		ite	le
+ 497 001c 0024     		movle	r4, #0
+ 498 001e 04F00104 		andgt	r4, r4, #1
+ 499 0022 2CBB     		cbnz	r4, .L55
+ 500              	.L33:
+ 111:TapTempo.cpp  ****      && !lastTapSkipped
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 17
+
+
+ 112:TapTempo.cpp  ****      && duration > beatLengthMS * skippedTapThresholdLow
+ 113:TapTempo.cpp  ****      && duration < beatLengthMS * skippedTapThresholdHigh)
+ 114:TapTempo.cpp  ****   {
+ 115:TapTempo.cpp  ****     duration = duration >> 1;
+ 116:TapTempo.cpp  ****     lastTapSkipped = true;
+ 117:TapTempo.cpp  ****   }
+ 118:TapTempo.cpp  ****   else
+ 119:TapTempo.cpp  ****   {
+ 120:TapTempo.cpp  ****     lastTapSkipped = false;
+ 121:TapTempo.cpp  ****   }
+ 122:TapTempo.cpp  ****   
+ 123:TapTempo.cpp  ****   tapDurations[tapDurationIndex] = duration;
+ 501              		.loc 1 123 16 view .LVU109
+ 502 0024 836D     		ldr	r3, [r0, #88]
+ 503 0026 80F86140 		strb	r4, [r0, #97]
+ 504              		.loc 1 123 3 is_stmt 1 view .LVU110
+ 505              		.loc 1 123 34 is_stmt 0 view .LVU111
+ 506 002a 03F10C0C 		add	ip, r3, #12
+ 124:TapTempo.cpp  ****   tapDurationIndex++;
+ 125:TapTempo.cpp  ****   if(tapDurationIndex == totalTapValues) {
+ 507              		.loc 1 125 26 view .LVU112
+ 508 002e C468     		ldr	r4, [r0, #12]
+ 124:TapTempo.cpp  ****   tapDurationIndex++;
+ 509              		.loc 1 124 19 view .LVU113
+ 510 0030 0133     		adds	r3, r3, #1
+ 123:TapTempo.cpp  ****   tapDurationIndex++;
+ 511              		.loc 1 123 34 view .LVU114
+ 512 0032 40F82C10 		str	r1, [r0, ip, lsl #2]
+ 124:TapTempo.cpp  ****   tapDurationIndex++;
+ 513              		.loc 1 124 3 is_stmt 1 view .LVU115
+ 514              		.loc 1 125 3 is_stmt 0 view .LVU116
+ 515 0036 A342     		cmp	r3, r4
+ 124:TapTempo.cpp  ****   tapDurationIndex++;
+ 516              		.loc 1 124 19 view .LVU117
+ 517 0038 8365     		str	r3, [r0, #88]
+ 518              		.loc 1 125 3 is_stmt 1 view .LVU118
+ 519 003a 01D1     		bne	.L36
+ 126:TapTempo.cpp  ****     tapDurationIndex = 0;
+ 520              		.loc 1 126 5 view .LVU119
+ 521              		.loc 1 126 22 is_stmt 0 view .LVU120
+ 522 003c 0023     		movs	r3, #0
+ 523 003e 8365     		str	r3, [r0, #88]
+ 524              	.L36:
+ 127:TapTempo.cpp  ****   }
+ 128:TapTempo.cpp  ****   
+ 129:TapTempo.cpp  ****   beatLengthMS = getAverageTapDuration();
+ 525              		.loc 1 129 3 is_stmt 1 view .LVU121
+ 526              	.LVL29:
+ 527              	.LBB40:
+ 528              	.LBI40:
+ 130:TapTempo.cpp  **** }
+ 131:TapTempo.cpp  **** 
+ 132:TapTempo.cpp  **** void TapTempo::resetTapChain()
+ 133:TapTempo.cpp  **** {
+ 134:TapTempo.cpp  ****   resetTapChain(daisy::System::GetNow());
+ 135:TapTempo.cpp  **** }
+ 136:TapTempo.cpp  **** 
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 18
+
+
+ 137:TapTempo.cpp  **** void TapTempo::resetTapChain(unsigned long ms)
+ 138:TapTempo.cpp  **** {
+ 139:TapTempo.cpp  ****   tapsInChain = 0;
+ 140:TapTempo.cpp  ****   tapDurationIndex = 0;
+ 141:TapTempo.cpp  ****   lastResetMS = ms;
+ 142:TapTempo.cpp  ****   for(int i = 0; i < totalTapValues; i++) {
+ 143:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 144:TapTempo.cpp  ****   }
+ 145:TapTempo.cpp  **** }
+ 146:TapTempo.cpp  **** 
+ 147:TapTempo.cpp  **** unsigned long TapTempo::getAverageTapDuration()
+ 529              		.loc 1 147 15 view .LVU122
+ 530              	.LBB41:
+ 148:TapTempo.cpp  **** {
+ 149:TapTempo.cpp  ****   int amount = tapsInChain - 1;
+ 531              		.loc 1 149 3 view .LVU123
+ 150:TapTempo.cpp  ****   if(amount > totalTapValues)
+ 532              		.loc 1 150 3 view .LVU124
+ 533 0040 A242     		cmp	r2, r4
+ 534 0042 A8BF     		it	ge
+ 535 0044 2246     		movge	r2, r4
+ 536              	.LVL30:
+ 537              	.LBB42:
+ 151:TapTempo.cpp  ****     amount = totalTapValues;
+ 152:TapTempo.cpp  ****   
+ 153:TapTempo.cpp  ****   unsigned long runningTotalMS = 0;
+ 154:TapTempo.cpp  ****   for(int i = 0; i < amount; i++) {
+ 538              		.loc 1 154 20 is_stmt 0 view .LVU125
+ 539 0046 002A     		cmp	r2, #0
+ 540 0048 9646     		mov	lr, r2
+ 541              	.LVL31:
+ 542              		.loc 1 154 20 view .LVU126
+ 543              	.LBE42:
+ 153:TapTempo.cpp  ****   for(int i = 0; i < amount; i++) {
+ 544              		.loc 1 153 3 is_stmt 1 view .LVU127
+ 545              		.loc 1 154 3 view .LVU128
+ 546              	.LBB43:
+ 547              		.loc 1 154 20 view .LVU129
+ 548 004a 32DD     		ble	.L42
+ 549 004c 00F12C03 		add	r3, r0, #44
+ 550              	.LBE43:
+ 153:TapTempo.cpp  ****   for(int i = 0; i < amount; i++) {
+ 551              		.loc 1 153 17 is_stmt 0 view .LVU130
+ 552 0050 0022     		movs	r2, #0
+ 553 0052 03EB8E0C 		add	ip, r3, lr, lsl #2
+ 554              	.LVL32:
+ 555              	.L38:
+ 556              	.LBB44:
+ 155:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 557              		.loc 1 155 5 is_stmt 1 view .LVU131
+ 558              		.loc 1 155 20 is_stmt 0 view .LVU132
+ 559 0056 53F8041F 		ldr	r1, [r3, #4]!
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 560              		.loc 1 154 20 view .LVU133
+ 561 005a 9C45     		cmp	ip, r3
+ 562              		.loc 1 155 20 view .LVU134
+ 563 005c 0A44     		add	r2, r2, r1
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 19
+
+
+ 564              	.LVL33:
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 565              		.loc 1 154 3 is_stmt 1 view .LVU135
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 566              		.loc 1 154 20 view .LVU136
+ 567 005e FAD1     		bne	.L38
+ 568              	.LBE44:
+ 156:TapTempo.cpp  ****   }
+ 157:TapTempo.cpp  ****   unsigned long avgTapDurationMS = runningTotalMS / amount;
+ 569              		.loc 1 157 17 is_stmt 0 view .LVU137
+ 570 0060 B2FBFEF2 		udiv	r2, r2, lr
+ 571              	.LVL34:
+ 572              	.L37:
+ 573              		.loc 1 157 3 is_stmt 1 view .LVU138
+ 158:TapTempo.cpp  ****   if(avgTapDurationMS < minBeatLengthMS) {
+ 574              		.loc 1 158 3 view .LVU139
+ 575              		.loc 1 158 3 is_stmt 0 view .LVU140
+ 576              	.LBE41:
+ 577              	.LBE40:
+ 129:TapTempo.cpp  **** }
+ 578              		.loc 1 129 16 view .LVU141
+ 579 0064 4368     		ldr	r3, [r0, #4]
+ 580 0066 9A42     		cmp	r2, r3
+ 581 0068 38BF     		it	cc
+ 582 006a 1A46     		movcc	r2, r3
+ 583 006c 4262     		str	r2, [r0, #36]
+ 584              	.L31:
+ 130:TapTempo.cpp  **** 
+ 585              		.loc 1 130 1 view .LVU142
+ 586 006e 10BD     		pop	{r4, pc}
+ 587              	.LVL35:
+ 588              	.L55:
+ 111:TapTempo.cpp  ****      && duration > beatLengthMS * skippedTapThresholdLow
+ 589              		.loc 1 111 10 view .LVU143
+ 590 0070 90F86130 		ldrb	r3, [r0, #97]	@ zero_extendqisi2
+ 111:TapTempo.cpp  ****      && duration > beatLengthMS * skippedTapThresholdLow
+ 591              		.loc 1 111 6 view .LVU144
+ 592 0074 DBB9     		cbnz	r3, .L39
+ 112:TapTempo.cpp  ****      && duration < beatLengthMS * skippedTapThresholdHigh)
+ 593              		.loc 1 112 18 view .LVU145
+ 594 0076 07EE901A 		vmov	s15, r1	@ int
+ 112:TapTempo.cpp  ****      && duration < beatLengthMS * skippedTapThresholdHigh)
+ 595              		.loc 1 112 33 view .LVU146
+ 596 007a 90ED047A 		vldr.32	s14, [r0, #16]
+ 112:TapTempo.cpp  ****      && duration < beatLengthMS * skippedTapThresholdHigh)
+ 597              		.loc 1 112 18 view .LVU147
+ 598 007e F8EE676A 		vcvt.f32.u32	s13, s15
+ 112:TapTempo.cpp  ****      && duration < beatLengthMS * skippedTapThresholdHigh)
+ 599              		.loc 1 112 33 view .LVU148
+ 600 0082 D0ED097A 		vldr.32	s15, [r0, #36]	@ int
+ 601 0086 F8EE677A 		vcvt.f32.u32	s15, s15
+ 602 008a 27EE877A 		vmul.f32	s14, s15, s14
+ 112:TapTempo.cpp  ****      && duration < beatLengthMS * skippedTapThresholdHigh)
+ 603              		.loc 1 112 6 view .LVU149
+ 604 008e F4EEC76A 		vcmpe.f32	s13, s14
+ 605 0092 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 606 0096 0ADD     		ble	.L39
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 20
+
+
+ 113:TapTempo.cpp  ****   {
+ 607              		.loc 1 113 33 view .LVU150
+ 608 0098 90ED057A 		vldr.32	s14, [r0, #20]
+ 609 009c 67EE877A 		vmul.f32	s15, s15, s14
+ 113:TapTempo.cpp  ****   {
+ 610              		.loc 1 113 6 view .LVU151
+ 611 00a0 F4EEE76A 		vcmpe.f32	s13, s15
+ 612 00a4 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 613 00a8 05D5     		bpl	.L53
+ 115:TapTempo.cpp  ****     lastTapSkipped = true;
+ 614              		.loc 1 115 5 is_stmt 1 view .LVU152
+ 115:TapTempo.cpp  ****     lastTapSkipped = true;
+ 615              		.loc 1 115 14 is_stmt 0 view .LVU153
+ 616 00aa 4908     		lsrs	r1, r1, #1
+ 617              	.LVL36:
+ 116:TapTempo.cpp  ****   }
+ 618              		.loc 1 116 5 is_stmt 1 view .LVU154
+ 116:TapTempo.cpp  ****   }
+ 619              		.loc 1 116 20 is_stmt 0 view .LVU155
+ 620 00ac BAE7     		b	.L33
+ 621              	.L39:
+ 120:TapTempo.cpp  ****   }
+ 622              		.loc 1 120 20 view .LVU156
+ 623 00ae 0024     		movs	r4, #0
+ 624 00b0 B8E7     		b	.L33
+ 625              	.LVL37:
+ 626              	.L42:
+ 627              	.LBB47:
+ 628              	.LBB46:
+ 629              	.LBB45:
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 630              		.loc 1 154 20 view .LVU157
+ 631 00b2 0022     		movs	r2, #0
+ 632 00b4 D6E7     		b	.L37
+ 633              	.LVL38:
+ 634              	.L53:
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 635              		.loc 1 154 20 view .LVU158
+ 636              	.LBE45:
+ 637              	.LBE46:
+ 638              	.LBE47:
+ 120:TapTempo.cpp  ****   }
+ 639              		.loc 1 120 20 view .LVU159
+ 640 00b6 1C46     		mov	r4, r3
+ 641 00b8 B4E7     		b	.L33
+ 642              		.cfi_endproc
+ 643              	.LFE2551:
+ 645 00ba 00BF     		.section	.text._ZN8TapTempo3tapEm,"ax",%progbits
+ 646              		.align	1
+ 647              		.p2align 2,,3
+ 648              		.global	_ZN8TapTempo3tapEm
+ 649              		.syntax unified
+ 650              		.thumb
+ 651              		.thumb_func
+ 652              		.fpu fpv5-d16
+ 654              	_ZN8TapTempo3tapEm:
+ 655              	.LVL39:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 21
+
+
+ 656              	.LFB2550:
+  87:TapTempo.cpp  ****   // start a new tap chain if last tap was over an amount of beats ago
+ 657              		.loc 1 87 1 is_stmt 1 view -0
+ 658              		.cfi_startproc
+ 659              		@ args = 0, pretend = 0, frame = 0
+ 660              		@ frame_needed = 0, uses_anonymous_args = 0
+  89:TapTempo.cpp  ****     resetTapChain(ms);
+ 661              		.loc 1 89 3 view .LVU161
+  87:TapTempo.cpp  ****   // start a new tap chain if last tap was over an amount of beats ago
+ 662              		.loc 1 87 1 is_stmt 0 view .LVU162
+ 663 0000 38B5     		push	{r3, r4, r5, lr}
+ 664              		.cfi_def_cfa_offset 16
+ 665              		.cfi_offset 3, -16
+ 666              		.cfi_offset 4, -12
+ 667              		.cfi_offset 5, -8
+ 668              		.cfi_offset 14, -4
+ 669              	.LBB48:
+ 670              	.LBB49:
+  65:TapTempo.cpp  **** }
+ 671              		.loc 1 65 10 view .LVU163
+ 672 0002 C26A     		ldr	r2, [r0, #44]
+ 673              	.LBE49:
+ 674              	.LBE48:
+  87:TapTempo.cpp  ****   // start a new tap chain if last tap was over an amount of beats ago
+ 675              		.loc 1 87 1 view .LVU164
+ 676 0004 0446     		mov	r4, r0
+ 677              	.LVL40:
+ 678              	.LBB52:
+ 679              	.LBB50:
+  65:TapTempo.cpp  **** }
+ 680              		.loc 1 65 20 view .LVU165
+ 681 0006 0368     		ldr	r3, [r0]
+ 682              	.LBE50:
+ 683              	.LBE52:
+  87:TapTempo.cpp  ****   // start a new tap chain if last tap was over an amount of beats ago
+ 684              		.loc 1 87 1 view .LVU166
+ 685 0008 0D46     		mov	r5, r1
+ 686              	.LVL41:
+ 687              	.LBB53:
+ 688              	.LBI48:
+  63:TapTempo.cpp  **** {
+ 689              		.loc 1 63 6 is_stmt 1 view .LVU167
+ 690              	.LBB51:
+  65:TapTempo.cpp  **** }
+ 691              		.loc 1 65 3 view .LVU168
+  65:TapTempo.cpp  **** }
+ 692              		.loc 1 65 20 is_stmt 0 view .LVU169
+ 693 000a 1344     		add	r3, r3, r2
+  65:TapTempo.cpp  **** }
+ 694              		.loc 1 65 43 view .LVU170
+ 695 000c 9942     		cmp	r1, r3
+ 696 000e 05D2     		bcs	.L57
+  65:TapTempo.cpp  **** }
+ 697              		.loc 1 65 72 view .LVU171
+ 698 0010 436A     		ldr	r3, [r0, #36]
+ 699 0012 8168     		ldr	r1, [r0, #8]
+ 700              	.LVL42:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 22
+
+
+  65:TapTempo.cpp  **** }
+ 701              		.loc 1 65 56 view .LVU172
+ 702 0014 01FB0322 		mla	r2, r1, r3, r2
+  65:TapTempo.cpp  **** }
+ 703              		.loc 1 65 43 view .LVU173
+ 704 0018 9542     		cmp	r5, r2
+ 705 001a 0BD3     		bcc	.L58
+ 706              	.L57:
+ 707              	.LVL43:
+  65:TapTempo.cpp  **** }
+ 708              		.loc 1 65 43 view .LVU174
+ 709              	.LBE51:
+ 710              	.LBE53:
+  90:TapTempo.cpp  **** 
+ 711              		.loc 1 90 5 is_stmt 1 view .LVU175
+ 712              	.LBB54:
+ 713              	.LBI54:
+ 137:TapTempo.cpp  **** {
+ 714              		.loc 1 137 6 view .LVU176
+ 715              	.LBB55:
+ 139:TapTempo.cpp  ****   tapDurationIndex = 0;
+ 716              		.loc 1 139 3 view .LVU177
+ 139:TapTempo.cpp  ****   tapDurationIndex = 0;
+ 717              		.loc 1 139 15 is_stmt 0 view .LVU178
+ 718 001c 0021     		movs	r1, #0
+ 719              	.LBB56:
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 720              		.loc 1 142 22 view .LVU179
+ 721 001e E268     		ldr	r2, [r4, #12]
+ 722              	.LBE56:
+ 141:TapTempo.cpp  ****   for(int i = 0; i < totalTapValues; i++) {
+ 723              		.loc 1 141 15 view .LVU180
+ 724 0020 A562     		str	r5, [r4, #40]
+ 725              	.LBB57:
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 726              		.loc 1 142 20 view .LVU181
+ 727 0022 8A42     		cmp	r2, r1
+ 728              	.LBE57:
+ 140:TapTempo.cpp  ****   lastResetMS = ms;
+ 729              		.loc 1 140 20 view .LVU182
+ 730 0024 C4E91611 		strd	r1, r1, [r4, #88]
+ 141:TapTempo.cpp  ****   for(int i = 0; i < totalTapValues; i++) {
+ 731              		.loc 1 141 3 is_stmt 1 view .LVU183
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 732              		.loc 1 142 3 view .LVU184
+ 733              	.LVL44:
+ 734              	.LBB58:
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 735              		.loc 1 142 20 view .LVU185
+ 736 0028 04DD     		ble	.L58
+ 143:TapTempo.cpp  ****   }
+ 737              		.loc 1 143 21 is_stmt 0 view .LVU186
+ 738 002a 9200     		lsls	r2, r2, #2
+ 739 002c 04F13000 		add	r0, r4, #48
+ 740              	.LVL45:
+ 143:TapTempo.cpp  ****   }
+ 741              		.loc 1 143 21 view .LVU187
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 23
+
+
+ 742 0030 FFF7FEFF 		bl	memset
+ 743              	.LVL46:
+ 744              	.L58:
+ 143:TapTempo.cpp  ****   }
+ 745              		.loc 1 143 21 view .LVU188
+ 746              	.LBE58:
+ 747              	.LBE55:
+ 748              	.LBE54:
+  92:TapTempo.cpp  **** }
+ 749              		.loc 1 92 3 is_stmt 1 view .LVU189
+  92:TapTempo.cpp  **** }
+ 750              		.loc 1 92 16 is_stmt 0 view .LVU190
+ 751 0034 2946     		mov	r1, r5
+ 752 0036 2046     		mov	r0, r4
+  93:TapTempo.cpp  **** 
+ 753              		.loc 1 93 1 view .LVU191
+ 754 0038 BDE83840 		pop	{r3, r4, r5, lr}
+ 755              		.cfi_restore 14
+ 756              		.cfi_restore 5
+ 757              		.cfi_restore 4
+ 758              		.cfi_restore 3
+ 759              		.cfi_def_cfa_offset 0
+ 760              	.LVL47:
+  92:TapTempo.cpp  **** }
+ 761              		.loc 1 92 16 view .LVU192
+ 762 003c FFF7FEBF 		b	_ZN8TapTempo13addTapToChainEm
+ 763              	.LVL48:
+  92:TapTempo.cpp  **** }
+ 764              		.loc 1 92 16 view .LVU193
+ 765              		.cfi_endproc
+ 766              	.LFE2550:
+ 768              		.section	.text._ZN8TapTempo6updateEb,"ax",%progbits
+ 769              		.align	1
+ 770              		.p2align 2,,3
+ 771              		.global	_ZN8TapTempo6updateEb
+ 772              		.syntax unified
+ 773              		.thumb
+ 774              		.thumb_func
+ 775              		.fpu fpv5-d16
+ 777              	_ZN8TapTempo6updateEb:
+ 778              	.LVL49:
+ 779              	.LFB2549:
+  74:TapTempo.cpp  ****   unsigned long ms = daisy::System::GetNow();
+ 780              		.loc 1 74 1 is_stmt 1 view -0
+ 781              		.cfi_startproc
+ 782              		@ args = 0, pretend = 0, frame = 0
+ 783              		@ frame_needed = 0, uses_anonymous_args = 0
+  75:TapTempo.cpp  **** 
+ 784              		.loc 1 75 3 view .LVU195
+  74:TapTempo.cpp  ****   unsigned long ms = daisy::System::GetNow();
+ 785              		.loc 1 74 1 is_stmt 0 view .LVU196
+ 786 0000 70B5     		push	{r4, r5, r6, lr}
+ 787              		.cfi_def_cfa_offset 16
+ 788              		.cfi_offset 4, -16
+ 789              		.cfi_offset 5, -12
+ 790              		.cfi_offset 6, -8
+ 791              		.cfi_offset 14, -4
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 24
+
+
+  74:TapTempo.cpp  ****   unsigned long ms = daisy::System::GetNow();
+ 792              		.loc 1 74 1 view .LVU197
+ 793 0002 0E46     		mov	r6, r1
+ 794 0004 0446     		mov	r4, r0
+  75:TapTempo.cpp  **** 
+ 795              		.loc 1 75 43 view .LVU198
+ 796 0006 FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
+ 797              	.LVL50:
+  75:TapTempo.cpp  **** 
+ 798              		.loc 1 75 43 view .LVU199
+ 799 000a 0546     		mov	r5, r0
+ 800              	.LVL51:
+  78:TapTempo.cpp  ****     tap(ms);
+ 801              		.loc 1 78 3 is_stmt 1 view .LVU200
+ 802 000c 0EB1     		cbz	r6, .L61
+  78:TapTempo.cpp  ****     tap(ms);
+ 803              		.loc 1 78 17 is_stmt 0 discriminator 1 view .LVU201
+ 804 000e 237E     		ldrb	r3, [r4, #24]	@ zero_extendqisi2
+ 805 0010 33B1     		cbz	r3, .L66
+ 806              	.LVL52:
+ 807              	.L61:
+  81:TapTempo.cpp  ****   millisSinceResetOld = millisSinceReset;
+ 808              		.loc 1 81 3 is_stmt 1 view .LVU202
+  83:TapTempo.cpp  **** }
+ 809              		.loc 1 83 25 is_stmt 0 view .LVU203
+ 810 0012 A16A     		ldr	r1, [r4, #40]
+  82:TapTempo.cpp  ****   millisSinceReset = ms - lastResetMS;
+ 811              		.loc 1 82 23 view .LVU204
+ 812 0014 E369     		ldr	r3, [r4, #28]
+  83:TapTempo.cpp  **** }
+ 813              		.loc 1 83 25 view .LVU205
+ 814 0016 6D1A     		subs	r5, r5, r1
+ 815              	.LVL53:
+  81:TapTempo.cpp  ****   millisSinceResetOld = millisSinceReset;
+ 816              		.loc 1 81 17 view .LVU206
+ 817 0018 2676     		strb	r6, [r4, #24]
+  82:TapTempo.cpp  ****   millisSinceReset = ms - lastResetMS;
+ 818              		.loc 1 82 3 is_stmt 1 view .LVU207
+  83:TapTempo.cpp  **** }
+ 819              		.loc 1 83 20 is_stmt 0 view .LVU208
+ 820 001a C4E90753 		strd	r5, r3, [r4, #28]
+  84:TapTempo.cpp  **** 
+ 821              		.loc 1 84 1 view .LVU209
+ 822 001e 70BD     		pop	{r4, r5, r6, pc}
+ 823              	.LVL54:
+ 824              	.L66:
+  79:TapTempo.cpp  **** 
+ 825              		.loc 1 79 5 is_stmt 1 view .LVU210
+  79:TapTempo.cpp  **** 
+ 826              		.loc 1 79 8 is_stmt 0 view .LVU211
+ 827 0020 0146     		mov	r1, r0
+ 828 0022 2046     		mov	r0, r4
+ 829              	.LVL55:
+  79:TapTempo.cpp  **** 
+ 830              		.loc 1 79 8 view .LVU212
+ 831 0024 FFF7FEFF 		bl	_ZN8TapTempo3tapEm
+ 832              	.LVL56:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 25
+
+
+ 833 0028 F3E7     		b	.L61
+ 834              		.cfi_endproc
+ 835              	.LFE2549:
+ 837 002a 00BF     		.section	.text._ZN8TapTempo13resetTapChainEv,"ax",%progbits
+ 838              		.align	1
+ 839              		.p2align 2,,3
+ 840              		.global	_ZN8TapTempo13resetTapChainEv
+ 841              		.syntax unified
+ 842              		.thumb
+ 843              		.thumb_func
+ 844              		.fpu fpv5-d16
+ 846              	_ZN8TapTempo13resetTapChainEv:
+ 847              	.LVL57:
+ 848              	.LFB2552:
+ 133:TapTempo.cpp  ****   resetTapChain(daisy::System::GetNow());
+ 849              		.loc 1 133 1 is_stmt 1 view -0
+ 850              		.cfi_startproc
+ 851              		@ args = 0, pretend = 0, frame = 0
+ 852              		@ frame_needed = 0, uses_anonymous_args = 0
+ 134:TapTempo.cpp  **** }
+ 853              		.loc 1 134 3 view .LVU214
+ 133:TapTempo.cpp  ****   resetTapChain(daisy::System::GetNow());
+ 854              		.loc 1 133 1 is_stmt 0 view .LVU215
+ 855 0000 10B5     		push	{r4, lr}
+ 856              		.cfi_def_cfa_offset 8
+ 857              		.cfi_offset 4, -8
+ 858              		.cfi_offset 14, -4
+ 133:TapTempo.cpp  ****   resetTapChain(daisy::System::GetNow());
+ 859              		.loc 1 133 1 view .LVU216
+ 860 0002 0446     		mov	r4, r0
+ 134:TapTempo.cpp  **** }
+ 861              		.loc 1 134 16 view .LVU217
+ 862 0004 FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
+ 863              	.LVL58:
+ 864              	.LBB59:
+ 865              	.LBI59:
+ 137:TapTempo.cpp  **** {
+ 866              		.loc 1 137 6 is_stmt 1 view .LVU218
+ 867              	.LBB60:
+ 139:TapTempo.cpp  ****   tapDurationIndex = 0;
+ 868              		.loc 1 139 3 view .LVU219
+ 139:TapTempo.cpp  ****   tapDurationIndex = 0;
+ 869              		.loc 1 139 15 is_stmt 0 view .LVU220
+ 870 0008 0021     		movs	r1, #0
+ 871              	.LBB61:
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 872              		.loc 1 142 22 view .LVU221
+ 873 000a E268     		ldr	r2, [r4, #12]
+ 874              	.LBE61:
+ 141:TapTempo.cpp  ****   for(int i = 0; i < totalTapValues; i++) {
+ 875              		.loc 1 141 15 view .LVU222
+ 876 000c A062     		str	r0, [r4, #40]
+ 877              	.LBB62:
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 878              		.loc 1 142 20 view .LVU223
+ 879 000e 8A42     		cmp	r2, r1
+ 880              	.LBE62:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 26
+
+
+ 140:TapTempo.cpp  ****   lastResetMS = ms;
+ 881              		.loc 1 140 20 view .LVU224
+ 882 0010 C4E91611 		strd	r1, r1, [r4, #88]
+ 141:TapTempo.cpp  ****   for(int i = 0; i < totalTapValues; i++) {
+ 883              		.loc 1 141 3 is_stmt 1 view .LVU225
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 884              		.loc 1 142 3 view .LVU226
+ 885              	.LVL59:
+ 886              	.LBB63:
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 887              		.loc 1 142 20 view .LVU227
+ 888 0014 06DD     		ble	.L67
+ 143:TapTempo.cpp  ****   }
+ 889              		.loc 1 143 21 is_stmt 0 view .LVU228
+ 890 0016 04F13000 		add	r0, r4, #48
+ 891              	.LVL60:
+ 143:TapTempo.cpp  ****   }
+ 892              		.loc 1 143 21 view .LVU229
+ 893 001a 9200     		lsls	r2, r2, #2
+ 894              	.LBE63:
+ 895              	.LBE60:
+ 896              	.LBE59:
+ 135:TapTempo.cpp  **** 
+ 897              		.loc 1 135 1 view .LVU230
+ 898 001c BDE81040 		pop	{r4, lr}
+ 899              		.cfi_remember_state
+ 900              		.cfi_restore 14
+ 901              		.cfi_restore 4
+ 902              		.cfi_def_cfa_offset 0
+ 903              	.LVL61:
+ 904              	.LBB66:
+ 905              	.LBB65:
+ 906              	.LBB64:
+ 143:TapTempo.cpp  ****   }
+ 907              		.loc 1 143 21 view .LVU231
+ 908 0020 FFF7FEBF 		b	memset
+ 909              	.LVL62:
+ 910              	.L67:
+ 911              		.cfi_restore_state
+ 143:TapTempo.cpp  ****   }
+ 912              		.loc 1 143 21 view .LVU232
+ 913              	.LBE64:
+ 914              	.LBE65:
+ 915              	.LBE66:
+ 135:TapTempo.cpp  **** 
+ 916              		.loc 1 135 1 view .LVU233
+ 917 0024 10BD     		pop	{r4, pc}
+ 135:TapTempo.cpp  **** 
+ 918              		.loc 1 135 1 view .LVU234
+ 919              		.cfi_endproc
+ 920              	.LFE2552:
+ 922 0026 00BF     		.section	.text._ZN8TapTempo13resetTapChainEm,"ax",%progbits
+ 923              		.align	1
+ 924              		.p2align 2,,3
+ 925              		.global	_ZN8TapTempo13resetTapChainEm
+ 926              		.syntax unified
+ 927              		.thumb
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 27
+
+
+ 928              		.thumb_func
+ 929              		.fpu fpv5-d16
+ 931              	_ZN8TapTempo13resetTapChainEm:
+ 932              	.LVL63:
+ 933              	.LFB2553:
+ 138:TapTempo.cpp  ****   tapsInChain = 0;
+ 934              		.loc 1 138 1 is_stmt 1 view -0
+ 935              		.cfi_startproc
+ 936              		@ args = 0, pretend = 0, frame = 0
+ 937              		@ frame_needed = 0, uses_anonymous_args = 0
+ 938              		@ link register save eliminated.
+ 139:TapTempo.cpp  ****   tapDurationIndex = 0;
+ 939              		.loc 1 139 3 view .LVU236
+ 139:TapTempo.cpp  ****   tapDurationIndex = 0;
+ 940              		.loc 1 139 15 is_stmt 0 view .LVU237
+ 941 0000 0023     		movs	r3, #0
+ 942              	.LBB67:
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 943              		.loc 1 142 22 view .LVU238
+ 944 0002 C268     		ldr	r2, [r0, #12]
+ 945              	.LBE67:
+ 141:TapTempo.cpp  ****   for(int i = 0; i < totalTapValues; i++) {
+ 946              		.loc 1 141 15 view .LVU239
+ 947 0004 8162     		str	r1, [r0, #40]
+ 948              	.LBB68:
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 949              		.loc 1 142 20 view .LVU240
+ 950 0006 9A42     		cmp	r2, r3
+ 951              	.LBE68:
+ 140:TapTempo.cpp  ****   lastResetMS = ms;
+ 952              		.loc 1 140 20 view .LVU241
+ 953 0008 C0E91633 		strd	r3, r3, [r0, #88]
+ 141:TapTempo.cpp  ****   for(int i = 0; i < totalTapValues; i++) {
+ 954              		.loc 1 141 3 is_stmt 1 view .LVU242
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 955              		.loc 1 142 3 view .LVU243
+ 956              	.LVL64:
+ 957              	.LBB69:
+ 142:TapTempo.cpp  ****     tapDurations[i] = 0;
+ 958              		.loc 1 142 20 view .LVU244
+ 959 000c 04DD     		ble	.L70
+ 143:TapTempo.cpp  ****   }
+ 960              		.loc 1 143 21 is_stmt 0 view .LVU245
+ 961 000e 9200     		lsls	r2, r2, #2
+ 962 0010 1946     		mov	r1, r3
+ 963              	.LVL65:
+ 143:TapTempo.cpp  ****   }
+ 964              		.loc 1 143 21 view .LVU246
+ 965 0012 3030     		adds	r0, r0, #48
+ 966              	.LVL66:
+ 143:TapTempo.cpp  ****   }
+ 967              		.loc 1 143 21 view .LVU247
+ 968 0014 FFF7FEBF 		b	memset
+ 969              	.LVL67:
+ 970              	.L70:
+ 143:TapTempo.cpp  ****   }
+ 971              		.loc 1 143 21 view .LVU248
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 28
+
+
+ 972              	.LBE69:
+ 145:TapTempo.cpp  **** 
+ 973              		.loc 1 145 1 view .LVU249
+ 974 0018 7047     		bx	lr
+ 975              		.cfi_endproc
+ 976              	.LFE2553:
+ 978 001a 00BF     		.section	.text._ZN8TapTempo21getAverageTapDurationEv,"ax",%progbits
+ 979              		.align	1
+ 980              		.p2align 2,,3
+ 981              		.global	_ZN8TapTempo21getAverageTapDurationEv
+ 982              		.syntax unified
+ 983              		.thumb
+ 984              		.thumb_func
+ 985              		.fpu fpv5-d16
+ 987              	_ZN8TapTempo21getAverageTapDurationEv:
+ 988              	.LVL68:
+ 989              	.LFB2554:
+ 148:TapTempo.cpp  ****   int amount = tapsInChain - 1;
+ 990              		.loc 1 148 1 is_stmt 1 view -0
+ 991              		.cfi_startproc
+ 992              		@ args = 0, pretend = 0, frame = 0
+ 993              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149:TapTempo.cpp  ****   if(amount > totalTapValues)
+ 994              		.loc 1 149 3 view .LVU251
+ 149:TapTempo.cpp  ****   if(amount > totalTapValues)
+ 995              		.loc 1 149 7 is_stmt 0 view .LVU252
+ 996 0000 C36D     		ldr	r3, [r0, #92]
+ 997 0002 C168     		ldr	r1, [r0, #12]
+ 998 0004 5A1E     		subs	r2, r3, #1
+ 999              	.LVL69:
+ 150:TapTempo.cpp  ****     amount = totalTapValues;
+ 1000              		.loc 1 150 3 is_stmt 1 view .LVU253
+ 1001 0006 8A42     		cmp	r2, r1
+ 1002 0008 A8BF     		it	ge
+ 1003 000a 0A46     		movge	r2, r1
+ 1004              	.LVL70:
+ 153:TapTempo.cpp  ****   for(int i = 0; i < amount; i++) {
+ 1005              		.loc 1 153 3 view .LVU254
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 1006              		.loc 1 154 3 view .LVU255
+ 1007              	.LBB70:
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 1008              		.loc 1 154 20 view .LVU256
+ 1009 000c 002A     		cmp	r2, #0
+ 1010 000e 13DD     		ble	.L75
+ 1011 0010 00F12C03 		add	r3, r0, #44
+ 1012              	.LVL71:
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 1013              		.loc 1 154 20 is_stmt 0 view .LVU257
+ 1014              	.LBE70:
+ 148:TapTempo.cpp  ****   int amount = tapsInChain - 1;
+ 1015              		.loc 1 148 1 view .LVU258
+ 1016 0014 00B5     		push	{lr}
+ 1017              		.cfi_def_cfa_offset 4
+ 1018              		.cfi_offset 14, -4
+ 1019 0016 9646     		mov	lr, r2
+ 153:TapTempo.cpp  ****   for(int i = 0; i < amount; i++) {
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 29
+
+
+ 1020              		.loc 1 153 17 view .LVU259
+ 1021 0018 0022     		movs	r2, #0
+ 1022 001a 03EB8E0C 		add	ip, r3, lr, lsl #2
+ 1023              	.LVL72:
+ 1024              	.L74:
+ 1025              	.LBB71:
+ 155:TapTempo.cpp  ****   }
+ 1026              		.loc 1 155 5 is_stmt 1 discriminator 2 view .LVU260
+ 155:TapTempo.cpp  ****   }
+ 1027              		.loc 1 155 20 is_stmt 0 discriminator 2 view .LVU261
+ 1028 001e 53F8041F 		ldr	r1, [r3, #4]!
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 1029              		.loc 1 154 20 discriminator 2 view .LVU262
+ 1030 0022 9C45     		cmp	ip, r3
+ 155:TapTempo.cpp  ****   }
+ 1031              		.loc 1 155 20 discriminator 2 view .LVU263
+ 1032 0024 0A44     		add	r2, r2, r1
+ 1033              	.LVL73:
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 1034              		.loc 1 154 3 is_stmt 1 discriminator 2 view .LVU264
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 1035              		.loc 1 154 20 discriminator 2 view .LVU265
+ 1036 0026 FAD1     		bne	.L74
+ 1037              	.LBE71:
+ 157:TapTempo.cpp  ****   if(avgTapDurationMS < minBeatLengthMS) {
+ 1038              		.loc 1 157 3 view .LVU266
+ 1039              		.loc 1 158 3 view .LVU267
+ 159:TapTempo.cpp  ****     return minBeatLengthMS;
+ 160:TapTempo.cpp  ****   }
+ 161:TapTempo.cpp  ****   return avgTapDurationMS;
+ 162:TapTempo.cpp  **** }
+ 1040              		.loc 1 162 1 is_stmt 0 view .LVU268
+ 1041 0028 4068     		ldr	r0, [r0, #4]
+ 1042              	.LVL74:
+ 157:TapTempo.cpp  ****   if(avgTapDurationMS < minBeatLengthMS) {
+ 1043              		.loc 1 157 17 view .LVU269
+ 1044 002a B2FBFEF2 		udiv	r2, r2, lr
+ 1045              	.LVL75:
+ 1046              		.loc 1 162 1 view .LVU270
+ 1047 002e 9042     		cmp	r0, r2
+ 1048 0030 38BF     		it	cc
+ 1049 0032 1046     		movcc	r0, r2
+ 1050 0034 5DF804FB 		ldr	pc, [sp], #4
+ 1051              	.LVL76:
+ 1052              	.L75:
+ 1053              		.cfi_def_cfa_offset 0
+ 1054              		.cfi_restore 14
+ 1055              	.LBB72:
+ 154:TapTempo.cpp  ****     runningTotalMS += tapDurations[i];
+ 1056              		.loc 1 154 20 view .LVU271
+ 1057 0038 0022     		movs	r2, #0
+ 1058              	.LBE72:
+ 157:TapTempo.cpp  ****   if(avgTapDurationMS < minBeatLengthMS) {
+ 1059              		.loc 1 157 3 is_stmt 1 view .LVU272
+ 158:TapTempo.cpp  ****     return minBeatLengthMS;
+ 1060              		.loc 1 158 3 view .LVU273
+ 1061              		.loc 1 162 1 is_stmt 0 view .LVU274
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 30
+
+
+ 1062 003a 4068     		ldr	r0, [r0, #4]
+ 1063              	.LVL77:
+ 1064              		.loc 1 162 1 view .LVU275
+ 1065 003c 9042     		cmp	r0, r2
+ 1066 003e 38BF     		it	cc
+ 1067 0040 1046     		movcc	r0, r2
+ 1068 0042 7047     		bx	lr
+ 1069              		.cfi_endproc
+ 1070              	.LFE2554:
+ 1072              		.section	.text._ZN8TapTempo23setBeatsUntilChainResetEi,"ax",%progbits
+ 1073              		.align	1
+ 1074              		.p2align 2,,3
+ 1075              		.global	_ZN8TapTempo23setBeatsUntilChainResetEi
+ 1076              		.syntax unified
+ 1077              		.thumb
+ 1078              		.thumb_func
+ 1079              		.fpu fpv5-d16
+ 1081              	_ZN8TapTempo23setBeatsUntilChainResetEi:
+ 1082              	.LVL78:
+ 1083              	.LFB2555:
+ 163:TapTempo.cpp  **** 
+ 164:TapTempo.cpp  **** void TapTempo::setBeatsUntilChainReset(int beats)
+ 165:TapTempo.cpp  **** {
+ 1084              		.loc 1 165 1 is_stmt 1 view -0
+ 1085              		.cfi_startproc
+ 1086              		@ args = 0, pretend = 0, frame = 0
+ 1087              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1088              		@ link register save eliminated.
+ 166:TapTempo.cpp  ****   if(beats < 2)
+ 1089              		.loc 1 166 3 view .LVU277
+ 167:TapTempo.cpp  ****   {
+ 168:TapTempo.cpp  ****     beats = 2;
+ 169:TapTempo.cpp  ****   }
+ 170:TapTempo.cpp  ****   beatsUntilChainReset = beats;
+ 1090              		.loc 1 170 3 view .LVU278
+ 1091              		.loc 1 170 24 is_stmt 0 view .LVU279
+ 1092 0000 0229     		cmp	r1, #2
+ 1093 0002 B8BF     		it	lt
+ 1094 0004 0221     		movlt	r1, #2
+ 1095              	.LVL79:
+ 1096              		.loc 1 170 24 view .LVU280
+ 1097 0006 8160     		str	r1, [r0, #8]
+ 171:TapTempo.cpp  **** }
+ 1098              		.loc 1 171 1 view .LVU281
+ 1099 0008 7047     		bx	lr
+ 1100              		.cfi_endproc
+ 1101              	.LFE2555:
+ 1103 000a 00BF     		.section	.text._ZN8TapTempo17setTotalTapValuesEi,"ax",%progbits
+ 1104              		.align	1
+ 1105              		.p2align 2,,3
+ 1106              		.global	_ZN8TapTempo17setTotalTapValuesEi
+ 1107              		.syntax unified
+ 1108              		.thumb
+ 1109              		.thumb_func
+ 1110              		.fpu fpv5-d16
+ 1112              	_ZN8TapTempo17setTotalTapValuesEi:
+ 1113              	.LVL80:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 31
+
+
+ 1114              	.LFB2556:
+ 172:TapTempo.cpp  **** 
+ 173:TapTempo.cpp  **** void TapTempo::setTotalTapValues(int total)
+ 174:TapTempo.cpp  **** {
+ 1115              		.loc 1 174 1 is_stmt 1 view -0
+ 1116              		.cfi_startproc
+ 1117              		@ args = 0, pretend = 0, frame = 0
+ 1118              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1119              		@ link register save eliminated.
+ 175:TapTempo.cpp  ****   if(total < 2)
+ 1120              		.loc 1 175 3 view .LVU283
+ 1121 0000 0A29     		cmp	r1, #10
+ 1122 0002 A8BF     		it	ge
+ 1123 0004 0A21     		movge	r1, #10
+ 1124              	.LVL81:
+ 176:TapTempo.cpp  ****   {
+ 177:TapTempo.cpp  ****     total = 2;
+ 178:TapTempo.cpp  ****   }
+ 179:TapTempo.cpp  ****   else if(total > TapTempo::MAX_TAP_VALUES)
+ 180:TapTempo.cpp  ****   {
+ 181:TapTempo.cpp  ****     total = TapTempo::MAX_TAP_VALUES;
+ 182:TapTempo.cpp  ****   }
+ 183:TapTempo.cpp  ****   totalTapValues = total;
+ 1125              		.loc 1 183 3 view .LVU284
+ 1126              		.loc 1 183 18 is_stmt 0 view .LVU285
+ 1127 0006 0229     		cmp	r1, #2
+ 1128 0008 B8BF     		it	lt
+ 1129 000a 0221     		movlt	r1, #2
+ 1130              	.LVL82:
+ 1131              		.loc 1 183 18 view .LVU286
+ 1132 000c C160     		str	r1, [r0, #12]
+ 184:TapTempo.cpp  **** }
+ 1133              		.loc 1 184 1 view .LVU287
+ 1134 000e 7047     		bx	lr
+ 1135              		.cfi_endproc
+ 1136              	.LFE2556:
+ 1138              		.text
+ 1139              	.Letext0:
+ 1140              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 1141              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 1142              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 1143              		.file 6 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 1144              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 1145              		.file 8 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 1146              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 1147              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 1148              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 1149              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 1150              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 1151              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 1152              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 1153              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 1154              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 1155              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 1156              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 1157              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\ext\\type_traits
+ 1158              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 32
+
+
+ 1159              		.file 22 "<built-in>"
+ 1160              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 1161              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 1162              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 1163              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 1164              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 1165              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 1166              		.file 29 "../../libDaisy//src/daisy_core.h"
+ 1167              		.file 30 "../../libDaisy//src/per/tim.h"
+ 1168              		.file 31 "../../libDaisy//src/sys/system.h"
+ 1169              		.file 32 "../../libDaisy//src/util/wav_format.h"
+ 1170              		.file 33 "../../libDaisy//src/dev/max11300.h"
+ 1171              		.file 34 "../../libDaisy//src/daisy_seed.h"
+ 1172              		.file 35 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 1173              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 1174              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 1175              		.file 38 "TapTempo.h"
+ 1176              		.file 39 "../../libDaisy//src/dev/sr_595.h"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s 			page 33
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 TapTempo.cpp
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:17     .text._ZN8TapTempo25setSkippedTapThresholdLowEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:26     .text._ZN8TapTempo25setSkippedTapThresholdLowEf:00000000 _ZN8TapTempo25setSkippedTapThresholdLowEf
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:55     .text._ZN8TapTempo26setSkippedTapThresholdHighEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:63     .text._ZN8TapTempo26setSkippedTapThresholdHighEf:00000000 _ZN8TapTempo26setSkippedTapThresholdHighEf
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:91     .text._ZN8TapTempo6getBPMEv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:99     .text._ZN8TapTempo6getBPMEv:00000000 _ZN8TapTempo6getBPMEv
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:119    .text._ZN8TapTempo6getBPMEv:00000018 $d
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:125    .text._ZN8TapTempo6setBPMEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:133    .text._ZN8TapTempo6setBPMEf:00000000 _ZN8TapTempo6setBPMEf
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:160    .text._ZN8TapTempo6setBPMEf:0000001c $d
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:166    .text._ZN8TapTempo6onBeatEv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:174    .text._ZN8TapTempo6onBeatEv:00000000 _ZN8TapTempo6onBeatEv
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:264    .text._ZN8TapTempo13isChainActiveEv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:272    .text._ZN8TapTempo13isChainActiveEv:00000000 _ZN8TapTempo13isChainActiveEv
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:343    .text._ZN8TapTempo13isChainActiveEm:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:351    .text._ZN8TapTempo13isChainActiveEm:00000000 _ZN8TapTempo13isChainActiveEm
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:391    .text._ZN8TapTempo12beatProgressEv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:399    .text._ZN8TapTempo12beatProgressEv:00000000 _ZN8TapTempo12beatProgressEv
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:452    .text._ZN8TapTempo13addTapToChainEm:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:460    .text._ZN8TapTempo13addTapToChainEm:00000000 _ZN8TapTempo13addTapToChainEm
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:646    .text._ZN8TapTempo3tapEm:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:654    .text._ZN8TapTempo3tapEm:00000000 _ZN8TapTempo3tapEm
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:769    .text._ZN8TapTempo6updateEb:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:777    .text._ZN8TapTempo6updateEb:00000000 _ZN8TapTempo6updateEb
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:838    .text._ZN8TapTempo13resetTapChainEv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:846    .text._ZN8TapTempo13resetTapChainEv:00000000 _ZN8TapTempo13resetTapChainEv
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:923    .text._ZN8TapTempo13resetTapChainEm:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:931    .text._ZN8TapTempo13resetTapChainEm:00000000 _ZN8TapTempo13resetTapChainEm
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:979    .text._ZN8TapTempo21getAverageTapDurationEv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:987    .text._ZN8TapTempo21getAverageTapDurationEv:00000000 _ZN8TapTempo21getAverageTapDurationEv
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:1073   .text._ZN8TapTempo23setBeatsUntilChainResetEi:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:1081   .text._ZN8TapTempo23setBeatsUntilChainResetEi:00000000 _ZN8TapTempo23setBeatsUntilChainResetEi
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:1104   .text._ZN8TapTempo17setTotalTapValuesEi:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccljUBFx.s:1112   .text._ZN8TapTempo17setTotalTapValuesEi:00000000 _ZN8TapTempo17setTotalTapValuesEi
+
+UNDEFINED SYMBOLS
+fmodf
+_ZN5daisy6System6GetNowEv
+fmod
+memset

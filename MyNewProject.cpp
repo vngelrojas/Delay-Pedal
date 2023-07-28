@@ -1,7 +1,6 @@
-
 #include "Delay.h"
 #include "ToneFilter.h"
-
+#include "TapTempo.h"
 
 using namespace daisysp;
 using namespace daisy;
@@ -12,6 +11,7 @@ DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS delayMems[4];
 Delayy delay;
 ToneFilter tone(48000.f);
 static Balance balance;
+TapTempo tapTempo;
 
 Switch ON_BUTTON;                 // The on/off button
 Switch TEMPO_BUTTON;              // The tap tempo button
@@ -61,6 +61,7 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
         {
             onButtonWasPressed = true; // set the flag to indicate that the button was pressed
             delay.stopAll();
+            hw.PrintLine("BPM is %f",tapTempo.getBPM());
         }
 
         // Check if the button was released
@@ -162,6 +163,7 @@ int main(void)
 
     initDelay();
     
+    
 
     //delayMems[1].Init();
 
@@ -177,70 +179,72 @@ void CheckTempo()
 {
     
 
-    uint32_t tick;    // The position of the counter when the second tap occurs
-    uint32_t freq;    // The frequency of each tick of the timer in Hz.
-    float seconds;    // The seconds elapsed between first and second tap
+    // uint32_t tick;    // The position of the counter when the second tap occurs
+    // uint32_t freq;    // The frequency of each tick of the timer in Hz.
+    // float seconds;    // The seconds elapsed between first and second tap
 
 
-    tick = TIMER.GetTick();            
-    freq = TIMER.GetFreq();    
-    seconds = (float)tick / (float)freq; // Calculating seconds from timer as recomended by documentation         
+    // tick = TIMER.GetTick();            
+    // freq = TIMER.GetFreq();    
+    // seconds = (float)tick / (float)freq; // Calculating seconds from timer as recomended by documentation         
 
-    //Check if the timer has gone past our max delay, if so, abandon this tap tempo and keep the old one
-    if(seconds > MAX_DELAY_SEC && TAPPING)
-    {
-        //hw.PrintLine("Over 3 sec");
-        TIMER.DeInit();
-        TIMER.Init(*configPtr);
+    // //Check if the timer has gone past our max delay, if so, abandon this tap tempo and keep the old one
+    // if(seconds > MAX_DELAY_SEC && TAPPING)
+    // {
+    //     //hw.PrintLine("Over 3 sec");
+    //     TIMER.DeInit();
+    //     TIMER.Init(*configPtr);
 
-        // Turn the timer off
-        TIMER.Stop();
-        TAPPING = false;         // Reset the TAPPING flag 
-    }
+    //     // Turn the timer off
+    //     TIMER.Stop();
+    //     TAPPING = false;         // Reset the TAPPING flag 
+    // }
 
     // Check if the button was clicked
+    bool tap = false;
     TEMPO_BUTTON.Debounce();
     if(TEMPO_BUTTON.RisingEdge() )
     {
-        // The first tap
-        if(TAPPING == false)
-        {
-            TAPPING = true; // Set the TAPPING flag
+        // // The first tap
+        // if(TAPPING == false)
+        // {
+        //     // Start the timer and begin counting
+        //     TIMER.Start(); 
 
-            // Start the timer and begin counting
-            TIMER.Start(); 
+        //     TAPPING = true; // Set the TAPPING flag
 
+        // }
+        // // The second tap
+        // else 
+        // {
+        //     TAPPING = false; // Reset TAPPING flag
 
-        }
-        // The second tap
-        else 
-        {
-            TAPPING = false; // Reset TAPPING flag
+        //     // Stop the timer
+        //     TIMER.Stop();
+        //     TIMER.DeInit();
+        //     TIMER.Init(*configPtr);
+        //     // Turn the timer off
+        //     TIMER.Stop();
 
-            // Stop the timer
-            TIMER.Stop();
-            TIMER.DeInit();
-            TIMER.Init(*configPtr);
-            // Turn the timer off
-            TIMER.Stop();
-
-            // Only set new BPM if its greater than our minimum
-            if(seconds > MIN_DELAY_SEC )
-            {
-                BPM = -33.3333f*(seconds)+120; // Set the BPM for the delays 
-                // Set all delays to new bpm
-            }
-            //else
-                //hw.PrintLine("Under .6");
+        //     // Only set new BPM if its greater than our minimum
+        //     if(seconds > MIN_DELAY_SEC )
+        //     {
+        //         BPM = -33.3333f*(seconds)+120; // Set the BPM for the delays 
+        //         // Set all delays to new bpm
+        //     }
+        //     //else
+        //         //hw.PrintLine("Under .6");
 
 
             
-        }
-    
+        // }
+
+        tap = true;
 
     }
 
-
+    tapTempo.update(tap);
+    
 }
 
 void InitHeadButtons()

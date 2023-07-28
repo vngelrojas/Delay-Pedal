@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -47,24 +47,20 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
   37              	.LBB9:
   38              		.loc 1 8 22 view .LVU2
    9:Delay.cpp     ****     {
-  10:Delay.cpp     ****         // // Initialize delay line
-  11:Delay.cpp     ****         // delayMems[i].Init();
-  12:Delay.cpp     ****         // // For the current head, point its delayline ptr to one from delayMems
-  13:Delay.cpp     ****         // delayHeads[i].delay = &delayMems[i];
-  14:Delay.cpp     ****         // Init the feedback
-  15:Delay.cpp     ****         delayHeads[i].feedback = 0; 
-  39              		.loc 1 15 9 view .LVU3
-  40              		.loc 1 15 32 is_stmt 0 view .LVU4
+  10:Delay.cpp     ****         // Init the feedback
+  11:Delay.cpp     ****         delayHeads[i].feedback = 0; 
+  39              		.loc 1 11 9 view .LVU3
+  40              		.loc 1 11 32 is_stmt 0 view .LVU4
   41 0000 0022     		movs	r2, #0
   42              	.LBE9:
-  16:Delay.cpp     ****         // Make sure they are all off
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 2
+  12:Delay.cpp     ****         // Make sure they are all off
+  13:Delay.cpp     ****         delayHeadOn[i] = false;
+  14:Delay.cpp     ****     }
+  15:Delay.cpp     ****     bpm = 20;
+  43              		.loc 1 15 9 view .LVU5
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 2
 
 
-  17:Delay.cpp     ****         delayHeadOn[i] = false;
-  18:Delay.cpp     ****     }
-  19:Delay.cpp     ****     bpm = 20;
-  43              		.loc 1 19 9 view .LVU5
   44 0002 1421     		movs	r1, #20
   45              	.LBE8:
    5:Delay.cpp     **** {
@@ -74,65 +70,65 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
   49              		.cfi_offset 4, -4
   50              	.LBB11:
   51              	.LBB10:
-  17:Delay.cpp     ****     }
-  52              		.loc 1 17 24 view .LVU7
+  13:Delay.cpp     ****     }
+  52              		.loc 1 13 24 view .LVU7
   53 0006 0024     		movs	r4, #0
-  15:Delay.cpp     ****         // Make sure they are all off
-  54              		.loc 1 15 32 view .LVU8
-  55 0008 4261     		str	r2, [r0, #20]	@ float
-  17:Delay.cpp     ****     }
-  56              		.loc 1 17 9 is_stmt 1 view .LVU9
+  11:Delay.cpp     ****         // Make sure they are all off
+  54              		.loc 1 11 32 view .LVU8
+  55 0008 8261     		str	r2, [r0, #24]	@ float
+  13:Delay.cpp     ****     }
+  56              		.loc 1 13 9 is_stmt 1 view .LVU9
    8:Delay.cpp     ****     {
   57              		.loc 1 8 5 view .LVU10
   58              	.LVL1:
    8:Delay.cpp     ****     {
   59              		.loc 1 8 22 view .LVU11
-  15:Delay.cpp     ****         // Make sure they are all off
-  60              		.loc 1 15 9 view .LVU12
-  15:Delay.cpp     ****         // Make sure they are all off
-  61              		.loc 1 15 32 is_stmt 0 view .LVU13
-  62 000a 4262     		str	r2, [r0, #36]	@ float
-  17:Delay.cpp     ****     }
-  63              		.loc 1 17 9 is_stmt 1 view .LVU14
+  11:Delay.cpp     ****         // Make sure they are all off
+  60              		.loc 1 11 9 view .LVU12
+  11:Delay.cpp     ****         // Make sure they are all off
+  61              		.loc 1 11 32 is_stmt 0 view .LVU13
+  62 000a 8262     		str	r2, [r0, #40]	@ float
+  13:Delay.cpp     ****     }
+  63              		.loc 1 13 9 is_stmt 1 view .LVU14
    8:Delay.cpp     ****     {
   64              		.loc 1 8 5 view .LVU15
   65              	.LVL2:
    8:Delay.cpp     ****     {
   66              		.loc 1 8 22 view .LVU16
-  15:Delay.cpp     ****         // Make sure they are all off
-  67              		.loc 1 15 9 view .LVU17
-  15:Delay.cpp     ****         // Make sure they are all off
-  68              		.loc 1 15 32 is_stmt 0 view .LVU18
-  69 000c 4263     		str	r2, [r0, #52]	@ float
-  17:Delay.cpp     ****     }
-  70              		.loc 1 17 9 is_stmt 1 view .LVU19
+  11:Delay.cpp     ****         // Make sure they are all off
+  67              		.loc 1 11 9 view .LVU17
+  11:Delay.cpp     ****         // Make sure they are all off
+  68              		.loc 1 11 32 is_stmt 0 view .LVU18
+  69 000c 8263     		str	r2, [r0, #56]	@ float
+  13:Delay.cpp     ****     }
+  70              		.loc 1 13 9 is_stmt 1 view .LVU19
    8:Delay.cpp     ****     {
   71              		.loc 1 8 5 view .LVU20
   72              	.LVL3:
    8:Delay.cpp     ****     {
   73              		.loc 1 8 22 view .LVU21
-  15:Delay.cpp     ****         // Make sure they are all off
-  74              		.loc 1 15 9 view .LVU22
-  15:Delay.cpp     ****         // Make sure they are all off
-  75              		.loc 1 15 32 is_stmt 0 view .LVU23
-  76 000e 4264     		str	r2, [r0, #68]	@ float
-  17:Delay.cpp     ****     }
-  77              		.loc 1 17 9 is_stmt 1 view .LVU24
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 3
-
-
+  11:Delay.cpp     ****         // Make sure they are all off
+  74              		.loc 1 11 9 view .LVU22
+  11:Delay.cpp     ****         // Make sure they are all off
+  75              		.loc 1 11 32 is_stmt 0 view .LVU23
+  76 000e 8264     		str	r2, [r0, #72]	@ float
+  13:Delay.cpp     ****     }
+  77              		.loc 1 13 9 is_stmt 1 view .LVU24
    8:Delay.cpp     ****     {
   78              		.loc 1 8 5 view .LVU25
   79              	.LVL4:
    8:Delay.cpp     ****     {
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 3
+
+
   80              		.loc 1 8 22 view .LVU26
   81              	.LBE10:
-  82              		.loc 1 19 5 view .LVU27
-  83              		.loc 1 19 9 is_stmt 0 view .LVU28
+  82              		.loc 1 15 5 view .LVU27
+  83              		.loc 1 15 9 is_stmt 0 view .LVU28
   84 0010 C0E90041 		strd	r4, r1, [r0]
   85              	.LBE11:
-  20:Delay.cpp     **** }
-  86              		.loc 1 20 1 view .LVU29
+  16:Delay.cpp     **** }
+  86              		.loc 1 16 1 view .LVU29
   87 0014 5DF8044B 		ldr	r4, [sp], #4
   88              		.cfi_restore 4
   89              		.cfi_def_cfa_offset 0
@@ -152,49 +148,49 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
  105              	_ZN6Delayy7stopAllEv:
  106              	.LVL5:
  107              	.LFB4792:
-  21:Delay.cpp     **** 
-  22:Delay.cpp     **** void Delayy::stopAll()
-  23:Delay.cpp     **** {
- 108              		.loc 1 23 1 is_stmt 1 view -0
+  17:Delay.cpp     **** 
+  18:Delay.cpp     **** void Delayy::stopAll()
+  19:Delay.cpp     **** {
+ 108              		.loc 1 19 1 is_stmt 1 view -0
  109              		.cfi_startproc
  110              		@ args = 0, pretend = 0, frame = 0
  111              		@ frame_needed = 0, uses_anonymous_args = 0
  112              		@ link register save eliminated.
-  24:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
- 113              		.loc 1 24 5 view .LVU31
+  20:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
+ 113              		.loc 1 20 5 view .LVU31
  114              	.LBB12:
- 115              		.loc 1 24 21 view .LVU32
-  25:Delay.cpp     ****         delayHeadOn[i] = false;
- 116              		.loc 1 25 9 view .LVU33
-  24:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
- 117              		.loc 1 24 5 view .LVU34
-  24:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
- 118              		.loc 1 24 21 view .LVU35
- 119              		.loc 1 25 9 view .LVU36
-  24:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
- 120              		.loc 1 24 5 view .LVU37
-  24:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
- 121              		.loc 1 24 21 view .LVU38
- 122              		.loc 1 25 9 view .LVU39
-  24:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
- 123              		.loc 1 24 5 view .LVU40
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 4
+ 115              		.loc 1 20 21 view .LVU32
+  21:Delay.cpp     ****         delayHeadOn[i] = false;
+ 116              		.loc 1 21 9 view .LVU33
+  20:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
+ 117              		.loc 1 20 5 view .LVU34
+  20:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
+ 118              		.loc 1 20 21 view .LVU35
+ 119              		.loc 1 21 9 view .LVU36
+  20:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
+ 120              		.loc 1 20 5 view .LVU37
+  20:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
+ 121              		.loc 1 20 21 view .LVU38
+ 122              		.loc 1 21 9 view .LVU39
+  20:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
+ 123              		.loc 1 20 5 view .LVU40
+  20:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
+ 124              		.loc 1 20 21 view .LVU41
+ 125              		.loc 1 21 9 view .LVU42
+ 126              		.loc 1 21 24 is_stmt 0 view .LVU43
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 4
 
 
-  24:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
- 124              		.loc 1 24 21 view .LVU41
- 125              		.loc 1 25 9 view .LVU42
- 126              		.loc 1 25 24 is_stmt 0 view .LVU43
  127 0000 0023     		movs	r3, #0
  128 0002 0360     		str	r3, [r0]
-  24:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
- 129              		.loc 1 24 5 is_stmt 1 view .LVU44
+  20:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
+ 129              		.loc 1 20 5 is_stmt 1 view .LVU44
  130              	.LVL6:
-  24:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
- 131              		.loc 1 24 21 view .LVU45
+  20:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
+ 131              		.loc 1 20 21 view .LVU45
  132              	.LBE12:
-  26:Delay.cpp     **** }
- 133              		.loc 1 26 1 is_stmt 0 view .LVU46
+  22:Delay.cpp     **** }
+ 133              		.loc 1 22 1 is_stmt 0 view .LVU46
  134 0004 7047     		bx	lr
  135              		.cfi_endproc
  136              	.LFE4792:
@@ -209,254 +205,210 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
  147              	_ZN6Delayy6setBPMERKi:
  148              	.LVL7:
  149              	.LFB4793:
-  27:Delay.cpp     **** 
-  28:Delay.cpp     **** void Delayy::setBPM(const int& bpm)
-  29:Delay.cpp     **** {
- 150              		.loc 1 29 1 is_stmt 1 view -0
+  23:Delay.cpp     **** 
+  24:Delay.cpp     **** void Delayy::setBPM(const int& bpm)
+  25:Delay.cpp     **** {
+ 150              		.loc 1 25 1 is_stmt 1 view -0
  151              		.cfi_startproc
  152              		@ args = 0, pretend = 0, frame = 0
  153              		@ frame_needed = 0, uses_anonymous_args = 0
  154              		@ link register save eliminated.
-  30:Delay.cpp     ****     this->bpm = bpm;
- 155              		.loc 1 30 5 view .LVU48
- 156              		.loc 1 30 17 is_stmt 0 view .LVU49
- 157 0000 0968     		ldr	r1, [r1]
- 158              	.LVL8:
- 159              	.LBB13:
-  31:Delay.cpp     ****     for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 160              		.loc 1 31 13 view .LVU50
- 161 0002 0023     		movs	r3, #0
- 162 0004 0246     		mov	r2, r0
-  32:Delay.cpp     ****     {
-  33:Delay.cpp     ****         //The (i+0.25-i*0.75) just sets the delay intervals to 
-  34:Delay.cpp     ****         // (1/16 note, 1/8 note, dotted 1/8 note, 1/4 note - or 0.25,0.5,0.75,1) for i=0,1,2,3
-  35:Delay.cpp     ****         // The 2880000/BPM sets BPM of delay 
-  36:Delay.cpp     ****         delayHeads[i].delayTarget = (i+0.25-i*0.75)* 2880000/bpm;
- 163              		.loc 1 36 61 view .LVU51
- 164 0006 07EE901A 		vmov	s15, r1	@ int
- 165              	.LBE13:
-  30:Delay.cpp     ****     for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 166              		.loc 1 30 15 view .LVU52
- 167 000a 4160     		str	r1, [r0, #4]
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 5
+  26:Delay.cpp     ****     this->bpm = bpm;
+ 155              		.loc 1 26 5 view .LVU48
+ 156              		.loc 1 26 17 is_stmt 0 view .LVU49
+ 157 0000 0B68     		ldr	r3, [r1]
+ 158              		.loc 1 26 15 view .LVU50
+ 159 0002 4360     		str	r3, [r0, #4]
+  27:Delay.cpp     ****     // for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
+  28:Delay.cpp     ****     // {
+  29:Delay.cpp     ****     //     //The (i+0.25-i*0.75) just sets the delay intervals to 
+  30:Delay.cpp     ****     //     // (1/16 note, 1/8 note, dotted 1/8 note, 1/4 note - or 0.25,0.5,0.75,1) for i=0,1,2,3
+  31:Delay.cpp     ****     //     // The 2880000/BPM sets BPM of delay 
+  32:Delay.cpp     ****     //     delayHeads[i].delayTarget = (i+0.25-i*0.75)* 2880000/bpm;
+  33:Delay.cpp     ****     // }
+  34:Delay.cpp     **** }
+ 160              		.loc 1 34 1 view .LVU51
+ 161 0004 7047     		bx	lr
+ 162              		.cfi_endproc
+ 163              	.LFE4793:
+ 165 0006 00BF     		.section	.text._ZN6Delayy11setFeedbackERKf,"ax",%progbits
+ 166              		.align	1
+ 167              		.p2align 2,,3
+ 168              		.global	_ZN6Delayy11setFeedbackERKf
+ 169              		.syntax unified
+ 170              		.thumb
+ 171              		.thumb_func
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 5
 
 
-  31:Delay.cpp     ****     for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 168              		.loc 1 31 5 is_stmt 1 view .LVU53
- 169              	.LVL9:
- 170              	.LBB14:
-  31:Delay.cpp     ****     for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 171              		.loc 1 31 22 view .LVU54
- 172              		.loc 1 36 61 is_stmt 0 view .LVU55
- 173 000c B8EEE73B 		vcvt.f64.s32	d3, s15
- 174              	.LVL10:
- 175              	.L6:
- 176              		.loc 1 36 9 is_stmt 1 discriminator 2 view .LVU56
- 177              		.loc 1 36 39 is_stmt 0 discriminator 2 view .LVU57
- 178 0010 07EE903A 		vmov	s15, r3	@ int
- 179              		.loc 1 36 44 discriminator 2 view .LVU58
- 180 0014 B6EE084B 		vmov.f64	d4, #7.5e-1
-  31:Delay.cpp     ****     for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 181              		.loc 1 31 5 discriminator 2 view .LVU59
- 182 0018 0133     		adds	r3, r3, #1
- 183              	.LVL11:
- 184              		.loc 1 36 61 discriminator 2 view .LVU60
- 185 001a 1032     		adds	r2, r2, #16
- 186              		.loc 1 36 39 discriminator 2 view .LVU61
- 187 001c B8EEE76B 		vcvt.f64.s32	d6, s15
- 188 0020 B5EE007B 		vmov.f64	d7, #2.5e-1
-  31:Delay.cpp     ****     for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 189              		.loc 1 31 22 discriminator 2 view .LVU62
- 190 0024 042B     		cmp	r3, #4
- 191              		.loc 1 36 52 discriminator 2 view .LVU63
- 192 0026 9FED085B 		vldr.64	d5, .L8
- 193              		.loc 1 36 39 discriminator 2 view .LVU64
- 194 002a 36EE077B 		vadd.f64	d7, d6, d7
- 195              		.loc 1 36 44 discriminator 2 view .LVU65
- 196 002e A6EE447B 		vfms.f64	d7, d6, d4
- 197              		.loc 1 36 52 discriminator 2 view .LVU66
- 198 0032 27EE057B 		vmul.f64	d7, d7, d5
- 199              		.loc 1 36 61 discriminator 2 view .LVU67
- 200 0036 87EE036B 		vdiv.f64	d6, d7, d3
- 201 003a B7EEC66B 		vcvt.f32.f64	s12, d6
- 202 003e 82ED006A 		vstr.32	s12, [r2]
-  31:Delay.cpp     ****     for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 203              		.loc 1 31 5 is_stmt 1 discriminator 2 view .LVU68
- 204              	.LVL12:
-  31:Delay.cpp     ****     for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 205              		.loc 1 31 22 discriminator 2 view .LVU69
- 206 0042 E5D1     		bne	.L6
- 207              	.LBE14:
-  37:Delay.cpp     ****     }
-  38:Delay.cpp     **** }
- 208              		.loc 1 38 1 is_stmt 0 view .LVU70
- 209 0044 7047     		bx	lr
- 210              	.L9:
- 211 0046 00BF     		.align	3
- 212              	.L8:
- 213 0048 00000000 		.word	0
- 214 004c 00F94541 		.word	1095104768
- 215              		.cfi_endproc
- 216              	.LFE4793:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 6
+ 172              		.fpu fpv5-d16
+ 174              	_ZN6Delayy11setFeedbackERKf:
+ 175              	.LVL8:
+ 176              	.LFB4794:
+  35:Delay.cpp     **** 
+  36:Delay.cpp     **** void Delayy::setFeedback(const float& feed)                           
+  37:Delay.cpp     **** {
+ 177              		.loc 1 37 1 is_stmt 1 view -0
+ 178              		.cfi_startproc
+ 179              		@ args = 0, pretend = 0, frame = 0
+ 180              		@ frame_needed = 0, uses_anonymous_args = 0
+ 181              		@ link register save eliminated.
+  38:Delay.cpp     ****     
+  39:Delay.cpp     ****     this->feedback = feed;
+ 182              		.loc 1 39 5 view .LVU53
+ 183              		.loc 1 39 22 is_stmt 0 view .LVU54
+ 184 0000 0B68     		ldr	r3, [r1]	@ float
+ 185              		.loc 1 39 20 view .LVU55
+ 186 0002 8360     		str	r3, [r0, #8]	@ float
+  40:Delay.cpp     **** 
+  41:Delay.cpp     **** }
+ 187              		.loc 1 41 1 view .LVU56
+ 188 0004 7047     		bx	lr
+ 189              		.cfi_endproc
+ 190              	.LFE4794:
+ 192 0006 00BF     		.section	.text._ZN6Delayy7processEf,"ax",%progbits
+ 193              		.align	1
+ 194              		.p2align 2,,3
+ 195              		.global	_ZN6Delayy7processEf
+ 196              		.syntax unified
+ 197              		.thumb
+ 198              		.thumb_func
+ 199              		.fpu fpv5-d16
+ 201              	_ZN6Delayy7processEf:
+ 202              	.LVL9:
+ 203              	.LFB4795:
+  42:Delay.cpp     **** 
+  43:Delay.cpp     **** float Delayy::process(float in)
+  44:Delay.cpp     **** {
+ 204              		.loc 1 44 1 is_stmt 1 view -0
+ 205              		.cfi_startproc
+ 206              		@ args = 0, pretend = 0, frame = 0
+ 207              		@ frame_needed = 0, uses_anonymous_args = 0
+  45:Delay.cpp     ****     float allDelaySignals = 0;
+ 208              		.loc 1 45 5 view .LVU58
+  46:Delay.cpp     **** 
+  47:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
+ 209              		.loc 1 47 5 view .LVU59
+ 210              	.LBB24:
+ 211              		.loc 1 47 23 view .LVU60
+  48:Delay.cpp     ****     {
+  49:Delay.cpp     ****         delayHeads[i].feedback = this->feedback;
+  50:Delay.cpp     ****         delayHeads[i].delayTarget = (i+0.25-i*0.75)* 2880000/bpm;
+ 212              		.loc 1 50 61 is_stmt 0 view .LVU61
+ 213 0000 D0ED017A 		vldr.32	s15, [r0, #4]	@ int
+  47:Delay.cpp     ****     {
+ 214              		.loc 1 47 14 view .LVU62
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 6
 
 
- 218              		.section	.text._ZN6Delayy11setFeedbackERKf,"ax",%progbits
- 219              		.align	1
- 220              		.p2align 2,,3
- 221              		.global	_ZN6Delayy11setFeedbackERKf
- 222              		.syntax unified
- 223              		.thumb
- 224              		.thumb_func
- 225              		.fpu fpv5-d16
- 227              	_ZN6Delayy11setFeedbackERKf:
- 228              	.LVL13:
- 229              	.LFB4794:
-  39:Delay.cpp     **** 
-  40:Delay.cpp     **** void Delayy::setFeedback(const float& feed)                           
-  41:Delay.cpp     **** {
- 230              		.loc 1 41 1 is_stmt 1 view -0
- 231              		.cfi_startproc
- 232              		@ args = 0, pretend = 0, frame = 0
- 233              		@ frame_needed = 0, uses_anonymous_args = 0
- 234              		@ link register save eliminated.
-  42:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 235              		.loc 1 42 5 view .LVU72
- 236              	.LBB15:
- 237              		.loc 1 42 23 view .LVU73
-  43:Delay.cpp     ****         delayHeads[i].feedback = feed;
- 238              		.loc 1 43 9 view .LVU74
- 239              		.loc 1 43 34 is_stmt 0 view .LVU75
- 240 0000 0B68     		ldr	r3, [r1]	@ float
- 241              		.loc 1 43 32 view .LVU76
- 242 0002 4361     		str	r3, [r0, #20]	@ float
-  42:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 243              		.loc 1 42 5 is_stmt 1 view .LVU77
- 244              	.LVL14:
-  42:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 245              		.loc 1 42 23 view .LVU78
- 246              		.loc 1 43 9 view .LVU79
- 247              		.loc 1 43 32 is_stmt 0 view .LVU80
- 248 0004 4362     		str	r3, [r0, #36]	@ float
-  42:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 249              		.loc 1 42 5 is_stmt 1 view .LVU81
- 250              	.LVL15:
-  42:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 251              		.loc 1 42 23 view .LVU82
- 252              		.loc 1 43 9 view .LVU83
- 253              		.loc 1 43 34 is_stmt 0 view .LVU84
- 254 0006 0B68     		ldr	r3, [r1]	@ float
- 255              		.loc 1 43 32 view .LVU85
- 256 0008 4363     		str	r3, [r0, #52]	@ float
-  42:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 257              		.loc 1 42 5 is_stmt 1 view .LVU86
- 258              	.LVL16:
-  42:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 259              		.loc 1 42 23 view .LVU87
- 260              		.loc 1 43 9 view .LVU88
- 261              		.loc 1 43 32 is_stmt 0 view .LVU89
- 262 000a 4364     		str	r3, [r0, #68]	@ float
-  42:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 263              		.loc 1 42 5 is_stmt 1 view .LVU90
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 7
-
-
- 264              	.LVL17:
-  42:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 265              		.loc 1 42 23 view .LVU91
- 266              	.LBE15:
-  44:Delay.cpp     **** }
- 267              		.loc 1 44 1 is_stmt 0 view .LVU92
- 268 000c 7047     		bx	lr
- 269              		.cfi_endproc
- 270              	.LFE4794:
- 272 000e 00BF     		.section	.text._ZN6Delayy7processEf,"ax",%progbits
- 273              		.align	1
- 274              		.p2align 2,,3
- 275              		.global	_ZN6Delayy7processEf
- 276              		.syntax unified
- 277              		.thumb
- 278              		.thumb_func
- 279              		.fpu fpv5-d16
- 281              	_ZN6Delayy7processEf:
- 282              	.LVL18:
- 283              	.LFB4795:
+ 215 0004 0022     		movs	r2, #0
+ 216              	.LBE24:
   45:Delay.cpp     **** 
-  46:Delay.cpp     **** float Delayy::process(float in)
-  47:Delay.cpp     **** {
- 284              		.loc 1 47 1 is_stmt 1 view -0
- 285              		.cfi_startproc
- 286              		@ args = 0, pretend = 0, frame = 0
- 287              		@ frame_needed = 0, uses_anonymous_args = 0
-  48:Delay.cpp     ****     float allDelaySignals = 0;
- 288              		.loc 1 48 5 view .LVU94
-  49:Delay.cpp     **** 
-  50:Delay.cpp     ****     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
- 289              		.loc 1 50 5 view .LVU95
- 290              	.LBB27:
- 291              		.loc 1 50 23 view .LVU96
- 292 0000 0346     		mov	r3, r0
- 293              	.LBE27:
-  48:Delay.cpp     ****     float allDelaySignals = 0;
- 294              		.loc 1 48 11 is_stmt 0 view .LVU97
- 295 0002 9FED306A 		vldr.32	s12, .L20
- 296 0006 0138     		subs	r0, r0, #1
- 297              	.LVL19:
-  47:Delay.cpp     ****     float allDelaySignals = 0;
- 298              		.loc 1 47 1 view .LVU98
- 299 0008 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
- 300              		.cfi_def_cfa_offset 28
- 301              		.cfi_offset 4, -28
- 302              		.cfi_offset 5, -24
- 303              		.cfi_offset 6, -20
- 304              		.cfi_offset 7, -16
- 305              		.cfi_offset 8, -12
- 306              		.cfi_offset 9, -8
- 307              		.cfi_offset 14, -4
- 308 000c DE1C     		adds	r6, r3, #3
- 309              	.LVL20:
- 310              	.L13:
- 311              	.LBB71:
+ 217              		.loc 1 45 11 view .LVU63
+ 218 0006 DFED3E2A 		vldr.32	s5, .L16+8
+ 219 000a 0346     		mov	r3, r0
+ 220              	.LBB72:
+ 221              		.loc 1 50 61 view .LVU64
+ 222 000c B8EEE75B 		vcvt.f64.s32	d5, s15
+ 223              	.LBE72:
+  44:Delay.cpp     ****     float allDelaySignals = 0;
+ 224              		.loc 1 44 1 view .LVU65
+ 225 0010 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
+ 226              		.cfi_def_cfa_offset 32
+ 227              		.cfi_offset 4, -32
+ 228              		.cfi_offset 5, -28
+ 229              		.cfi_offset 6, -24
+ 230              		.cfi_offset 7, -20
+ 231              		.cfi_offset 8, -16
+ 232              		.cfi_offset 9, -12
+ 233              		.cfi_offset 10, -8
+ 234              		.cfi_offset 14, -4
+ 235 0014 00F1FF3E 		add	lr, r0, #-1
+ 236              	.LVL10:
+ 237              	.L9:
+ 238              	.LBB73:
+  49:Delay.cpp     ****         delayHeads[i].delayTarget = (i+0.25-i*0.75)* 2880000/bpm;
+ 239              		.loc 1 49 9 is_stmt 1 view .LVU66
+ 240              		.loc 1 50 39 is_stmt 0 view .LVU67
+ 241 0018 07EE902A 		vmov	s15, r2	@ int
+ 242              		.loc 1 50 44 view .LVU68
+ 243 001c B6EE083B 		vmov.f64	d3, #7.5e-1
+  49:Delay.cpp     ****         delayHeads[i].delayTarget = (i+0.25-i*0.75)* 2880000/bpm;
+ 244              		.loc 1 49 40 view .LVU69
+ 245 0020 8468     		ldr	r4, [r0, #8]	@ float
+  47:Delay.cpp     ****     {
+ 246              		.loc 1 47 5 view .LVU70
+ 247 0022 0132     		adds	r2, r2, #1
+ 248              	.LVL11:
+ 249              		.loc 1 50 39 view .LVU71
+ 250 0024 B8EEE76B 		vcvt.f64.s32	d6, s15
   51:Delay.cpp     ****         if(delayHeadOn[i])
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 8
+ 251              		.loc 1 51 9 view .LVU72
+ 252 0028 1EF8011F 		ldrb	r1, [lr, #1]!	@ zero_extendqisi2
+  50:Delay.cpp     ****         if(delayHeadOn[i])
+ 253              		.loc 1 50 39 view .LVU73
+ 254 002c B5EE007B 		vmov.f64	d7, #2.5e-1
+  49:Delay.cpp     ****         delayHeads[i].delayTarget = (i+0.25-i*0.75)* 2880000/bpm;
+ 255              		.loc 1 49 32 view .LVU74
+ 256 0030 9C61     		str	r4, [r3, #24]	@ float
+  50:Delay.cpp     ****         if(delayHeadOn[i])
+ 257              		.loc 1 50 9 is_stmt 1 view .LVU75
+  50:Delay.cpp     ****         if(delayHeadOn[i])
+ 258              		.loc 1 50 52 is_stmt 0 view .LVU76
+ 259 0032 9FED314B 		vldr.64	d4, .L16
+  50:Delay.cpp     ****         if(delayHeadOn[i])
+ 260              		.loc 1 50 39 view .LVU77
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 7
 
 
- 312              		.loc 1 51 9 is_stmt 1 view .LVU99
- 313 000e 10F8012F 		ldrb	r2, [r0, #1]!	@ zero_extendqisi2
- 314              	.LVL21:
- 315              		.loc 1 51 9 is_stmt 0 view .LVU100
- 316 0012 3AB9     		cbnz	r2, .L19
- 317              	.L12:
+ 261 0036 36EE077B 		vadd.f64	d7, d6, d7
   50:Delay.cpp     ****         if(delayHeadOn[i])
- 318              		.loc 1 50 5 is_stmt 1 discriminator 2 view .LVU101
- 319              	.LVL22:
+ 262              		.loc 1 50 44 view .LVU78
+ 263 003a A6EE437B 		vfms.f64	d7, d6, d3
   50:Delay.cpp     ****         if(delayHeadOn[i])
- 320              		.loc 1 50 23 discriminator 2 view .LVU102
- 321 0014 B042     		cmp	r0, r6
- 322 0016 03F11003 		add	r3, r3, #16
- 323 001a F8D1     		bne	.L13
+ 264              		.loc 1 50 52 view .LVU79
+ 265 003e 27EE047B 		vmul.f64	d7, d7, d4
   50:Delay.cpp     ****         if(delayHeadOn[i])
- 324              		.loc 1 50 23 is_stmt 0 discriminator 2 view .LVU103
- 325              	.LBE71:
+ 266              		.loc 1 50 61 view .LVU80
+ 267 0042 87EE056B 		vdiv.f64	d6, d7, d5
+ 268 0046 B7EEC66B 		vcvt.f32.f64	s12, d6
+  50:Delay.cpp     ****         if(delayHeadOn[i])
+ 269              		.loc 1 50 35 view .LVU81
+ 270 004a 83ED056A 		vstr.32	s12, [r3, #20]
+ 271              		.loc 1 51 9 is_stmt 1 view .LVU82
+ 272 004e 39B9     		cbnz	r1, .L15
+ 273              	.LVL12:
+ 274              	.L8:
+  47:Delay.cpp     ****     {
+ 275              		.loc 1 47 5 discriminator 2 view .LVU83
+  47:Delay.cpp     ****     {
+ 276              		.loc 1 47 23 discriminator 2 view .LVU84
+ 277 0050 042A     		cmp	r2, #4
+ 278 0052 03F11003 		add	r3, r3, #16
+ 279 0056 DFD1     		bne	.L9
+  47:Delay.cpp     ****     {
+ 280              		.loc 1 47 23 is_stmt 0 discriminator 2 view .LVU85
+ 281              	.LBE73:
   52:Delay.cpp     ****             allDelaySignals += delayHeads[i].process(in);
-  53:Delay.cpp     **** 
-  54:Delay.cpp     ****     return allDelaySignals;
- 326              		.loc 1 54 5 is_stmt 1 view .LVU104
-  55:Delay.cpp     ****     
-  56:Delay.cpp     **** }
- 327              		.loc 1 56 1 is_stmt 0 view .LVU105
- 328 001c B0EE460A 		vmov.f32	s0, s12
- 329              	.LVL23:
- 330              		.loc 1 56 1 view .LVU106
- 331 0020 BDE8F083 		pop	{r4, r5, r6, r7, r8, r9, pc}
- 332              	.LVL24:
- 333              	.L19:
- 334              	.LBB72:
+  53:Delay.cpp     ****     }
+  54:Delay.cpp     **** 
+  55:Delay.cpp     ****     return allDelaySignals;
+ 282              		.loc 1 55 5 is_stmt 1 view .LVU86
+  56:Delay.cpp     ****     
+  57:Delay.cpp     **** }
+ 283              		.loc 1 57 1 is_stmt 0 view .LVU87
+ 284 0058 B0EE620A 		vmov.f32	s0, s5
+ 285              	.LVL13:
+ 286              		.loc 1 57 1 view .LVU88
+ 287 005c BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
+ 288              	.LVL14:
+ 289              	.L15:
+ 290              	.LBB74:
   52:Delay.cpp     ****             allDelaySignals += delayHeads[i].process(in);
- 335              		.loc 1 52 13 is_stmt 1 view .LVU107
- 336              	.LBB28:
- 337              	.LBI28:
- 338              		.file 2 "Delay.h"
+ 291              		.loc 1 52 13 is_stmt 1 view .LVU89
+ 292              	.LBB25:
+ 293              	.LBI25:
+ 294              		.file 2 "Delay.h"
    1:Delay.h       **** #include "daisysp.h"
    2:Delay.h       **** #include "daisy_seed.h"
    3:Delay.h       **** #pragma once
@@ -466,37 +418,36 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
    7:Delay.h       **** 
    8:Delay.h       **** #define MAX_DELAY static_cast<size_t>(48000 * 3.f)  // Max delay of 3 seconds which is 20 bpm
    9:Delay.h       **** const int NUM_OF_DELAY_HEADS = 4;                   // # of delay heads, simply change this number 
-  10:Delay.h       **** // DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS  delayMems[4];
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 8
+
+
+  10:Delay.h       **** 
   11:Delay.h       **** 
   12:Delay.h       **** 
-  13:Delay.h       **** 
-  14:Delay.h       **** class Delayy
-  15:Delay.h       **** {
-  16:Delay.h       ****     private:
-  17:Delay.h       ****         struct DelayHead
-  18:Delay.h       ****         {
-  19:Delay.h       ****             DelayLine<float, MAX_DELAY> *delay; // Will point to a delayMem
-  20:Delay.h       ****             float currentDelay;                 // The current delay 
-  21:Delay.h       ****             float delayTarget;                  // The delay target that currentDelay will ramp up/
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 9
-
-
-  22:Delay.h       ****             float feedback;                     // Feedback level of the delay
-  23:Delay.h       **** 
-  24:Delay.h       ****             float process(float in)
- 339              		.loc 2 24 19 view .LVU108
- 340              	.LBB29:
-  25:Delay.h       ****             {
-  26:Delay.h       **** 
-  27:Delay.h       ****                 float readSample; // Will store a sample from the delay line
- 341              		.loc 2 27 17 view .LVU109
-  28:Delay.h       **** 
-  29:Delay.h       ****                 // This smoothes out the delay when you turn the delay control?
-  30:Delay.h       ****                 fonepole(currentDelay, delayTarget, .0002f); 
- 342              		.loc 2 30 17 view .LVU110
- 343              	.LBB30:
- 344              	.LBI30:
- 345              		.file 3 "../../DaisySP//Source/Utility/dsp.h"
+  13:Delay.h       **** class Delayy
+  14:Delay.h       **** {
+  15:Delay.h       ****     private:
+  16:Delay.h       ****         struct DelayHead
+  17:Delay.h       ****         {
+  18:Delay.h       ****             DelayLine<float, MAX_DELAY> *delay; // Will point to a delayMem
+  19:Delay.h       ****             float currentDelay;                 // The current delay 
+  20:Delay.h       ****             float delayTarget;                  // The delay target that currentDelay will ramp up/
+  21:Delay.h       ****             float feedback;                     // Feedback level of the delay
+  22:Delay.h       **** 
+  23:Delay.h       ****             float process(float in)
+ 295              		.loc 2 23 19 view .LVU90
+ 296              	.LBB26:
+  24:Delay.h       ****             {
+  25:Delay.h       **** 
+  26:Delay.h       ****                 float readSample; // Will store a sample from the delay line
+ 297              		.loc 2 26 17 view .LVU91
+  27:Delay.h       **** 
+  28:Delay.h       ****                 // This smoothes out the delay when you turn the delay control?
+  29:Delay.h       ****                 fonepole(currentDelay, delayTarget, .0002f); 
+ 298              		.loc 2 29 17 view .LVU92
+ 299              	.LBB27:
+ 300              	.LBI27:
+ 301              		.file 3 "../../DaisySP//Source/Utility/dsp.h"
    1:../../DaisySP//Source/Utility/dsp.h **** /** Helpful defines, functions, and other utilities for use in/with daisysp modules.
    2:../../DaisySP//Source/Utility/dsp.h **** */
    3:../../DaisySP//Source/Utility/dsp.h **** #pragma once
@@ -527,6 +478,9 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
   28:../../DaisySP//Source/Utility/dsp.h **** 
   29:../../DaisySP//Source/Utility/dsp.h **** /** efficient floating point min/max
   30:../../DaisySP//Source/Utility/dsp.h **** c/o stephen mccaul
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 9
+
+
   31:../../DaisySP//Source/Utility/dsp.h **** */
   32:../../DaisySP//Source/Utility/dsp.h **** inline float fmax(float a, float b)
   33:../../DaisySP//Source/Utility/dsp.h **** {
@@ -538,9 +492,6 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
   39:../../DaisySP//Source/Utility/dsp.h **** #endif // __arm__
   40:../../DaisySP//Source/Utility/dsp.h ****     return r;
   41:../../DaisySP//Source/Utility/dsp.h **** }
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 10
-
-
   42:../../DaisySP//Source/Utility/dsp.h **** 
   43:../../DaisySP//Source/Utility/dsp.h **** inline float fmin(float a, float b)
   44:../../DaisySP//Source/Utility/dsp.h **** {
@@ -587,6 +538,9 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
   85:../../DaisySP//Source/Utility/dsp.h ****     *lp = l;
   86:../../DaisySP//Source/Utility/dsp.h ****     return f;
   87:../../DaisySP//Source/Utility/dsp.h **** }
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 10
+
+
   88:../../DaisySP//Source/Utility/dsp.h **** 
   89:../../DaisySP//Source/Utility/dsp.h **** /** From http://openaudio.blogspot.com/2017/02/faster-log10-and-pow.html
   90:../../DaisySP//Source/Utility/dsp.h **** No approximation, pow10f(x) gives a 90% speed increase over powf(10.f, x)
@@ -598,9 +552,6 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
   96:../../DaisySP//Source/Utility/dsp.h **** 
   97:../../DaisySP//Source/Utility/dsp.h **** /* Original code for fastlog2f by Dr. Paul Beckmann from the ARM community forum, adapted from the 
   98:../../DaisySP//Source/Utility/dsp.h **** About 25% performance increase over std::log10f
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 11
-
-
   99:../../DaisySP//Source/Utility/dsp.h **** */
  100:../../DaisySP//Source/Utility/dsp.h **** inline float fastlog2f(float f)
  101:../../DaisySP//Source/Utility/dsp.h **** {
@@ -638,29 +589,30 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
  133:../../DaisySP//Source/Utility/dsp.h **** coeff = 1.0 / (time * sample_rate) ; where time is in seconds
  134:../../DaisySP//Source/Utility/dsp.h **** */
  135:../../DaisySP//Source/Utility/dsp.h **** inline void fonepole(float &out, float in, float coeff)
- 346              		.loc 3 135 13 view .LVU111
- 347              	.LBB31:
+ 302              		.loc 3 135 13 view .LVU93
+ 303              	.LBB28:
  136:../../DaisySP//Source/Utility/dsp.h **** {
  137:../../DaisySP//Source/Utility/dsp.h ****     out += coeff * (in - out);
- 348              		.loc 3 137 5 view .LVU112
- 349              		.loc 3 137 9 is_stmt 0 view .LVU113
- 350 0024 D3ED037A 		vldr.32	s15, [r3, #12]
- 351              		.loc 3 137 24 view .LVU114
- 352 0028 93ED047A 		vldr.32	s14, [r3, #16]
- 353              		.loc 3 137 9 view .LVU115
- 354 002c DFED266A 		vldr.32	s13, .L20+4
- 355              		.loc 3 137 24 view .LVU116
- 356 0030 37EE677A 		vsub.f32	s14, s14, s15
- 357              	.LBE31:
- 358              	.LBE30:
- 359              	.LBB34:
- 360              	.LBB35:
- 361              		.file 4 "../../DaisySP//Source/Utility/delayline.h"
+ 304              		.loc 3 137 5 view .LVU94
+ 305              		.loc 3 137 9 is_stmt 0 view .LVU95
+ 306 0060 D3ED047A 		vldr.32	s15, [r3, #16]
+ 307              	.LVL15:
+ 308              		.loc 3 137 9 view .LVU96
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 11
+
+
+ 309 0064 9FED277A 		vldr.32	s14, .L16+12
+ 310              		.loc 3 137 24 view .LVU97
+ 311 0068 36EE676A 		vsub.f32	s12, s12, s15
+ 312              	.LVL16:
+ 313              		.loc 3 137 24 view .LVU98
+ 314              	.LBE28:
+ 315              	.LBE27:
+ 316              	.LBB31:
+ 317              	.LBB32:
+ 318              		.file 4 "../../DaisySP//Source/Utility/delayline.h"
    1:../../DaisySP//Source/Utility/delayline.h **** #pragma once
    2:../../DaisySP//Source/Utility/delayline.h **** #ifndef DSY_DELAY_H
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 12
-
-
    3:../../DaisySP//Source/Utility/delayline.h **** #define DSY_DELAY_H
    4:../../DaisySP//Source/Utility/delayline.h **** #include <stdlib.h>
    5:../../DaisySP//Source/Utility/delayline.h **** #include <stdint.h>
@@ -706,6 +658,9 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
   45:../../DaisySP//Source/Utility/delayline.h ****         frac_  = 0.0f;
   46:../../DaisySP//Source/Utility/delayline.h ****         delay_ = delay < max_size ? delay : max_size - 1;
   47:../../DaisySP//Source/Utility/delayline.h ****     }
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 12
+
+
   48:../../DaisySP//Source/Utility/delayline.h **** 
   49:../../DaisySP//Source/Utility/delayline.h ****     /** sets the delay time in samples
   50:../../DaisySP//Source/Utility/delayline.h ****         If a float is passed in, a fractional component will be calculated for interpolating the de
@@ -715,31 +670,28 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
   54:../../DaisySP//Source/Utility/delayline.h ****         int32_t int_delay = static_cast<int32_t>(delay);
   55:../../DaisySP//Source/Utility/delayline.h ****         frac_             = delay - static_cast<float>(int_delay);
   56:../../DaisySP//Source/Utility/delayline.h ****         delay_ = static_cast<size_t>(int_delay) < max_size ? int_delay
- 362              		.loc 4 56 60 view .LVU117
- 363 0034 254F     		ldr	r7, .L20+8
- 364              	.LBE35:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 13
-
-
- 365              	.LBE34:
-  31:Delay.h       ****                 // Set delay time
-  32:Delay.h       ****                 delay->SetDelay(currentDelay);          
- 366              		.loc 2 32 17 view .LVU118
- 367 0036 9968     		ldr	r1, [r3, #8]
-  33:Delay.h       ****                 readSample = delay->Read(); // Read in the next sample from the delay line
-  34:Delay.h       **** 
-  35:Delay.h       ****                 // Write the readSample * the feedback amount + the input sample into the delay lin
-  36:Delay.h       ****                 delay->Write((feedback * readSample) + in); 
- 368              		.loc 2 36 29 view .LVU119
- 369 0038 D3ED055A 		vldr.32	s11, [r3, #20]
- 370              	.LBB39:
- 371              	.LBB32:
- 372              		.loc 3 137 9 view .LVU120
- 373 003c E7EE267A 		vfma.f32	s15, s14, s13
- 374              	.LBE32:
- 375              	.LBE39:
- 376              	.LBB40:
- 377              	.LBB41:
+ 319              		.loc 4 56 60 view .LVU99
+ 320 006c 264D     		ldr	r5, .L16+16
+ 321              	.LBE32:
+ 322              	.LBE31:
+  30:Delay.h       ****                 // Set delay time
+  31:Delay.h       ****                 delay->SetDelay(currentDelay);          
+ 323              		.loc 2 31 17 view .LVU100
+ 324 006e DC68     		ldr	r4, [r3, #12]
+  32:Delay.h       ****                 readSample = delay->Read(); // Read in the next sample from the delay line
+  33:Delay.h       **** 
+  34:Delay.h       ****                 // Write the readSample * the feedback amount + the input sample into the delay lin
+  35:Delay.h       ****                 delay->Write((feedback * readSample) + in); 
+ 325              		.loc 2 35 29 view .LVU101
+ 326 0070 D3ED064A 		vldr.32	s9, [r3, #24]
+ 327              	.LBB37:
+ 328              	.LBB29:
+ 329              		.loc 3 137 9 view .LVU102
+ 330 0074 E6EE077A 		vfma.f32	s15, s12, s14
+ 331              	.LBE29:
+ 332              	.LBE37:
+ 333              	.LBB38:
+ 334              	.LBB39:
   57:../../DaisySP//Source/Utility/delayline.h ****                                                            : max_size - 1;
   58:../../DaisySP//Source/Utility/delayline.h ****     }
   59:../../DaisySP//Source/Utility/delayline.h **** 
@@ -756,335 +708,345 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 1
   70:../../DaisySP//Source/Utility/delayline.h ****     inline const T Read() const
   71:../../DaisySP//Source/Utility/delayline.h ****     {
   72:../../DaisySP//Source/Utility/delayline.h ****         T a = line_[(write_ptr_ + delay_) % max_size];
- 378              		.loc 4 72 22 view .LVU121
- 379 0040 4D68     		ldr	r5, [r1, #4]
- 380              		.loc 4 72 43 view .LVU122
- 381 0042 234C     		ldr	r4, .L20+12
- 382              	.LBE41:
- 383              	.LBE40:
- 384              	.LBB47:
- 385              	.LBB48:
+ 335              		.loc 4 72 22 view .LVU103
+ 336 0078 6668     		ldr	r6, [r4, #4]
+ 337              		.loc 4 72 43 view .LVU104
+ 338 007a 244F     		ldr	r7, .L16+20
+ 339              	.LBE39:
+ 340              	.LBE38:
+ 341              	.LBB46:
+ 342              	.LBB47:
   65:../../DaisySP//Source/Utility/delayline.h ****     }
- 386              		.loc 4 65 45 view .LVU123
- 387 0044 05EB070C 		add	ip, r5, r7
- 388              	.LBE48:
- 389              	.LBE47:
- 390              	.LBB54:
- 391              	.LBB36:
+ 343              		.loc 4 65 45 view .LVU105
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 13
+
+
+ 344 007c 06EB050C 		add	ip, r6, r5
+ 345              	.LBE47:
+ 346              	.LBE46:
+ 347              	.LBB53:
+ 348              	.LBB33:
   54:../../DaisySP//Source/Utility/delayline.h ****         frac_             = delay - static_cast<float>(int_delay);
- 392              		.loc 4 54 17 view .LVU124
- 393 0048 BDEEE77A 		vcvt.s32.f32	s14, s15
- 394              	.LBE36:
- 395              	.LBE54:
- 396              	.LBB55:
- 397              	.LBB33:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 14
-
-
- 398              		.loc 3 137 9 view .LVU125
- 399 004c C3ED037A 		vstr.32	s15, [r3, #12]
- 400              	.LVL25:
- 401              		.loc 3 137 9 view .LVU126
- 402              	.LBE33:
- 403              	.LBE55:
-  32:Delay.h       ****                 readSample = delay->Read(); // Read in the next sample from the delay line
- 404              		.loc 2 32 17 is_stmt 1 view .LVU127
- 405              	.LBB56:
- 406              	.LBI34:
+ 349              		.loc 4 54 17 view .LVU106
+ 350 0080 BDEEE77A 		vcvt.s32.f32	s14, s15
+ 351              	.LBE33:
+ 352              	.LBE53:
+ 353              	.LBB54:
+ 354              	.LBB30:
+ 355              		.loc 3 137 9 view .LVU107
+ 356 0084 C3ED047A 		vstr.32	s15, [r3, #16]
+ 357              	.LVL17:
+ 358              		.loc 3 137 9 view .LVU108
+ 359              	.LBE30:
+ 360              	.LBE54:
+  31:Delay.h       ****                 readSample = delay->Read(); // Read in the next sample from the delay line
+ 361              		.loc 2 31 17 is_stmt 1 view .LVU109
+ 362              	.LBB55:
+ 363              	.LBI31:
   52:../../DaisySP//Source/Utility/delayline.h ****     {
- 407              		.loc 4 52 17 view .LVU128
- 408              	.LBB37:
+ 364              		.loc 4 52 17 view .LVU110
+ 365              	.LBB34:
   56:../../DaisySP//Source/Utility/delayline.h ****                                                            : max_size - 1;
- 409              		.loc 4 56 60 is_stmt 0 view .LVU129
- 410 0050 17EE102A 		vmov	r2, s14	@ int
+ 366              		.loc 4 56 60 is_stmt 0 view .LVU111
+ 367 0088 17EE101A 		vmov	r1, s14	@ int
   55:../../DaisySP//Source/Utility/delayline.h ****         delay_ = static_cast<size_t>(int_delay) < max_size ? int_delay
- 411              		.loc 4 55 37 view .LVU130
- 412 0054 B8EEC77A 		vcvt.f32.s32	s14, s14
- 413              	.LVL26:
+ 368              		.loc 4 55 37 view .LVU112
+ 369 008c B8EEC77A 		vcvt.f32.s32	s14, s14
+ 370              	.LVL18:
   56:../../DaisySP//Source/Utility/delayline.h ****                                                            : max_size - 1;
- 414              		.loc 4 56 60 view .LVU131
- 415 0058 BA42     		cmp	r2, r7
+ 371              		.loc 4 56 60 view .LVU113
+ 372 0090 A942     		cmp	r1, r5
   55:../../DaisySP//Source/Utility/delayline.h ****         delay_ = static_cast<size_t>(int_delay) < max_size ? int_delay
- 416              		.loc 4 55 35 view .LVU132
- 417 005a 77EEC77A 		vsub.f32	s15, s15, s14
- 418              	.LVL27:
+ 373              		.loc 4 55 35 view .LVU114
+ 374 0092 77EEC77A 		vsub.f32	s15, s15, s14
+ 375              	.LVL19:
   56:../../DaisySP//Source/Utility/delayline.h ****                                                            : max_size - 1;
- 419              		.loc 4 56 60 view .LVU133
- 420 005e 28BF     		it	cs
- 421 0060 3A46     		movcs	r2, r7
- 422              	.LVL28:
+ 376              		.loc 4 56 60 view .LVU115
+ 377 0096 28BF     		it	cs
+ 378 0098 2946     		movcs	r1, r5
+ 379              	.LVL20:
   56:../../DaisySP//Source/Utility/delayline.h ****                                                            : max_size - 1;
- 423              		.loc 4 56 16 view .LVU134
- 424 0062 8A60     		str	r2, [r1, #8]
- 425              	.LVL29:
+ 380              		.loc 4 56 60 view .LVU116
+ 381              	.LBE34:
+ 382              	.LBE55:
+ 383              	.LBB56:
+ 384              	.LBB40:
+ 385              		.loc 4 72 43 view .LVU117
+ 386 009a 1D4D     		ldr	r5, .L16+24
+ 387              	.LBE40:
+ 388              	.LBE56:
+ 389              	.LBB57:
+ 390              	.LBB35:
   56:../../DaisySP//Source/Utility/delayline.h ****                                                            : max_size - 1;
- 426              		.loc 4 56 16 view .LVU135
- 427              	.LBE37:
- 428              	.LBE56:
-  33:Delay.h       **** 
- 429              		.loc 2 33 17 is_stmt 1 view .LVU136
- 430              	.LBB57:
- 431              	.LBI40:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 14
+
+
+ 391              		.loc 4 56 16 view .LVU118
+ 392 009c A160     		str	r1, [r4, #8]
+ 393              	.LVL21:
+  56:../../DaisySP//Source/Utility/delayline.h ****                                                            : max_size - 1;
+ 394              		.loc 4 56 16 view .LVU119
+ 395              	.LBE35:
+ 396              	.LBE57:
+  32:Delay.h       **** 
+ 397              		.loc 2 32 17 is_stmt 1 view .LVU120
+ 398              	.LBB58:
+ 399              	.LBI38:
   70:../../DaisySP//Source/Utility/delayline.h ****     {
- 432              		.loc 4 70 20 view .LVU137
- 433              	.LBB42:
- 434              		.loc 4 72 33 is_stmt 0 view .LVU138
- 435 0064 2A44     		add	r2, r2, r5
- 436              	.LBE42:
- 437              	.LBE57:
- 438              	.LBB58:
- 439              	.LBB38:
+ 400              		.loc 4 70 20 view .LVU121
+ 401              	.LBB41:
+ 402              		.loc 4 72 33 is_stmt 0 view .LVU122
+ 403 009e 3144     		add	r1, r1, r6
+ 404              	.LBE41:
+ 405              	.LBE58:
+ 406              	.LBB59:
+ 407              	.LBB36:
   55:../../DaisySP//Source/Utility/delayline.h ****         delay_ = static_cast<size_t>(int_delay) < max_size ? int_delay
- 440              		.loc 4 55 27 view .LVU139
- 441 0066 C1ED007A 		vstr.32	s15, [r1]
- 442              	.LBE38:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 15
-
-
- 443              	.LBE58:
- 444              	.LBB59:
- 445              	.LBB49:
+ 408              		.loc 4 55 27 view .LVU123
+ 409 00a0 C4ED007A 		vstr.32	s15, [r4]
+ 410              	.LBE36:
+ 411              	.LBE59:
+ 412              	.LBB60:
+ 413              	.LBB48:
   64:../../DaisySP//Source/Utility/delayline.h ****         write_ptr_        = (write_ptr_ - 1 + max_size) % max_size;
- 446              		.loc 4 64 27 view .LVU140
- 447 006a 01EB8505 		add	r5, r1, r5, lsl #2
- 448              	.LBE49:
- 449              	.LBE59:
- 450              	.LBB60:
- 451              	.LBB43:
+ 414              		.loc 4 64 27 view .LVU124
+ 415 00a4 04EB8606 		add	r6, r4, r6, lsl #2
+ 416              	.LBE48:
+ 417              	.LBE60:
+ 418              	.LBB61:
+ 419              	.LBB42:
+ 420              		.loc 4 72 43 view .LVU125
+ 421 00a8 A5FB01A9 		umull	r10, r9, r5, r1
   73:../../DaisySP//Source/Utility/delayline.h ****         T b = line_[(write_ptr_ + delay_ + 1) % max_size];
- 452              		.loc 4 73 42 view .LVU141
- 453 006e 02F1010E 		add	lr, r2, #1
+ 422              		.loc 4 73 42 view .LVU126
+ 423 00ac 01F10108 		add	r8, r1, #1
   72:../../DaisySP//Source/Utility/delayline.h ****         T b = line_[(write_ptr_ + delay_ + 1) % max_size];
- 454              		.loc 4 72 43 view .LVU142
- 455 0072 A4FB0279 		umull	r7, r9, r4, r2
- 456              		.loc 4 73 47 view .LVU143
- 457 0076 A4FB0E78 		umull	r7, r8, r4, lr
+ 424              		.loc 4 72 43 view .LVU127
+ 425 00b0 4FEA5949 		lsr	r9, r9, #17
+ 426 00b4 07FB1911 		mls	r1, r7, r9, r1
   72:../../DaisySP//Source/Utility/delayline.h ****         T b = line_[(write_ptr_ + delay_ + 1) % max_size];
- 458              		.loc 4 72 43 view .LVU144
- 459 007a 4FEA5949 		lsr	r9, r9, #17
- 460              	.LBE43:
- 461              	.LBE60:
- 462              	.LBB61:
- 463              	.LBB50:
+ 427              		.loc 4 72 11 view .LVU128
+ 428 00b8 04EB8101 		add	r1, r4, r1, lsl #2
+ 429 00bc 91ED037A 		vldr.32	s14, [r1, #12]
+ 430              	.LVL22:
+ 431              		.loc 4 73 47 view .LVU129
+ 432 00c0 A5FB0891 		umull	r9, r1, r5, r8
+ 433              	.LBE42:
+ 434              	.LBE61:
+ 435              	.LBB62:
+ 436              	.LBB49:
   65:../../DaisySP//Source/Utility/delayline.h ****     }
- 464              		.loc 4 65 57 view .LVU145
- 465 007e A4FB0C74 		umull	r7, r4, r4, ip
- 466              	.LBE50:
- 467              	.LBE61:
- 468              	.LBB62:
- 469              	.LBB44:
-  72:../../DaisySP//Source/Utility/delayline.h ****         T b = line_[(write_ptr_ + delay_ + 1) % max_size];
- 470              		.loc 4 72 43 view .LVU146
- 471 0082 144F     		ldr	r7, .L20+16
- 472              		.loc 4 73 47 view .LVU147
- 473 0084 4FEA5848 		lsr	r8, r8, #17
-  72:../../DaisySP//Source/Utility/delayline.h ****         T b = line_[(write_ptr_ + delay_ + 1) % max_size];
- 474              		.loc 4 72 43 view .LVU148
- 475 0088 07FB1922 		mls	r2, r7, r9, r2
- 476              	.LBE44:
- 477              	.LBE62:
- 478              	.LBB63:
- 479              	.LBB51:
-  65:../../DaisySP//Source/Utility/delayline.h ****     }
- 480              		.loc 4 65 57 view .LVU149
- 481 008c 640C     		lsrs	r4, r4, #17
- 482              	.LBE51:
- 483              	.LBE63:
- 484              	.LBB64:
- 485              	.LBB45:
- 486              		.loc 4 73 47 view .LVU150
- 487 008e 07FB18EE 		mls	lr, r7, r8, lr
-  72:../../DaisySP//Source/Utility/delayline.h ****         T b = line_[(write_ptr_ + delay_ + 1) % max_size];
- 488              		.loc 4 72 11 view .LVU151
- 489 0092 01EB8202 		add	r2, r1, r2, lsl #2
- 490              	.LBE45:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 16
+ 437              		.loc 4 65 57 view .LVU130
+ 438 00c4 A5FB0C95 		umull	r9, r5, r5, ip
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 15
 
 
- 491              	.LBE64:
- 492              	.LBB65:
- 493              	.LBB52:
+ 439              	.LBE49:
+ 440              	.LBE62:
+ 441              	.LBB63:
+ 442              	.LBB43:
+ 443              		.loc 4 73 47 view .LVU131
+ 444 00c8 490C     		lsrs	r1, r1, #17
+ 445              	.LBE43:
+ 446              	.LBE63:
+ 447              	.LBB64:
+ 448              	.LBB50:
   65:../../DaisySP//Source/Utility/delayline.h ****     }
- 494              		.loc 4 65 57 view .LVU152
- 495 0096 07FB14C4 		mls	r4, r7, r4, ip
- 496              	.LBE52:
- 497              	.LBE65:
- 498              	.LBB66:
- 499              	.LBB46:
- 500              		.loc 4 73 11 view .LVU153
- 501 009a 01EB8E0E 		add	lr, r1, lr, lsl #2
-  72:../../DaisySP//Source/Utility/delayline.h ****         T b = line_[(write_ptr_ + delay_ + 1) % max_size];
- 502              		.loc 4 72 11 view .LVU154
- 503 009e 92ED037A 		vldr.32	s14, [r2, #12]
- 504              	.LVL30:
+ 449              		.loc 4 65 57 view .LVU132
+ 450 00ca 6D0C     		lsrs	r5, r5, #17
+ 451              	.LBE50:
+ 452              	.LBE64:
+ 453              	.LBB65:
+ 454              	.LBB44:
+ 455              		.loc 4 73 47 view .LVU133
+ 456 00cc 07FB1188 		mls	r8, r7, r1, r8
+ 457              	.LVL23:
+ 458              		.loc 4 73 47 view .LVU134
+ 459              	.LBE44:
+ 460              	.LBE65:
+ 461              	.LBB66:
+ 462              	.LBB51:
+  65:../../DaisySP//Source/Utility/delayline.h ****     }
+ 463              		.loc 4 65 57 view .LVU135
+ 464 00d0 07FB15C5 		mls	r5, r7, r5, ip
+ 465              	.LBE51:
+ 466              	.LBE66:
+ 467              	.LBB67:
+ 468              	.LBB45:
+ 469              		.loc 4 73 11 view .LVU136
+ 470 00d4 04EB8808 		add	r8, r4, r8, lsl #2
   74:../../DaisySP//Source/Utility/delayline.h ****         return a + (b - a) * frac_;
- 505              		.loc 4 74 23 view .LVU155
- 506 00a2 DEED036A 		vldr.32	s13, [lr, #12]
- 507 00a6 76EEC76A 		vsub.f32	s13, s13, s14
- 508              		.loc 4 74 30 view .LVU156
- 509 00aa A7EEA67A 		vfma.f32	s14, s15, s13
- 510              	.LVL31:
- 511              		.loc 4 74 30 view .LVU157
- 512              	.LBE46:
- 513              	.LBE66:
- 514              		.loc 2 36 17 is_stmt 1 view .LVU158
- 515              		.loc 2 36 29 is_stmt 0 view .LVU159
- 516 00ae F0EE407A 		vmov.f32	s15, s0
- 517 00b2 E5EE877A 		vfma.f32	s15, s11, s14
- 518              	.LVL32:
- 519              	.LBB67:
- 520              	.LBI47:
+ 471              		.loc 4 74 23 view .LVU137
+ 472 00d8 D8ED036A 		vldr.32	s13, [r8, #12]
+ 473 00dc 76EEC76A 		vsub.f32	s13, s13, s14
+ 474              		.loc 4 74 30 view .LVU138
+ 475 00e0 A7EEA67A 		vfma.f32	s14, s15, s13
+ 476              	.LVL24:
+ 477              		.loc 4 74 30 view .LVU139
+ 478              	.LBE45:
+ 479              	.LBE67:
+ 480              		.loc 2 35 17 is_stmt 1 view .LVU140
+ 481              		.loc 2 35 29 is_stmt 0 view .LVU141
+ 482 00e4 F0EE407A 		vmov.f32	s15, s0
+ 483 00e8 E4EE877A 		vfma.f32	s15, s9, s14
+ 484              	.LVL25:
+ 485              	.LBB68:
+ 486              	.LBI46:
   62:../../DaisySP//Source/Utility/delayline.h ****     {
- 521              		.loc 4 62 17 is_stmt 1 view .LVU160
- 522              	.LBE67:
- 523              	.LBE29:
- 524              	.LBE28:
-  52:Delay.cpp     **** 
- 525              		.loc 1 52 29 is_stmt 0 view .LVU161
- 526 00b6 36EE076A 		vadd.f32	s12, s12, s14
- 527              	.LVL33:
- 528              	.LBB70:
- 529              	.LBB69:
- 530              	.LBB68:
- 531              	.LBB53:
+ 487              		.loc 4 62 17 is_stmt 1 view .LVU142
+ 488              	.LBE68:
+ 489              	.LBE26:
+ 490              	.LBE25:
+  52:Delay.cpp     ****     }
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 16
+
+
+ 491              		.loc 1 52 29 is_stmt 0 view .LVU143
+ 492 00ec 72EE872A 		vadd.f32	s5, s5, s14
+ 493              	.LVL26:
+ 494              	.LBB71:
+ 495              	.LBB70:
+ 496              	.LBB69:
+ 497              	.LBB52:
   64:../../DaisySP//Source/Utility/delayline.h ****         write_ptr_        = (write_ptr_ - 1 + max_size) % max_size;
- 532              		.loc 4 64 27 view .LVU162
- 533 00ba C5ED037A 		vstr.32	s15, [r5, #12]
+ 498              		.loc 4 64 27 view .LVU144
+ 499 00f0 C6ED037A 		vstr.32	s15, [r6, #12]
   65:../../DaisySP//Source/Utility/delayline.h ****     }
- 534              		.loc 4 65 27 view .LVU163
- 535 00be 4C60     		str	r4, [r1, #4]
- 536              	.LVL34:
+ 500              		.loc 4 65 27 view .LVU145
+ 501 00f4 6560     		str	r5, [r4, #4]
+ 502              	.LVL27:
   65:../../DaisySP//Source/Utility/delayline.h ****     }
- 537              		.loc 4 65 27 view .LVU164
- 538              	.LBE53:
- 539              	.LBE68:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 17
+ 503              		.loc 4 65 27 view .LVU146
+ 504              	.LBE52:
+ 505              	.LBE69:
+  36:Delay.h       ****                 
+  37:Delay.h       ****                 return readSample;
+ 506              		.loc 2 37 17 is_stmt 1 view .LVU147
+ 507              		.loc 2 37 17 is_stmt 0 view .LVU148
+ 508              	.LBE70:
+ 509              	.LBE71:
+ 510 00f6 ABE7     		b	.L8
+ 511              	.L17:
+ 512              		.align	3
+ 513              	.L16:
+ 514 00f8 00000000 		.word	0
+ 515 00fc 00F94541 		.word	1095104768
+ 516 0100 00000000 		.word	0
+ 517 0104 17B75139 		.word	961656599
+ 518 0108 7F320200 		.word	143999
+ 519 010c 80320200 		.word	144000
+ 520 0110 D55204E9 		.word	-385592619
+ 521              	.LBE74:
+ 522              		.cfi_endproc
+ 523              	.LFE4795:
+ 525              		.section	.text._ZN6Delayy10toggleHeadERKi,"ax",%progbits
+ 526              		.align	1
+ 527              		.p2align 2,,3
+ 528              		.global	_ZN6Delayy10toggleHeadERKi
+ 529              		.syntax unified
+ 530              		.thumb
+ 531              		.thumb_func
+ 532              		.fpu fpv5-d16
+ 534              	_ZN6Delayy10toggleHeadERKi:
+ 535              	.LVL28:
+ 536              	.LFB4796:
+  58:Delay.cpp     **** 
+  59:Delay.cpp     **** void Delayy::toggleHead(const int& headNumber)
+  60:Delay.cpp     **** {
+ 537              		.loc 1 60 1 is_stmt 1 view -0
+ 538              		.cfi_startproc
+ 539              		@ args = 0, pretend = 0, frame = 0
+ 540              		@ frame_needed = 0, uses_anonymous_args = 0
+ 541              		@ link register save eliminated.
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 17
 
 
-  37:Delay.h       ****                 
-  38:Delay.h       ****                 return readSample;
- 540              		.loc 2 38 17 is_stmt 1 view .LVU165
- 541              		.loc 2 38 17 is_stmt 0 view .LVU166
- 542              	.LBE69:
- 543              	.LBE70:
- 544 00c0 A8E7     		b	.L12
- 545              	.L21:
- 546 00c2 00BF     		.align	2
- 547              	.L20:
- 548 00c4 00000000 		.word	0
- 549 00c8 17B75139 		.word	961656599
- 550 00cc 7F320200 		.word	143999
- 551 00d0 D55204E9 		.word	-385592619
- 552 00d4 80320200 		.word	144000
- 553              	.LBE72:
- 554              		.cfi_endproc
- 555              	.LFE4795:
- 557              		.section	.text._ZN6Delayy10toggleHeadERKi,"ax",%progbits
- 558              		.align	1
- 559              		.p2align 2,,3
- 560              		.global	_ZN6Delayy10toggleHeadERKi
- 561              		.syntax unified
- 562              		.thumb
- 563              		.thumb_func
- 564              		.fpu fpv5-d16
- 566              	_ZN6Delayy10toggleHeadERKi:
- 567              	.LVL35:
- 568              	.LFB4796:
-  57:Delay.cpp     **** 
-  58:Delay.cpp     **** void Delayy::toggleHead(const int& headNumber)
-  59:Delay.cpp     **** {
- 569              		.loc 1 59 1 is_stmt 1 view -0
- 570              		.cfi_startproc
- 571              		@ args = 0, pretend = 0, frame = 0
- 572              		@ frame_needed = 0, uses_anonymous_args = 0
- 573              		@ link register save eliminated.
-  60:Delay.cpp     ****     if(headNumber >= NUM_OF_DELAY_HEADS || headNumber < 0)
- 574              		.loc 1 60 5 view .LVU168
- 575              		.loc 1 60 8 is_stmt 0 view .LVU169
- 576 0000 0B68     		ldr	r3, [r1]
- 577              		.loc 1 60 5 view .LVU170
- 578 0002 032B     		cmp	r3, #3
- 579 0004 03D8     		bhi	.L22
-  61:Delay.cpp     ****         return;
-  62:Delay.cpp     ****     else
-  63:Delay.cpp     ****         delayHeadOn[headNumber] = !delayHeadOn[headNumber];
- 580              		.loc 1 63 9 is_stmt 1 view .LVU171
- 581              		.loc 1 63 35 is_stmt 0 view .LVU172
- 582 0006 C25C     		ldrb	r2, [r0, r3]	@ zero_extendqisi2
- 583 0008 82F00102 		eor	r2, r2, #1
- 584              		.loc 1 63 33 view .LVU173
- 585 000c C254     		strb	r2, [r0, r3]
- 586              	.L22:
-  64:Delay.cpp     **** }...
- 587              		.loc 1 64 1 view .LVU174
- 588 000e 7047     		bx	lr
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 18
+  61:Delay.cpp     ****     if(headNumber >= NUM_OF_DELAY_HEADS || headNumber < 0)
+ 542              		.loc 1 61 5 view .LVU150
+ 543              		.loc 1 61 8 is_stmt 0 view .LVU151
+ 544 0000 0B68     		ldr	r3, [r1]
+ 545              		.loc 1 61 5 view .LVU152
+ 546 0002 032B     		cmp	r3, #3
+ 547 0004 03D8     		bhi	.L18
+  62:Delay.cpp     ****         return;
+  63:Delay.cpp     ****     else
+  64:Delay.cpp     ****         delayHeadOn[headNumber] = !delayHeadOn[headNumber];
+ 548              		.loc 1 64 9 is_stmt 1 view .LVU153
+ 549              		.loc 1 64 35 is_stmt 0 view .LVU154
+ 550 0006 C25C     		ldrb	r2, [r0, r3]	@ zero_extendqisi2
+ 551 0008 82F00102 		eor	r2, r2, #1
+ 552              		.loc 1 64 33 view .LVU155
+ 553 000c C254     		strb	r2, [r0, r3]
+ 554              	.L18:
+  65:Delay.cpp     **** }...
+ 555              		.loc 1 65 1 view .LVU156
+ 556 000e 7047     		bx	lr
+ 557              		.cfi_endproc
+ 558              	.LFE4796:
+ 560              		.text
+ 561              	.Letext0:
+ 562              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 563              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 564              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 565              		.file 8 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 566              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 567              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 568              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 569              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 570              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 571              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 572              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 573              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 574              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 575              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 576              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 577              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 578              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 579              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
+ 580              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 581              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 582              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 583              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 584              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 585              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 586              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 587              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 588              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 589              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 590              		.file 33 "../../DaisySP//Source/Control/adenv.h"
+ 591              		.file 34 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 592              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 593              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 594              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 18
 
 
- 589              		.cfi_endproc
- 590              	.LFE4796:
- 592              		.text
- 593              	.Letext0:
- 594              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
- 595              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
- 596              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
- 597              		.file 8 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
- 598              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
- 599              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 600              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
- 601              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
- 602              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
- 603              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
- 604              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
- 605              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
- 606              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
- 607              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
- 608              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
- 609              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
- 610              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
- 611              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
- 612              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
- 613              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
- 614              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
- 615              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
- 616              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
- 617              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
- 618              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
- 619              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 620              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
- 621              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 622              		.file 33 "../../DaisySP//Source/Control/adenv.h"
- 623              		.file 34 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
- 624              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
- 625              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
- 626              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
- 627              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
- 628              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
- 629              		.file 40 "../../libDaisy//src/daisy_core.h"
- 630              		.file 41 "../../libDaisy//src/util/wav_format.h"
- 631              		.file 42 "../../libDaisy//src/dev/max11300.h"
- 632              		.file 43 "../../libDaisy//src/daisy_seed.h"
- 633              		.file 44 "../../libDaisy//src/dev/sr_595.h"
- 634              		.file 45 "<built-in>"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s 			page 19
+ 595              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 596              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 597              		.file 40 "../../libDaisy//src/daisy_core.h"
+ 598              		.file 41 "../../libDaisy//src/util/wav_format.h"
+ 599              		.file 42 "../../libDaisy//src/dev/max11300.h"
+ 600              		.file 43 "../../libDaisy//src/daisy_seed.h"
+ 601              		.file 44 "../../libDaisy//src/dev/sr_595.h"
+ 602              		.file 45 "<built-in>"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Delay.cpp
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:17     .text._ZN6DelayyC2Ev:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC2Ev
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC1Ev
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:97     .text._ZN6Delayy7stopAllEv:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:105    .text._ZN6Delayy7stopAllEv:00000000 _ZN6Delayy7stopAllEv
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:139    .text._ZN6Delayy6setBPMERKi:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:147    .text._ZN6Delayy6setBPMERKi:00000000 _ZN6Delayy6setBPMERKi
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:213    .text._ZN6Delayy6setBPMERKi:00000048 $d
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:219    .text._ZN6Delayy11setFeedbackERKf:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:227    .text._ZN6Delayy11setFeedbackERKf:00000000 _ZN6Delayy11setFeedbackERKf
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:273    .text._ZN6Delayy7processEf:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:281    .text._ZN6Delayy7processEf:00000000 _ZN6Delayy7processEf
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:548    .text._ZN6Delayy7processEf:000000c4 $d
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:558    .text._ZN6Delayy10toggleHeadERKi:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccNQNBna.s:566    .text._ZN6Delayy10toggleHeadERKi:00000000 _ZN6Delayy10toggleHeadERKi
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:17     .text._ZN6DelayyC2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC2Ev
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC1Ev
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:97     .text._ZN6Delayy7stopAllEv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:105    .text._ZN6Delayy7stopAllEv:00000000 _ZN6Delayy7stopAllEv
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:139    .text._ZN6Delayy6setBPMERKi:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:147    .text._ZN6Delayy6setBPMERKi:00000000 _ZN6Delayy6setBPMERKi
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:166    .text._ZN6Delayy11setFeedbackERKf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:174    .text._ZN6Delayy11setFeedbackERKf:00000000 _ZN6Delayy11setFeedbackERKf
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:193    .text._ZN6Delayy7processEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:201    .text._ZN6Delayy7processEf:00000000 _ZN6Delayy7processEf
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:514    .text._ZN6Delayy7processEf:000000f8 $d
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:526    .text._ZN6Delayy10toggleHeadERKi:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cc3oMZMW.s:534    .text._ZN6Delayy10toggleHeadERKi:00000000 _ZN6Delayy10toggleHeadERKi
 
 NO UNDEFINED SYMBOLS
