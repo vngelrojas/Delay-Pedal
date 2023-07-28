@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   33              		@ frame_needed = 0, uses_anonymous_args = 0
   34              		@ link register save eliminated.
   35              		.loc 1 23 17 is_stmt 0 view .LVU1
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 2
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 2
 
 
   36 0000 7047     		bx	lr
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   55              		.loc 2 37 5 is_stmt 1 view -0
   56              		.cfi_startproc
   57              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 3
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 3
 
 
   58              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   35:../../libDaisy//src/per/tim.h ****  ** @todo Advanced timers (TIM1/TIM8)
   36:../../libDaisy//src/per/tim.h ****  ** */
   37:../../libDaisy//src/per/tim.h **** class TimerHandle
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 4
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 4
 
 
   38:../../libDaisy//src/per/tim.h **** {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   92:../../libDaisy//src/per/tim.h ****      *   period. This requires that Config::enable_irq is true before Init
   93:../../libDaisy//src/per/tim.h ****      *  @param data pointer to arbitrary user-provided data
   94:../../libDaisy//src/per/tim.h ****     */
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 5
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 5
 
 
   95:../../libDaisy//src/per/tim.h ****     typedef void (*PeriodElapsedCallback)(void* data);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   26:../../libDaisy//src/hid/switch.h ****     /** Specifies whether the pressed is HIGH or LOW. */
   27:../../libDaisy//src/hid/switch.h ****     enum Polarity
   28:../../libDaisy//src/hid/switch.h ****     {
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 6
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 6
 
 
   29:../../libDaisy//src/hid/switch.h ****         POLARITY_NORMAL,   /**< & */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   18:../../libDaisy//src/hid/parameter.h ****         LINEAR,      /**< Linear curve */
   19:../../libDaisy//src/hid/parameter.h ****         EXPONENTIAL, /**< Exponential curve */
   20:../../libDaisy//src/hid/parameter.h ****         LOGARITHMIC, /**<  Logarithmic curve */
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 7
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 7
 
 
   21:../../libDaisy//src/hid/parameter.h ****         CUBE,        /**< Cubic curve */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  155              		.fpu fpv5-d16
  157              	_ZN5daisy9DaisySeedD2Ev:
  158              	.LVL5:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 8
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 8
 
 
  159              	.LFB4783:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   23:../../libDaisy//src/sys/system.h ****     {
   24:../../libDaisy//src/sys/system.h ****         /** Specifies the system clock frequency that feeds APB/AHB clocks, etc. */
   25:../../libDaisy//src/sys/system.h ****         enum class SysClkFreq
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 9
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 9
 
 
   26:../../libDaisy//src/sys/system.h ****         {
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  170              		.loc 8 78 5 is_stmt 0 view .LVU14
  171              	.LBE184:
  172              	.LBB185:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 10
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 10
 
 
  173              	.LBI185:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
    5:../../libDaisy//src/per/adc.h **** #include <stdlib.h>
    6:../../libDaisy//src/per/adc.h **** #include "daisy_core.h"
    7:../../libDaisy//src/per/adc.h **** #include "per/gpio.h"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 11
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 11
 
 
    8:../../libDaisy//src/per/adc.h **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   62:../../libDaisy//src/per/adc.h ****                  dsy_gpio_pin mux_1 = {DSY_GPIOX, 0},
   63:../../libDaisy//src/per/adc.h ****                  dsy_gpio_pin mux_2 = {DSY_GPIOX, 0});
   64:../../libDaisy//src/per/adc.h **** 
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 12
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 12
 
 
   65:../../libDaisy//src/per/adc.h ****     dsy_gpio pin_;                   /**< & */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   20:../../libDaisy//src/hid/audio.h ****  *             5. Start the Audio using one of the StartAudio function
   21:../../libDaisy//src/hid/audio.h ****  */
   22:../../libDaisy//src/hid/audio.h **** class AudioHandle
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 13
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 13
 
 
   23:../../libDaisy//src/hid/audio.h **** {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   77:../../libDaisy//src/hid/audio.h ****     /** Interleaving Input buffer
   78:../../libDaisy//src/hid/audio.h ****      ** audio is prepared as { L0, R0, L1, R1, . . . LN, RN }]
   79:../../libDaisy//src/hid/audio.h ****      ** this is const, as the user shouldn't modify it
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 14
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 14
 
 
   80:../../libDaisy//src/hid/audio.h ****     */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  218 0002 00BF     		.section	.text._ZN10ToneFilterD2Ev,"axG",%progbits,_ZN10ToneFilterD5Ev,comdat
  219              		.align	1
  220              		.p2align 2,,3
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 15
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 15
 
 
  221              		.weak	_ZN10ToneFilterD2Ev
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  244              		.file 15 "../../DaisySP//Source/Filters/tone.h"
    1:../../DaisySP//Source/Filters/tone.h **** #pragma once
    2:../../DaisySP//Source/Filters/tone.h **** #ifndef DSY_TONE_H
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 16
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 16
 
 
    3:../../DaisySP//Source/Filters/tone.h **** #define DSY_TONE_H
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   15:MyNewProject.cpp **** 
   16:MyNewProject.cpp **** Switch ON_BUTTON;                 // The on/off button
   17:MyNewProject.cpp **** Switch TEMPO_BUTTON;              // The tap tempo button
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 17
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 17
 
 
   18:MyNewProject.cpp **** Switch headSwitches[4];           // One switch for each head
@@ -998,7 +998,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   52:MyNewProject.cpp ****         // Check for tempo change
   53:MyNewProject.cpp ****         CheckTempo();
   54:MyNewProject.cpp ****         // Set delays with new bpm
-  55:MyNewProject.cpp ****         delay.setBPM(BPM);       
+  55:MyNewProject.cpp ****         delay.setBPM(tapTempo.getBPM());       
   56:MyNewProject.cpp **** 
   57:MyNewProject.cpp **** 
   58:MyNewProject.cpp ****         ON_BUTTON.Debounce();
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   72:MyNewProject.cpp **** 
   73:MyNewProject.cpp ****         float final_mix = 0;         // The final float value that will be outputted
   74:MyNewProject.cpp **** 	    float all_delay_signals = 0; // Summation of all delay signals
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 18
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 18
 
 
   75:MyNewProject.cpp ****         float nonConstInput;         // Will store the a copy of input float value at in[channel][i
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  129:MyNewProject.cpp ****     config.enable_irq = 1;                                  // Enable interrupt for user based call
  130:MyNewProject.cpp ****     configPtr = &config;                                    // Point our global config to the one w
  131:MyNewProject.cpp **** 
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 19
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 19
 
 
  132:MyNewProject.cpp ****     // Init the timer with our config
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  182:MyNewProject.cpp ****     // uint32_t tick;    // The position of the counter when the second tap occurs
  183:MyNewProject.cpp ****     // uint32_t freq;    // The frequency of each tick of the timer in Hz.
  184:MyNewProject.cpp ****     // float seconds;    // The seconds elapsed between first and second tap
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 20
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 20
 
 
  185:MyNewProject.cpp **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   58:../../libDaisy//src/hid/switch.h ****        \param update_rate Left for backwards compatibility until next breaking change.
   59:../../libDaisy//src/hid/switch.h ****     */
   60:../../libDaisy//src/hid/switch.h ****     void Init(dsy_gpio_pin pin, float update_rate = 0.f);
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 21
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 21
 
 
   61:../../libDaisy//src/hid/switch.h **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  233:MyNewProject.cpp ****         //         // Set all delays to new bpm
  234:MyNewProject.cpp ****         //     }
  235:MyNewProject.cpp ****         //     //else
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 22
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 22
 
 
  236:MyNewProject.cpp ****         //         //hw.PrintLine("Under .6");
@@ -1275,19 +1275,20 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  322              		.loc 12 246 5 is_stmt 1 view .LVU42
  323              		.loc 12 246 20 is_stmt 0 view .LVU43
  324 001a 0348     		ldr	r0, .L17+4
- 247:MyNewProject.cpp ****     
- 248:MyNewProject.cpp **** }
- 325              		.loc 12 248 1 view .LVU44
+ 247:MyNewProject.cpp **** 
+ 248:MyNewProject.cpp ****     
+ 249:MyNewProject.cpp **** }
+ 325              		.loc 12 249 1 view .LVU44
  326 001c BDE81040 		pop	{r4, lr}
  327              		.cfi_restore 14
  328              		.cfi_restore 4
  329              		.cfi_def_cfa_offset 0
- 246:MyNewProject.cpp ****     
+ 246:MyNewProject.cpp **** 
  330              		.loc 12 246 20 view .LVU45
  331 0020 FFF7FEBF 		b	_ZN8TapTempo6updateEb
  332              	.LVL11:
  333              	.L18:
- 246:MyNewProject.cpp ****     
+ 246:MyNewProject.cpp **** 
  334              		.loc 12 246 20 view .LVU46
  335              		.align	2
  336              	.L17:
@@ -1305,25 +1306,25 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  349              		.fpu fpv5-d16
  351              	_Z15InitHeadButtonsv:
  352              	.LFB4803:
- 249:MyNewProject.cpp **** 
- 250:MyNewProject.cpp **** void InitHeadButtons()
- 251:MyNewProject.cpp **** {
- 353              		.loc 12 251 1 is_stmt 1 view -0
+ 250:MyNewProject.cpp **** 
+ 251:MyNewProject.cpp **** void InitHeadButtons()
+ 252:MyNewProject.cpp **** {
+ 353              		.loc 12 252 1 is_stmt 1 view -0
  354              		.cfi_startproc
  355              		@ args = 0, pretend = 0, frame = 8
  356              		@ frame_needed = 0, uses_anonymous_args = 0
- 252:MyNewProject.cpp ****     // Iterate through head switch array
- 253:MyNewProject.cpp ****     for(int i = 0; i < 4;i++)
- 357              		.loc 12 253 5 view .LVU48
+ 253:MyNewProject.cpp ****     // Iterate through head switch array
+ 254:MyNewProject.cpp ****     for(int i = 0; i < 4;i++)
+ 357              		.loc 12 254 5 view .LVU48
  358              	.LVL12:
  359              	.LBB195:
- 360              		.loc 12 253 22 view .LVU49
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 23
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 23
 
 
+ 360              		.loc 12 254 22 view .LVU49
  361              	.LBE195:
- 251:MyNewProject.cpp ****     // Iterate through head switch array
- 362              		.loc 12 251 1 is_stmt 0 view .LVU50
+ 252:MyNewProject.cpp ****     // Iterate through head switch array
+ 362              		.loc 12 252 1 is_stmt 0 view .LVU50
  363 0000 30B5     		push	{r4, r5, lr}
  364              		.cfi_def_cfa_offset 12
  365              		.cfi_offset 4, -12
@@ -1332,55 +1333,55 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  368 0002 0B4D     		ldr	r5, .L23
  369 0004 83B0     		sub	sp, sp, #12
  370              		.cfi_def_cfa_offset 24
- 251:MyNewProject.cpp ****     // Iterate through head switch array
- 371              		.loc 12 251 1 view .LVU51
+ 252:MyNewProject.cpp ****     // Iterate through head switch array
+ 371              		.loc 12 252 1 view .LVU51
  372 0006 1524     		movs	r4, #21
  373              	.LVL13:
  374              	.L20:
  375              	.LBB196:
- 254:MyNewProject.cpp ****     {
- 255:MyNewProject.cpp ****         // Init buttons to D21 - D24
- 256:MyNewProject.cpp ****         headSwitches[i].Init(hw.GetPin(21+i),1000);
- 376              		.loc 12 256 9 is_stmt 1 discriminator 2 view .LVU52
- 377              		.loc 12 256 29 is_stmt 0 discriminator 2 view .LVU53
+ 255:MyNewProject.cpp ****     {
+ 256:MyNewProject.cpp ****         // Init buttons to D21 - D24
+ 257:MyNewProject.cpp ****         headSwitches[i].Init(hw.GetPin(21+i),1000);
+ 376              		.loc 12 257 9 is_stmt 1 discriminator 2 view .LVU52
+ 377              		.loc 12 257 29 is_stmt 0 discriminator 2 view .LVU53
  378 0008 2046     		mov	r0, r4
- 253:MyNewProject.cpp ****     {
- 379              		.loc 12 253 22 discriminator 2 view .LVU54
+ 254:MyNewProject.cpp ****     {
+ 379              		.loc 12 254 22 discriminator 2 view .LVU54
  380 000a 0134     		adds	r4, r4, #1
- 381              		.loc 12 256 29 discriminator 2 view .LVU55
+ 381              		.loc 12 257 29 discriminator 2 view .LVU55
  382 000c FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
  383              	.LVL14:
  384 0010 0346     		mov	r3, r0	@ movhi
- 253:MyNewProject.cpp ****     {
- 385              		.loc 12 253 22 discriminator 2 view .LVU56
+ 254:MyNewProject.cpp ****     {
+ 385              		.loc 12 254 22 discriminator 2 view .LVU56
  386 0012 E4B2     		uxtb	r4, r4
- 387              		.loc 12 256 29 discriminator 2 view .LVU57
+ 387              		.loc 12 257 29 discriminator 2 view .LVU57
  388 0014 2846     		mov	r0, r5
  389 0016 ADF80430 		strh	r3, [sp, #4]	@ movhi
- 253:MyNewProject.cpp ****     {
- 390              		.loc 12 253 22 discriminator 2 view .LVU58
+ 254:MyNewProject.cpp ****     {
+ 390              		.loc 12 254 22 discriminator 2 view .LVU58
  391 001a 1035     		adds	r5, r5, #16
- 392              		.loc 12 256 29 discriminator 2 view .LVU59
+ 392              		.loc 12 257 29 discriminator 2 view .LVU59
  393 001c 9FED050A 		vldr.32	s0, .L23+4
  394 0020 0199     		ldr	r1, [sp, #4]
  395 0022 FFF7FEFF 		bl	_ZN5daisy6Switch4InitE12dsy_gpio_pinf
  396              	.LVL15:
- 253:MyNewProject.cpp ****     {
- 397              		.loc 12 253 5 is_stmt 1 discriminator 2 view .LVU60
- 253:MyNewProject.cpp ****     {
- 398              		.loc 12 253 22 discriminator 2 view .LVU61
+ 254:MyNewProject.cpp ****     {
+ 397              		.loc 12 254 5 is_stmt 1 discriminator 2 view .LVU60
+ 254:MyNewProject.cpp ****     {
+ 398              		.loc 12 254 22 discriminator 2 view .LVU61
  399 0026 192C     		cmp	r4, #25
  400 0028 EED1     		bne	.L20
  401              	.LBE196:
- 257:MyNewProject.cpp ****     }
- 258:MyNewProject.cpp **** }
- 402              		.loc 12 258 1 is_stmt 0 view .LVU62
+ 258:MyNewProject.cpp ****     }
+ 259:MyNewProject.cpp **** }
+ 402              		.loc 12 259 1 is_stmt 0 view .LVU62
  403 002a 03B0     		add	sp, sp, #12
  404              		.cfi_def_cfa_offset 12
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 24
+
+
  405              		@ sp needed
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 24
-
-
  406 002c 30BD     		pop	{r4, r5, pc}
  407              	.L24:
  408 002e 00BF     		.align	2
@@ -1407,82 +1408,82 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  426              		.fpu fpv5-d16
  428              	_Z15ProcessControlsv:
  429              	.LFB4804:
- 259:MyNewProject.cpp **** 
- 260:MyNewProject.cpp **** void ProcessControls()
- 261:MyNewProject.cpp **** {
- 430              		.loc 12 261 1 is_stmt 1 view -0
+ 260:MyNewProject.cpp **** 
+ 261:MyNewProject.cpp **** void ProcessControls()
+ 262:MyNewProject.cpp **** {
+ 430              		.loc 12 262 1 is_stmt 1 view -0
  431              		.cfi_startproc
  432              		@ args = 0, pretend = 0, frame = 8
  433              		@ frame_needed = 0, uses_anonymous_args = 0
+ 263:MyNewProject.cpp ****     delay.setFeedback(feedbackKnob.Process());
+ 434              		.loc 12 263 5 view .LVU64
  262:MyNewProject.cpp ****     delay.setFeedback(feedbackKnob.Process());
- 434              		.loc 12 262 5 view .LVU64
- 261:MyNewProject.cpp ****     delay.setFeedback(feedbackKnob.Process());
- 435              		.loc 12 261 1 is_stmt 0 view .LVU65
+ 435              		.loc 12 262 1 is_stmt 0 view .LVU65
  436 0000 10B5     		push	{r4, lr}
  437              		.cfi_def_cfa_offset 8
  438              		.cfi_offset 4, -8
  439              		.cfi_offset 14, -4
  440 0002 82B0     		sub	sp, sp, #8
  441              		.cfi_def_cfa_offset 16
- 442              		.loc 12 262 43 view .LVU66
+ 442              		.loc 12 263 43 view .LVU66
  443 0004 1C48     		ldr	r0, .L34
  444 0006 FFF7FEFF 		bl	_ZN5daisy9Parameter7ProcessEv
  445              	.LVL16:
- 446              		.loc 12 262 22 view .LVU67
+ 446              		.loc 12 263 22 view .LVU67
  447 000a 1C48     		ldr	r0, .L34+4
  448 000c 01A9     		add	r1, sp, #4
- 449              		.loc 12 262 43 view .LVU68
+ 449              		.loc 12 263 43 view .LVU68
  450 000e 8DED010A 		vstr.32	s0, [sp, #4]
- 451              		.loc 12 262 22 view .LVU69
+ 451              		.loc 12 263 22 view .LVU69
  452 0012 FFF7FEFF 		bl	_ZN6Delayy11setFeedbackERKf
  453              	.LVL17:
- 263:MyNewProject.cpp ****     tone.setFreq(toneKnob.Process());
- 454              		.loc 12 263 5 is_stmt 1 view .LVU70
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 25
+ 264:MyNewProject.cpp ****     tone.setFreq(toneKnob.Process());
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 25
 
 
- 455              		.loc 12 263 17 is_stmt 0 view .LVU71
+ 454              		.loc 12 264 5 is_stmt 1 view .LVU70
+ 455              		.loc 12 264 17 is_stmt 0 view .LVU71
  456 0016 1A48     		ldr	r0, .L34+8
  457 0018 FFF7FEFF 		bl	_ZN5daisy9Parameter7ProcessEv
  458              	.LVL18:
  459 001c 1948     		ldr	r0, .L34+12
  460 001e FFF7FEFF 		bl	_ZN10ToneFilter7setFreqEf
  461              	.LVL19:
- 264:MyNewProject.cpp **** 
  265:MyNewProject.cpp **** 
- 266:MyNewProject.cpp ****     for(int i = 0; i < 4;i++)
- 462              		.loc 12 266 5 is_stmt 1 view .LVU72
+ 266:MyNewProject.cpp **** 
+ 267:MyNewProject.cpp ****     for(int i = 0; i < 4;i++)
+ 462              		.loc 12 267 5 is_stmt 1 view .LVU72
  463              	.LBB197:
- 464              		.loc 12 266 13 is_stmt 0 view .LVU73
+ 464              		.loc 12 267 13 is_stmt 0 view .LVU73
  465 0022 0023     		movs	r3, #0
  466 0024 184C     		ldr	r4, .L34+16
- 467              		.loc 12 266 22 view .LVU74
+ 467              		.loc 12 267 22 view .LVU74
  468 0026 1846     		mov	r0, r3
- 469              		.loc 12 266 13 view .LVU75
+ 469              		.loc 12 267 13 view .LVU75
  470 0028 0193     		str	r3, [sp, #4]
- 471              		.loc 12 266 22 is_stmt 1 view .LVU76
+ 471              		.loc 12 267 22 is_stmt 1 view .LVU76
  472 002a 03E0     		b	.L27
  473              	.LVL20:
  474              	.L26:
- 475              		.loc 12 266 5 discriminator 2 view .LVU77
+ 475              		.loc 12 267 5 discriminator 2 view .LVU77
  476 002c 0130     		adds	r0, r0, #1
- 477              		.loc 12 266 22 is_stmt 0 discriminator 2 view .LVU78
+ 477              		.loc 12 267 22 is_stmt 0 discriminator 2 view .LVU78
  478 002e 0328     		cmp	r0, #3
- 479              		.loc 12 266 5 discriminator 2 view .LVU79
+ 479              		.loc 12 267 5 discriminator 2 view .LVU79
  480 0030 0190     		str	r0, [sp, #4]
- 481              		.loc 12 266 22 is_stmt 1 discriminator 2 view .LVU80
+ 481              		.loc 12 267 22 is_stmt 1 discriminator 2 view .LVU80
  482 0032 1FDC     		bgt	.L33
  483              	.L27:
- 267:MyNewProject.cpp ****     {
- 268:MyNewProject.cpp ****         headSwitches[i].Debounce();
- 484              		.loc 12 268 9 view .LVU81
- 485              		.loc 12 268 33 is_stmt 0 view .LVU82
+ 268:MyNewProject.cpp ****     {
+ 269:MyNewProject.cpp ****         headSwitches[i].Debounce();
+ 484              		.loc 12 269 9 view .LVU81
+ 485              		.loc 12 269 33 is_stmt 0 view .LVU82
  486 0034 04EB0010 		add	r0, r4, r0, lsl #4
  487 0038 FFF7FEFF 		bl	_ZN5daisy6Switch8DebounceEv
  488              	.LVL21:
- 269:MyNewProject.cpp ****         if(headSwitches[i].RisingEdge())
- 489              		.loc 12 269 9 is_stmt 1 view .LVU83
- 490              		.loc 12 269 26 is_stmt 0 view .LVU84
+ 270:MyNewProject.cpp ****         if(headSwitches[i].RisingEdge())
+ 489              		.loc 12 270 9 is_stmt 1 view .LVU83
+ 490              		.loc 12 270 26 is_stmt 0 view .LVU84
  491 003c 0198     		ldr	r0, [sp, #4]
  492              	.LVL22:
  493              	.LBB198:
@@ -1497,21 +1498,21 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  502 0044 002A     		cmp	r2, #0
  503 0046 F1D0     		beq	.L26
  504              	.LBE199:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 26
+
+
  505              	.LBE198:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 26
-
-
- 506              		.loc 12 269 9 view .LVU89
+ 506              		.loc 12 270 9 view .LVU89
  507 0048 9B7A     		ldrb	r3, [r3, #10]	@ zero_extendqisi2
  508 004a 7F2B     		cmp	r3, #127
  509 004c EED1     		bne	.L26
- 270:MyNewProject.cpp ****         {            
- 271:MyNewProject.cpp ****             hw.PrintLine("tone knob val: %f",toneKnob.Process());
- 510              		.loc 12 271 13 is_stmt 1 view .LVU90
- 511              		.loc 12 271 25 is_stmt 0 view .LVU91
+ 271:MyNewProject.cpp ****         {            
+ 272:MyNewProject.cpp ****             hw.PrintLine("tone knob val: %f",toneKnob.Process());
+ 510              		.loc 12 272 13 is_stmt 1 view .LVU90
+ 511              		.loc 12 272 25 is_stmt 0 view .LVU91
  512 004e 0C48     		ldr	r0, .L34+8
  513              	.LVL23:
- 514              		.loc 12 271 25 view .LVU92
+ 514              		.loc 12 272 25 view .LVU92
  515 0050 FFF7FEFF 		bl	_ZN5daisy9Parameter7ProcessEv
  516              	.LVL24:
  517              	.LBB200:
@@ -1557,10 +1558,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   61:../../libDaisy//src/daisy_seed.h ****     void StartAudio(AudioHandle::InterleavingAudioCallback cb);
   62:../../libDaisy//src/daisy_seed.h **** 
   63:../../libDaisy//src/daisy_seed.h ****     /** Begins the audio for the seeds builtin audio.
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 27
+
+
   64:../../libDaisy//src/daisy_seed.h ****     the specified callback will get called whenever
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 27
-
-
   65:../../libDaisy//src/daisy_seed.h ****     new data is ready to be prepared.
   66:../../libDaisy//src/daisy_seed.h ****     This will use the newer non-interleaved callback.
   67:../../libDaisy//src/daisy_seed.h ****     */
@@ -1617,10 +1618,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  118:../../libDaisy//src/daisy_seed.h ****     template <typename... VA>
  119:../../libDaisy//src/daisy_seed.h ****     static void PrintLine(const char* format, VA... va)
  519              		.loc 7 119 17 is_stmt 1 view .LVU93
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 28
+
+
  520              	.LBB201:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 28
-
-
  120:../../libDaisy//src/daisy_seed.h ****     {
  121:../../libDaisy//src/daisy_seed.h ****         Log::PrintLine(format, va...);
  521              		.loc 7 121 23 is_stmt 0 view .LVU94
@@ -1632,34 +1633,34 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  527              		.loc 7 121 23 view .LVU95
  528              	.LBE201:
  529              	.LBE200:
- 272:MyNewProject.cpp ****             delay.toggleHead(i);
- 530              		.loc 12 272 13 is_stmt 1 view .LVU96
- 531              		.loc 12 272 29 is_stmt 0 view .LVU97
+ 273:MyNewProject.cpp ****             delay.toggleHead(i);
+ 530              		.loc 12 273 13 is_stmt 1 view .LVU96
+ 531              		.loc 12 273 29 is_stmt 0 view .LVU97
  532 0062 0648     		ldr	r0, .L34+4
  533 0064 01A9     		add	r1, sp, #4
  534 0066 FFF7FEFF 		bl	_ZN6Delayy10toggleHeadERKi
  535              	.LVL26:
- 266:MyNewProject.cpp ****     {
- 536              		.loc 12 266 5 view .LVU98
+ 267:MyNewProject.cpp ****     {
+ 536              		.loc 12 267 5 view .LVU98
  537 006a 0198     		ldr	r0, [sp, #4]
- 266:MyNewProject.cpp ****     {
- 538              		.loc 12 266 5 is_stmt 1 view .LVU99
+ 267:MyNewProject.cpp ****     {
+ 538              		.loc 12 267 5 is_stmt 1 view .LVU99
  539 006c 0130     		adds	r0, r0, #1
- 266:MyNewProject.cpp ****     {
- 540              		.loc 12 266 22 is_stmt 0 view .LVU100
+ 267:MyNewProject.cpp ****     {
+ 540              		.loc 12 267 22 is_stmt 0 view .LVU100
  541 006e 0328     		cmp	r0, #3
- 266:MyNewProject.cpp ****     {
- 542              		.loc 12 266 5 view .LVU101
+ 267:MyNewProject.cpp ****     {
+ 542              		.loc 12 267 5 view .LVU101
  543 0070 0190     		str	r0, [sp, #4]
- 266:MyNewProject.cpp ****     {
- 544              		.loc 12 266 22 is_stmt 1 view .LVU102
+ 267:MyNewProject.cpp ****     {
+ 544              		.loc 12 267 22 is_stmt 1 view .LVU102
  545 0072 DFDD     		ble	.L27
  546              	.L33:
  547              	.LBE197:
- 273:MyNewProject.cpp ****         }
- 274:MyNewProject.cpp ****     }
- 275:MyNewProject.cpp **** }
- 548              		.loc 12 275 1 is_stmt 0 view .LVU103
+ 274:MyNewProject.cpp ****         }
+ 275:MyNewProject.cpp ****     }
+ 276:MyNewProject.cpp **** }
+ 548              		.loc 12 276 1 is_stmt 0 view .LVU103
  549 0074 02B0     		add	sp, sp, #8
  550              		.cfi_def_cfa_offset 8
  551              		@ sp needed
@@ -1677,10 +1678,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  563              	.LFE4804:
  565              		.section	.rodata._ZL13AudioCallbackPKPKfPPfj.str1.4,"aMS",%progbits,1
  566              		.align	2
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 29
+
+
  567              	.LC1:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 29
-
-
  568 0000 42504D20 		.ascii	"BPM is %f\000"
  568      69732025 
  568      6600
@@ -1705,7 +1706,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   48:MyNewProject.cpp ****     {
  586              		.loc 12 48 25 view .LVU106
  587 0000 002A     		cmp	r2, #0
- 588 0002 00F09280 		beq	.L54
+ 588 0002 00F08D80 		beq	.L54
  589              	.LBE216:
   47:MyNewProject.cpp ****     for(size_t i = 0; i < size; i++)
  590              		.loc 12 47 1 is_stmt 0 view .LVU107
@@ -1727,9 +1728,9 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   48:MyNewProject.cpp ****     {
  606              		.loc 12 48 16 view .LVU108
  607 0010 0024     		movs	r4, #0
- 608 0012 464F     		ldr	r7, .L58
- 609 0014 DFF83881 		ldr	r8, .L58+36
- 610 0018 DFF838B1 		ldr	fp, .L58+40
+ 608 0012 444F     		ldr	r7, .L58
+ 609 0014 DFF82C81 		ldr	r8, .L58+32
+ 610 0018 DFF82CB1 		ldr	fp, .L58+36
  611              	.LBE237:
   47:MyNewProject.cpp ****     for(size_t i = 0; i < size; i++)
  612              		.loc 12 47 1 view .LVU109
@@ -1737,10 +1738,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  614              		.cfi_def_cfa_offset 44
  615              		.cfi_offset 80, -44
  616              		.cfi_offset 81, -40
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 30
+
+
  617 0020 83B0     		sub	sp, sp, #12
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 30
-
-
  618              		.cfi_def_cfa_offset 56
  619 0022 42E0     		b	.L45
  620              	.LVL28:
@@ -1775,7 +1776,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  640 0032 0022     		movs	r2, #0
   80:MyNewProject.cpp ****         float preFilter = all_delay_signals;
  641              		.loc 12 80 42 discriminator 2 view .LVU119
- 642 0034 3E48     		ldr	r0, .L58+4
+ 642 0034 3C48     		ldr	r0, .L58+4
  643 0036 4FEA840A 		lsl	r10, r4, #2
  644 003a 03EB8403 		add	r3, r3, r4, lsl #2
   74:MyNewProject.cpp ****         float nonConstInput;         // Will store the a copy of input float value at in[channel][i
@@ -1797,11 +1798,11 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  656 0046 FFF7FEFF 		bl	_ZN6Delayy7processEf
  657              	.LVL31:
   82:MyNewProject.cpp ****         all_delay_signals = balance.Process(all_delay_signals,preFilter*tone.getFactor());
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 31
+
+
  658              		.loc 12 82 41 discriminator 2 view .LVU125
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 31
-
-
- 659 004a 3A48     		ldr	r0, .L58+8
+ 659 004a 3848     		ldr	r0, .L58+8
   80:MyNewProject.cpp ****         float preFilter = all_delay_signals;
  660              		.loc 12 80 42 discriminator 2 view .LVU126
  661 004c B0EE408A 		vmov.f32	s16, s0
@@ -1819,7 +1820,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  669              	.LVL33:
   83:MyNewProject.cpp **** 
  670              		.loc 12 83 87 discriminator 2 view .LVU131
- 671 0058 3648     		ldr	r0, .L58+8
+ 671 0058 3448     		ldr	r0, .L58+8
   82:MyNewProject.cpp ****         all_delay_signals = balance.Process(all_delay_signals,preFilter*tone.getFactor());
  672              		.loc 12 82 41 discriminator 2 view .LVU132
  673 005a F0EE408A 		vmov.f32	s17, s0
@@ -1835,7 +1836,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  680 0066 F0EE400A 		vmov.f32	s1, s0
   83:MyNewProject.cpp **** 
  681              		.loc 12 83 44 discriminator 2 view .LVU136
- 682 006a 3348     		ldr	r0, .L58+12
+ 682 006a 3148     		ldr	r0, .L58+12
  683 006c B0EE680A 		vmov.f32	s0, s17
  684 0070 68EE200A 		vmul.f32	s1, s16, s1
  685 0074 FFF7FEFF 		bl	_ZN7daisysp7Balance7ProcessEff
@@ -1850,17 +1851,17 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  691              		.loc 12 88 9 is_stmt 1 discriminator 2 view .LVU139
   92:MyNewProject.cpp **** 		out[0][i]  = out [1][i] = final_mix;//filter; // this sends 'final_mix' to the left and right out
  692              		.loc 12 92 28 is_stmt 0 discriminator 2 view .LVU140
- 693 007e 01A9     		add	r1, sp, #4
+ 693 007e 6A46     		mov	r2, sp
   88:MyNewProject.cpp **** 
  694              		.loc 12 88 32 discriminator 2 view .LVU141
  695 0080 5344     		add	r3, r3, r10
  696              	.LBB218:
  697              	.LBB219:
   38:../../DaisySP//Source/Dynamics/crossfade.h ****     /** Initializes CrossFade module
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 32
+
+
   39:../../DaisySP//Source/Dynamics/crossfade.h ****         Defaults
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 32
-
-
   40:../../DaisySP//Source/Dynamics/crossfade.h ****         - current position = .5
   41:../../DaisySP//Source/Dynamics/crossfade.h ****         - curve = linear
   42:../../DaisySP//Source/Dynamics/crossfade.h ****     */
@@ -1883,12 +1884,12 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   59:../../DaisySP//Source/Dynamics/crossfade.h ****     */
   60:../../DaisySP//Source/Dynamics/crossfade.h ****     inline void SetPos(float pos) { pos_ = pos; }
  698              		.loc 2 60 42 discriminator 2 view .LVU142
- 699 0082 2E4A     		ldr	r2, .L58+16
+ 699 0082 2C49     		ldr	r1, .L58+16
  700              	.LBE219:
  701              	.LBE218:
   92:MyNewProject.cpp **** 		out[0][i]  = out [1][i] = final_mix;//filter; // this sends 'final_mix' to the left and right out
  702              		.loc 12 92 28 discriminator 2 view .LVU143
- 703 0084 2D48     		ldr	r0, .L58+16
+ 703 0084 2B48     		ldr	r0, .L58+16
   88:MyNewProject.cpp **** 
  704              		.loc 12 88 32 discriminator 2 view .LVU144
  705 0086 1B68     		ldr	r3, [r3]	@ float
@@ -1905,7 +1906,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  714              		.loc 2 60 37 discriminator 2 view .LVU148
  715              		.loc 2 60 42 is_stmt 0 discriminator 2 view .LVU149
  716 008a DBF80030 		ldr	r3, [fp]	@ float
- 717 008e 1360     		str	r3, [r2]	@ float
+ 717 008e 0B60     		str	r3, [r1]	@ float
  718              	.LVL37:
  719              		.loc 2 60 42 discriminator 2 view .LVU150
  720              	.LBE220:
@@ -1914,131 +1915,130 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  722              		.loc 12 92 3 is_stmt 1 discriminator 2 view .LVU151
   92:MyNewProject.cpp **** 		out[0][i]  = out [1][i] = final_mix;//filter; // this sends 'final_mix' to the left and right out
  723              		.loc 12 92 28 is_stmt 0 discriminator 2 view .LVU152
- 724 0090 6A46     		mov	r2, sp
+ 724 0090 01A9     		add	r1, sp, #4
  725 0092 FFF7FEFF 		bl	_ZN7daisysp9CrossFade7ProcessERfS1_
  726              	.LVL38:
-  93:MyNewProject.cpp ****     }
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 33
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 33
 
 
- 727              		.loc 12 93 3 is_stmt 1 discriminator 2 view .LVU153
   93:MyNewProject.cpp ****     }
- 728              		.loc 12 93 27 is_stmt 0 discriminator 2 view .LVU154
- 729 0096 7368     		ldr	r3, [r6, #4]
- 730              	.LBE234:
-  48:MyNewProject.cpp ****     {
- 731              		.loc 12 48 25 discriminator 2 view .LVU155
- 732 0098 A145     		cmp	r9, r4
- 733              	.LBB235:
+ 727              		.loc 12 93 27 discriminator 2 view .LVU153
+ 728 0096 7368     		ldr	r3, [r6, #4]
+ 729              	.LVL39:
   93:MyNewProject.cpp ****     }
- 734              		.loc 12 93 27 discriminator 2 view .LVU156
- 735 009a 5344     		add	r3, r3, r10
- 736 009c 83ED000A 		vstr.32	s0, [r3]
+ 730              		.loc 12 93 3 is_stmt 1 discriminator 2 view .LVU154
+ 731              	.LBE234:
+  48:MyNewProject.cpp ****     {
+ 732              		.loc 12 48 25 is_stmt 0 discriminator 2 view .LVU155
+ 733 0098 A145     		cmp	r9, r4
+ 734              	.LBB235:
   93:MyNewProject.cpp ****     }
- 737              		.loc 12 93 14 discriminator 2 view .LVU157
- 738 00a0 3368     		ldr	r3, [r6]
- 739 00a2 5344     		add	r3, r3, r10
- 740 00a4 83ED000A 		vstr.32	s0, [r3]
- 741              	.LBE235:
+ 735              		.loc 12 93 27 discriminator 2 view .LVU156
+ 736 009a 5344     		add	r3, r3, r10
+ 737 009c 83ED000A 		vstr.32	s0, [r3]
+  93:MyNewProject.cpp ****     }
+ 738              		.loc 12 93 14 discriminator 2 view .LVU157
+ 739 00a0 3368     		ldr	r3, [r6]
+ 740 00a2 5344     		add	r3, r3, r10
+ 741 00a4 83ED000A 		vstr.32	s0, [r3]
+ 742              	.LBE235:
   48:MyNewProject.cpp ****     {
- 742              		.loc 12 48 5 is_stmt 1 discriminator 2 view .LVU158
- 743              	.LVL39:
+ 743              		.loc 12 48 5 is_stmt 1 discriminator 2 view .LVU158
+ 744              	.LVL40:
   48:MyNewProject.cpp ****     {
- 744              		.loc 12 48 25 discriminator 2 view .LVU159
- 745 00a8 3AD0     		beq	.L57
- 746              	.LVL40:
- 747              	.L45:
- 748              	.LBB236:
+ 745              		.loc 12 48 25 discriminator 2 view .LVU159
+ 746 00a8 35D0     		beq	.L57
+ 747              	.LVL41:
+ 748              	.L45:
+ 749              	.LBB236:
   51:MyNewProject.cpp ****         // Check for tempo change
- 749              		.loc 12 51 9 view .LVU160
+ 750              		.loc 12 51 9 view .LVU160
   51:MyNewProject.cpp ****         // Check for tempo change
- 750              		.loc 12 51 24 is_stmt 0 view .LVU161
- 751 00aa FFF7FEFF 		bl	_Z15ProcessControlsv
- 752              	.LVL41:
+ 751              		.loc 12 51 24 is_stmt 0 view .LVU161
+ 752 00aa FFF7FEFF 		bl	_Z15ProcessControlsv
+ 753              	.LVL42:
   53:MyNewProject.cpp ****         // Set delays with new bpm
- 753              		.loc 12 53 9 is_stmt 1 view .LVU162
- 754              	.LBB222:
- 755              	.LBI222:
+ 754              		.loc 12 53 9 is_stmt 1 view .LVU162
+ 755              	.LBB222:
+ 756              	.LBI222:
  178:MyNewProject.cpp **** {
- 756              		.loc 12 178 6 view .LVU163
- 757              	.LBB223:
+ 757              		.loc 12 178 6 view .LVU163
+ 758              	.LBB223:
  204:MyNewProject.cpp ****     TEMPO_BUTTON.Debounce();
- 758              		.loc 12 204 5 view .LVU164
+ 759              		.loc 12 204 5 view .LVU164
  205:MyNewProject.cpp ****     if(TEMPO_BUTTON.RisingEdge() )
- 759              		.loc 12 205 5 view .LVU165
+ 760              		.loc 12 205 5 view .LVU165
  205:MyNewProject.cpp ****     if(TEMPO_BUTTON.RisingEdge() )
- 760              		.loc 12 205 26 is_stmt 0 view .LVU166
- 761 00ae 1F48     		ldr	r0, .L58
- 762 00b0 FFF7FEFF 		bl	_ZN5daisy6Switch8DebounceEv
- 763              	.LVL42:
+ 761              		.loc 12 205 26 is_stmt 0 view .LVU166
+ 762 00ae 1D48     		ldr	r0, .L58
+ 763 00b0 FFF7FEFF 		bl	_ZN5daisy6Switch8DebounceEv
+ 764              	.LVL43:
  206:MyNewProject.cpp ****     {
- 764              		.loc 12 206 5 is_stmt 1 view .LVU167
- 765              	.LBB224:
- 766              	.LBI224:
- 767              		.loc 4 70 17 view .LVU168
- 768              	.LBB225:
- 769              		.loc 4 70 38 view .LVU169
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 34
+ 765              		.loc 12 206 5 is_stmt 1 view .LVU167
+ 766              	.LBB224:
+ 767              	.LBI224:
+ 768              		.loc 4 70 17 view .LVU168
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 34
 
 
- 770              		.loc 4 70 45 is_stmt 0 view .LVU170
- 771 00b4 3979     		ldrb	r1, [r7, #4]	@ zero_extendqisi2
- 772              	.LBE225:
- 773              	.LBE224:
- 246:MyNewProject.cpp ****     
- 774              		.loc 12 246 20 view .LVU171
- 775 00b6 2248     		ldr	r0, .L58+20
- 776              	.LBB227:
- 777              	.LBB226:
- 778              		.loc 4 70 54 view .LVU172
- 779 00b8 29B1     		cbz	r1, .L38
- 780              	.LBE226:
- 781              	.LBE227:
+ 769              	.LBB225:
+ 770              		.loc 4 70 38 view .LVU169
+ 771              		.loc 4 70 45 is_stmt 0 view .LVU170
+ 772 00b4 3979     		ldrb	r1, [r7, #4]	@ zero_extendqisi2
+ 773              	.LBE225:
+ 774              	.LBE224:
+ 246:MyNewProject.cpp **** 
+ 775              		.loc 12 246 20 view .LVU171
+ 776 00b6 2048     		ldr	r0, .L58+20
+ 777              	.LBB227:
+ 778              	.LBB226:
+ 779              		.loc 4 70 54 view .LVU172
+ 780 00b8 29B1     		cbz	r1, .L38
+ 781              	.LBE226:
+ 782              	.LBE227:
  206:MyNewProject.cpp ****     {
- 782              		.loc 12 206 5 view .LVU173
- 783 00ba B97A     		ldrb	r1, [r7, #10]	@ zero_extendqisi2
- 784 00bc A1F17F01 		sub	r1, #127
- 785 00c0 B1FA81F1 		clz	r1, r1
- 786 00c4 4909     		lsrs	r1, r1, #5
- 787              	.L38:
- 788              	.LVL43:
- 246:MyNewProject.cpp ****     
- 789              		.loc 12 246 5 is_stmt 1 view .LVU174
- 246:MyNewProject.cpp ****     
- 790              		.loc 12 246 20 is_stmt 0 view .LVU175
- 791 00c6 FFF7FEFF 		bl	_ZN8TapTempo6updateEb
- 792              	.LVL44:
- 246:MyNewProject.cpp ****     
- 793              		.loc 12 246 20 view .LVU176
- 794              	.LBE223:
- 795              	.LBE222:
+ 783              		.loc 12 206 5 view .LVU173
+ 784 00ba B97A     		ldrb	r1, [r7, #10]	@ zero_extendqisi2
+ 785 00bc A1F17F01 		sub	r1, #127
+ 786 00c0 B1FA81F1 		clz	r1, r1
+ 787 00c4 4909     		lsrs	r1, r1, #5
+ 788              	.L38:
+ 789              	.LVL44:
+ 246:MyNewProject.cpp **** 
+ 790              		.loc 12 246 5 is_stmt 1 view .LVU174
+ 246:MyNewProject.cpp **** 
+ 791              		.loc 12 246 20 is_stmt 0 view .LVU175
+ 792 00c6 FFF7FEFF 		bl	_ZN8TapTempo6updateEb
+ 793              	.LVL45:
+ 246:MyNewProject.cpp **** 
+ 794              		.loc 12 246 20 view .LVU176
+ 795              	.LBE223:
+ 796              	.LBE222:
   55:MyNewProject.cpp **** 
- 796              		.loc 12 55 9 is_stmt 1 view .LVU177
+ 797              		.loc 12 55 9 is_stmt 1 view .LVU177
   55:MyNewProject.cpp **** 
- 797              		.loc 12 55 21 is_stmt 0 view .LVU178
- 798 00ca 1E4B     		ldr	r3, .L58+24
- 799 00cc 01A9     		add	r1, sp, #4
- 800 00ce 1848     		ldr	r0, .L58+4
- 801 00d0 D3ED007A 		vldr.32	s15, [r3]
- 802 00d4 FDEEE77A 		vcvt.s32.f32	s15, s15
- 803 00d8 CDED017A 		vstr.32	s15, [sp, #4]	@ int
- 804 00dc FFF7FEFF 		bl	_ZN6Delayy6setBPMERKi
- 805              	.LVL45:
+ 798              		.loc 12 55 21 is_stmt 0 view .LVU178
+ 799 00ca 1B48     		ldr	r0, .L58+20
+ 800 00cc FFF7FEFF 		bl	_ZN8TapTempo6getBPMEv
+ 801              	.LVL46:
+ 802 00d0 1548     		ldr	r0, .L58+4
+ 803 00d2 FFF7FEFF 		bl	_ZN6Delayy6setBPMEf
+ 804              	.LVL47:
   58:MyNewProject.cpp ****         // Check if the button is pressed and was not previously pressed
- 806              		.loc 12 58 9 is_stmt 1 view .LVU179
+ 805              		.loc 12 58 9 is_stmt 1 view .LVU179
   58:MyNewProject.cpp ****         // Check if the button is pressed and was not previously pressed
- 807              		.loc 12 58 27 is_stmt 0 view .LVU180
- 808 00e0 1948     		ldr	r0, .L58+28
- 809 00e2 FFF7FEFF 		bl	_ZN5daisy6Switch8DebounceEv
- 810              	.LVL46:
+ 806              		.loc 12 58 27 is_stmt 0 view .LVU180
+ 807 00d6 1948     		ldr	r0, .L58+24
+ 808 00d8 FFF7FEFF 		bl	_ZN5daisy6Switch8DebounceEv
+ 809              	.LVL48:
   60:MyNewProject.cpp ****         {
- 811              		.loc 12 60 9 is_stmt 1 view .LVU181
- 812              	.LBB228:
- 813              	.LBI228:
+ 810              		.loc 12 60 9 is_stmt 1 view .LVU181
+ 811              	.LBB228:
+ 812              	.LBI228:
   71:../../libDaisy//src/hid/switch.h **** 
   72:../../libDaisy//src/hid/switch.h ****     /** \return true if the button was just released */
   73:../../libDaisy//src/hid/switch.h ****     inline bool FallingEdge() const
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 35
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 35
 
 
   74:../../libDaisy//src/hid/switch.h ****     {
@@ -2047,181 +2047,180 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   77:../../libDaisy//src/hid/switch.h **** 
   78:../../libDaisy//src/hid/switch.h ****     /** \return true if the button is held down (or if the toggle is on) */
   79:../../libDaisy//src/hid/switch.h ****     inline bool Pressed() const { return state_ == 0xff; }
- 814              		.loc 4 79 17 view .LVU182
- 815              	.LBB229:
- 816              		.loc 4 79 35 view .LVU183
- 817              		.loc 4 79 35 is_stmt 0 view .LVU184
- 818              	.LBE229:
- 819              	.LBE228:
+ 813              		.loc 4 79 17 view .LVU182
+ 814              	.LBB229:
+ 815              		.loc 4 79 35 view .LVU183
+ 816              		.loc 4 79 35 is_stmt 0 view .LVU184
+ 817              	.LBE229:
+ 818              	.LBE228:
   60:MyNewProject.cpp ****         {
- 820              		.loc 12 60 32 view .LVU185
- 821 00e6 184B     		ldr	r3, .L58+28
- 822 00e8 9B7A     		ldrb	r3, [r3, #10]	@ zero_extendqisi2
- 823 00ea FF2B     		cmp	r3, #255
- 824 00ec 9AD1     		bne	.L44
+ 819              		.loc 12 60 32 view .LVU185
+ 820 00dc 174B     		ldr	r3, .L58+24
+ 821 00de 9B7A     		ldrb	r3, [r3, #10]	@ zero_extendqisi2
+ 822 00e0 FF2B     		cmp	r3, #255
+ 823 00e2 9FD1     		bne	.L44
   60:MyNewProject.cpp ****         {
- 825              		.loc 12 60 32 discriminator 1 view .LVU186
- 826 00ee 98F80030 		ldrb	r3, [r8]	@ zero_extendqisi2
- 827 00f2 002B     		cmp	r3, #0
- 828 00f4 9CD1     		bne	.L43
+ 824              		.loc 12 60 32 discriminator 1 view .LVU186
+ 825 00e4 98F80030 		ldrb	r3, [r8]	@ zero_extendqisi2
+ 826 00e8 002B     		cmp	r3, #0
+ 827 00ea A1D1     		bne	.L43
   62:MyNewProject.cpp ****             delay.stopAll();
- 829              		.loc 12 62 13 is_stmt 1 view .LVU187
+ 828              		.loc 12 62 13 is_stmt 1 view .LVU187
   62:MyNewProject.cpp ****             delay.stopAll();
- 830              		.loc 12 62 32 is_stmt 0 view .LVU188
- 831 00f6 0123     		movs	r3, #1
+ 829              		.loc 12 62 32 is_stmt 0 view .LVU188
+ 830 00ec 0123     		movs	r3, #1
   63:MyNewProject.cpp ****             hw.PrintLine("BPM is %f",tapTempo.getBPM());
- 832              		.loc 12 63 26 view .LVU189
- 833 00f8 0D48     		ldr	r0, .L58+4
+ 831              		.loc 12 63 26 view .LVU189
+ 832 00ee 0E48     		ldr	r0, .L58+4
   62:MyNewProject.cpp ****             delay.stopAll();
- 834              		.loc 12 62 32 view .LVU190
- 835 00fa 88F80030 		strb	r3, [r8]
+ 833              		.loc 12 62 32 view .LVU190
+ 834 00f0 88F80030 		strb	r3, [r8]
   63:MyNewProject.cpp ****             hw.PrintLine("BPM is %f",tapTempo.getBPM());
- 836              		.loc 12 63 13 is_stmt 1 view .LVU191
+ 835              		.loc 12 63 13 is_stmt 1 view .LVU191
   63:MyNewProject.cpp ****             hw.PrintLine("BPM is %f",tapTempo.getBPM());
- 837              		.loc 12 63 26 is_stmt 0 view .LVU192
- 838 00fe FFF7FEFF 		bl	_ZN6Delayy7stopAllEv
- 839              	.LVL47:
+ 836              		.loc 12 63 26 is_stmt 0 view .LVU192
+ 837 00f4 FFF7FEFF 		bl	_ZN6Delayy7stopAllEv
+ 838              	.LVL49:
   64:MyNewProject.cpp ****         }
- 840              		.loc 12 64 13 is_stmt 1 view .LVU193
+ 839              		.loc 12 64 13 is_stmt 1 view .LVU193
   64:MyNewProject.cpp ****         }
- 841              		.loc 12 64 25 is_stmt 0 view .LVU194
- 842 0102 0F48     		ldr	r0, .L58+20
- 843 0104 FFF7FEFF 		bl	_ZN8TapTempo6getBPMEv
- 844              	.LVL48:
- 845              	.LBB230:
- 846              	.LBI230:
+ 840              		.loc 12 64 25 is_stmt 0 view .LVU194
+ 841 00f8 0F48     		ldr	r0, .L58+20
+ 842 00fa FFF7FEFF 		bl	_ZN8TapTempo6getBPMEv
+ 843              	.LVL50:
+ 844              	.LBB230:
+ 845              	.LBI230:
  119:../../libDaisy//src/daisy_seed.h ****     {
- 847              		.loc 7 119 17 is_stmt 1 view .LVU195
- 848              	.LBB231:
- 849              		.loc 7 121 23 is_stmt 0 view .LVU196
- 850 0108 B7EEC07A 		vcvt.f64.f32	d7, s0
- 851 010c 0F48     		ldr	r0, .L58+32
- 852 010e 53EC172B 		vmov	r2, r3, d7
- 853 0112 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 36
+ 846              		.loc 7 119 17 is_stmt 1 view .LVU195
+ 847              	.LBB231:
+ 848              		.loc 7 121 23 is_stmt 0 view .LVU196
+ 849 00fe B7EEC07A 		vcvt.f64.f32	d7, s0
+ 850 0102 0F48     		ldr	r0, .L58+28
+ 851 0104 53EC172B 		vmov	r2, r3, d7
+ 852 0108 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 36
 
 
- 854              	.LVL49:
- 855              		.loc 7 121 23 view .LVU197
- 856              	.LBE231:
- 857              	.LBE230:
+ 853              	.LVL51:
+ 854              		.loc 7 121 23 view .LVU197
+ 855              	.LBE231:
+ 856              	.LBE230:
   68:MyNewProject.cpp ****         {
- 858              		.loc 12 68 9 is_stmt 1 view .LVU198
- 859              	.LBB232:
- 860              	.LBI232:
- 861              		.loc 4 79 17 view .LVU199
- 862              	.LBB233:
- 863              		.loc 4 79 35 view .LVU200
- 864              		.loc 4 79 35 is_stmt 0 view .LVU201
- 865              	.LBE233:
- 866              	.LBE232:
+ 857              		.loc 12 68 9 is_stmt 1 view .LVU198
+ 858              	.LBB232:
+ 859              	.LBI232:
+ 860              		.loc 4 79 17 view .LVU199
+ 861              	.LBB233:
+ 862              		.loc 4 79 35 view .LVU200
+ 863              		.loc 4 79 35 is_stmt 0 view .LVU201
+ 864              	.LBE233:
+ 865              	.LBE232:
   68:MyNewProject.cpp ****         {
- 867              		.loc 12 68 33 view .LVU202
- 868 0116 0C4B     		ldr	r3, .L58+28
- 869 0118 9B7A     		ldrb	r3, [r3, #10]	@ zero_extendqisi2
- 870 011a FF2B     		cmp	r3, #255
- 871 011c 88D0     		beq	.L43
- 872 011e 81E7     		b	.L44
- 873              	.LVL50:
- 874              	.L57:
+ 866              		.loc 12 68 33 view .LVU202
+ 867 010c 0B4B     		ldr	r3, .L58+24
+ 868 010e 9B7A     		ldrb	r3, [r3, #10]	@ zero_extendqisi2
+ 869 0110 FF2B     		cmp	r3, #255
+ 870 0112 8DD0     		beq	.L43
+ 871 0114 86E7     		b	.L44
+ 872              	.LVL52:
+ 873              	.L57:
   68:MyNewProject.cpp ****         {
- 875              		.loc 12 68 33 view .LVU203
- 876              	.LBE236:
- 877              	.LBE238:
+ 874              		.loc 12 68 33 view .LVU203
+ 875              	.LBE236:
+ 876              	.LBE238:
   95:MyNewProject.cpp **** 
- 878              		.loc 12 95 1 view .LVU204
- 879 0120 03B0     		add	sp, sp, #12
- 880              		.cfi_def_cfa_offset 44
- 881              		@ sp needed
- 882 0122 BDEC028B 		vldm	sp!, {d8}
- 883              		.cfi_restore 80
- 884              		.cfi_restore 81
- 885              		.cfi_def_cfa_offset 36
- 886              	.LVL51:
+ 877              		.loc 12 95 1 view .LVU204
+ 878 0116 03B0     		add	sp, sp, #12
+ 879              		.cfi_def_cfa_offset 44
+ 880              		@ sp needed
+ 881 0118 BDEC028B 		vldm	sp!, {d8}
+ 882              		.cfi_restore 80
+ 883              		.cfi_restore 81
+ 884              		.cfi_def_cfa_offset 36
+ 885              	.LVL53:
   95:MyNewProject.cpp **** 
- 887              		.loc 12 95 1 view .LVU205
- 888 0126 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
- 889              	.LVL52:
- 890              	.L54:
- 891              		.cfi_def_cfa_offset 0
- 892              		.cfi_restore 4
- 893              		.cfi_restore 5
- 894              		.cfi_restore 6
- 895              		.cfi_restore 7
- 896              		.cfi_restore 8
- 897              		.cfi_restore 9
- 898              		.cfi_restore 10
- 899              		.cfi_restore 11
- 900              		.cfi_restore 14
+ 886              		.loc 12 95 1 view .LVU205
+ 887 011c BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 888              	.LVL54:
+ 889              	.L54:
+ 890              		.cfi_def_cfa_offset 0
+ 891              		.cfi_restore 4
+ 892              		.cfi_restore 5
+ 893              		.cfi_restore 6
+ 894              		.cfi_restore 7
+ 895              		.cfi_restore 8
+ 896              		.cfi_restore 9
+ 897              		.cfi_restore 10
+ 898              		.cfi_restore 11
+ 899              		.cfi_restore 14
   95:MyNewProject.cpp **** 
- 901              		.loc 12 95 1 view .LVU206
- 902 012a 7047     		bx	lr
- 903              	.L59:
- 904              		.align	2
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 37
+ 900              		.loc 12 95 1 view .LVU206
+ 901 0120 7047     		bx	lr
+ 902              	.L59:
+ 903 0122 00BF     		.align	2
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 37
 
 
- 905              	.L58:
- 906 012c 00000000 		.word	.LANCHOR0
- 907 0130 00000000 		.word	.LANCHOR4
- 908 0134 00000000 		.word	.LANCHOR6
- 909 0138 00000000 		.word	.LANCHOR10
- 910 013c 00000000 		.word	.LANCHOR11
- 911 0140 00000000 		.word	.LANCHOR1
- 912 0144 00000000 		.word	.LANCHOR7
- 913 0148 00000000 		.word	.LANCHOR8
- 914 014c 00000000 		.word	.LC1
- 915 0150 00000000 		.word	.LANCHOR9
- 916 0154 00000000 		.word	.LANCHOR12
- 917              		.cfi_endproc
- 918              	.LFE4800:
- 920              		.section	.text._Z9initDelayv,"ax",%progbits
- 921              		.align	1
- 922              		.p2align 2,,3
- 923              		.global	_Z9initDelayv
- 924              		.syntax unified
- 925              		.thumb
- 926              		.thumb_func
- 927              		.fpu fpv5-d16
- 929              	_Z9initDelayv:
- 930              	.LFB4805:
- 276:MyNewProject.cpp **** 
- 277:MyNewProject.cpp **** void initDelay()
- 278:MyNewProject.cpp **** {
- 931              		.loc 12 278 1 is_stmt 1 view -0
- 932              		.cfi_startproc
- 933              		@ args = 0, pretend = 0, frame = 0
- 934              		@ frame_needed = 0, uses_anonymous_args = 0
+ 904              	.L58:
+ 905 0124 00000000 		.word	.LANCHOR0
+ 906 0128 00000000 		.word	.LANCHOR4
+ 907 012c 00000000 		.word	.LANCHOR6
+ 908 0130 00000000 		.word	.LANCHOR9
+ 909 0134 00000000 		.word	.LANCHOR10
+ 910 0138 00000000 		.word	.LANCHOR1
+ 911 013c 00000000 		.word	.LANCHOR7
+ 912 0140 00000000 		.word	.LC1
+ 913 0144 00000000 		.word	.LANCHOR8
+ 914 0148 00000000 		.word	.LANCHOR11
+ 915              		.cfi_endproc
+ 916              	.LFE4800:
+ 918              		.section	.text._Z9initDelayv,"ax",%progbits
+ 919              		.align	1
+ 920              		.p2align 2,,3
+ 921              		.global	_Z9initDelayv
+ 922              		.syntax unified
+ 923              		.thumb
+ 924              		.thumb_func
+ 925              		.fpu fpv5-d16
+ 927              	_Z9initDelayv:
+ 928              	.LFB4805:
+ 277:MyNewProject.cpp **** 
+ 278:MyNewProject.cpp **** void initDelay()
+ 279:MyNewProject.cpp **** {
+ 929              		.loc 12 279 1 is_stmt 1 view -0
+ 930              		.cfi_startproc
+ 931              		@ args = 0, pretend = 0, frame = 0
+ 932              		@ frame_needed = 0, uses_anonymous_args = 0
+ 280:MyNewProject.cpp ****     for (int i = 0; i < 4; i++)
+ 933              		.loc 12 280 5 view .LVU208
+ 934              	.LVL55:
+ 935              	.LBB239:
+ 936              		.loc 12 280 23 view .LVU209
+ 937              	.LBE239:
  279:MyNewProject.cpp ****     for (int i = 0; i < 4; i++)
- 935              		.loc 12 279 5 view .LVU208
- 936              	.LVL53:
- 937              	.LBB239:
- 938              		.loc 12 279 23 view .LVU209
- 939              	.LBE239:
- 278:MyNewProject.cpp ****     for (int i = 0; i < 4; i++)
- 940              		.loc 12 278 1 is_stmt 0 view .LVU210
- 941 0000 70B5     		push	{r4, r5, r6, lr}
- 942              		.cfi_def_cfa_offset 16
- 943              		.cfi_offset 4, -16
- 944              		.cfi_offset 5, -12
- 945              		.cfi_offset 6, -8
- 946              		.cfi_offset 14, -4
- 947 0002 0B4C     		ldr	r4, .L64
- 948 0004 0B4D     		ldr	r5, .L64+4
- 949 0006 0C4E     		ldr	r6, .L64+8
- 950              	.LVL54:
- 951              	.L61:
- 952              	.LBB251:
- 280:MyNewProject.cpp ****     {
- 281:MyNewProject.cpp ****         delayMems[i].Init();
- 953              		.loc 12 281 9 is_stmt 1 discriminator 2 view .LVU211
- 954              	.LBB240:
- 955              	.LBI240:
- 956              		.file 16 "../../DaisySP//Source/Utility/delayline.h"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 38
-
-
+ 938              		.loc 12 279 1 is_stmt 0 view .LVU210
+ 939 0000 70B5     		push	{r4, r5, r6, lr}
+ 940              		.cfi_def_cfa_offset 16
+ 941              		.cfi_offset 4, -16
+ 942              		.cfi_offset 5, -12
+ 943              		.cfi_offset 6, -8
+ 944              		.cfi_offset 14, -4
+ 945 0002 0B4C     		ldr	r4, .L64
+ 946 0004 0B4D     		ldr	r5, .L64+4
+ 947 0006 0C4E     		ldr	r6, .L64+8
+ 948              	.LVL56:
+ 949              	.L61:
+ 950              	.LBB251:
+ 281:MyNewProject.cpp ****     {
+ 282:MyNewProject.cpp ****         delayMems[i].Init();
+ 951              		.loc 12 282 9 is_stmt 1 discriminator 2 view .LVU211
+ 952              	.LBB240:
+ 953              	.LBI240:
+ 954              		.file 16 "../../DaisySP//Source/Utility/delayline.h"
    1:../../DaisySP//Source/Utility/delayline.h **** #pragma once
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 38
+
+
    2:../../DaisySP//Source/Utility/delayline.h **** #ifndef DSY_DELAY_H
    3:../../DaisySP//Source/Utility/delayline.h **** #define DSY_DELAY_H
    4:../../DaisySP//Source/Utility/delayline.h **** #include <stdlib.h>
@@ -2248,384 +2247,384 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   25:../../DaisySP//Source/Utility/delayline.h ****     /** initializes the delay line by clearing the values within, and setting delay to 1 sample.
   26:../../DaisySP//Source/Utility/delayline.h ****     */
   27:../../DaisySP//Source/Utility/delayline.h ****     void Init() { Reset(); }
- 957              		.loc 16 27 10 discriminator 2 view .LVU212
- 958              	.LBB241:
- 959              	.LBI241:
+ 955              		.loc 16 27 10 discriminator 2 view .LVU212
+ 956              	.LBB241:
+ 957              	.LBI241:
   28:../../DaisySP//Source/Utility/delayline.h ****     /** clears buffer, sets write ptr to 0, and delay to 1 sample.
   29:../../DaisySP//Source/Utility/delayline.h ****     */
   30:../../DaisySP//Source/Utility/delayline.h ****     void Reset()
- 960              		.loc 16 30 10 discriminator 2 view .LVU213
- 961              	.LBB242:
- 962              	.LBB243:
+ 958              		.loc 16 30 10 discriminator 2 view .LVU213
+ 959              	.LBB242:
+ 960              	.LBB243:
   31:../../DaisySP//Source/Utility/delayline.h ****     {
   32:../../DaisySP//Source/Utility/delayline.h ****         for(size_t i = 0; i < max_size; i++)
- 963              		.loc 16 32 29 discriminator 2 view .LVU214
+ 961              		.loc 16 32 29 discriminator 2 view .LVU214
   33:../../DaisySP//Source/Utility/delayline.h ****         {
   34:../../DaisySP//Source/Utility/delayline.h ****             line_[i] = T(0);
- 964              		.loc 16 34 22 is_stmt 0 discriminator 2 view .LVU215
- 965 0008 04F10C00 		add	r0, r4, #12
- 966 000c 0B4A     		ldr	r2, .L64+12
- 967 000e 0021     		movs	r1, #0
- 968              	.LBE243:
- 969              	.LBE242:
- 970              	.LBE241:
- 971              	.LBE240:
- 279:MyNewProject.cpp ****     {
- 972              		.loc 12 279 23 discriminator 2 view .LVU216
- 973 0010 1035     		adds	r5, r5, #16
- 974              	.LBB249:
- 975              	.LBB247:
- 976              	.LBB245:
- 977              	.LBB244:
- 978              		.loc 16 34 22 discriminator 2 view .LVU217
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 39
+ 962              		.loc 16 34 22 is_stmt 0 discriminator 2 view .LVU215
+ 963 0008 04F10C00 		add	r0, r4, #12
+ 964 000c 0B4A     		ldr	r2, .L64+12
+ 965 000e 0021     		movs	r1, #0
+ 966              	.LBE243:
+ 967              	.LBE242:
+ 968              	.LBE241:
+ 969              	.LBE240:
+ 280:MyNewProject.cpp ****     {
+ 970              		.loc 12 280 23 discriminator 2 view .LVU216
+ 971 0010 1035     		adds	r5, r5, #16
+ 972              	.LBB249:
+ 973              	.LBB247:
+ 974              	.LBB245:
+ 975              	.LBB244:
+ 976              		.loc 16 34 22 discriminator 2 view .LVU217
+ 977 0012 FFF7FEFF 		bl	memset
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 39
 
 
- 979 0012 FFF7FEFF 		bl	memset
- 980              	.LVL55:
- 981              		.loc 16 34 22 discriminator 2 view .LVU218
- 982              	.LBE244:
+ 978              	.LVL57:
+ 979              		.loc 16 34 22 discriminator 2 view .LVU218
+ 980              	.LBE244:
   35:../../DaisySP//Source/Utility/delayline.h ****         }
   36:../../DaisySP//Source/Utility/delayline.h ****         write_ptr_ = 0;
- 983              		.loc 16 36 20 discriminator 2 view .LVU219
- 984 0016 0022     		movs	r2, #0
+ 981              		.loc 16 36 20 discriminator 2 view .LVU219
+ 982 0016 0022     		movs	r2, #0
   37:../../DaisySP//Source/Utility/delayline.h ****         delay_     = 1;
- 985              		.loc 16 37 20 discriminator 2 view .LVU220
- 986 0018 0123     		movs	r3, #1
- 987              	.LBE245:
- 988              	.LBE247:
- 989              	.LBE249:
- 282:MyNewProject.cpp ****         delay.delayHeads[i].delay = &delayMems[i];
- 990              		.loc 12 282 35 discriminator 2 view .LVU221
- 991 001a 45F8044C 		str	r4, [r5, #-4]
- 992              	.LBB250:
- 993              	.LBB248:
- 994              	.LBB246:
- 995              		.loc 16 37 20 discriminator 2 view .LVU222
- 996 001e C4E90123 		strd	r2, r3, [r4, #4]
- 997              	.LVL56:
- 998              		.loc 16 37 20 discriminator 2 view .LVU223
- 999              	.LBE246:
- 1000              	.LBE248:
- 1001              	.LBE250:
- 1002              		.loc 12 282 9 is_stmt 1 discriminator 2 view .LVU224
- 279:MyNewProject.cpp ****     {
- 1003              		.loc 12 279 5 discriminator 2 view .LVU225
- 279:MyNewProject.cpp ****     {
- 1004              		.loc 12 279 23 discriminator 2 view .LVU226
- 1005 0022 04F50C24 		add	r4, r4, #573440
- 1006 0026 04F60C24 		addw	r4, r4, #2572
- 1007 002a B442     		cmp	r4, r6
- 1008 002c ECD1     		bne	.L61
- 1009              	.LBE251:
- 283:MyNewProject.cpp ****     }
- 284:MyNewProject.cpp ****         
- 285:MyNewProject.cpp **** }
- 1010              		.loc 12 285 1 is_stmt 0 view .LVU227
- 1011 002e 70BD     		pop	{r4, r5, r6, pc}
- 1012              	.L65:
- 1013              		.align	2
- 1014              	.L64:
- 1015 0030 00000000 		.word	delayMems
- 1016 0034 00000000 		.word	.LANCHOR4
- 1017 0038 30282300 		.word	delayMems+2304048
- 1018 003c 00CA0800 		.word	576000
- 1019              		.cfi_endproc
- 1020              	.LFE4805:
- 1022              		.section	.text.startup.main,"ax",%progbits
- 1023              		.align	1
- 1024              		.p2align 2,,3
- 1025              		.global	main
- 1026              		.syntax unified
- 1027              		.thumb
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 40
+ 983              		.loc 16 37 20 discriminator 2 view .LVU220
+ 984 0018 0123     		movs	r3, #1
+ 985              	.LBE245:
+ 986              	.LBE247:
+ 987              	.LBE249:
+ 283:MyNewProject.cpp ****         delay.delayHeads[i].delay = &delayMems[i];
+ 988              		.loc 12 283 35 discriminator 2 view .LVU221
+ 989 001a 45F8044C 		str	r4, [r5, #-4]
+ 990              	.LBB250:
+ 991              	.LBB248:
+ 992              	.LBB246:
+ 993              		.loc 16 37 20 discriminator 2 view .LVU222
+ 994 001e C4E90123 		strd	r2, r3, [r4, #4]
+ 995              	.LVL58:
+ 996              		.loc 16 37 20 discriminator 2 view .LVU223
+ 997              	.LBE246:
+ 998              	.LBE248:
+ 999              	.LBE250:
+ 1000              		.loc 12 283 9 is_stmt 1 discriminator 2 view .LVU224
+ 280:MyNewProject.cpp ****     {
+ 1001              		.loc 12 280 5 discriminator 2 view .LVU225
+ 280:MyNewProject.cpp ****     {
+ 1002              		.loc 12 280 23 discriminator 2 view .LVU226
+ 1003 0022 04F5BB24 		add	r4, r4, #382976
+ 1004 0026 04F20C44 		addw	r4, r4, #1036
+ 1005 002a B442     		cmp	r4, r6
+ 1006 002c ECD1     		bne	.L61
+ 1007              	.LBE251:
+ 284:MyNewProject.cpp ****     }
+ 285:MyNewProject.cpp ****         
+ 286:MyNewProject.cpp **** }
+ 1008              		.loc 12 286 1 is_stmt 0 view .LVU227
+ 1009 002e 70BD     		pop	{r4, r5, r6, pc}
+ 1010              	.L65:
+ 1011              		.align	2
+ 1012              	.L64:
+ 1013 0030 00000000 		.word	delayMems
+ 1014 0034 00000000 		.word	.LANCHOR4
+ 1015 0038 30701700 		.word	delayMems+1536048
+ 1016 003c 00DC0500 		.word	384000
+ 1017              		.cfi_endproc
+ 1018              	.LFE4805:
+ 1020              		.section	.text.startup.main,"ax",%progbits
+ 1021              		.align	1
+ 1022              		.p2align 2,,3
+ 1023              		.global	main
+ 1024              		.syntax unified
+ 1025              		.thumb
+ 1026              		.thumb_func
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 40
 
 
- 1028              		.thumb_func
- 1029              		.fpu fpv5-d16
- 1031              	main:
- 1032              	.LFB4801:
+ 1027              		.fpu fpv5-d16
+ 1029              	main:
+ 1030              	.LFB4801:
   98:MyNewProject.cpp ****     // Initialize seed hardware.
- 1033              		.loc 12 98 1 is_stmt 1 view -0
- 1034              		.cfi_startproc
- 1035              		@ Volatile: function does not return.
- 1036              		@ args = 0, pretend = 0, frame = 216
- 1037              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1031              		.loc 12 98 1 is_stmt 1 view -0
+ 1032              		.cfi_startproc
+ 1033              		@ Volatile: function does not return.
+ 1034              		@ args = 0, pretend = 0, frame = 216
+ 1035              		@ frame_needed = 0, uses_anonymous_args = 0
  100:MyNewProject.cpp **** 
- 1038              		.loc 12 100 5 view .LVU229
+ 1036              		.loc 12 100 5 view .LVU229
   98:MyNewProject.cpp ****     // Initialize seed hardware.
- 1039              		.loc 12 98 1 is_stmt 0 view .LVU230
- 1040 0000 80B5     		push	{r7, lr}
- 1041              		.cfi_def_cfa_offset 8
- 1042              		.cfi_offset 7, -8
- 1043              		.cfi_offset 14, -4
+ 1037              		.loc 12 98 1 is_stmt 0 view .LVU230
+ 1038 0000 80B5     		push	{r7, lr}
+ 1039              		.cfi_def_cfa_offset 8
+ 1040              		.cfi_offset 7, -8
+ 1041              		.cfi_offset 14, -4
  100:MyNewProject.cpp **** 
- 1044              		.loc 12 100 12 view .LVU231
- 1045 0002 0021     		movs	r1, #0
+ 1042              		.loc 12 100 12 view .LVU231
+ 1043 0002 0021     		movs	r1, #0
   98:MyNewProject.cpp ****     // Initialize seed hardware.
- 1046              		.loc 12 98 1 view .LVU232
- 1047 0004 B6B0     		sub	sp, sp, #216
- 1048              		.cfi_def_cfa_offset 224
+ 1044              		.loc 12 98 1 view .LVU232
+ 1045 0004 B6B0     		sub	sp, sp, #216
+ 1046              		.cfi_def_cfa_offset 224
  100:MyNewProject.cpp **** 
- 1049              		.loc 12 100 12 view .LVU233
- 1050 0006 6548     		ldr	r0, .L69
- 1051              	.LBB252:
- 1052              	.LBB253:
+ 1047              		.loc 12 100 12 view .LVU233
+ 1048 0006 6548     		ldr	r0, .L69
+ 1049              	.LBB252:
+ 1050              	.LBB253:
   61:../../DaisySP//Source/Dynamics/crossfade.h ****     /** Sets current curve applied to CrossFade 
   62:../../DaisySP//Source/Dynamics/crossfade.h ****     Expected input: See [Curve Options](##curve-options)
   63:../../DaisySP//Source/Dynamics/crossfade.h ****     */
   64:../../DaisySP//Source/Dynamics/crossfade.h ****     inline void SetCurve(uint8_t curve) { curve_ = curve; }
- 1053              		.loc 2 64 50 view .LVU234
- 1054 0008 0127     		movs	r7, #1
- 1055              	.LBE253:
- 1056              	.LBE252:
+ 1051              		.loc 2 64 50 view .LVU234
+ 1052 0008 0127     		movs	r7, #1
+ 1053              	.LBE253:
+ 1054              	.LBE252:
  100:MyNewProject.cpp **** 
- 1057              		.loc 12 100 12 view .LVU235
- 1058 000a FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
- 1059              	.LVL57:
+ 1055              		.loc 12 100 12 view .LVU235
+ 1056 000a FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
+ 1057              	.LVL59:
  103:MyNewProject.cpp **** 
- 1060              		.loc 12 103 5 is_stmt 1 view .LVU236
- 1061              	.LBB255:
- 1062              	.LBI255:
+ 1058              		.loc 12 103 5 is_stmt 1 view .LVU236
+ 1059              	.LBB255:
+ 1060              	.LBI255:
  122:../../libDaisy//src/daisy_seed.h ****     }
  123:../../libDaisy//src/daisy_seed.h **** 
  124:../../libDaisy//src/daisy_seed.h ****     /** Start the logging session. Optionally wait for terminal connection before proceeding.
  125:../../libDaisy//src/daisy_seed.h ****     */
  126:../../libDaisy//src/daisy_seed.h ****     static void StartLog(bool wait_for_pc = false)
- 1063              		.loc 7 126 17 view .LVU237
- 1064              	.LBB256:
+ 1061              		.loc 7 126 17 view .LVU237
+ 1062              	.LBB256:
  127:../../libDaisy//src/daisy_seed.h ****     {
  128:../../libDaisy//src/daisy_seed.h ****         Log::StartLog(wait_for_pc);
- 1065              		.loc 7 128 9 view .LVU238
- 1066              		.loc 7 128 22 is_stmt 0 view .LVU239
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 41
+ 1063              		.loc 7 128 9 view .LVU238
+ 1064              		.loc 7 128 22 is_stmt 0 view .LVU239
+ 1065 000e 0020     		movs	r0, #0
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 41
 
 
- 1067 000e 0020     		movs	r0, #0
- 1068 0010 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE8StartLogEb
- 1069              	.LVL58:
- 1070              		.loc 7 128 22 view .LVU240
- 1071              	.LBE256:
- 1072              	.LBE255:
+ 1066 0010 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE8StartLogEb
+ 1067              	.LVL60:
+ 1068              		.loc 7 128 22 view .LVU240
+ 1069              	.LBE256:
+ 1070              	.LBE255:
  106:MyNewProject.cpp ****     // Init tap temp Button to D25, pin 32
- 1073              		.loc 12 106 5 is_stmt 1 view .LVU241
+ 1071              		.loc 12 106 5 is_stmt 1 view .LVU241
  106:MyNewProject.cpp ****     // Init tap temp Button to D25, pin 32
- 1074              		.loc 12 106 19 is_stmt 0 view .LVU242
- 1075 0014 1C20     		movs	r0, #28
- 1076 0016 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
- 1077              	.LVL59:
- 1078 001a 0346     		mov	r3, r0	@ movhi
- 1079 001c 9FED600A 		vldr.32	s0, .L69+4
- 1080              	.LBB257:
- 1081              	.LBB258:
- 1082              	.LBB259:
+ 1072              		.loc 12 106 19 is_stmt 0 view .LVU242
+ 1073 0014 1C20     		movs	r0, #28
+ 1074 0016 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
+ 1075              	.LVL61:
+ 1076 001a 0346     		mov	r3, r0	@ movhi
+ 1077 001c 9FED600A 		vldr.32	s0, .L69+4
+ 1078              	.LBB257:
+ 1079              	.LBB258:
+ 1080              	.LBB259:
   79:../../libDaisy//src/per/tim.h ****         {
- 1083              		.loc 3 79 27 view .LVU243
- 1084 0020 0025     		movs	r5, #0
- 1085              	.LBE259:
- 1086              	.LBE258:
- 1087              	.LBE257:
+ 1081              		.loc 3 79 27 view .LVU243
+ 1082 0020 0025     		movs	r5, #0
+ 1083              	.LBE259:
+ 1084              	.LBE258:
+ 1085              	.LBE257:
  106:MyNewProject.cpp ****     // Init tap temp Button to D25, pin 32
- 1088              		.loc 12 106 19 view .LVU244
- 1089 0022 ADF80C30 		strh	r3, [sp, #12]	@ movhi
- 1090 0026 4FF00208 		mov	r8, #2
- 1091 002a 0399     		ldr	r1, [sp, #12]
+ 1086              		.loc 12 106 19 view .LVU244
+ 1087 0022 ADF80C30 		strh	r3, [sp, #12]	@ movhi
+ 1088 0026 4FF00208 		mov	r8, #2
+ 1089 002a 0399     		ldr	r1, [sp, #12]
  146:MyNewProject.cpp ****     hw.adc.Init(configs,2);
- 1092              		.loc 12 146 57 view .LVU245
- 1093 002c 2DAE     		add	r6, sp, #180
+ 1090              		.loc 12 146 57 view .LVU245
+ 1091 002c 2DAE     		add	r6, sp, #180
  106:MyNewProject.cpp ****     // Init tap temp Button to D25, pin 32
- 1094              		.loc 12 106 19 view .LVU246
- 1095 002e 5D48     		ldr	r0, .L69+8
+ 1092              		.loc 12 106 19 view .LVU246
+ 1093 002e 5D48     		ldr	r0, .L69+8
  151:MyNewProject.cpp **** 
- 1096              		.loc 12 151 22 view .LVU247
- 1097 0030 25AC     		add	r4, sp, #148
+ 1094              		.loc 12 151 22 view .LVU247
+ 1095 0030 25AC     		add	r4, sp, #148
  106:MyNewProject.cpp ****     // Init tap temp Button to D25, pin 32
- 1098              		.loc 12 106 19 view .LVU248
- 1099 0032 FFF7FEFF 		bl	_ZN5daisy6Switch4InitE12dsy_gpio_pinf
- 1100              	.LVL60:
+ 1096              		.loc 12 106 19 view .LVU248
+ 1097 0032 FFF7FEFF 		bl	_ZN5daisy6Switch4InitE12dsy_gpio_pinf
+ 1098              	.LVL62:
  108:MyNewProject.cpp ****     // Init the head on/off buttons
- 1101              		.loc 12 108 5 is_stmt 1 view .LVU249
+ 1099              		.loc 12 108 5 is_stmt 1 view .LVU249
  108:MyNewProject.cpp ****     // Init the head on/off buttons
- 1102              		.loc 12 108 22 is_stmt 0 view .LVU250
- 1103 0036 1920     		movs	r0, #25
- 1104 0038 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
- 1105              	.LVL61:
- 1106 003c 0346     		mov	r3, r0	@ movhi
- 1107 003e 9FED580A 		vldr.32	s0, .L69+4
- 1108 0042 ADF81030 		strh	r3, [sp, #16]	@ movhi
- 1109 0046 5848     		ldr	r0, .L69+12
- 1110 0048 0499     		ldr	r1, [sp, #16]
- 1111 004a FFF7FEFF 		bl	_ZN5daisy6Switch4InitE12dsy_gpio_pinf
- 1112              	.LVL62:
+ 1100              		.loc 12 108 22 is_stmt 0 view .LVU250
+ 1101 0036 1920     		movs	r0, #25
+ 1102 0038 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
+ 1103              	.LVL63:
+ 1104 003c 0346     		mov	r3, r0	@ movhi
+ 1105 003e 9FED580A 		vldr.32	s0, .L69+4
+ 1106 0042 ADF81030 		strh	r3, [sp, #16]	@ movhi
+ 1107 0046 5848     		ldr	r0, .L69+12
+ 1108 0048 0499     		ldr	r1, [sp, #16]
+ 1109 004a FFF7FEFF 		bl	_ZN5daisy6Switch4InitE12dsy_gpio_pinf
+ 1110              	.LVL64:
  110:MyNewProject.cpp **** 
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 42
+ 1111              		.loc 12 110 5 is_stmt 1 view .LVU251
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 42
 
 
- 1113              		.loc 12 110 5 is_stmt 1 view .LVU251
  110:MyNewProject.cpp **** 
- 1114              		.loc 12 110 20 is_stmt 0 view .LVU252
- 1115 004e FFF7FEFF 		bl	_Z15InitHeadButtonsv
- 1116              	.LVL63:
+ 1112              		.loc 12 110 20 is_stmt 0 view .LVU252
+ 1113 004e FFF7FEFF 		bl	_Z15InitHeadButtonsv
+ 1114              	.LVL65:
  114:MyNewProject.cpp ****     hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
- 1117              		.loc 12 114 5 is_stmt 1 view .LVU253
+ 1115              		.loc 12 114 5 is_stmt 1 view .LVU253
  114:MyNewProject.cpp ****     hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
- 1118              		.loc 12 114 25 is_stmt 0 view .LVU254
- 1119 0052 0421     		movs	r1, #4
- 1120 0054 5148     		ldr	r0, .L69
- 1121 0056 FFF7FEFF 		bl	_ZN5daisy9DaisySeed17SetAudioBlockSizeEj
- 1122              	.LVL64:
+ 1116              		.loc 12 114 25 is_stmt 0 view .LVU254
+ 1117 0052 0421     		movs	r1, #4
+ 1118 0054 5148     		ldr	r0, .L69
+ 1119 0056 FFF7FEFF 		bl	_ZN5daisy9DaisySeed17SetAudioBlockSizeEj
+ 1120              	.LVL66:
  115:MyNewProject.cpp **** 
- 1123              		.loc 12 115 5 is_stmt 1 view .LVU255
+ 1121              		.loc 12 115 5 is_stmt 1 view .LVU255
  115:MyNewProject.cpp **** 
- 1124              		.loc 12 115 26 is_stmt 0 view .LVU256
- 1125 005a 0321     		movs	r1, #3
- 1126 005c 4F48     		ldr	r0, .L69
- 1127 005e FFF7FEFF 		bl	_ZN5daisy9DaisySeed18SetAudioSampleRateENS_9SaiHandle6Config10SampleRateE
- 1128              	.LVL65:
+ 1122              		.loc 12 115 26 is_stmt 0 view .LVU256
+ 1123 005a 0321     		movs	r1, #3
+ 1124 005c 4F48     		ldr	r0, .L69
+ 1125 005e FFF7FEFF 		bl	_ZN5daisy9DaisySeed18SetAudioSampleRateENS_9SaiHandle6Config10SampleRateE
+ 1126              	.LVL67:
  118:MyNewProject.cpp ****     // Sets crossfade to maintain constant power, which will maintain a constant volume as we go fr
- 1129              		.loc 12 118 5 is_stmt 1 view .LVU257
- 1130              	.LBB266:
- 1131              	.LBI266:
+ 1127              		.loc 12 118 5 is_stmt 1 view .LVU257
+ 1128              	.LBB266:
+ 1129              	.LBI266:
   51:../../DaisySP//Source/Dynamics/crossfade.h ****     /** processes CrossFade and returns single sample
- 1132              		.loc 2 51 17 view .LVU258
- 1133              	.LBE266:
+ 1130              		.loc 2 51 17 view .LVU258
+ 1131              	.LBE266:
   51:../../DaisySP//Source/Dynamics/crossfade.h ****     /** processes CrossFade and returns single sample
- 1134              		.loc 2 51 26 view .LVU259
- 1135              	.LBB271:
- 1136              	.LBB267:
- 1137              	.LBI267:
+ 1132              		.loc 2 51 26 view .LVU259
+ 1133              	.LBB271:
+ 1134              	.LBB267:
+ 1135              	.LBI267:
   43:../../DaisySP//Source/Dynamics/crossfade.h ****     {
- 1138              		.loc 2 43 17 view .LVU260
- 1139              	.LBB268:
+ 1136              		.loc 2 43 17 view .LVU260
+ 1137              	.LBB268:
   45:../../DaisySP//Source/Dynamics/crossfade.h ****         curve_ = curve < CROSSFADE_LAST ? curve : CROSSFADE_LIN;
- 1140              		.loc 2 45 9 view .LVU261
+ 1138              		.loc 2 45 9 view .LVU261
   45:../../DaisySP//Source/Dynamics/crossfade.h ****         curve_ = curve < CROSSFADE_LAST ? curve : CROSSFADE_LIN;
- 1141              		.loc 2 45 16 is_stmt 0 view .LVU262
- 1142 0062 524B     		ldr	r3, .L69+16
- 1143 0064 4FF07C52 		mov	r2, #1056964608
- 1144              	.LBE268:
- 1145              	.LBE267:
- 1146              	.LBE271:
+ 1139              		.loc 2 45 16 is_stmt 0 view .LVU262
+ 1140 0062 524B     		ldr	r3, .L69+16
+ 1141 0064 4FF07C52 		mov	r2, #1056964608
+ 1142              	.LBE268:
+ 1143              	.LBE267:
+ 1144              	.LBE271:
  123:MyNewProject.cpp **** 
- 1147              		.loc 12 123 18 view .LVU263
- 1148 0068 5149     		ldr	r1, .L69+20
- 1149 006a 4C48     		ldr	r0, .L69
- 1150              	.LBB272:
- 1151              	.LBB270:
- 1152              	.LBB269:
+ 1145              		.loc 12 123 18 view .LVU263
+ 1146 0068 5149     		ldr	r1, .L69+20
+ 1147 006a 4C48     		ldr	r0, .L69
+ 1148              	.LBB272:
+ 1149              	.LBB270:
+ 1150              	.LBB269:
   45:../../DaisySP//Source/Dynamics/crossfade.h ****         curve_ = curve < CROSSFADE_LAST ? curve : CROSSFADE_LIN;
- 1153              		.loc 2 45 16 view .LVU264
- 1154 006c 1A60     		str	r2, [r3]	@ float
+ 1151              		.loc 2 45 16 view .LVU264
+ 1152 006c 1A60     		str	r2, [r3]	@ float
   46:../../DaisySP//Source/Dynamics/crossfade.h ****     }
- 1155              		.loc 2 46 9 is_stmt 1 view .LVU265
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 43
+ 1153              		.loc 2 46 9 is_stmt 1 view .LVU265
+ 1154              	.LVL68:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 43
 
 
- 1156              	.LVL66:
   46:../../DaisySP//Source/Dynamics/crossfade.h ****     }
- 1157              		.loc 2 46 9 is_stmt 0 view .LVU266
- 1158              	.LBE269:
- 1159              	.LBE270:
- 1160              	.LBE272:
+ 1155              		.loc 2 46 9 is_stmt 0 view .LVU266
+ 1156              	.LBE269:
+ 1157              	.LBE270:
+ 1158              	.LBE272:
  120:MyNewProject.cpp **** 
- 1161              		.loc 12 120 5 is_stmt 1 view .LVU267
- 1162              	.LBB273:
- 1163              	.LBI252:
- 1164              		.loc 2 64 17 view .LVU268
- 1165              	.LBB254:
- 1166              		.loc 2 64 43 view .LVU269
- 1167              		.loc 2 64 50 is_stmt 0 view .LVU270
- 1168 006e 1F71     		strb	r7, [r3, #4]
- 1169              	.LVL67:
- 1170              		.loc 2 64 50 view .LVU271
- 1171              	.LBE254:
- 1172              	.LBE273:
+ 1159              		.loc 12 120 5 is_stmt 1 view .LVU267
+ 1160              	.LBB273:
+ 1161              	.LBI252:
+ 1162              		.loc 2 64 17 view .LVU268
+ 1163              	.LBB254:
+ 1164              		.loc 2 64 43 view .LVU269
+ 1165              		.loc 2 64 50 is_stmt 0 view .LVU270
+ 1166 006e 1F71     		strb	r7, [r3, #4]
+ 1167              	.LVL69:
+ 1168              		.loc 2 64 50 view .LVU271
+ 1169              	.LBE254:
+ 1170              	.LBE273:
  123:MyNewProject.cpp **** 
- 1173              		.loc 12 123 5 is_stmt 1 view .LVU272
+ 1171              		.loc 12 123 5 is_stmt 1 view .LVU272
  123:MyNewProject.cpp **** 
- 1174              		.loc 12 123 18 is_stmt 0 view .LVU273
- 1175 0070 FFF7FEFF 		bl	_ZN5daisy9DaisySeed10StartAudioEPFvPKPKfPPfjE
- 1176              	.LVL68:
+ 1172              		.loc 12 123 18 is_stmt 0 view .LVU273
+ 1173 0070 FFF7FEFF 		bl	_ZN5daisy9DaisySeed10StartAudioEPFvPKPKfPPfjE
+ 1174              	.LVL70:
  126:MyNewProject.cpp ****     config.dir = TimerHandle::Config::CounterDir::UP;       // Set it to count up 
- 1177              		.loc 12 126 5 is_stmt 1 view .LVU274
- 1178              	.LBB274:
- 1179              	.LBI257:
+ 1175              		.loc 12 126 5 is_stmt 1 view .LVU274
+ 1176              	.LBB274:
+ 1177              	.LBI257:
   75:../../libDaisy//src/per/tim.h ****         : periph(Peripheral::TIM_2),
- 1180              		.loc 3 75 9 view .LVU275
- 1181              	.LBB263:
- 1182              	.LBB260:
+ 1178              		.loc 3 75 9 view .LVU275
+ 1179              	.LBB263:
+ 1180              	.LBB260:
   79:../../libDaisy//src/per/tim.h ****         {
- 1183              		.loc 3 79 27 is_stmt 0 view .LVU276
- 1184 0074 4FF0FF32 		mov	r2, #-1
- 1185              	.LBE260:
- 1186              	.LBE263:
- 1187              	.LBE274:
+ 1181              		.loc 3 79 27 is_stmt 0 view .LVU276
+ 1182 0074 4FF0FF32 		mov	r2, #-1
+ 1183              	.LBE260:
+ 1184              	.LBE263:
+ 1185              	.LBE274:
  130:MyNewProject.cpp **** 
- 1188              		.loc 12 130 15 view .LVU277
- 1189 0078 4E4B     		ldr	r3, .L69+24
- 1190 007a 07A9     		add	r1, sp, #28
- 1191              	.LVL69:
+ 1186              		.loc 12 130 15 view .LVU277
+ 1187 0078 4E4B     		ldr	r3, .L69+24
+ 1188 007a 07A9     		add	r1, sp, #28
+ 1189              	.LVL71:
  133:MyNewProject.cpp ****     // Make sure the timer is off
- 1192              		.loc 12 133 15 view .LVU278
- 1193 007c 4E48     		ldr	r0, .L69+28
- 1194              	.LBB275:
- 1195              	.LBB264:
- 1196              	.LBB261:
+ 1190              		.loc 12 133 15 view .LVU278
+ 1191 007c 4E48     		ldr	r0, .L69+28
+ 1192              	.LBB275:
+ 1193              	.LBB264:
+ 1194              	.LBB261:
   79:../../libDaisy//src/per/tim.h ****         {
- 1197              		.loc 3 79 27 view .LVU279
- 1198 007e 0992     		str	r2, [sp, #36]
- 1199              	.LVL70:
+ 1195              		.loc 3 79 27 view .LVU279
+ 1196 007e 0992     		str	r2, [sp, #36]
+ 1197              	.LVL72:
   79:../../libDaisy//src/per/tim.h ****         {
- 1200              		.loc 3 79 27 view .LVU280
- 1201              	.LBE261:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 44
+ 1198              		.loc 3 79 27 view .LVU280
+ 1199              	.LBE261:
+ 1200              	.LBE264:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 44
 
 
- 1202              	.LBE264:
- 1203              	.LBE275:
+ 1201              	.LBE275:
  127:MyNewProject.cpp ****     config.periph = TimerHandle::Config::Peripheral::TIM_2; // Use timer 2 which is 32 bit counter
- 1204              		.loc 12 127 5 is_stmt 1 view .LVU281
+ 1202              		.loc 12 127 5 is_stmt 1 view .LVU281
  128:MyNewProject.cpp ****     config.enable_irq = 1;                                  // Enable interrupt for user based call
- 1205              		.loc 12 128 5 view .LVU282
+ 1203              		.loc 12 128 5 view .LVU282
  129:MyNewProject.cpp ****     configPtr = &config;                                    // Point our global config to the one w
- 1206              		.loc 12 129 5 view .LVU283
+ 1204              		.loc 12 129 5 view .LVU283
  130:MyNewProject.cpp **** 
- 1207              		.loc 12 130 15 is_stmt 0 view .LVU284
- 1208 0080 1960     		str	r1, [r3]
+ 1205              		.loc 12 130 15 is_stmt 0 view .LVU284
+ 1206 0080 1960     		str	r1, [r3]
  129:MyNewProject.cpp ****     configPtr = &config;                                    // Point our global config to the one w
- 1209              		.loc 12 129 23 view .LVU285
- 1210 0082 8DF82870 		strb	r7, [sp, #40]
+ 1207              		.loc 12 129 23 view .LVU285
+ 1208 0082 8DF82870 		strb	r7, [sp, #40]
  130:MyNewProject.cpp **** 
- 1211              		.loc 12 130 5 is_stmt 1 view .LVU286
+ 1209              		.loc 12 130 5 is_stmt 1 view .LVU286
  133:MyNewProject.cpp ****     // Make sure the timer is off
- 1212              		.loc 12 133 5 view .LVU287
- 1213              	.LBB276:
- 1214              	.LBB265:
- 1215              	.LBB262:
+ 1210              		.loc 12 133 5 view .LVU287
+ 1211              	.LBB276:
+ 1212              	.LBB265:
+ 1213              	.LBB262:
   79:../../libDaisy//src/per/tim.h ****         {
- 1216              		.loc 3 79 27 is_stmt 0 view .LVU288
- 1217 0086 CDE90755 		strd	r5, r5, [sp, #28]
- 1218              	.LBE262:
- 1219              	.LBE265:
- 1220              	.LBE276:
+ 1214              		.loc 3 79 27 is_stmt 0 view .LVU288
+ 1215 0086 CDE90755 		strd	r5, r5, [sp, #28]
+ 1216              	.LBE262:
+ 1217              	.LBE265:
+ 1218              	.LBE276:
  133:MyNewProject.cpp ****     // Make sure the timer is off
- 1221              		.loc 12 133 15 view .LVU289
- 1222 008a FFF7FEFF 		bl	_ZN5daisy11TimerHandle4InitERKNS0_6ConfigE
- 1223              	.LVL71:
+ 1219              		.loc 12 133 15 view .LVU289
+ 1220 008a FFF7FEFF 		bl	_ZN5daisy11TimerHandle4InitERKNS0_6ConfigE
+ 1221              	.LVL73:
  135:MyNewProject.cpp ****     //*********************************************************************************************
- 1224              		.loc 12 135 5 is_stmt 1 view .LVU290
+ 1222              		.loc 12 135 5 is_stmt 1 view .LVU290
  135:MyNewProject.cpp ****     //*********************************************************************************************
- 1225              		.loc 12 135 15 is_stmt 0 view .LVU291
- 1226 008e 4A48     		ldr	r0, .L69+28
- 1227 0090 FFF7FEFF 		bl	_ZN5daisy11TimerHandle4StopEv
- 1228              	.LVL72:
+ 1223              		.loc 12 135 15 is_stmt 0 view .LVU291
+ 1224 008e 4A48     		ldr	r0, .L69+28
+ 1225 0090 FFF7FEFF 		bl	_ZN5daisy11TimerHandle4StopEv
+ 1226              	.LVL74:
  140:MyNewProject.cpp ****     fbkConfig.InitSingle(A0);
- 1229              		.loc 12 140 5 is_stmt 1 view .LVU292
+ 1227              		.loc 12 140 5 is_stmt 1 view .LVU292
  141:MyNewProject.cpp ****     AdcChannelConfig toneConfig;
- 1230              		.loc 12 141 5 view .LVU293
- 1231              	.LBB277:
- 1232              	.LBI277:
- 1233              		.file 17 "../../libDaisy//src/daisy_core.h"
+ 1228              		.loc 12 141 5 view .LVU293
+ 1229              	.LBB277:
+ 1230              	.LBI277:
+ 1231              		.file 17 "../../libDaisy//src/daisy_core.h"
    1:../../libDaisy//src/daisy_core.h **** #pragma once
    2:../../libDaisy//src/daisy_core.h **** #ifndef DSY_CORE_HW_H
    3:../../libDaisy//src/daisy_core.h **** #define DSY_CORE_HW_H /**< & */
@@ -2638,10 +2637,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   10:../../libDaisy//src/daisy_core.h **** #define FORCE_INLINE inline __attribute__((always_inline)) /**< & */
   11:../../libDaisy//src/daisy_core.h **** #pragma clang diagnostic ignored "-Wduplicate-decl-specifier"
   12:../../libDaisy//src/daisy_core.h **** #elif defined(__GNUC__)
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 45
-
-
   13:../../libDaisy//src/daisy_core.h **** #define FORCE_INLINE inline __attribute__((always_inline)) /**< & */
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 45
+
+
   14:../../libDaisy//src/daisy_core.h **** #else
   15:../../libDaisy//src/daisy_core.h **** #error unknown compiler
   16:../../libDaisy//src/daisy_core.h **** #endif
@@ -2698,10 +2697,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   67:../../libDaisy//src/daisy_core.h ****     \return x ^ 3
   68:../../libDaisy//src/daisy_core.h **** */
   69:../../libDaisy//src/daisy_core.h **** FORCE_INLINE float cube(float x)
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 46
-
-
   70:../../libDaisy//src/daisy_core.h **** {
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 46
+
+
   71:../../libDaisy//src/daisy_core.h ****     return (x * x) * x;
   72:../../libDaisy//src/daisy_core.h **** }
   73:../../libDaisy//src/daisy_core.h **** 
@@ -2758,10 +2757,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  124:../../libDaisy//src/daisy_core.h **** 
  125:../../libDaisy//src/daisy_core.h **** /**
  126:../../libDaisy//src/daisy_core.h ****     Converts float to Signed 16-bit
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 47
-
-
  127:../../libDaisy//src/daisy_core.h **** */
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 47
+
+
  128:../../libDaisy//src/daisy_core.h **** FORCE_INLINE int16_t f2s16(float x)
  129:../../libDaisy//src/daisy_core.h **** {
  130:../../libDaisy//src/daisy_core.h ****     x = x <= FBIPMIN ? FBIPMIN : x;
@@ -2818,10 +2817,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  181:../../libDaisy//src/daisy_core.h **** {
  182:../../libDaisy//src/daisy_core.h ****     DSY_GPIOA, /**< & */
  183:../../libDaisy//src/daisy_core.h ****     DSY_GPIOB, /**< & */
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 48
-
-
  184:../../libDaisy//src/daisy_core.h ****     DSY_GPIOC, /**< & */
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 48
+
+
  185:../../libDaisy//src/daisy_core.h ****     DSY_GPIOD, /**< & */
  186:../../libDaisy//src/daisy_core.h ****     DSY_GPIOE, /**< & */
  187:../../libDaisy//src/daisy_core.h ****     DSY_GPIOF, /**< & */
@@ -2878,10 +2877,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  238:../../libDaisy//src/daisy_core.h **** #ifdef __cplusplus
  239:../../libDaisy//src/daisy_core.h **** 
  240:../../libDaisy//src/daisy_core.h **** namespace daisy
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 49
-
-
  241:../../libDaisy//src/daisy_core.h **** {
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 49
+
+
  242:../../libDaisy//src/daisy_core.h **** /** @brief GPIO Port names */
  243:../../libDaisy//src/daisy_core.h **** enum GPIOPort
  244:../../libDaisy//src/daisy_core.h **** {
@@ -2935,327 +2934,327 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  292:../../libDaisy//src/daisy_core.h ****      *  type.
  293:../../libDaisy//src/daisy_core.h ****      */
  294:../../libDaisy//src/daisy_core.h ****     operator dsy_gpio_pin() const
- 1234              		.loc 17 294 5 view .LVU294
- 1235              	.LBE277:
+ 1232              		.loc 17 294 5 view .LVU294
+ 1233              	.LBE277:
  295:../../libDaisy//src/daisy_core.h ****     {
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 50
-
-
  296:../../libDaisy//src/daisy_core.h ****         return dsy_pin(static_cast<dsy_gpio_port>(port), pin);
- 1236              		.loc 17 296 9 view .LVU295
- 1237              	.LBB279:
- 1238              	.LBB278:
- 1239              	.LBI278:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 50
+
+
+ 1234              		.loc 17 296 9 view .LVU295
+ 1235              	.LBB279:
+ 1236              	.LBB278:
+ 1237              	.LBI278:
  217:../../libDaisy//src/daisy_core.h **** {
- 1240              		.loc 17 217 27 view .LVU296
- 1241              	.LBE278:
- 1242              	.LBE279:
+ 1238              		.loc 17 217 27 view .LVU296
+ 1239              	.LBE278:
+ 1240              	.LBE279:
  219:../../libDaisy//src/daisy_core.h ****     p.port = port;
- 1243              		.loc 17 219 5 view .LVU297
+ 1241              		.loc 17 219 5 view .LVU297
  220:../../libDaisy//src/daisy_core.h ****     p.pin  = pin;
- 1244              		.loc 17 220 5 view .LVU298
+ 1242              		.loc 17 220 5 view .LVU298
  221:../../libDaisy//src/daisy_core.h ****     return p;
- 1245              		.loc 17 221 5 view .LVU299
+ 1243              		.loc 17 221 5 view .LVU299
  222:../../libDaisy//src/daisy_core.h **** }
- 1246              		.loc 17 222 5 view .LVU300
+ 1244              		.loc 17 222 5 view .LVU300
  222:../../libDaisy//src/daisy_core.h **** }
- 1247              		.loc 17 222 5 is_stmt 0 view .LVU301
- 1248 0094 8DF81480 		strb	r8, [sp, #20]
- 1249 0098 8DF81550 		strb	r5, [sp, #21]
- 1250              	.LVL73:
+ 1245              		.loc 17 222 5 is_stmt 0 view .LVU301
+ 1246 0094 8DF81480 		strb	r8, [sp, #20]
+ 1247 0098 8DF81550 		strb	r5, [sp, #21]
+ 1248              	.LVL75:
  141:MyNewProject.cpp ****     AdcChannelConfig toneConfig;
- 1251              		.loc 12 141 25 view .LVU302
- 1252 009c 0BA8     		add	r0, sp, #44
- 1253 009e 0599     		ldr	r1, [sp, #20]
- 1254 00a0 FFF7FEFF 		bl	_ZN5daisy16AdcChannelConfig10InitSingleE12dsy_gpio_pin
- 1255              	.LVL74:
+ 1249              		.loc 12 141 25 view .LVU302
+ 1250 009c 0BA8     		add	r0, sp, #44
+ 1251 009e 0599     		ldr	r1, [sp, #20]
+ 1252 00a0 FFF7FEFF 		bl	_ZN5daisy16AdcChannelConfig10InitSingleE12dsy_gpio_pin
+ 1253              	.LVL76:
  142:MyNewProject.cpp ****     toneConfig.InitSingle(A1);
- 1256              		.loc 12 142 5 is_stmt 1 view .LVU303
+ 1254              		.loc 12 142 5 is_stmt 1 view .LVU303
  143:MyNewProject.cpp **** 
- 1257              		.loc 12 143 5 view .LVU304
- 1258              	.LBB280:
- 1259              	.LBI280:
+ 1255              		.loc 12 143 5 view .LVU304
+ 1256              	.LBB280:
+ 1257              	.LBI280:
  294:../../libDaisy//src/daisy_core.h ****     {
- 1260              		.loc 17 294 5 view .LVU305
- 1261              	.LBE280:
- 1262              		.loc 17 296 9 view .LVU306
- 1263              	.LBB282:
- 1264              	.LBB281:
- 1265              	.LBI281:
+ 1258              		.loc 17 294 5 view .LVU305
+ 1259              	.LBE280:
+ 1260              		.loc 17 296 9 view .LVU306
+ 1261              	.LBB282:
+ 1262              	.LBB281:
+ 1263              	.LBI281:
  217:../../libDaisy//src/daisy_core.h **** {
- 1266              		.loc 17 217 27 view .LVU307
- 1267              	.LBE281:
- 1268              	.LBE282:
+ 1264              		.loc 17 217 27 view .LVU307
+ 1265              	.LBE281:
+ 1266              	.LBE282:
  219:../../libDaisy//src/daisy_core.h ****     p.port = port;
- 1269              		.loc 17 219 5 view .LVU308
+ 1267              		.loc 17 219 5 view .LVU308
  220:../../libDaisy//src/daisy_core.h ****     p.pin  = pin;
- 1270              		.loc 17 220 5 view .LVU309
+ 1268              		.loc 17 220 5 view .LVU309
  221:../../libDaisy//src/daisy_core.h ****     return p;
- 1271              		.loc 17 221 5 view .LVU310
+ 1269              		.loc 17 221 5 view .LVU310
  222:../../libDaisy//src/daisy_core.h **** }
- 1272              		.loc 17 222 5 view .LVU311
+ 1270              		.loc 17 222 5 view .LVU311
  222:../../libDaisy//src/daisy_core.h **** }
- 1273              		.loc 17 222 5 is_stmt 0 view .LVU312
- 1274 00a4 0323     		movs	r3, #3
- 1275 00a6 8DF81850 		strb	r5, [sp, #24]
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 51
+ 1271              		.loc 17 222 5 is_stmt 0 view .LVU312
+ 1272 00a4 0323     		movs	r3, #3
+ 1273 00a6 8DF81850 		strb	r5, [sp, #24]
+ 143:MyNewProject.cpp **** 
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 51
 
 
+ 1274              		.loc 12 143 26 view .LVU313
+ 1275 00aa 10A8     		add	r0, sp, #64
+ 1276 00ac 8DF81930 		strb	r3, [sp, #25]
+ 1277              	.LVL77:
  143:MyNewProject.cpp **** 
- 1276              		.loc 12 143 26 view .LVU313
- 1277 00aa 10A8     		add	r0, sp, #64
- 1278 00ac 8DF81930 		strb	r3, [sp, #25]
- 1279              	.LVL75:
- 143:MyNewProject.cpp **** 
- 1280              		.loc 12 143 26 view .LVU314
- 1281 00b0 0699     		ldr	r1, [sp, #24]
- 1282 00b2 FFF7FEFF 		bl	_ZN5daisy16AdcChannelConfig10InitSingleE12dsy_gpio_pin
- 1283              	.LVL76:
+ 1278              		.loc 12 143 26 view .LVU314
+ 1279 00b0 0699     		ldr	r1, [sp, #24]
+ 1280 00b2 FFF7FEFF 		bl	_ZN5daisy16AdcChannelConfig10InitSingleE12dsy_gpio_pin
+ 1281              	.LVL78:
  146:MyNewProject.cpp ****     hw.adc.Init(configs,2);
- 1284              		.loc 12 146 5 is_stmt 1 view .LVU315
+ 1282              		.loc 12 146 5 is_stmt 1 view .LVU315
  146:MyNewProject.cpp ****     hw.adc.Init(configs,2);
- 1285              		.loc 12 146 57 is_stmt 0 view .LVU316
- 1286 00b6 0DF12C0E 		add	lr, sp, #44
- 1287 00ba 0DF1400C 		add	ip, sp, #64
- 1288 00be BEE80F00 		ldmia	lr!, {r0, r1, r2, r3}
- 1289 00c2 0FC6     		stmia	r6!, {r0, r1, r2, r3}
- 1290 00c4 DEF80030 		ldr	r3, [lr]
- 1291 00c8 3370     		strb	r3, [r6]
+ 1283              		.loc 12 146 57 is_stmt 0 view .LVU316
+ 1284 00b6 0DF12C0E 		add	lr, sp, #44
+ 1285 00ba 0DF1400C 		add	ip, sp, #64
+ 1286 00be BEE80F00 		ldmia	lr!, {r0, r1, r2, r3}
+ 1287 00c2 0FC6     		stmia	r6!, {r0, r1, r2, r3}
+ 1288 00c4 DEF80030 		ldr	r3, [lr]
+ 1289 00c8 3370     		strb	r3, [r6]
  155:MyNewProject.cpp **** 
- 1292              		.loc 12 155 18 view .LVU317
- 1293 00ca 25AE     		add	r6, sp, #148
+ 1290              		.loc 12 155 18 view .LVU317
+ 1291 00ca 25AE     		add	r6, sp, #148
  146:MyNewProject.cpp ****     hw.adc.Init(configs,2);
- 1294              		.loc 12 146 57 view .LVU318
- 1295 00cc BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
- 1296 00d0 CDF8D130 		str	r3, [sp, #209]	@ unaligned
- 1297 00d4 9CF80030 		ldrb	r3, [ip]	@ zero_extendqisi2
- 1298 00d8 CDF8C500 		str	r0, [sp, #197]	@ unaligned
- 1299 00dc CDF8C910 		str	r1, [sp, #201]	@ unaligned
+ 1292              		.loc 12 146 57 view .LVU318
+ 1293 00cc BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
+ 1294 00d0 CDF8D130 		str	r3, [sp, #209]	@ unaligned
+ 1295 00d4 9CF80030 		ldrb	r3, [ip]	@ zero_extendqisi2
+ 1296 00d8 CDF8C500 		str	r0, [sp, #197]	@ unaligned
+ 1297 00dc CDF8C910 		str	r1, [sp, #201]	@ unaligned
  147:MyNewProject.cpp **** 
- 1300              		.loc 12 147 16 view .LVU319
- 1301 00e0 2DA9     		add	r1, sp, #180
- 1302 00e2 3648     		ldr	r0, .L69+32
+ 1298              		.loc 12 147 16 view .LVU319
+ 1299 00e0 2DA9     		add	r1, sp, #180
+ 1300 00e2 3648     		ldr	r0, .L69+32
  146:MyNewProject.cpp ****     hw.adc.Init(configs,2);
- 1303              		.loc 12 146 57 view .LVU320
- 1304 00e4 CDF8CD20 		str	r2, [sp, #205]	@ unaligned
+ 1301              		.loc 12 146 57 view .LVU320
+ 1302 00e4 CDF8CD20 		str	r2, [sp, #205]	@ unaligned
  147:MyNewProject.cpp **** 
- 1305              		.loc 12 147 16 view .LVU321
- 1306 00e8 4246     		mov	r2, r8
+ 1303              		.loc 12 147 16 view .LVU321
+ 1304 00e8 4246     		mov	r2, r8
  146:MyNewProject.cpp ****     hw.adc.Init(configs,2);
- 1307              		.loc 12 146 57 view .LVU322
- 1308 00ea 8DF8D530 		strb	r3, [sp, #213]
+ 1305              		.loc 12 146 57 view .LVU322
+ 1306 00ea 8DF8D530 		strb	r3, [sp, #213]
  147:MyNewProject.cpp **** 
- 1309              		.loc 12 147 5 is_stmt 1 view .LVU323
+ 1307              		.loc 12 147 5 is_stmt 1 view .LVU323
  147:MyNewProject.cpp **** 
- 1310              		.loc 12 147 16 is_stmt 0 view .LVU324
- 1311 00ee 0423     		movs	r3, #4
- 1312 00f0 FFF7FEFF 		bl	_ZN5daisy9AdcHandle4InitEPNS_16AdcChannelConfigEjNS0_12OverSamplingE
- 1313              	.LVL77:
+ 1308              		.loc 12 147 16 is_stmt 0 view .LVU324
+ 1309 00ee 0423     		movs	r3, #4
+ 1310 00f0 FFF7FEFF 		bl	_ZN5daisy9AdcHandle4InitEPNS_16AdcChannelConfigEjNS0_12OverSamplingE
+ 1311              	.LVL79:
  149:MyNewProject.cpp ****     fbk.Init(hw.adc.GetPtr(0),hw.AudioSampleRate());
- 1314              		.loc 12 149 5 is_stmt 1 view .LVU325
- 1315              	.LBB283:
- 1316              	.LBI283:
+ 1312              		.loc 12 149 5 is_stmt 1 view .LVU325
+ 1313              	.LBB283:
+ 1314              	.LBI283:
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
- 1317              		.loc 6 21 5 view .LVU326
+ 1315              		.loc 6 21 5 view .LVU326
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 52
+ 1316              		.loc 6 21 5 is_stmt 0 view .LVU327
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 52
 
 
- 1318              		.loc 6 21 5 is_stmt 0 view .LVU327
- 1319              	.LBE283:
+ 1317              	.LBE283:
  150:MyNewProject.cpp ****     feedbackKnob.Init(fbk,0.00,MAX_FEEDBACK,Parameter::LINEAR);
- 1320              		.loc 12 150 5 is_stmt 1 view .LVU328
+ 1318              		.loc 12 150 5 is_stmt 1 view .LVU328
  150:MyNewProject.cpp ****     feedbackKnob.Init(fbk,0.00,MAX_FEEDBACK,Parameter::LINEAR);
- 1321              		.loc 12 150 13 is_stmt 0 view .LVU329
- 1322 00f4 2946     		mov	r1, r5
- 1323 00f6 3148     		ldr	r0, .L69+32
- 1324 00f8 FFF7FEFF 		bl	_ZNK5daisy9AdcHandle6GetPtrEh
- 1325              	.LVL78:
- 1326 00fc 0190     		str	r0, [sp, #4]
- 1327 00fe 2748     		ldr	r0, .L69
- 1328 0100 FFF7FEFF 		bl	_ZN5daisy9DaisySeed15AudioSampleRateEv
- 1329              	.LVL79:
- 1330 0104 DFED2E0A 		vldr.32	s1, .L69+36
- 1331 0108 0199     		ldr	r1, [sp, #4]
- 1332 010a 2B46     		mov	r3, r5
- 1333 010c 2A46     		mov	r2, r5
- 1334 010e 15A8     		add	r0, sp, #84
- 1335 0110 FFF7FEFF 		bl	_ZN5daisy13AnalogControl4InitEPtfbbf
- 1336              	.LVL80:
+ 1319              		.loc 12 150 13 is_stmt 0 view .LVU329
+ 1320 00f4 2946     		mov	r1, r5
+ 1321 00f6 3148     		ldr	r0, .L69+32
+ 1322 00f8 FFF7FEFF 		bl	_ZNK5daisy9AdcHandle6GetPtrEh
+ 1323              	.LVL80:
+ 1324 00fc 0190     		str	r0, [sp, #4]
+ 1325 00fe 2748     		ldr	r0, .L69
+ 1326 0100 FFF7FEFF 		bl	_ZN5daisy9DaisySeed15AudioSampleRateEv
+ 1327              	.LVL81:
+ 1328 0104 DFED2E0A 		vldr.32	s1, .L69+36
+ 1329 0108 0199     		ldr	r1, [sp, #4]
+ 1330 010a 2B46     		mov	r3, r5
+ 1331 010c 2A46     		mov	r2, r5
+ 1332 010e 15A8     		add	r0, sp, #84
+ 1333 0110 FFF7FEFF 		bl	_ZN5daisy13AnalogControl4InitEPtfbbf
+ 1334              	.LVL82:
  151:MyNewProject.cpp **** 
- 1337              		.loc 12 151 5 is_stmt 1 view .LVU330
+ 1335              		.loc 12 151 5 is_stmt 1 view .LVU330
  151:MyNewProject.cpp **** 
- 1338              		.loc 12 151 22 is_stmt 0 view .LVU331
- 1339 0114 2B4B     		ldr	r3, .L69+40
- 1340 0116 0DF1540C 		add	ip, sp, #84
- 1341 011a 9FED2B0A 		vldr.32	s0, .L69+44
- 1342 011e D3ED000A 		vldr.32	s1, [r3]
- 1343 0122 BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
- 1344 0126 0FC4     		stmia	r4!, {r0, r1, r2, r3}
- 1345 0128 9CE80F00 		ldm	ip, {r0, r1, r2, r3}
- 1346 012c 84E80F00 		stm	r4, {r0, r1, r2, r3}
- 1347 0130 2A46     		mov	r2, r5
- 1348 0132 2648     		ldr	r0, .L69+48
- 1349 0134 25A9     		add	r1, sp, #148
- 1350 0136 FFF7FEFF 		bl	_ZN5daisy9Parameter4InitENS_13AnalogControlEffNS0_5CurveE
- 1351              	.LVL81:
- 1352              	.LBB284:
- 1353              	.LBI284:
- 1354              		.loc 6 23 5 is_stmt 1 view .LVU332
- 1355              		.loc 6 23 5 is_stmt 0 view .LVU333
- 1356              	.LBE284:
+ 1336              		.loc 12 151 22 is_stmt 0 view .LVU331
+ 1337 0114 2B4B     		ldr	r3, .L69+40
+ 1338 0116 0DF1540C 		add	ip, sp, #84
+ 1339 011a 9FED2B0A 		vldr.32	s0, .L69+44
+ 1340 011e D3ED000A 		vldr.32	s1, [r3]
+ 1341 0122 BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
+ 1342 0126 0FC4     		stmia	r4!, {r0, r1, r2, r3}
+ 1343 0128 9CE80F00 		ldm	ip, {r0, r1, r2, r3}
+ 1344 012c 84E80F00 		stm	r4, {r0, r1, r2, r3}
+ 1345 0130 2A46     		mov	r2, r5
+ 1346 0132 2648     		ldr	r0, .L69+48
+ 1347 0134 25A9     		add	r1, sp, #148
+ 1348 0136 FFF7FEFF 		bl	_ZN5daisy9Parameter4InitENS_13AnalogControlEffNS0_5CurveE
+ 1349              	.LVL83:
+ 1350              	.LBB284:
+ 1351              	.LBI284:
+ 1352              		.loc 6 23 5 is_stmt 1 view .LVU332
+ 1353              		.loc 6 23 5 is_stmt 0 view .LVU333
+ 1354              	.LBE284:
  153:MyNewProject.cpp ****     tne.Init(hw.adc.GetPtr(1),hw.AudioSampleRate());
- 1357              		.loc 12 153 5 is_stmt 1 view .LVU334
- 1358              	.LBB285:
- 1359              	.LBI285:
+ 1355              		.loc 12 153 5 is_stmt 1 view .LVU334
+ 1356              	.LBB285:
+ 1357              	.LBI285:
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
- 1360              		.loc 6 21 5 view .LVU335
+ 1358              		.loc 6 21 5 view .LVU335
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
- 1361              		.loc 6 21 5 is_stmt 0 view .LVU336
- 1362              	.LBE285:
+ 1359              		.loc 6 21 5 is_stmt 0 view .LVU336
+ 1360              	.LBE285:
  154:MyNewProject.cpp ****     toneKnob.Init(tne,-1.f,1.f,Parameter::LINEAR);
- 1363              		.loc 12 154 5 is_stmt 1 view .LVU337
+ 1361              		.loc 12 154 5 is_stmt 1 view .LVU337
  154:MyNewProject.cpp ****     toneKnob.Init(tne,-1.f,1.f,Parameter::LINEAR);
- 1364              		.loc 12 154 13 is_stmt 0 view .LVU338
- 1365 013a 3946     		mov	r1, r7
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 53
+ 1362              		.loc 12 154 13 is_stmt 0 view .LVU338
+ 1363 013a 3946     		mov	r1, r7
+ 1364 013c 1F48     		ldr	r0, .L69+32
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 53
 
 
- 1366 013c 1F48     		ldr	r0, .L69+32
- 1367 013e FFF7FEFF 		bl	_ZNK5daisy9AdcHandle6GetPtrEh
- 1368              	.LVL82:
- 1369 0142 0190     		str	r0, [sp, #4]
- 1370 0144 1548     		ldr	r0, .L69
- 1371 0146 FFF7FEFF 		bl	_ZN5daisy9DaisySeed15AudioSampleRateEv
- 1372              	.LVL83:
- 1373 014a DFED1D0A 		vldr.32	s1, .L69+36
- 1374 014e 0199     		ldr	r1, [sp, #4]
- 1375 0150 2B46     		mov	r3, r5
- 1376 0152 2A46     		mov	r2, r5
- 1377 0154 1DA8     		add	r0, sp, #116
- 1378 0156 FFF7FEFF 		bl	_ZN5daisy13AnalogControl4InitEPtfbbf
- 1379              	.LVL84:
+ 1365 013e FFF7FEFF 		bl	_ZNK5daisy9AdcHandle6GetPtrEh
+ 1366              	.LVL84:
+ 1367 0142 0190     		str	r0, [sp, #4]
+ 1368 0144 1548     		ldr	r0, .L69
+ 1369 0146 FFF7FEFF 		bl	_ZN5daisy9DaisySeed15AudioSampleRateEv
+ 1370              	.LVL85:
+ 1371 014a DFED1D0A 		vldr.32	s1, .L69+36
+ 1372 014e 0199     		ldr	r1, [sp, #4]
+ 1373 0150 2B46     		mov	r3, r5
+ 1374 0152 2A46     		mov	r2, r5
+ 1375 0154 1DA8     		add	r0, sp, #116
+ 1376 0156 FFF7FEFF 		bl	_ZN5daisy13AnalogControl4InitEPtfbbf
+ 1377              	.LVL86:
  155:MyNewProject.cpp **** 
- 1380              		.loc 12 155 5 is_stmt 1 view .LVU339
+ 1378              		.loc 12 155 5 is_stmt 1 view .LVU339
  155:MyNewProject.cpp **** 
- 1381              		.loc 12 155 18 is_stmt 0 view .LVU340
- 1382 015a 0DF1740C 		add	ip, sp, #116
- 1383 015e F7EE000A 		vmov.f32	s1, #1.0e+0
- 1384 0162 BFEE000A 		vmov.f32	s0, #-1.0e+0
- 1385 0166 BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
- 1386 016a 0FC6     		stmia	r6!, {r0, r1, r2, r3}
- 1387 016c 9CE80F00 		ldm	ip, {r0, r1, r2, r3}
- 1388 0170 84E80F00 		stm	r4, {r0, r1, r2, r3}
- 1389 0174 2A46     		mov	r2, r5
- 1390 0176 25A9     		add	r1, sp, #148
- 1391 0178 1548     		ldr	r0, .L69+52
- 1392 017a FFF7FEFF 		bl	_ZN5daisy9Parameter4InitENS_13AnalogControlEffNS0_5CurveE
- 1393              	.LVL85:
- 1394              	.LBB286:
- 1395              	.LBI286:
- 1396              		.loc 6 23 5 is_stmt 1 view .LVU341
- 1397              		.loc 6 23 5 is_stmt 0 view .LVU342
- 1398              	.LBE286:
+ 1379              		.loc 12 155 18 is_stmt 0 view .LVU340
+ 1380 015a 0DF1740C 		add	ip, sp, #116
+ 1381 015e F7EE000A 		vmov.f32	s1, #1.0e+0
+ 1382 0162 BFEE000A 		vmov.f32	s0, #-1.0e+0
+ 1383 0166 BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
+ 1384 016a 0FC6     		stmia	r6!, {r0, r1, r2, r3}
+ 1385 016c 9CE80F00 		ldm	ip, {r0, r1, r2, r3}
+ 1386 0170 84E80F00 		stm	r4, {r0, r1, r2, r3}
+ 1387 0174 2A46     		mov	r2, r5
+ 1388 0176 25A9     		add	r1, sp, #148
+ 1389 0178 1548     		ldr	r0, .L69+52
+ 1390 017a FFF7FEFF 		bl	_ZN5daisy9Parameter4InitENS_13AnalogControlEffNS0_5CurveE
+ 1391              	.LVL87:
+ 1392              	.LBB286:
+ 1393              	.LBI286:
+ 1394              		.loc 6 23 5 is_stmt 1 view .LVU341
+ 1395              		.loc 6 23 5 is_stmt 0 view .LVU342
+ 1396              	.LBE286:
  161:MyNewProject.cpp ****     hw.adc.Start();
- 1399              		.loc 12 161 5 is_stmt 1 view .LVU343
+ 1397              		.loc 12 161 5 is_stmt 1 view .LVU343
  161:MyNewProject.cpp ****     hw.adc.Start();
- 1400              		.loc 12 161 17 is_stmt 0 view .LVU344
- 1401 017e 9FED150A 		vldr.32	s0, .L69+56
- 1402 0182 1548     		ldr	r0, .L69+60
- 1403 0184 FFF7FEFF 		bl	_ZN7daisysp7Balance4InitEf
- 1404              	.LVL86:
+ 1398              		.loc 12 161 17 is_stmt 0 view .LVU344
+ 1399 017e 9FED150A 		vldr.32	s0, .L69+56
+ 1400 0182 1548     		ldr	r0, .L69+60
+ 1401 0184 FFF7FEFF 		bl	_ZN7daisysp7Balance4InitEf
+ 1402              	.LVL88:
  162:MyNewProject.cpp **** 
- 1405              		.loc 12 162 5 is_stmt 1 view .LVU345
+ 1403              		.loc 12 162 5 is_stmt 1 view .LVU345
  162:MyNewProject.cpp **** 
- 1406              		.loc 12 162 17 is_stmt 0 view .LVU346
- 1407 0188 0C48     		ldr	r0, .L69+32
- 1408 018a FFF7FEFF 		bl	_ZN5daisy9AdcHandle5StartEv
- 1409              	.LVL87:
+ 1404              		.loc 12 162 17 is_stmt 0 view .LVU346
+ 1405 0188 0C48     		ldr	r0, .L69+32
+ 1406 018a FFF7FEFF 		bl	_ZN5daisy9AdcHandle5StartEv
+ 1407              	.LVL89:
  164:MyNewProject.cpp ****     
- 1410              		.loc 12 164 5 is_stmt 1 view .LVU347
+ 1408              		.loc 12 164 5 is_stmt 1 view .LVU347
  164:MyNewProject.cpp ****     
- 1411              		.loc 12 164 14 is_stmt 0 view .LVU348
- 1412 018e FFF7FEFF 		bl	_Z9initDelayv
- 1413              	.LVL88:
- 1414              	.L67:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 54
-
-
+ 1409              		.loc 12 164 14 is_stmt 0 view .LVU348
+ 1410 018e FFF7FEFF 		bl	_Z9initDelayv
+ 1411              	.LVL90:
+ 1412              	.L67:
  170:MyNewProject.cpp ****     {
- 1415              		.loc 12 170 5 is_stmt 1 discriminator 1 view .LVU349
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 54
+
+
+ 1413              		.loc 12 170 5 is_stmt 1 discriminator 1 view .LVU349
  173:MyNewProject.cpp **** 
- 1416              		.loc 12 173 9 discriminator 1 view .LVU350
+ 1414              		.loc 12 173 9 discriminator 1 view .LVU350
  173:MyNewProject.cpp **** 
- 1417              		.loc 12 173 22 is_stmt 0 discriminator 1 view .LVU351
- 1418 0192 0620     		movs	r0, #6
- 1419 0194 FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
- 1420              	.LVL89:
+ 1415              		.loc 12 173 22 is_stmt 0 discriminator 1 view .LVU351
+ 1416 0192 0620     		movs	r0, #6
+ 1417 0194 FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
+ 1418              	.LVL91:
  170:MyNewProject.cpp ****     {
- 1421              		.loc 12 170 5 is_stmt 1 discriminator 1 view .LVU352
- 1422 0198 FBE7     		b	.L67
- 1423              	.L70:
- 1424 019a 00BF     		.align	2
- 1425              	.L69:
- 1426 019c 00000000 		.word	.LANCHOR13
- 1427 01a0 00007A44 		.word	1148846080
- 1428 01a4 00000000 		.word	.LANCHOR8
- 1429 01a8 00000000 		.word	.LANCHOR0
- 1430 01ac 00000000 		.word	.LANCHOR11
- 1431 01b0 00000000 		.word	_ZL13AudioCallbackPKPKfPPfj
- 1432 01b4 00000000 		.word	.LANCHOR14
- 1433 01b8 00000000 		.word	.LANCHOR15
- 1434 01bc 18000000 		.word	.LANCHOR13+24
- 1435 01c0 6F12033B 		.word	990057071
- 1436 01c4 00000000 		.word	.LANCHOR16
- 1437 01c8 00000000 		.word	0
- 1438 01cc 00000000 		.word	.LANCHOR3
- 1439 01d0 00000000 		.word	.LANCHOR5
- 1440 01d4 00803B47 		.word	1195081728
- 1441 01d8 00000000 		.word	.LANCHOR10
- 1442              		.cfi_endproc
- 1443              	.LFE4801:
- 1445              		.section	.text.startup._GLOBAL__sub_I_delayMems,"ax",%progbits
- 1446              		.align	1
- 1447              		.p2align 2,,3
- 1448              		.syntax unified
- 1449              		.thumb
- 1450              		.thumb_func
- 1451              		.fpu fpv5-d16
- 1453              	_GLOBAL__sub_I_delayMems:
- 1454              	.LFB5382:
- 1455              		.loc 12 285 1 view -0
- 1456              		.cfi_startproc
- 1457              		@ args = 0, pretend = 0, frame = 0
- 1458              		@ frame_needed = 0, uses_anonymous_args = 0
- 1459              	.LBB329:
- 1460              	.LBI329:
- 1461              		.loc 12 285 1 view .LVU354
- 1462              	.LVL90:
- 1463              	.LBB330:
+ 1419              		.loc 12 170 5 is_stmt 1 discriminator 1 view .LVU352
+ 1420 0198 FBE7     		b	.L67
+ 1421              	.L70:
+ 1422 019a 00BF     		.align	2
+ 1423              	.L69:
+ 1424 019c 00000000 		.word	.LANCHOR12
+ 1425 01a0 00007A44 		.word	1148846080
+ 1426 01a4 00000000 		.word	.LANCHOR7
+ 1427 01a8 00000000 		.word	.LANCHOR0
+ 1428 01ac 00000000 		.word	.LANCHOR10
+ 1429 01b0 00000000 		.word	_ZL13AudioCallbackPKPKfPPfj
+ 1430 01b4 00000000 		.word	.LANCHOR13
+ 1431 01b8 00000000 		.word	.LANCHOR14
+ 1432 01bc 18000000 		.word	.LANCHOR12+24
+ 1433 01c0 6F12033B 		.word	990057071
+ 1434 01c4 00000000 		.word	.LANCHOR15
+ 1435 01c8 00000000 		.word	0
+ 1436 01cc 00000000 		.word	.LANCHOR3
+ 1437 01d0 00000000 		.word	.LANCHOR5
+ 1438 01d4 00803B47 		.word	1195081728
+ 1439 01d8 00000000 		.word	.LANCHOR9
+ 1440              		.cfi_endproc
+ 1441              	.LFE4801:
+ 1443              		.section	.text.startup._GLOBAL__sub_I_delayMems,"ax",%progbits
+ 1444              		.align	1
+ 1445              		.p2align 2,,3
+ 1446              		.syntax unified
+ 1447              		.thumb
+ 1448              		.thumb_func
+ 1449              		.fpu fpv5-d16
+ 1451              	_GLOBAL__sub_I_delayMems:
+ 1452              	.LFB5382:
+ 1453              		.loc 12 286 1 view -0
+ 1454              		.cfi_startproc
+ 1455              		@ args = 0, pretend = 0, frame = 0
+ 1456              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1457              	.LBB329:
+ 1458              	.LBI329:
+ 1459              		.loc 12 286 1 view .LVU354
+ 1460              	.LVL92:
+ 1461              	.LBB330:
    9:MyNewProject.cpp **** 
- 1464              		.loc 12 9 54 view .LVU355
- 1465              	.LBE330:
- 1466              	.LBE329:
- 1467              		.loc 12 285 1 is_stmt 0 view .LVU356
- 1468 0000 70B5     		push	{r4, r5, r6, lr}
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 55
+ 1462              		.loc 12 9 54 view .LVU355
+ 1463              	.LBE330:
+ 1464              	.LBE329:
+ 1465              		.loc 12 286 1 is_stmt 0 view .LVU356
+ 1466 0000 70B5     		push	{r4, r5, r6, lr}
+ 1467              		.cfi_def_cfa_offset 16
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 55
 
 
- 1469              		.cfi_def_cfa_offset 16
- 1470              		.cfi_offset 4, -16
- 1471              		.cfi_offset 5, -12
- 1472              		.cfi_offset 6, -8
- 1473              		.cfi_offset 14, -4
- 1474              	.LBB380:
- 1475              	.LBB378:
+ 1468              		.cfi_offset 4, -16
+ 1469              		.cfi_offset 5, -12
+ 1470              		.cfi_offset 6, -8
+ 1471              		.cfi_offset 14, -4
+ 1472              	.LBB380:
+ 1473              	.LBB378:
    9:MyNewProject.cpp **** 
- 1476              		.loc 12 9 43 view .LVU357
- 1477 0002 324D     		ldr	r5, .L73
- 1478 0004 0020     		movs	r0, #0
- 1479 0006 3249     		ldr	r1, .L73+4
- 1480              	.LBB331:
- 1481              	.LBB332:
- 1482              		.file 18 "TapTempo.h"
+ 1474              		.loc 12 9 43 view .LVU357
+ 1475 0002 324D     		ldr	r5, .L73
+ 1476 0004 0020     		movs	r0, #0
+ 1477 0006 3249     		ldr	r1, .L73+4
+ 1478              	.LBB331:
+ 1479              	.LBB332:
+ 1480              		.file 18 "TapTempo.h"
    1:TapTempo.h    **** /*
    2:TapTempo.h    ****  * Ported from https://github.com/dxinteractive/ArduinoTapTempo/tree/master 
    3:TapTempo.h    ****  * Info from original file below
@@ -3288,167 +3287,167 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   30:TapTempo.h    **** #include "daisy_seed.h"
   31:TapTempo.h    **** 
   32:TapTempo.h    **** class TapTempo
- 1483              		.loc 18 32 7 view .LVU358
- 1484 0008 0026     		movs	r6, #0
- 1485              	.LBE332:
- 1486              	.LBE331:
+ 1481              		.loc 18 32 7 view .LVU358
+ 1482 0008 0026     		movs	r6, #0
+ 1483              	.LBE332:
+ 1484              	.LBE331:
    9:MyNewProject.cpp **** 
- 1487              		.loc 12 9 43 view .LVU359
- 1488 000a 2A46     		mov	r2, r5
+ 1485              		.loc 12 9 43 view .LVU359
+ 1486 000a 2A46     		mov	r2, r5
   12:MyNewProject.cpp **** static Balance balance;
- 1489              		.loc 12 12 24 view .LVU360
- 1490 000c 314C     		ldr	r4, .L73+8
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 56
-
-
+ 1487              		.loc 12 12 24 view .LVU360
+ 1488 000c 314C     		ldr	r4, .L73+8
    9:MyNewProject.cpp **** 
- 1491              		.loc 12 9 43 view .LVU361
- 1492 000e FFF7FEFF 		bl	__aeabi_atexit
- 1493              	.LVL91:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 56
+
+
+ 1489              		.loc 12 9 43 view .LVU361
+ 1490 000e FFF7FEFF 		bl	__aeabi_atexit
+ 1491              	.LVL93:
   11:MyNewProject.cpp **** ToneFilter tone(48000.f);
- 1494              		.loc 12 11 8 view .LVU362
- 1495 0012 3148     		ldr	r0, .L73+12
- 1496 0014 FFF7FEFF 		bl	_ZN6DelayyC1Ev
- 1497              	.LVL92:
+ 1492              		.loc 12 11 8 view .LVU362
+ 1493 0012 3148     		ldr	r0, .L73+12
+ 1494 0014 FFF7FEFF 		bl	_ZN6DelayyC1Ev
+ 1495              	.LVL94:
   12:MyNewProject.cpp **** static Balance balance;
- 1498              		.loc 12 12 24 view .LVU363
- 1499 0018 9FED300A 		vldr.32	s0, .L73+16
- 1500 001c 2046     		mov	r0, r4
- 1501 001e FFF7FEFF 		bl	_ZN10ToneFilterC1Ef
- 1502              	.LVL93:
+ 1496              		.loc 12 12 24 view .LVU363
+ 1497 0018 9FED300A 		vldr.32	s0, .L73+16
+ 1498 001c 2046     		mov	r0, r4
+ 1499 001e FFF7FEFF 		bl	_ZN10ToneFilterC1Ef
+ 1500              	.LVL95:
   12:MyNewProject.cpp **** static Balance balance;
- 1503              		.loc 12 12 12 view .LVU364
- 1504 0022 2A46     		mov	r2, r5
- 1505 0024 2E49     		ldr	r1, .L73+20
- 1506 0026 2046     		mov	r0, r4
- 1507 0028 FFF7FEFF 		bl	__aeabi_atexit
- 1508              	.LVL94:
- 1509              	.LBB338:
- 1510              	.LBI338:
+ 1501              		.loc 12 12 12 view .LVU364
+ 1502 0022 2A46     		mov	r2, r5
+ 1503 0024 2E49     		ldr	r1, .L73+20
+ 1504 0026 2046     		mov	r0, r4
+ 1505 0028 FFF7FEFF 		bl	__aeabi_atexit
+ 1506              	.LVL96:
+ 1507              	.LBB338:
+ 1508              	.LBI338:
   22:../../DaisySP//Source/Dynamics/balance.h ****     ~Balance() {}
- 1511              		.loc 1 22 5 is_stmt 1 view .LVU365
+ 1509              		.loc 1 22 5 is_stmt 1 view .LVU365
   22:../../DaisySP//Source/Dynamics/balance.h ****     ~Balance() {}
- 1512              		.loc 1 22 5 is_stmt 0 view .LVU366
- 1513              	.LBE338:
+ 1510              		.loc 1 22 5 is_stmt 0 view .LVU366
+ 1511              	.LBE338:
   13:MyNewProject.cpp **** TapTempo tapTempo;
- 1514              		.loc 12 13 16 view .LVU367
- 1515 002c 2A46     		mov	r2, r5
- 1516 002e 2D49     		ldr	r1, .L73+24
- 1517 0030 2D48     		ldr	r0, .L73+28
- 1518              	.LBB339:
- 1519              	.LBB333:
- 1520              		.loc 18 32 7 view .LVU368
- 1521 0032 2E4C     		ldr	r4, .L73+32
- 1522              	.LBE333:
- 1523              	.LBE339:
+ 1512              		.loc 12 13 16 view .LVU367
+ 1513 002c 2A46     		mov	r2, r5
+ 1514 002e 2D49     		ldr	r1, .L73+24
+ 1515 0030 2D48     		ldr	r0, .L73+28
+ 1516              	.LBB339:
+ 1517              	.LBB333:
+ 1518              		.loc 18 32 7 view .LVU368
+ 1519 0032 2E4C     		ldr	r4, .L73+32
+ 1520              	.LBE333:
+ 1521              	.LBE339:
   13:MyNewProject.cpp **** TapTempo tapTempo;
- 1524              		.loc 12 13 16 view .LVU369
- 1525 0034 FFF7FEFF 		bl	__aeabi_atexit
- 1526              	.LVL95:
- 1527              	.LBB340:
- 1528              	.LBI331:
- 1529              		.loc 18 32 7 is_stmt 1 view .LVU370
- 1530              	.LBB334:
- 1531 0038 4FF4FA63 		mov	r3, #2000
- 1532 003c 2C4A     		ldr	r2, .L73+36
- 1533 003e 2D49     		ldr	r1, .L73+40
- 1534 0040 2360     		str	r3, [r4]
- 1535 0042 FA23     		movs	r3, #250
- 1536 0044 6261     		str	r2, [r4, #20]	@ float
- 1537 0046 0322     		movs	r2, #3
- 1538 0048 6360     		str	r3, [r4, #4]
- 1539 004a 0823     		movs	r3, #8
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 57
+ 1522              		.loc 12 13 16 view .LVU369
+ 1523 0034 FFF7FEFF 		bl	__aeabi_atexit
+ 1524              	.LVL97:
+ 1525              	.LBB340:
+ 1526              	.LBI331:
+ 1527              		.loc 18 32 7 is_stmt 1 view .LVU370
+ 1528              	.LBB334:
+ 1529 0038 4FF4FA63 		mov	r3, #2000
+ 1530 003c 2C4A     		ldr	r2, .L73+36
+ 1531 003e 2D49     		ldr	r1, .L73+40
+ 1532 0040 2360     		str	r3, [r4]
+ 1533 0042 FA23     		movs	r3, #250
+ 1534 0044 6261     		str	r2, [r4, #20]	@ float
+ 1535 0046 0322     		movs	r2, #3
+ 1536 0048 6360     		str	r3, [r4, #4]
+ 1537 004a 0823     		movs	r3, #8
+ 1538 004c 2161     		str	r1, [r4, #16]	@ float
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 57
 
 
- 1540 004c 2161     		str	r1, [r4, #16]	@ float
- 1541 004e E360     		str	r3, [r4, #12]
- 1542 0050 4FF4FA73 		mov	r3, #500
- 1543 0054 A260     		str	r2, [r4, #8]
- 1544 0056 6362     		str	r3, [r4, #36]
- 1545 0058 2676     		strb	r6, [r4, #24]
- 1546 005a E661     		str	r6, [r4, #28]
- 1547 005c 2662     		str	r6, [r4, #32]
- 1548 005e FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
- 1549              	.LVL96:
- 1550 0062 0123     		movs	r3, #1
- 1551              	.LBE334:
- 1552              	.LBE340:
+ 1539 004e E360     		str	r3, [r4, #12]
+ 1540 0050 4FF4FA73 		mov	r3, #500
+ 1541 0054 A260     		str	r2, [r4, #8]
+ 1542 0056 6362     		str	r3, [r4, #36]
+ 1543 0058 2676     		strb	r6, [r4, #24]
+ 1544 005a E661     		str	r6, [r4, #28]
+ 1545 005c 2662     		str	r6, [r4, #32]
+ 1546 005e FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
+ 1547              	.LVL98:
+ 1548 0062 0123     		movs	r3, #1
+ 1549              	.LBE334:
+ 1550              	.LBE340:
   16:MyNewProject.cpp **** Switch TEMPO_BUTTON;              // The tap tempo button
- 1553              		.loc 12 16 8 is_stmt 0 view .LVU371
- 1554 0064 2A46     		mov	r2, r5
- 1555              	.LBB341:
- 1556              	.LBB335:
- 1557              		.loc 18 32 7 view .LVU372
- 1558 0066 A062     		str	r0, [r4, #40]
- 1559 0068 A4F86030 		strh	r3, [r4, #96]	@ movhi
- 1560              	.LVL97:
- 1561              		.loc 18 32 7 view .LVU373
- 1562              	.LBE335:
- 1563              	.LBE341:
- 1564              	.LBB342:
- 1565              	.LBI342:
+ 1551              		.loc 12 16 8 is_stmt 0 view .LVU371
+ 1552 0064 2A46     		mov	r2, r5
+ 1553              	.LBB341:
+ 1554              	.LBB335:
+ 1555              		.loc 18 32 7 view .LVU372
+ 1556 0066 A062     		str	r0, [r4, #40]
+ 1557 0068 A4F86030 		strh	r3, [r4, #96]	@ movhi
+ 1558              	.LVL99:
+ 1559              		.loc 18 32 7 view .LVU373
+ 1560              	.LBE335:
+ 1561              	.LBE341:
+ 1562              	.LBB342:
+ 1563              	.LBI342:
   41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
- 1566              		.loc 4 41 5 is_stmt 1 view .LVU374
+ 1564              		.loc 4 41 5 is_stmt 1 view .LVU374
   41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
- 1567              		.loc 4 41 5 is_stmt 0 view .LVU375
- 1568              	.LBE342:
+ 1565              		.loc 4 41 5 is_stmt 0 view .LVU375
+ 1566              	.LBE342:
   16:MyNewProject.cpp **** Switch TEMPO_BUTTON;              // The tap tempo button
- 1569              		.loc 12 16 8 view .LVU376
- 1570 006c 2249     		ldr	r1, .L73+44
- 1571              	.LBB343:
- 1572              	.LBB336:
- 1573              		.loc 18 32 7 view .LVU377
- 1574 006e E662     		str	r6, [r4, #44]
- 1575              	.LBE336:
- 1576              	.LBE343:
+ 1567              		.loc 12 16 8 view .LVU376
+ 1568 006c 2249     		ldr	r1, .L73+44
+ 1569              	.LBB343:
+ 1570              	.LBB336:
+ 1571              		.loc 18 32 7 view .LVU377
+ 1572 006e E662     		str	r6, [r4, #44]
+ 1573              	.LBE336:
+ 1574              	.LBE343:
   16:MyNewProject.cpp **** Switch TEMPO_BUTTON;              // The tap tempo button
- 1577              		.loc 12 16 8 view .LVU378
- 1578 0070 2248     		ldr	r0, .L73+48
- 1579              	.LBB344:
- 1580              	.LBB337:
- 1581              		.loc 18 32 7 view .LVU379
- 1582 0072 C4E91666 		strd	r6, r6, [r4, #88]
- 1583              	.LBE337:
- 1584              	.LBE344:
+ 1575              		.loc 12 16 8 view .LVU378
+ 1576 0070 2248     		ldr	r0, .L73+48
+ 1577              	.LBB344:
+ 1578              	.LBB337:
+ 1579              		.loc 18 32 7 view .LVU379
+ 1580 0072 C4E91666 		strd	r6, r6, [r4, #88]
+ 1581              	.LBE337:
+ 1582              	.LBE344:
   16:MyNewProject.cpp **** Switch TEMPO_BUTTON;              // The tap tempo button
- 1585              		.loc 12 16 8 view .LVU380
- 1586 0076 FFF7FEFF 		bl	__aeabi_atexit
- 1587              	.LVL98:
- 1588              	.LBB345:
- 1589              	.LBI345:
+ 1583              		.loc 12 16 8 view .LVU380
+ 1584 0076 FFF7FEFF 		bl	__aeabi_atexit
+ 1585              	.LVL100:
+ 1586              	.LBB345:
+ 1587              	.LBI345:
   41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 58
+ 1588              		.loc 4 41 5 is_stmt 1 view .LVU381
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 58
 
 
- 1590              		.loc 4 41 5 is_stmt 1 view .LVU381
   41:../../libDaisy//src/hid/switch.h ****     ~Switch() {}
- 1591              		.loc 4 41 5 is_stmt 0 view .LVU382
- 1592              	.LBE345:
+ 1589              		.loc 4 41 5 is_stmt 0 view .LVU382
+ 1590              	.LBE345:
   17:MyNewProject.cpp **** Switch headSwitches[4];           // One switch for each head
- 1593              		.loc 12 17 8 view .LVU383
- 1594 007a 2A46     		mov	r2, r5
- 1595 007c 1E49     		ldr	r1, .L73+44
- 1596 007e 2048     		ldr	r0, .L73+52
- 1597 0080 FFF7FEFF 		bl	__aeabi_atexit
- 1598              	.LVL99:
+ 1591              		.loc 12 17 8 view .LVU383
+ 1592 007a 2A46     		mov	r2, r5
+ 1593 007c 1E49     		ldr	r1, .L73+44
+ 1594 007e 2048     		ldr	r0, .L73+52
+ 1595 0080 FFF7FEFF 		bl	__aeabi_atexit
+ 1596              	.LVL101:
   18:MyNewProject.cpp **** static DaisySeed hw;              // The daisy seed harfware
- 1599              		.loc 12 18 22 is_stmt 1 view .LVU384
+ 1597              		.loc 12 18 22 is_stmt 1 view .LVU384
   18:MyNewProject.cpp **** static DaisySeed hw;              // The daisy seed harfware
- 1600              		.loc 12 18 8 is_stmt 0 view .LVU385
- 1601 0084 2A46     		mov	r2, r5
- 1602 0086 1F49     		ldr	r1, .L73+56
- 1603 0088 3046     		mov	r0, r6
- 1604 008a FFF7FEFF 		bl	__aeabi_atexit
- 1605              	.LVL100:
- 1606              	.LBB346:
- 1607              	.LBI346:
+ 1598              		.loc 12 18 8 is_stmt 0 view .LVU385
+ 1599 0084 2A46     		mov	r2, r5
+ 1600 0086 1F49     		ldr	r1, .L73+56
+ 1601 0088 3046     		mov	r0, r6
+ 1602 008a FFF7FEFF 		bl	__aeabi_atexit
+ 1603              	.LVL102:
+ 1604              	.LBB346:
+ 1605              	.LBI346:
   21:../../libDaisy//src/daisy_seed.h ****     ~DaisySeed() {}
- 1608              		.loc 7 21 5 is_stmt 1 view .LVU386
- 1609              	.LBB347:
- 1610              	.LBB348:
- 1611              	.LBI348:
- 1612              		.file 19 "../../libDaisy//src/per/qspi.h"
+ 1606              		.loc 7 21 5 is_stmt 1 view .LVU386
+ 1607              	.LBB347:
+ 1608              	.LBB348:
+ 1609              	.LBI348:
+ 1610              		.file 19 "../../libDaisy//src/per/qspi.h"
    1:../../libDaisy//src/per/qspi.h **** #ifndef DSY_QSPI
    2:../../libDaisy//src/per/qspi.h **** #define DSY_QSPI /**< Macro */
    3:../../libDaisy//src/per/qspi.h **** 
@@ -3478,10 +3477,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   27:../../libDaisy//src/per/qspi.h ****     Currently supported QSPI Devices: \n 
   28:../../libDaisy//src/per/qspi.h ****     * IS25LP080D
   29:../../libDaisy//src/per/qspi.h **** */
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 59
-
-
   30:../../libDaisy//src/per/qspi.h **** class QSPIHandle
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 59
+
+
   31:../../libDaisy//src/per/qspi.h **** {
   32:../../libDaisy//src/per/qspi.h ****   public:
   33:../../libDaisy//src/per/qspi.h ****     enum Result
@@ -3538,10 +3537,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   84:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin io0; /**< & */
   85:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin io1; /**< & */
   86:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin io2; /**< & */
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 60
-
-
   87:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin io3; /**< & */
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 60
+
+
   88:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin clk; /**< & */
   89:../../libDaisy//src/per/qspi.h ****             dsy_gpio_pin ncs; /**< & */
   90:../../libDaisy//src/per/qspi.h ****         } pin_config;
@@ -3598,10 +3597,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  141:../../libDaisy//src/per/qspi.h ****         */
  142:../../libDaisy//src/per/qspi.h ****     Result Erase(uint32_t start_addr, uint32_t end_addr);
  143:../../libDaisy//src/per/qspi.h **** 
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 61
-
-
  144:../../libDaisy//src/per/qspi.h ****     /**  
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 61
+
+
  145:../../libDaisy//src/per/qspi.h ****          Erases a single sector of the chip.  
  146:../../libDaisy//src/per/qspi.h ****         TODO: Document the size of this function. 
  147:../../libDaisy//src/per/qspi.h ****         \param address Address of sector to erase
@@ -3624,60 +3623,60 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
  164:../../libDaisy//src/per/qspi.h ****     void* GetData(uint32_t offset = 0);
  165:../../libDaisy//src/per/qspi.h **** 
  166:../../libDaisy//src/per/qspi.h ****     QSPIHandle() : pimpl_(nullptr) {}
- 1613              		.loc 19 166 5 view .LVU387
- 1614              	.LBB349:
- 1615              	.LBB350:
- 1616              		.loc 19 166 34 is_stmt 0 view .LVU388
- 1617 008e 1E48     		ldr	r0, .L73+60
- 1618              	.LBE350:
- 1619              	.LBE349:
- 1620              	.LBE348:
- 1621              	.LBE347:
- 1622              	.LBE346:
+ 1611              		.loc 19 166 5 view .LVU387
+ 1612              	.LBB349:
+ 1613              	.LBB350:
+ 1614              		.loc 19 166 34 is_stmt 0 view .LVU388
+ 1615 008e 1E48     		ldr	r0, .L73+60
+ 1616              	.LBE350:
+ 1617              	.LBE349:
+ 1618              	.LBE348:
+ 1619              	.LBE347:
+ 1620              	.LBE346:
   19:MyNewProject.cpp **** static CrossFade cfade;           // Used to blend the wet/dry and maintain a constant mixed volume
- 1623              		.loc 12 19 18 view .LVU389
- 1624 0090 2A46     		mov	r2, r5
- 1625 0092 1E49     		ldr	r1, .L73+64
- 1626              	.LBB364:
- 1627              	.LBB363:
- 1628              	.LBB353:
- 1629              	.LBB352:
- 1630              	.LBB351:
- 1631              		.loc 19 166 34 view .LVU390
- 1632 0094 0660     		str	r6, [r0]
- 1633              	.LVL101:
- 1634              		.loc 19 166 34 view .LVU391
- 1635              	.LBE351:
- 1636              	.LBE352:
- 1637              	.LBE353:
- 1638              	.LBB354:
- 1639              	.LBI354:
+ 1621              		.loc 12 19 18 view .LVU389
+ 1622 0090 2A46     		mov	r2, r5
+ 1623 0092 1E49     		ldr	r1, .L73+64
+ 1624              	.LBB364:
+ 1625              	.LBB363:
+ 1626              	.LBB353:
+ 1627              	.LBB352:
+ 1628              	.LBB351:
+ 1629              		.loc 19 166 34 view .LVU390
+ 1630 0094 0660     		str	r6, [r0]
+ 1631              	.LVL103:
+ 1632              		.loc 19 166 34 view .LVU391
+ 1633              	.LBE351:
+ 1634              	.LBE352:
+ 1635              	.LBE353:
+ 1636              	.LBB354:
+ 1637              	.LBI354:
   95:../../libDaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 1640              		.loc 11 95 5 is_stmt 1 view .LVU392
- 1641              	.LBB355:
- 1642              	.LBB356:
+ 1638              		.loc 11 95 5 is_stmt 1 view .LVU392
+ 1639              	.LBB355:
+ 1640              	.LBB356:
   95:../../libDaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 1643              		.loc 11 95 35 is_stmt 0 view .LVU393
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 62
+ 1641              		.loc 11 95 35 is_stmt 0 view .LVU393
+ 1642 0096 4661     		str	r6, [r0, #20]
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 62
 
 
- 1644 0096 4661     		str	r6, [r0, #20]
- 1645              	.LVL102:
+ 1643              	.LVL104:
   95:../../libDaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 1646              		.loc 11 95 35 view .LVU394
- 1647              	.LBE356:
- 1648              	.LBE355:
- 1649              	.LBE354:
- 1650              	.LBB357:
- 1651              	.LBI357:
+ 1644              		.loc 11 95 35 view .LVU394
+ 1645              	.LBE356:
+ 1646              	.LBE355:
+ 1647              	.LBE354:
+ 1648              	.LBB357:
+ 1649              	.LBI357:
   92:../../libDaisy//src/per/adc.h ****     ~AdcHandle() {}
- 1652              		.loc 10 92 5 is_stmt 1 view .LVU395
+ 1650              		.loc 10 92 5 is_stmt 1 view .LVU395
   92:../../libDaisy//src/per/adc.h ****     ~AdcHandle() {}
- 1653              		.loc 10 92 5 is_stmt 0 view .LVU396
- 1654              	.LBE357:
- 1655              	.LBB358:
- 1656              	.LBI358:
- 1657              		.file 20 "../../libDaisy//src/per/dac.h"
+ 1651              		.loc 10 92 5 is_stmt 0 view .LVU396
+ 1652              	.LBE357:
+ 1653              	.LBB358:
+ 1654              	.LBI358:
+ 1655              		.file 20 "../../libDaisy//src/per/dac.h"
    1:../../libDaisy//src/per/dac.h **** #pragma once
    2:../../libDaisy//src/per/dac.h **** #ifndef DSY_DAC_H
    3:../../libDaisy//src/per/dac.h **** #define DSY_DAC_H
@@ -3718,10 +3717,10 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   38:../../libDaisy//src/per/dac.h **** 
   39:../../libDaisy//src/per/dac.h ****     /** Sets the Mode for the DAC channels.
   40:../../libDaisy//src/per/dac.h ****      **
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 63
-
-
   41:../../libDaisy//src/per/dac.h ****      ** Polling mode uses the blocking mode to transmit a single value at a time.
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 63
+
+
   42:../../libDaisy//src/per/dac.h ****      **
   43:../../libDaisy//src/per/dac.h ****      ** DMA mode uses a buffer, and periodically transmits it triggering a 
   44:../../libDaisy//src/per/dac.h ****      ** callback to fill the buffer when it is ready for more samples.
@@ -3765,485 +3764,484 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 1
   82:../../libDaisy//src/per/dac.h ****     };
   83:../../libDaisy//src/per/dac.h **** 
   84:../../libDaisy//src/per/dac.h ****     DacHandle() : pimpl_(nullptr) {}
- 1658              		.loc 20 84 5 is_stmt 1 view .LVU397
- 1659              	.LBB359:
- 1660              	.LBB360:
- 1661              		.loc 20 84 33 is_stmt 0 view .LVU398
- 1662 0098 0662     		str	r6, [r0, #32]
- 1663              	.LVL103:
- 1664              		.loc 20 84 33 view .LVU399
- 1665              	.LBE360:
- 1666              	.LBE359:
- 1667              	.LBE358:
- 1668              	.LBB361:
- 1669              	.LBI361:
+ 1656              		.loc 20 84 5 is_stmt 1 view .LVU397
+ 1657              	.LBB359:
+ 1658              	.LBB360:
+ 1659              		.loc 20 84 33 is_stmt 0 view .LVU398
+ 1660 0098 0662     		str	r6, [r0, #32]
+ 1661              	.LVL105:
+ 1662              		.loc 20 84 33 view .LVU399
+ 1663              	.LBE360:
+ 1664              	.LBE359:
+ 1665              	.LBE358:
+ 1666              	.LBB361:
+ 1667              	.LBI361:
   40:../../libDaisy//src/hid/usb.h **** 
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 64
+ 1668              		.loc 9 40 5 is_stmt 1 view .LVU400
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 64
 
 
- 1670              		.loc 9 40 5 is_stmt 1 view .LVU400
   40:../../libDaisy//src/hid/usb.h **** 
- 1671              		.loc 9 40 5 is_stmt 0 view .LVU401
- 1672              	.LBE361:
- 1673              	.LBB362:
- 1674              	.LBI362:
+ 1669              		.loc 9 40 5 is_stmt 0 view .LVU401
+ 1670              	.LBE361:
+ 1671              	.LBB362:
+ 1672              	.LBI362:
   77:../../libDaisy//src/sys/system.h ****     ~System() {}
- 1675              		.loc 8 77 5 is_stmt 1 view .LVU402
+ 1673              		.loc 8 77 5 is_stmt 1 view .LVU402
   77:../../libDaisy//src/sys/system.h ****     ~System() {}
- 1676              		.loc 8 77 5 is_stmt 0 view .LVU403
- 1677              	.LBE362:
- 1678              	.LBE363:
- 1679              	.LBE364:
+ 1674              		.loc 8 77 5 is_stmt 0 view .LVU403
+ 1675              	.LBE362:
+ 1676              	.LBE363:
+ 1677              	.LBE364:
   19:MyNewProject.cpp **** static CrossFade cfade;           // Used to blend the wet/dry and maintain a constant mixed volume
- 1680              		.loc 12 19 18 view .LVU404
- 1681 009a FFF7FEFF 		bl	__aeabi_atexit
- 1682              	.LVL104:
- 1683              	.LBB365:
- 1684              	.LBI365:
+ 1678              		.loc 12 19 18 view .LVU404
+ 1679 009a FFF7FEFF 		bl	__aeabi_atexit
+ 1680              	.LVL106:
+ 1681              	.LBB365:
+ 1682              	.LBI365:
   36:../../DaisySP//Source/Dynamics/crossfade.h ****     ~CrossFade() {}
- 1685              		.loc 2 36 5 is_stmt 1 view .LVU405
+ 1683              		.loc 2 36 5 is_stmt 1 view .LVU405
   36:../../DaisySP//Source/Dynamics/crossfade.h ****     ~CrossFade() {}
- 1686              		.loc 2 36 5 is_stmt 0 view .LVU406
- 1687              	.LBE365:
+ 1684              		.loc 2 36 5 is_stmt 0 view .LVU406
+ 1685              	.LBE365:
   20:MyNewProject.cpp **** 
- 1688              		.loc 12 20 18 view .LVU407
- 1689 009e 2A46     		mov	r2, r5
- 1690 00a0 1B49     		ldr	r1, .L73+68
- 1691 00a2 1C48     		ldr	r0, .L73+72
- 1692 00a4 FFF7FEFF 		bl	__aeabi_atexit
- 1693              	.LVL105:
- 1694              	.LBB366:
- 1695              	.LBI366:
+ 1686              		.loc 12 20 18 view .LVU407
+ 1687 009e 2A46     		mov	r2, r5
+ 1688 00a0 1B49     		ldr	r1, .L73+68
+ 1689 00a2 1C48     		ldr	r0, .L73+72
+ 1690 00a4 FFF7FEFF 		bl	__aeabi_atexit
+ 1691              	.LVL107:
+ 1692              	.LBB366:
+ 1693              	.LBI366:
   97:../../libDaisy//src/per/tim.h ****     TimerHandle(const TimerHandle& other) = default;
- 1696              		.loc 3 97 5 is_stmt 1 view .LVU408
- 1697              	.LBB367:
- 1698              	.LBB368:
+ 1694              		.loc 3 97 5 is_stmt 1 view .LVU408
+ 1695              	.LBB367:
+ 1696              	.LBB368:
   97:../../libDaisy//src/per/tim.h ****     TimerHandle(const TimerHandle& other) = default;
- 1699              		.loc 3 97 35 is_stmt 0 view .LVU409
- 1700 00a8 1B48     		ldr	r0, .L73+76
- 1701              	.LBE368:
- 1702              	.LBE367:
- 1703              	.LBE366:
+ 1697              		.loc 3 97 35 is_stmt 0 view .LVU409
+ 1698 00a8 1B48     		ldr	r0, .L73+76
+ 1699              	.LBE368:
+ 1700              	.LBE367:
+ 1701              	.LBE366:
   30:MyNewProject.cpp **** TimerHandle::Config* configPtr;   // Pointer to config for timer, need because for some reason it w
- 1704              		.loc 12 30 13 view .LVU410
- 1705 00aa 2A46     		mov	r2, r5
- 1706 00ac 1B49     		ldr	r1, .L73+80
- 1707              	.LBB371:
- 1708              	.LBB370:
- 1709              	.LBB369:
+ 1702              		.loc 12 30 13 view .LVU410
+ 1703 00aa 2A46     		mov	r2, r5
+ 1704 00ac 1B49     		ldr	r1, .L73+80
+ 1705              	.LBB371:
+ 1706              	.LBB370:
+ 1707              	.LBB369:
   97:../../libDaisy//src/per/tim.h ****     TimerHandle(const TimerHandle& other) = default;
- 1710              		.loc 3 97 35 view .LVU411
- 1711 00ae 0660     		str	r6, [r0]
- 1712              	.LVL106:
+ 1708              		.loc 3 97 35 view .LVU411
+ 1709 00ae 0660     		str	r6, [r0]
+ 1710              	.LVL108:
   97:../../libDaisy//src/per/tim.h ****     TimerHandle(const TimerHandle& other) = default;
- 1713              		.loc 3 97 35 view .LVU412
- 1714              	.LBE369:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 65
+ 1711              		.loc 3 97 35 view .LVU412
+ 1712              	.LBE369:
+ 1713              	.LBE370:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 65
 
 
- 1715              	.LBE370:
- 1716              	.LBE371:
+ 1714              	.LBE371:
   30:MyNewProject.cpp **** TimerHandle::Config* configPtr;   // Pointer to config for timer, need because for some reason it w
- 1717              		.loc 12 30 13 view .LVU413
- 1718 00b0 FFF7FEFF 		bl	__aeabi_atexit
- 1719              	.LVL107:
- 1720              	.LBB372:
- 1721              	.LBI372:
+ 1715              		.loc 12 30 13 view .LVU413
+ 1716 00b0 FFF7FEFF 		bl	__aeabi_atexit
+ 1717              	.LVL109:
+ 1718              	.LBB372:
+ 1719              	.LBI372:
   25:../../libDaisy//src/hid/parameter.h ****     /** Destructor */
- 1722              		.loc 5 25 5 is_stmt 1 view .LVU414
- 1723              	.LBB373:
- 1724              	.LBB374:
- 1725              	.LBI374:
+ 1720              		.loc 5 25 5 is_stmt 1 view .LVU414
+ 1721              	.LBB373:
+ 1722              	.LBB374:
+ 1723              	.LBI374:
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
- 1726              		.loc 6 21 5 view .LVU415
+ 1724              		.loc 6 21 5 view .LVU415
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
- 1727              		.loc 6 21 5 is_stmt 0 view .LVU416
- 1728              	.LBE374:
- 1729              	.LBE373:
- 1730              	.LBE372:
+ 1725              		.loc 6 21 5 is_stmt 0 view .LVU416
+ 1726              	.LBE374:
+ 1727              	.LBE373:
+ 1728              	.LBE372:
   32:MyNewProject.cpp **** Parameter toneKnob;
- 1731              		.loc 12 32 11 view .LVU417
- 1732 00b4 2A46     		mov	r2, r5
- 1733 00b6 1A49     		ldr	r1, .L73+84
- 1734 00b8 1A48     		ldr	r0, .L73+88
- 1735 00ba FFF7FEFF 		bl	__aeabi_atexit
- 1736              	.LVL108:
- 1737              	.LBB375:
- 1738              	.LBI375:
+ 1729              		.loc 12 32 11 view .LVU417
+ 1730 00b4 2A46     		mov	r2, r5
+ 1731 00b6 1A49     		ldr	r1, .L73+84
+ 1732 00b8 1A48     		ldr	r0, .L73+88
+ 1733 00ba FFF7FEFF 		bl	__aeabi_atexit
+ 1734              	.LVL110:
+ 1735              	.LBB375:
+ 1736              	.LBI375:
   25:../../libDaisy//src/hid/parameter.h ****     /** Destructor */
- 1739              		.loc 5 25 5 is_stmt 1 view .LVU418
- 1740              	.LBB376:
- 1741              	.LBB377:
- 1742              	.LBI377:
+ 1737              		.loc 5 25 5 is_stmt 1 view .LVU418
+ 1738              	.LBB376:
+ 1739              	.LBB377:
+ 1740              	.LBI377:
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
- 1743              		.loc 6 21 5 view .LVU419
+ 1741              		.loc 6 21 5 view .LVU419
   21:../../libDaisy//src/hid/ctrl.h ****     /** destructor */
- 1744              		.loc 6 21 5 is_stmt 0 view .LVU420
- 1745              	.LBE377:
- 1746              	.LBE376:
- 1747              	.LBE375:
+ 1742              		.loc 6 21 5 is_stmt 0 view .LVU420
+ 1743              	.LBE377:
+ 1744              	.LBE376:
+ 1745              	.LBE375:
   33:MyNewProject.cpp **** 
- 1748              		.loc 12 33 11 view .LVU421
- 1749 00be 2A46     		mov	r2, r5
- 1750 00c0 1749     		ldr	r1, .L73+84
- 1751 00c2 1948     		ldr	r0, .L73+92
- 1752              	.LBE378:
- 1753              	.LBE380:
- 1754              		.loc 12 285 1 view .LVU422
- 1755 00c4 BDE87040 		pop	{r4, r5, r6, lr}
- 1756              		.cfi_restore 14
- 1757              		.cfi_restore 6
- 1758              		.cfi_restore 5
- 1759              		.cfi_restore 4
- 1760              		.cfi_def_cfa_offset 0
- 1761              	.LBB381:
- 1762              	.LBB379:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 66
-
-
+ 1746              		.loc 12 33 11 view .LVU421
+ 1747 00be 2A46     		mov	r2, r5
+ 1748 00c0 1749     		ldr	r1, .L73+84
+ 1749 00c2 1948     		ldr	r0, .L73+92
+ 1750              	.LBE378:
+ 1751              	.LBE380:
+ 1752              		.loc 12 286 1 view .LVU422
+ 1753 00c4 BDE87040 		pop	{r4, r5, r6, lr}
+ 1754              		.cfi_restore 14
+ 1755              		.cfi_restore 6
+ 1756              		.cfi_restore 5
+ 1757              		.cfi_restore 4
+ 1758              		.cfi_def_cfa_offset 0
+ 1759              	.LBB381:
+ 1760              	.LBB379:
   33:MyNewProject.cpp **** 
- 1763              		.loc 12 33 11 view .LVU423
- 1764 00c8 FFF7FEBF 		b	__aeabi_atexit
- 1765              	.LVL109:
- 1766              	.L74:
- 1767              		.align	2
- 1768              	.L73:
- 1769 00cc 00000000 		.word	__dso_handle
- 1770 00d0 00000000 		.word	__tcf_0
- 1771 00d4 00000000 		.word	.LANCHOR6
- 1772 00d8 00000000 		.word	.LANCHOR4
- 1773 00dc 00803B47 		.word	1195081728
- 1774 00e0 00000000 		.word	_ZN10ToneFilterD1Ev
- 1775 00e4 00000000 		.word	_ZN7daisysp7BalanceD1Ev
- 1776 00e8 00000000 		.word	.LANCHOR10
- 1777 00ec 00000000 		.word	.LANCHOR1
- 1778 00f0 00003040 		.word	1076887552
- 1779 00f4 0000E03F 		.word	1071644672
- 1780 00f8 00000000 		.word	_ZN5daisy6SwitchD1Ev
- 1781 00fc 00000000 		.word	.LANCHOR8
- 1782 0100 00000000 		.word	.LANCHOR0
- 1783 0104 00000000 		.word	__tcf_1
- 1784 0108 00000000 		.word	.LANCHOR13
- 1785 010c 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
- 1786 0110 00000000 		.word	_ZN7daisysp9CrossFadeD1Ev
- 1787 0114 00000000 		.word	.LANCHOR11
- 1788 0118 00000000 		.word	.LANCHOR15
- 1789 011c 00000000 		.word	_ZN5daisy11TimerHandleD1Ev
- 1790 0120 00000000 		.word	_ZN5daisy9ParameterD1Ev
- 1791 0124 00000000 		.word	.LANCHOR3
- 1792 0128 00000000 		.word	.LANCHOR5
- 1793              	.LBE379:
- 1794              	.LBE381:
- 1795              		.cfi_endproc
- 1796              	.LFE5382:
- 1798              		.section	.init_array,"aw",%init_array
- 1799              		.align	2
- 1800 0000 00000000 		.word	_GLOBAL__sub_I_delayMems(target1)
- 1801              		.global	toneKnob
- 1802              		.global	feedbackKnob
- 1803              		.global	configPtr
- 1804              		.global	TIMER
- 1805              		.global	TAPPING
- 1806              		.global	BPM
- 1807              		.global	onButtonWasPressed
- 1808              		.global	drywet_ratio
- 1809              		.global	MAX_FEEDBACK
- 1810              		.global	headSwitches
- 1811              		.global	TEMPO_BUTTON
- 1812              		.global	ON_BUTTON
- 1813              		.global	tapTempo
- 1814              		.global	tone
- 1815              		.global	delay
- 1816              		.global	delayMems
- 1817              		.section	.bss.ON_BUTTON,"aw",%nobits
- 1818              		.align	2
- 1819              		.set	.LANCHOR8,. + 0
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 67
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 66
 
 
- 1822              	ON_BUTTON:
- 1823 0000 00000000 		.space	16
- 1823      00000000 
- 1823      00000000 
- 1823      00000000 
- 1824              		.section	.bss.TAPPING,"aw",%nobits
- 1827              	TAPPING:
- 1828 0000 00       		.space	1
- 1829              		.section	.bss.TEMPO_BUTTON,"aw",%nobits
- 1830              		.align	2
- 1831              		.set	.LANCHOR0,. + 0
- 1834              	TEMPO_BUTTON:
- 1835 0000 00000000 		.space	16
- 1835      00000000 
- 1835      00000000 
- 1835      00000000 
- 1836              		.section	.bss.TIMER,"aw",%nobits
- 1837              		.align	2
- 1838              		.set	.LANCHOR15,. + 0
- 1841              	TIMER:
- 1842 0000 00000000 		.space	4
- 1843              		.section	.bss._ZL2hw,"aw",%nobits
- 1844              		.align	2
- 1845              		.set	.LANCHOR13,. + 0
- 1848              	_ZL2hw:
- 1849 0000 00000000 		.space	60
- 1849      00000000 
- 1849      00000000 
- 1849      00000000 
- 1849      00000000 
- 1850              		.section	.bss._ZL5cfade,"aw",%nobits
- 1851              		.align	2
- 1852              		.set	.LANCHOR11,. + 0
- 1855              	_ZL5cfade:
- 1856 0000 00000000 		.space	8
- 1856      00000000 
- 1857              		.section	.bss._ZL7balance,"aw",%nobits
- 1858              		.align	2
- 1859              		.set	.LANCHOR10,. + 0
- 1862              	_ZL7balance:
- 1863 0000 00000000 		.space	28
- 1863      00000000 
- 1863      00000000 
- 1863      00000000 
- 1863      00000000 
- 1864              		.section	.bss.configPtr,"aw",%nobits
- 1865              		.align	2
- 1866              		.set	.LANCHOR14,. + 0
- 1869              	configPtr:
- 1870 0000 00000000 		.space	4
- 1871              		.section	.bss.delay,"aw",%nobits
- 1872              		.align	2
- 1873              		.set	.LANCHOR4,. + 0
- 1876              	delay:
- 1877 0000 00000000 		.space	76
- 1877      00000000 
- 1877      00000000 
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 68
+ 1761              		.loc 12 33 11 view .LVU423
+ 1762 00c8 FFF7FEBF 		b	__aeabi_atexit
+ 1763              	.LVL111:
+ 1764              	.L74:
+ 1765              		.align	2
+ 1766              	.L73:
+ 1767 00cc 00000000 		.word	__dso_handle
+ 1768 00d0 00000000 		.word	__tcf_0
+ 1769 00d4 00000000 		.word	.LANCHOR6
+ 1770 00d8 00000000 		.word	.LANCHOR4
+ 1771 00dc 00803B47 		.word	1195081728
+ 1772 00e0 00000000 		.word	_ZN10ToneFilterD1Ev
+ 1773 00e4 00000000 		.word	_ZN7daisysp7BalanceD1Ev
+ 1774 00e8 00000000 		.word	.LANCHOR9
+ 1775 00ec 00000000 		.word	.LANCHOR1
+ 1776 00f0 00003040 		.word	1076887552
+ 1777 00f4 0000E03F 		.word	1071644672
+ 1778 00f8 00000000 		.word	_ZN5daisy6SwitchD1Ev
+ 1779 00fc 00000000 		.word	.LANCHOR7
+ 1780 0100 00000000 		.word	.LANCHOR0
+ 1781 0104 00000000 		.word	__tcf_1
+ 1782 0108 00000000 		.word	.LANCHOR12
+ 1783 010c 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
+ 1784 0110 00000000 		.word	_ZN7daisysp9CrossFadeD1Ev
+ 1785 0114 00000000 		.word	.LANCHOR10
+ 1786 0118 00000000 		.word	.LANCHOR14
+ 1787 011c 00000000 		.word	_ZN5daisy11TimerHandleD1Ev
+ 1788 0120 00000000 		.word	_ZN5daisy9ParameterD1Ev
+ 1789 0124 00000000 		.word	.LANCHOR3
+ 1790 0128 00000000 		.word	.LANCHOR5
+ 1791              	.LBE379:
+ 1792              	.LBE381:
+ 1793              		.cfi_endproc
+ 1794              	.LFE5382:
+ 1796              		.section	.init_array,"aw",%init_array
+ 1797              		.align	2
+ 1798 0000 00000000 		.word	_GLOBAL__sub_I_delayMems(target1)
+ 1799              		.global	toneKnob
+ 1800              		.global	feedbackKnob
+ 1801              		.global	configPtr
+ 1802              		.global	TIMER
+ 1803              		.global	TAPPING
+ 1804              		.global	BPM
+ 1805              		.global	onButtonWasPressed
+ 1806              		.global	drywet_ratio
+ 1807              		.global	MAX_FEEDBACK
+ 1808              		.global	headSwitches
+ 1809              		.global	TEMPO_BUTTON
+ 1810              		.global	ON_BUTTON
+ 1811              		.global	tapTempo
+ 1812              		.global	tone
+ 1813              		.global	delay
+ 1814              		.global	delayMems
+ 1815              		.section	.bss.ON_BUTTON,"aw",%nobits
+ 1816              		.align	2
+ 1817              		.set	.LANCHOR7,. + 0
+ 1820              	ON_BUTTON:
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 67
 
 
- 1877      00000000 
- 1877      00000000 
- 1878              		.section	.bss.feedbackKnob,"aw",%nobits
- 1879              		.align	2
- 1880              		.set	.LANCHOR3,. + 0
- 1883              	feedbackKnob:
- 1884 0000 00000000 		.space	56
- 1884      00000000 
- 1884      00000000 
- 1884      00000000 
- 1884      00000000 
- 1885              		.section	.bss.headSwitches,"aw",%nobits
- 1886              		.align	2
- 1887              		.set	.LANCHOR2,. + 0
- 1890              	headSwitches:
- 1891 0000 00000000 		.space	64
- 1891      00000000 
- 1891      00000000 
- 1891      00000000 
- 1891      00000000 
- 1892              		.section	.bss.onButtonWasPressed,"aw",%nobits
- 1893              		.set	.LANCHOR9,. + 0
- 1896              	onButtonWasPressed:
- 1897 0000 00       		.space	1
- 1898              		.section	.bss.tapTempo,"aw",%nobits
- 1899              		.align	2
- 1900              		.set	.LANCHOR1,. + 0
- 1903              	tapTempo:
- 1904 0000 00000000 		.space	100
- 1904      00000000 
- 1904      00000000 
- 1904      00000000 
- 1904      00000000 
- 1905              		.section	.bss.tone,"aw",%nobits
- 1906              		.align	2
- 1907              		.set	.LANCHOR6,. + 0
- 1910              	tone:
- 1911 0000 00000000 		.space	60
- 1911      00000000 
- 1911      00000000 
- 1911      00000000 
- 1911      00000000 
- 1912              		.section	.bss.toneKnob,"aw",%nobits
- 1913              		.align	2
- 1914              		.set	.LANCHOR5,. + 0
- 1917              	toneKnob:
- 1918 0000 00000000 		.space	56
- 1918      00000000 
- 1918      00000000 
- 1918      00000000 
- 1918      00000000 
- 1919              		.section	.data.BPM,"aw"
- 1920              		.align	2
- 1921              		.set	.LANCHOR7,. + 0
- 1924              	BPM:
- 1925 0000 0000A041 		.word	1101004800
- 1926              		.section	.data.MAX_FEEDBACK,"aw"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 69
+ 1821 0000 00000000 		.space	16
+ 1821      00000000 
+ 1821      00000000 
+ 1821      00000000 
+ 1822              		.section	.bss.TAPPING,"aw",%nobits
+ 1825              	TAPPING:
+ 1826 0000 00       		.space	1
+ 1827              		.section	.bss.TEMPO_BUTTON,"aw",%nobits
+ 1828              		.align	2
+ 1829              		.set	.LANCHOR0,. + 0
+ 1832              	TEMPO_BUTTON:
+ 1833 0000 00000000 		.space	16
+ 1833      00000000 
+ 1833      00000000 
+ 1833      00000000 
+ 1834              		.section	.bss.TIMER,"aw",%nobits
+ 1835              		.align	2
+ 1836              		.set	.LANCHOR14,. + 0
+ 1839              	TIMER:
+ 1840 0000 00000000 		.space	4
+ 1841              		.section	.bss._ZL2hw,"aw",%nobits
+ 1842              		.align	2
+ 1843              		.set	.LANCHOR12,. + 0
+ 1846              	_ZL2hw:
+ 1847 0000 00000000 		.space	60
+ 1847      00000000 
+ 1847      00000000 
+ 1847      00000000 
+ 1847      00000000 
+ 1848              		.section	.bss._ZL5cfade,"aw",%nobits
+ 1849              		.align	2
+ 1850              		.set	.LANCHOR10,. + 0
+ 1853              	_ZL5cfade:
+ 1854 0000 00000000 		.space	8
+ 1854      00000000 
+ 1855              		.section	.bss._ZL7balance,"aw",%nobits
+ 1856              		.align	2
+ 1857              		.set	.LANCHOR9,. + 0
+ 1860              	_ZL7balance:
+ 1861 0000 00000000 		.space	28
+ 1861      00000000 
+ 1861      00000000 
+ 1861      00000000 
+ 1861      00000000 
+ 1862              		.section	.bss.configPtr,"aw",%nobits
+ 1863              		.align	2
+ 1864              		.set	.LANCHOR13,. + 0
+ 1867              	configPtr:
+ 1868 0000 00000000 		.space	4
+ 1869              		.section	.bss.delay,"aw",%nobits
+ 1870              		.align	2
+ 1871              		.set	.LANCHOR4,. + 0
+ 1874              	delay:
+ 1875 0000 00000000 		.space	76
+ 1875      00000000 
+ 1875      00000000 
+ 1875      00000000 
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 68
 
 
- 1927              		.align	2
- 1928              		.set	.LANCHOR16,. + 0
- 1931              	MAX_FEEDBACK:
- 1932 0000 CDCC8C3F 		.word	1066192077
- 1933              		.section	.data.drywet_ratio,"aw"
- 1934              		.align	2
- 1935              		.set	.LANCHOR12,. + 0
- 1938              	drywet_ratio:
- 1939 0000 0000003F 		.word	1056964608
- 1940              		.section	.sdram_bss,"aw"
- 1941              		.align	2
- 1944              	delayMems:
- 1945 0000 00000000 		.space	2304048
- 1945      00000000 
- 1945      00000000 
- 1945      00000000 
- 1945      00000000 
- 1946              		.text
- 1947              	.Letext0:
- 1948              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
- 1949              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
- 1950              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
- 1951              		.file 24 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
- 1952              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
- 1953              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 1954              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
- 1955              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
- 1956              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
- 1957              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
- 1958              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
- 1959              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
- 1960              		.file 33 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
- 1961              		.file 34 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
- 1962              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
- 1963              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
- 1964              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
- 1965              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
- 1966              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
- 1967              		.file 40 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
- 1968              		.file 41 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
- 1969              		.file 42 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
- 1970              		.file 43 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
- 1971              		.file 44 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
- 1972              		.file 45 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
- 1973              		.file 46 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 1974              		.file 47 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
- 1975              		.file 48 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 1976              		.file 49 "../../DaisySP//Source/Control/adenv.h"
- 1977              		.file 50 "../../DaisySP//Source/Utility/dsp.h"
- 1978              		.file 51 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
- 1979              		.file 52 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
- 1980              		.file 53 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
- 1981              		.file 54 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
- 1982              		.file 55 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
- 1983              		.file 56 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
- 1984              		.file 57 "../../libDaisy//src/per/sai.h"
- 1985              		.file 58 "../../libDaisy//src/hid/logger_impl.h"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 70
+ 1875      00000000 
+ 1876              		.section	.bss.feedbackKnob,"aw",%nobits
+ 1877              		.align	2
+ 1878              		.set	.LANCHOR3,. + 0
+ 1881              	feedbackKnob:
+ 1882 0000 00000000 		.space	56
+ 1882      00000000 
+ 1882      00000000 
+ 1882      00000000 
+ 1882      00000000 
+ 1883              		.section	.bss.headSwitches,"aw",%nobits
+ 1884              		.align	2
+ 1885              		.set	.LANCHOR2,. + 0
+ 1888              	headSwitches:
+ 1889 0000 00000000 		.space	64
+ 1889      00000000 
+ 1889      00000000 
+ 1889      00000000 
+ 1889      00000000 
+ 1890              		.section	.bss.onButtonWasPressed,"aw",%nobits
+ 1891              		.set	.LANCHOR8,. + 0
+ 1894              	onButtonWasPressed:
+ 1895 0000 00       		.space	1
+ 1896              		.section	.bss.tapTempo,"aw",%nobits
+ 1897              		.align	2
+ 1898              		.set	.LANCHOR1,. + 0
+ 1901              	tapTempo:
+ 1902 0000 00000000 		.space	100
+ 1902      00000000 
+ 1902      00000000 
+ 1902      00000000 
+ 1902      00000000 
+ 1903              		.section	.bss.tone,"aw",%nobits
+ 1904              		.align	2
+ 1905              		.set	.LANCHOR6,. + 0
+ 1908              	tone:
+ 1909 0000 00000000 		.space	60
+ 1909      00000000 
+ 1909      00000000 
+ 1909      00000000 
+ 1909      00000000 
+ 1910              		.section	.bss.toneKnob,"aw",%nobits
+ 1911              		.align	2
+ 1912              		.set	.LANCHOR5,. + 0
+ 1915              	toneKnob:
+ 1916 0000 00000000 		.space	56
+ 1916      00000000 
+ 1916      00000000 
+ 1916      00000000 
+ 1916      00000000 
+ 1917              		.section	.data.BPM,"aw"
+ 1918              		.align	2
+ 1921              	BPM:
+ 1922 0000 0000A041 		.word	1101004800
+ 1923              		.section	.data.MAX_FEEDBACK,"aw"
+ 1924              		.align	2
+ 1925              		.set	.LANCHOR15,. + 0
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 69
 
 
- 1986              		.file 59 "../../libDaisy//src/util/wav_format.h"
- 1987              		.file 60 "../../libDaisy//src/dev/max11300.h"
- 1988              		.file 61 "../../libDaisy//src/hid/logger.h"
- 1989              		.file 62 "../../libDaisy//src/per/gpio.h"
- 1990              		.file 63 "../../libDaisy//src/dev/sdram.h"
- 1991              		.file 64 "Delay.h"
- 1992              		.file 65 "../../libDaisy//src/dev/sr_595.h"
- 1993              		.file 66 "<built-in>"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 71
+ 1928              	MAX_FEEDBACK:
+ 1929 0000 CDCC8C3F 		.word	1066192077
+ 1930              		.section	.data.drywet_ratio,"aw"
+ 1931              		.align	2
+ 1932              		.set	.LANCHOR11,. + 0
+ 1935              	drywet_ratio:
+ 1936 0000 0000003F 		.word	1056964608
+ 1937              		.section	.sdram_bss,"aw"
+ 1938              		.align	2
+ 1941              	delayMems:
+ 1942 0000 00000000 		.space	1536048
+ 1942      00000000 
+ 1942      00000000 
+ 1942      00000000 
+ 1942      00000000 
+ 1943              		.text
+ 1944              	.Letext0:
+ 1945              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 1946              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 1947              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 1948              		.file 24 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 1949              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 1950              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 1951              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 1952              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 1953              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 1954              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 1955              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 1956              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 1957              		.file 33 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 1958              		.file 34 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 1959              		.file 35 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ 1960              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 1961              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 1962              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
+ 1963              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 1964              		.file 40 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 1965              		.file 41 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 1966              		.file 42 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 1967              		.file 43 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 1968              		.file 44 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 1969              		.file 45 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 1970              		.file 46 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 1971              		.file 47 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 1972              		.file 48 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 1973              		.file 49 "../../DaisySP//Source/Control/adenv.h"
+ 1974              		.file 50 "../../DaisySP//Source/Utility/dsp.h"
+ 1975              		.file 51 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 1976              		.file 52 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 1977              		.file 53 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 1978              		.file 54 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 1979              		.file 55 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 1980              		.file 56 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 1981              		.file 57 "../../libDaisy//src/per/sai.h"
+ 1982              		.file 58 "../../libDaisy//src/hid/logger_impl.h"
+ 1983              		.file 59 "../../libDaisy//src/util/wav_format.h"
+ 1984              		.file 60 "../../libDaisy//src/dev/max11300.h"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 70
+
+
+ 1985              		.file 61 "../../libDaisy//src/hid/logger.h"
+ 1986              		.file 62 "../../libDaisy//src/per/gpio.h"
+ 1987              		.file 63 "../../libDaisy//src/dev/sdram.h"
+ 1988              		.file 64 "Delay.h"
+ 1989              		.file 65 "../../libDaisy//src/dev/sr_595.h"
+ 1990              		.file 66 "<built-in>"
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 71
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 MyNewProject.cpp
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:17     .text._ZN7daisysp7BalanceD2Ev:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:26     .text._ZN7daisysp7BalanceD2Ev:00000000 _ZN7daisysp7BalanceD2Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:26     .text._ZN7daisysp7BalanceD2Ev:00000000 _ZN7daisysp7BalanceD1Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:43     .text._ZN7daisysp9CrossFadeD2Ev:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:51     .text._ZN7daisysp9CrossFadeD2Ev:00000000 _ZN7daisysp9CrossFadeD2Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:51     .text._ZN7daisysp9CrossFadeD2Ev:00000000 _ZN7daisysp9CrossFadeD1Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:68     .text._ZN5daisy11TimerHandleD2Ev:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:76     .text._ZN5daisy11TimerHandleD2Ev:00000000 _ZN5daisy11TimerHandleD2Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:76     .text._ZN5daisy11TimerHandleD2Ev:00000000 _ZN5daisy11TimerHandleD1Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:93     .text._ZN5daisy6SwitchD2Ev:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:101    .text._ZN5daisy6SwitchD2Ev:00000000 _ZN5daisy6SwitchD2Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:101    .text._ZN5daisy6SwitchD2Ev:00000000 _ZN5daisy6SwitchD1Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:118    .text._ZN5daisy9ParameterD2Ev:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:126    .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD2Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:126    .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD1Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:149    .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:157    .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:157    .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:198    .text.__tcf_0:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:205    .text.__tcf_0:00000000 __tcf_0
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:219    .text._ZN10ToneFilterD2Ev:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:227    .text._ZN10ToneFilterD2Ev:00000000 _ZN10ToneFilterD2Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:227    .text._ZN10ToneFilterD2Ev:00000000 _ZN10ToneFilterD1Ev
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:256    .text.__tcf_1:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:263    .text.__tcf_1:00000000 __tcf_1
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:274    .text._Z10CheckTempov:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:282    .text._Z10CheckTempov:00000000 _Z10CheckTempov
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:337    .text._Z10CheckTempov:00000024 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:343    .text._Z15InitHeadButtonsv:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:351    .text._Z15InitHeadButtonsv:00000000 _Z15InitHeadButtonsv
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:410    .text._Z15InitHeadButtonsv:00000030 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:416    .rodata._Z15ProcessControlsv.str1.4:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:420    .text._Z15ProcessControlsv:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:428    .text._Z15ProcessControlsv:00000000 _Z15ProcessControlsv
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:556    .text._Z15ProcessControlsv:00000078 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:566    .rodata._ZL13AudioCallbackPKPKfPPfj.str1.4:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:570    .text._ZL13AudioCallbackPKPKfPPfj:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:577    .text._ZL13AudioCallbackPKPKfPPfj:00000000 _ZL13AudioCallbackPKPKfPPfj
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:906    .text._ZL13AudioCallbackPKPKfPPfj:0000012c $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:921    .text._Z9initDelayv:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:929    .text._Z9initDelayv:00000000 _Z9initDelayv
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1015   .text._Z9initDelayv:00000030 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1944   .sdram_bss:00000000 delayMems
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1023   .text.startup.main:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1031   .text.startup.main:00000000 main
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1426   .text.startup.main:0000019c $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1446   .text.startup._GLOBAL__sub_I_delayMems:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1453   .text.startup._GLOBAL__sub_I_delayMems:00000000 _GLOBAL__sub_I_delayMems
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1769   .text.startup._GLOBAL__sub_I_delayMems:000000cc $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1799   .init_array:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1917   .bss.toneKnob:00000000 toneKnob
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1883   .bss.feedbackKnob:00000000 feedbackKnob
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1869   .bss.configPtr:00000000 configPtr
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1841   .bss.TIMER:00000000 TIMER
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1827   .bss.TAPPING:00000000 TAPPING
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 72
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:17     .text._ZN7daisysp7BalanceD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:26     .text._ZN7daisysp7BalanceD2Ev:00000000 _ZN7daisysp7BalanceD2Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:26     .text._ZN7daisysp7BalanceD2Ev:00000000 _ZN7daisysp7BalanceD1Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:43     .text._ZN7daisysp9CrossFadeD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:51     .text._ZN7daisysp9CrossFadeD2Ev:00000000 _ZN7daisysp9CrossFadeD2Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:51     .text._ZN7daisysp9CrossFadeD2Ev:00000000 _ZN7daisysp9CrossFadeD1Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:68     .text._ZN5daisy11TimerHandleD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:76     .text._ZN5daisy11TimerHandleD2Ev:00000000 _ZN5daisy11TimerHandleD2Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:76     .text._ZN5daisy11TimerHandleD2Ev:00000000 _ZN5daisy11TimerHandleD1Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:93     .text._ZN5daisy6SwitchD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:101    .text._ZN5daisy6SwitchD2Ev:00000000 _ZN5daisy6SwitchD2Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:101    .text._ZN5daisy6SwitchD2Ev:00000000 _ZN5daisy6SwitchD1Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:118    .text._ZN5daisy9ParameterD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:126    .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD2Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:126    .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD1Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:149    .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:157    .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:157    .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:198    .text.__tcf_0:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:205    .text.__tcf_0:00000000 __tcf_0
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:219    .text._ZN10ToneFilterD2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:227    .text._ZN10ToneFilterD2Ev:00000000 _ZN10ToneFilterD2Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:227    .text._ZN10ToneFilterD2Ev:00000000 _ZN10ToneFilterD1Ev
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:256    .text.__tcf_1:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:263    .text.__tcf_1:00000000 __tcf_1
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:274    .text._Z10CheckTempov:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:282    .text._Z10CheckTempov:00000000 _Z10CheckTempov
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:337    .text._Z10CheckTempov:00000024 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:343    .text._Z15InitHeadButtonsv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:351    .text._Z15InitHeadButtonsv:00000000 _Z15InitHeadButtonsv
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:410    .text._Z15InitHeadButtonsv:00000030 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:416    .rodata._Z15ProcessControlsv.str1.4:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:420    .text._Z15ProcessControlsv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:428    .text._Z15ProcessControlsv:00000000 _Z15ProcessControlsv
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:556    .text._Z15ProcessControlsv:00000078 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:566    .rodata._ZL13AudioCallbackPKPKfPPfj.str1.4:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:570    .text._ZL13AudioCallbackPKPKfPPfj:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:577    .text._ZL13AudioCallbackPKPKfPPfj:00000000 _ZL13AudioCallbackPKPKfPPfj
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:905    .text._ZL13AudioCallbackPKPKfPPfj:00000124 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:919    .text._Z9initDelayv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:927    .text._Z9initDelayv:00000000 _Z9initDelayv
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1013   .text._Z9initDelayv:00000030 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1941   .sdram_bss:00000000 delayMems
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1021   .text.startup.main:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1029   .text.startup.main:00000000 main
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1424   .text.startup.main:0000019c $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1444   .text.startup._GLOBAL__sub_I_delayMems:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1451   .text.startup._GLOBAL__sub_I_delayMems:00000000 _GLOBAL__sub_I_delayMems
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1767   .text.startup._GLOBAL__sub_I_delayMems:000000cc $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1797   .init_array:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1915   .bss.toneKnob:00000000 toneKnob
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1881   .bss.feedbackKnob:00000000 feedbackKnob
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1867   .bss.configPtr:00000000 configPtr
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1839   .bss.TIMER:00000000 TIMER
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1825   .bss.TAPPING:00000000 TAPPING
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 72
 
 
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1924   .data.BPM:00000000 BPM
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1896   .bss.onButtonWasPressed:00000000 onButtonWasPressed
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1938   .data.drywet_ratio:00000000 drywet_ratio
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1931   .data.MAX_FEEDBACK:00000000 MAX_FEEDBACK
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1890   .bss.headSwitches:00000000 headSwitches
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1834   .bss.TEMPO_BUTTON:00000000 TEMPO_BUTTON
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1822   .bss.ON_BUTTON:00000000 ON_BUTTON
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1903   .bss.tapTempo:00000000 tapTempo
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1910   .bss.tone:00000000 tone
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1876   .bss.delay:00000000 delay
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1818   .bss.ON_BUTTON:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1828   .bss.TAPPING:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1830   .bss.TEMPO_BUTTON:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1837   .bss.TIMER:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1844   .bss._ZL2hw:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1848   .bss._ZL2hw:00000000 _ZL2hw
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1851   .bss._ZL5cfade:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1855   .bss._ZL5cfade:00000000 _ZL5cfade
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1858   .bss._ZL7balance:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1862   .bss._ZL7balance:00000000 _ZL7balance
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1865   .bss.configPtr:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1872   .bss.delay:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1879   .bss.feedbackKnob:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1886   .bss.headSwitches:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1897   .bss.onButtonWasPressed:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1899   .bss.tapTempo:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1906   .bss.tone:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1913   .bss.toneKnob:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1920   .data.BPM:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1927   .data.MAX_FEEDBACK:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1934   .data.drywet_ratio:00000000 $d
-C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s:1941   .sdram_bss:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1921   .data.BPM:00000000 BPM
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1894   .bss.onButtonWasPressed:00000000 onButtonWasPressed
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1935   .data.drywet_ratio:00000000 drywet_ratio
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1928   .data.MAX_FEEDBACK:00000000 MAX_FEEDBACK
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1888   .bss.headSwitches:00000000 headSwitches
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1832   .bss.TEMPO_BUTTON:00000000 TEMPO_BUTTON
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1820   .bss.ON_BUTTON:00000000 ON_BUTTON
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1901   .bss.tapTempo:00000000 tapTempo
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1908   .bss.tone:00000000 tone
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1874   .bss.delay:00000000 delay
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1816   .bss.ON_BUTTON:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1826   .bss.TAPPING:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1828   .bss.TEMPO_BUTTON:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1835   .bss.TIMER:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1842   .bss._ZL2hw:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1846   .bss._ZL2hw:00000000 _ZL2hw
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1849   .bss._ZL5cfade:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1853   .bss._ZL5cfade:00000000 _ZL5cfade
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1856   .bss._ZL7balance:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1860   .bss._ZL7balance:00000000 _ZL7balance
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1863   .bss.configPtr:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1870   .bss.delay:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1877   .bss.feedbackKnob:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1884   .bss.headSwitches:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1895   .bss.onButtonWasPressed:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1897   .bss.tapTempo:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1904   .bss.tone:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1911   .bss.toneKnob:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1918   .data.BPM:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1924   .data.MAX_FEEDBACK:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1931   .data.drywet_ratio:00000000 $d
+C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s:1938   .sdram_bss:00000000 $d
                            .group:00000000 _ZN7daisysp7BalanceD5Ev
                            .group:00000000 _ZN7daisysp9CrossFadeD5Ev
                            .group:00000000 _ZN5daisy11TimerHandleD5Ev
@@ -4267,12 +4265,12 @@ _ZN10ToneFilter7processEf
 _ZN10ToneFilter9getFactorEv
 _ZN7daisysp7Balance7ProcessEff
 _ZN7daisysp9CrossFade7ProcessERfS1_
-_ZN6Delayy6setBPMERKi
-_ZN6Delayy7stopAllEv
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccUqh1Ey.s 			page 73
-
-
 _ZN8TapTempo6getBPMEv
+_ZN6Delayy6setBPMEf
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\cciFNxXe.s 			page 73
+
+
+_ZN6Delayy7stopAllEv
 memset
 _ZN5daisy9DaisySeed4InitEb
 _ZN5daisy6LoggerILNS_17LoggerDestinationE1EE8StartLogEb

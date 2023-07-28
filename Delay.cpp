@@ -21,7 +21,7 @@ void Delayy::stopAll()
         delayHeadOn[i] = false;
 }
 
-void Delayy::setBPM(const int& bpm)
+void Delayy::setBPM(float bpm)
 {
     this->bpm = bpm;
     // for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
@@ -47,7 +47,7 @@ float Delayy::process(float in)
     for (int i = 0; i < NUM_OF_DELAY_HEADS; i++)
     {
         delayHeads[i].feedback = this->feedback;
-        delayHeads[i].delayTarget = (i+0.25-i*0.75)* 2880000/bpm;
+        delayHeads[i].delayTarget = (i+0.25-i*0.75)* (48000*(60/bpm));
         if(delayHeadOn[i])
             allDelaySignals += delayHeads[i].process(in);
     }

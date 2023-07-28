@@ -52,7 +52,7 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
         // Check for tempo change
         CheckTempo();
         // Set delays with new bpm
-        delay.setBPM(BPM);       
+        delay.setBPM(tapTempo.getBPM());       
 
 
         ON_BUTTON.Debounce();
@@ -244,6 +244,7 @@ void CheckTempo()
     }
 
     tapTempo.update(tap);
+
     
 }
 
