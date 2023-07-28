@@ -7,6 +7,8 @@ using namespace daisysp;
 using namespace daisy;
 using namespace daisy::seed;
 
+DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS delayMems[4];
+
 Delayy delay;
 ToneFilter tone(48000.f);
 static Balance balance;
@@ -156,6 +158,16 @@ int main(void)
 
     balance.Init(48000);
     hw.adc.Start();
+
+
+    for (int i = 0; i < 4; i++)
+    {
+        delayMems[i].Init();
+        delay.delayHeads[i].delay = &delayMems[i];
+    }
+    
+
+    //delayMems[1].Init();
 
     while(1) 
     {

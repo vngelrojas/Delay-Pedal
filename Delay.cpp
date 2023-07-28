@@ -1,16 +1,16 @@
 #include "Delay.h"
 
-//DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS  delayMems[4];
 
 
 Delayy::Delayy()
 {
-    for(int i = 0; i < NUM_OF_DELAY_HEADS; i++)
+    //delayMems = temp;
+    for(int i = 0; i < 4; i++)
     {
-        // Initialize delay line
-        delayMems[i].Init();
-        // For the current head, point its delayline ptr to one from delayMems
-        delayHeads[i].delay = &delayMems[i];
+        // // Initialize delay line
+        // delayMems[i].Init();
+        // // For the current head, point its delayline ptr to one from delayMems
+        // delayHeads[i].delay = &delayMems[i];
         // Init the feedback
         delayHeads[i].feedback = 0; 
         // Make sure they are all off

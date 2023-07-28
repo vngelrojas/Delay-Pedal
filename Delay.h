@@ -5,9 +5,9 @@ using namespace daisysp;
 using namespace daisy;
 using namespace daisy::seed;
 
-#define MAX_DELAY static_cast<size_t>(24000)//48000 * 3.f)  // Max delay of 3 seconds which is 20 bpm
+#define MAX_DELAY static_cast<size_t>(48000 * 3.f)  // Max delay of 3 seconds which is 20 bpm
 const int NUM_OF_DELAY_HEADS = 4;                   // # of delay heads, simply change this number if you want more or less delay heads
-//extern DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS  delayMems[4];
+// DelayLine<float, MAX_DELAY> DSY_SDRAM_BSS  delayMems[4];
 
 
 
@@ -75,11 +75,11 @@ class Delayy
          */
         void toggleHead(const int& headNumber);
     private:
-        DelayLine<float, MAX_DELAY>   delayMems[4];
-        DelayHead delayHeads[NUM_OF_DELAY_HEADS];                   // Array of however many delays you want 
+        // DelayLine<float, MAX_DELAY> delayMems[4];
         bool delayHeadOn[NUM_OF_DELAY_HEADS];                       // Each delay head will be turned on/off independently
         int bpm;                                                    // The bpm being used being used by all heads, might be useful if you add other features that need bpm
-        
+    public:
+        DelayHead delayHeads[NUM_OF_DELAY_HEADS];                   // Array of however many delays you want 
 
     
 };
