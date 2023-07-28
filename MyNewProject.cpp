@@ -25,10 +25,7 @@ float drywet_ratio = 0.5f;        // Drywet_ratio=0.0 is effect off
 const float MAX_DELAY_SEC = 3.0f; // Max amount of seconds allowed to get 20 bpm
 const float MIN_DELAY_SEC = 0.6f; // Min amount of seconds allowed to get 100 bpm
 bool onButtonWasPressed = false;  // Flag for turning on/off delays, replace with onButton.risingEdge()
-volatile float BPM = 20.0f;       // The BPM of delays
-volatile bool TAPPING = false;    // True when user is TAPPING
-TimerHandle TIMER;                // Timer that will be used to calculate bpm
-TimerHandle::Config* configPtr;   // Pointer to config for timer, need because for some reason it wont let me create a config in global scope, so I create in main and point this to it
+
 Parameter feedbackKnob;
 Parameter toneKnob;
 
@@ -122,19 +119,6 @@ int main(void)
     // Start callback
     hw.StartAudio(AudioCallback);
 
-    //TIMER*****************************************************************************************************
-    TimerHandle::Config config;                             // Config for the timer
-    config.dir = TimerHandle::Config::CounterDir::UP;       // Set it to count up 
-    config.periph = TimerHandle::Config::Peripheral::TIM_2; // Use timer 2 which is 32 bit counter
-    config.enable_irq = 1;                                  // Enable interrupt for user based callback
-    configPtr = &config;                                    // Point our global config to the one we just made
-
-    // Init the timer with our config
-    TIMER.Init(config);
-    // Make sure the timer is off
-    TIMER.Stop();
-    //*********************************************************************************************************
-
 
     //KNOB INIT************************************************************************
     AdcChannelConfig fbkConfig;
@@ -178,70 +162,10 @@ int main(void)
 void CheckTempo()
 {
     
-
-    // uint32_t tick;    // The position of the counter when the second tap occurs
-    // uint32_t freq;    // The frequency of each tick of the timer in Hz.
-    // float seconds;    // The seconds elapsed between first and second tap
-
-
-    // tick = TIMER.GetTick();            
-    // freq = TIMER.GetFreq();    
-    // seconds = (float)tick / (float)freq; // Calculating seconds from timer as recomended by documentation         
-
-    // //Check if the timer has gone past our max delay, if so, abandon this tap tempo and keep the old one
-    // if(seconds > MAX_DELAY_SEC && TAPPING)
-    // {
-    //     //hw.PrintLine("Over 3 sec");
-    //     TIMER.DeInit();
-    //     TIMER.Init(*configPtr);
-
-    //     // Turn the timer off
-    //     TIMER.Stop();
-    //     TAPPING = false;         // Reset the TAPPING flag 
-    // }
-
-    // Check if the button was clicked
     bool tap = false;
     TEMPO_BUTTON.Debounce();
-    if(TEMPO_BUTTON.RisingEdge() )
-    {
-        // // The first tap
-        // if(TAPPING == false)
-        // {
-        //     // Start the timer and begin counting
-        //     TIMER.Start(); 
-
-        //     TAPPING = true; // Set the TAPPING flag
-
-        // }
-        // // The second tap
-        // else 
-        // {
-        //     TAPPING = false; // Reset TAPPING flag
-
-        //     // Stop the timer
-        //     TIMER.Stop();
-        //     TIMER.DeInit();
-        //     TIMER.Init(*configPtr);
-        //     // Turn the timer off
-        //     TIMER.Stop();
-
-        //     // Only set new BPM if its greater than our minimum
-        //     if(seconds > MIN_DELAY_SEC )
-        //     {
-        //         BPM = -33.3333f*(seconds)+120; // Set the BPM for the delays 
-        //         // Set all delays to new bpm
-        //     }
-        //     //else
-        //         //hw.PrintLine("Under .6");
-
-
-            
-        // }
-
+    if(TEMPO_BUTTON.RisingEdge())
         tap = true;
-
-    }
 
     tapTempo.update(tap);
 
