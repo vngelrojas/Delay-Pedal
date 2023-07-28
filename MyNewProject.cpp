@@ -38,7 +38,8 @@ void CheckTempo();
 void InitHeadButtons();
 // Processes the controls and updates values that changed
 void ProcessControls();
-
+// Will point the delay heads in class to the global delay lines
+void initDelay();
 
 static void AudioCallback(AudioHandle::InputBuffer  in,
                           AudioHandle::OutputBuffer out,
@@ -159,12 +160,7 @@ int main(void)
     balance.Init(48000);
     hw.adc.Start();
 
-
-    for (int i = 0; i < 4; i++)
-    {
-        delayMems[i].Init();
-        delay.delayHeads[i].delay = &delayMems[i];
-    }
+    initDelay();
     
 
     //delayMems[1].Init();
@@ -274,6 +270,15 @@ void ProcessControls()
     }
 }
 
+void initDelay()
+{
+    for (int i = 0; i < 4; i++)
+    {
+        delayMems[i].Init();
+        delay.delayHeads[i].delay = &delayMems[i];
+    }
+        
+}
 
 
 
