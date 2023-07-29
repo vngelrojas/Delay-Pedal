@@ -81,10 +81,10 @@ class Delayy
         float getBPM();
     private:
         bool delayHeadOn[NUM_OF_DELAY_HEADS]; // Each delay head will be turned on/off independently
-        float bpm;                              // The bpm being used being used by all heads, might be useful if you add other features that need bpm
+        float bpm;                            // The bpm being used being used by all heads, might be useful if you add other features that need bpm
         float feedback;                       // The feedback of delays
     public:
-        DelayHead delayHeads[NUM_OF_DELAY_HEADS];                   // Array of however many delays you want 
+        DelayHead delayHeads[NUM_OF_DELAY_HEADS]; // Array of however many delays you want 
 
     
 };

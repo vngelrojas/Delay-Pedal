@@ -48,7 +48,7 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
         // Check for tempo change
         CheckTempo();
         // Set delays with new bpm
-        //delay.setBPM(tapTempo.getBPM());       
+        delay.setBPM(tapTempo.getBPM());       
 
 
         ON_BUTTON.Debounce();
@@ -191,6 +191,7 @@ void ProcessControls()
     delay.setFeedback(feedbackKnob.Process());
     tone.setFreq(toneKnob.Process());
     float tempoFromKnob = timeKnob.Process();
+    
     if( tempoFromKnob > tapTempo.getBPM() - 1 &&  tempoFromKnob < tapTempo.getBPM() + 1 )
     {
         delay.setBPM(tempoFromKnob);
@@ -217,10 +218,10 @@ void initDelay()
     }
 
     // Set the BPM at start up to the current value of knob
-    float initBPM = toneKnob.Process();
-    delay.setBPM(initBPM);
-    tapTempo.update(true);
-    tapTempo.setBPM(initBPM);
+    // float initBPM = toneKnob.Process();
+    // delay.setBPM(initBPM);
+    // tapTempo.update(true);
+    // tapTempo.setBPM(initBPM);
         
 }
 
