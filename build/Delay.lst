@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
   14:Delay.cpp     ****     }
   15:Delay.cpp     ****     bpm = 20;
   43              		.loc 1 15 9 view .LVU5
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 2
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 2
 
 
   44 0002 0649     		ldr	r1, .L4
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
   79              		.loc 1 16 1 is_stmt 0 view .LVU24
   80 0010 5DF8044B 		ldr	r4, [sp], #4
   81              		.cfi_restore 4
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 3
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 3
 
 
   82              		.cfi_def_cfa_offset 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
  127              		.loc 1 21 9 view .LVU35
   20:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
  128              		.loc 1 20 5 view .LVU36
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 4
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 4
 
 
   20:Delay.cpp     ****     for(int i = 0;i < NUM_OF_DELAY_HEADS;i++)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
   31:Delay.cpp     ****     //     // The 2880000/BPM sets BPM of delay 
   32:Delay.cpp     ****     //     delayHeads[i].delayTarget = (i+0.25-i*0.75)* 2880000/bpm;
   33:Delay.cpp     ****     // }
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 5
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 5
 
 
   34:Delay.cpp     **** }
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
  216              		@ frame_needed = 0, uses_anonymous_args = 0
   45:Delay.cpp     ****     float allDelaySignals = 0;
  217              		.loc 1 45 5 view .LVU59
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 6
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 6
 
 
   46:Delay.cpp     **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
   47:Delay.cpp     ****     {
  264              		.loc 1 47 5 view .LVU76
  265 0030 0132     		adds	r2, r2, #1
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 7
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 7
 
 
  266              	.LVL11:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
  304              		.loc 1 52 13 is_stmt 1 view .LVU91
  305              	.LBB27:
  306              	.LBI27:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 8
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 8
 
 
  307              		.file 2 "Delay.h"
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
   18:../../DaisySP//Source/Utility/dsp.h **** #define DSY_CLAMP(in, mn, mx) (DSY_MIN(DSY_MAX(in, mn), mx))
   19:../../DaisySP//Source/Utility/dsp.h **** #define DSY_COUNTOF(_arr) (sizeof(_arr) / sizeof(_arr[0]))
   20:../../DaisySP//Source/Utility/dsp.h **** 
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 9
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 9
 
 
   21:../../DaisySP//Source/Utility/dsp.h **** namespace daisysp
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
   75:../../DaisySP//Source/Utility/dsp.h **** }
   76:../../DaisySP//Source/Utility/dsp.h **** 
   77:../../DaisySP//Source/Utility/dsp.h **** inline float fastroot(float f, int n)
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 10
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 10
 
 
   78:../../DaisySP//Source/Utility/dsp.h **** {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
  132:../../DaisySP//Source/Utility/dsp.h **** coeff can be calculated:
  133:../../DaisySP//Source/Utility/dsp.h **** coeff = 1.0 / (time * sample_rate) ; where time is in seconds
  134:../../DaisySP//Source/Utility/dsp.h **** */
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 11
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 11
 
 
  135:../../DaisySP//Source/Utility/dsp.h **** inline void fonepole(float &out, float in, float coeff)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
   37:../../DaisySP//Source/Utility/delayline.h ****         delay_     = 1;
   38:../../DaisySP//Source/Utility/delayline.h ****     }
   39:../../DaisySP//Source/Utility/delayline.h **** 
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 12
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 12
 
 
   40:../../DaisySP//Source/Utility/delayline.h ****     /** sets the delay time in samples
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
   72:../../DaisySP//Source/Utility/delayline.h ****         T a = line_[(write_ptr_ + delay_) % max_size];
  346              		.loc 4 72 22 view .LVU104
  347 0080 6668     		ldr	r6, [r4, #4]
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 13
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 13
 
 
  348              		.loc 4 72 43 view .LVU105
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
  392              	.LBE36:
  393              	.LBE57:
  394              	.LBB58:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 14
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 14
 
 
  395              	.LBB42:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
  440 00c4 91ED037A 		vldr.32	s14, [r1, #12]
  441              	.LVL22:
  442              		.loc 4 73 47 view .LVU130
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 15
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 15
 
 
  443 00c8 A5FB0891 		umull	r9, r1, r5, r8
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
  493 00ec F0EE407A 		vmov.f32	s15, s0
  494 00f0 E6EE077A 		vfma.f32	s15, s12, s14
  495              	.LVL25:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 16
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 16
 
 
  496              	.LBB70:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
  545              	_ZN6Delayy10toggleHeadERKi:
  546              	.LVL28:
  547              	.LFB4796:
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 17
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 17
 
 
   58:Delay.cpp     **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
  595              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
  596              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
  597              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 18
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 18
 
 
  598              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
@@ -1037,25 +1037,25 @@ ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 1
  611              		.file 43 "../../libDaisy//src/daisy_seed.h"
  612              		.file 44 "../../libDaisy//src/dev/sr_595.h"
  613              		.file 45 "<built-in>"
-ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s 			page 19
+ARM GAS  C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Delay.cpp
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:17     .text._ZN6DelayyC2Ev:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC2Ev
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:101    .text._ZN6DelayyC2Ev:0000001c $d
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC1Ev
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:108    .text._ZN6Delayy7stopAllEv:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:116    .text._ZN6Delayy7stopAllEv:00000000 _ZN6Delayy7stopAllEv
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:150    .text._ZN6Delayy6setBPMEf:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:158    .text._ZN6Delayy6setBPMEf:00000000 _ZN6Delayy6setBPMEf
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:175    .text._ZN6Delayy11setFeedbackERKf:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:183    .text._ZN6Delayy11setFeedbackERKf:00000000 _ZN6Delayy11setFeedbackERKf
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:202    .text._ZN6Delayy7processEf:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:210    .text._ZN6Delayy7processEf:00000000 _ZN6Delayy7processEf
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:525    .text._ZN6Delayy7processEf:00000100 $d
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:537    .text._ZN6Delayy10toggleHeadERKi:00000000 $t
-C:\Users\vngel\AppData\Local\Temp\ccHLqYhc.s:545    .text._ZN6Delayy10toggleHeadERKi:00000000 _ZN6Delayy10toggleHeadERKi
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:17     .text._ZN6DelayyC2Ev:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC2Ev
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:101    .text._ZN6DelayyC2Ev:0000001c $d
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:26     .text._ZN6DelayyC2Ev:00000000 _ZN6DelayyC1Ev
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:108    .text._ZN6Delayy7stopAllEv:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:116    .text._ZN6Delayy7stopAllEv:00000000 _ZN6Delayy7stopAllEv
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:150    .text._ZN6Delayy6setBPMEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:158    .text._ZN6Delayy6setBPMEf:00000000 _ZN6Delayy6setBPMEf
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:175    .text._ZN6Delayy11setFeedbackERKf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:183    .text._ZN6Delayy11setFeedbackERKf:00000000 _ZN6Delayy11setFeedbackERKf
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:202    .text._ZN6Delayy7processEf:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:210    .text._ZN6Delayy7processEf:00000000 _ZN6Delayy7processEf
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:525    .text._ZN6Delayy7processEf:00000100 $d
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:537    .text._ZN6Delayy10toggleHeadERKi:00000000 $t
+C:\Users\vngel\AppData\Local\Temp\ccNvzeCD.s:545    .text._ZN6Delayy10toggleHeadERKi:00000000 _ZN6Delayy10toggleHeadERKi
 
 NO UNDEFINED SYMBOLS

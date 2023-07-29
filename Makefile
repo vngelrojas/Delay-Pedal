@@ -9,7 +9,7 @@ CPP_SOURCES = MyNewProject.cpp \
 
 CPP_HEADERS = Delay.h \
 			  ToneFilter.h \
-			  TapTemp.h \
+			  TapTempo.h \
 
 # Library Locations
 LIBDAISY_DIR = ../../libDaisy/

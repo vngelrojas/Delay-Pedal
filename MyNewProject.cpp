@@ -21,13 +21,12 @@ static CrossFade cfade;           // Used to blend the wet/dry and maintain a co
 
 
 float MAX_FEEDBACK = 1.1f;        // Max value of feedback knob, maxFeedback=1 -> forever repeats but no selfoscillation, values over 1 allow runaway feedback fun
-float drywet_ratio = 0.5f;        // Drywet_ratio=0.0 is effect off
-const float MAX_DELAY_SEC = 3.0f; // Max amount of seconds allowed to get 20 bpm
-const float MIN_DELAY_SEC = 0.6f; // Min amount of seconds allowed to get 100 bpm
 bool onButtonWasPressed = false;  // Flag for turning on/off delays, replace with onButton.risingEdge()
 
 Parameter feedbackKnob;
 Parameter toneKnob;
+Parameter timeKnob;
+Parameter dryKnob;
 
 // Sets the delays when there is a change
 void CheckTempo();
@@ -49,7 +48,7 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
         // Check for tempo change
         CheckTempo();
         // Set delays with new bpm
-        delay.setBPM(tapTempo.getBPM());       
+        //delay.setBPM(tapTempo.getBPM());       
 
 
         ON_BUTTON.Debounce();
@@ -58,7 +57,6 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
         {
             onButtonWasPressed = true; // set the flag to indicate that the button was pressed
             delay.stopAll();
-            hw.PrintLine("BPM is %f",tapTempo.getBPM());
         }
 
         // Check if the button was released
@@ -67,27 +65,23 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
             onButtonWasPressed = false; // reset the flag
         }
 
-        float final_mix = 0;         // The final float value that will be outputted
-	    float all_delay_signals = 0; // Summation of all delay signals
-        float nonConstInput;         // Will store the a copy of input float value at in[channel][i] but will be but non-const,
-                                     // Needed because cfade.SetPos requieres non-const  
+        float finalMix = 0;            // The final float value that will be outputted
+	    float allDelaySignals = 0;     // Summation of all delay signals
+        float nonConstInput = in[0][i];// Will store the a copy of input float value but non-const : cfade.SetPos requieres non-const  
 
     
 
-        all_delay_signals = delay.process(in[0][i]);
-        float preFilter = all_delay_signals;
-        all_delay_signals = tone.process(all_delay_signals);
-        all_delay_signals = balance.Process(all_delay_signals,preFilter*tone.getFactor());
+        allDelaySignals = delay.process(in[0][i]);
+        float preFilter = allDelaySignals;
+        allDelaySignals = tone.process(allDelaySignals);
+        allDelaySignals = balance.Process(allDelaySignals,preFilter*tone.getFactor());
 
 
-
-
-        nonConstInput = in[0][i];
 
 		// Use a crossfade object to maintain a constant power while mixing the delayed/raw audio mix
-		cfade.SetPos(drywet_ratio);
-		final_mix = cfade.Process(nonConstInput, all_delay_signals);
-		out[0][i]  = out [1][i] = final_mix;//filter; // this sends 'final_mix' to the left and right output
+		cfade.SetPos(dryKnob.Process());
+		finalMix = cfade.Process(nonConstInput, allDelaySignals);
+		out[0][i]  = out [1][i] = finalMix;//filter; // this sends 'final_mix' to the left and right output
     }
 }
 
@@ -125,10 +119,14 @@ int main(void)
     fbkConfig.InitSingle(A0);
     AdcChannelConfig toneConfig;
     toneConfig.InitSingle(A1);
+    AdcChannelConfig timeConfig;
+    timeConfig.InitSingle(A2); 
+    AdcChannelConfig dryConfig;
+    dryConfig.InitSingle(A3);
 
     // If adding more knobs, create config above, and update  array and # of configs
-    AdcChannelConfig configs [2] = {fbkConfig,toneConfig};
-    hw.adc.Init(configs,2);
+    AdcChannelConfig configs [4] = {fbkConfig,toneConfig,timeConfig,dryConfig};
+    hw.adc.Init(configs,4);
 
     AnalogControl fbk;
     fbk.Init(hw.adc.GetPtr(0),hw.AudioSampleRate());
@@ -138,18 +136,24 @@ int main(void)
     tne.Init(hw.adc.GetPtr(1),hw.AudioSampleRate());
     toneKnob.Init(tne,-1.f,1.f,Parameter::LINEAR);
 
+    AnalogControl time;
+    time.Init(hw.adc.GetPtr(2),hw.AudioSampleRate());
+    timeKnob.Init(time,30.f,240.f,Parameter::LINEAR);
+
+    AnalogControl dry;
+    dry.Init(hw.adc.GetPtr(3),hw.AudioSampleRate());
+    dryKnob.Init(dry,0,1,Parameter::LINEAR);
 
     //*******************************************************************************
 
 
     balance.Init(48000);
     hw.adc.Start();
+    
 
+    // Init the delay object with the globally scoped delayMems array
     initDelay();
-    
-    
-
-    //delayMems[1].Init();
+  
 
     while(1) 
     {
@@ -186,14 +190,19 @@ void ProcessControls()
 {
     delay.setFeedback(feedbackKnob.Process());
     tone.setFreq(toneKnob.Process());
-
+    float tempoFromKnob = timeKnob.Process();
+    if( tempoFromKnob > tapTempo.getBPM() - 1 &&  tempoFromKnob < tapTempo.getBPM() + 1 )
+    {
+        delay.setBPM(tempoFromKnob);
+        tapTempo.setBPM(tempoFromKnob);
+    }
 
     for(int i = 0; i < 4;i++)
     {
         headSwitches[i].Debounce();
         if(headSwitches[i].RisingEdge())
         {            
-            hw.PrintLine("tone knob val: %f",toneKnob.Process());
+            hw.PrintLine("time knob val: %f tap val: %f",timeKnob.Process(),tapTempo.getBPM());
             delay.toggleHead(i);
         }
     }
@@ -206,23 +215,14 @@ void initDelay()
         delayMems[i].Init();
         delay.delayHeads[i].delay = &delayMems[i];
     }
+
+    // Set the BPM at start up to the current value of knob
+    float initBPM = toneKnob.Process();
+    delay.setBPM(initBPM);
+    tapTempo.update(true);
+    tapTempo.setBPM(initBPM);
         
 }
 
 
-
-
-/*
-Max Delay = 48,000 * 3 = 144,000 : Which is three seconds, the 1/4 delay will be 20 bpm
-
-x/20 bpm = 144,000, solving for x 
-x = 2,880,000
-
-2,880,000/BPM = The required delay to go into SetDelay() to be at the correct BPM
-
-
-Create linear equation with 2 points (3,20) and (.6,100)
-BPM = −33.3333(sec)+120, where max delay is 3 seconds and min delay is .6 seconds (100 bpm)
-
-*/
 

@@ -73,6 +73,12 @@ class Delayy
          * @param headNumber The delay head to toggle on/off
          */
         void toggleHead(const int& headNumber);
+        /**
+         * @brief Get the current bpm of delay
+         * 
+         * @return float 
+         */
+        float getBPM();
     private:
         bool delayHeadOn[NUM_OF_DELAY_HEADS]; // Each delay head will be turned on/off independently
         float bpm;                              // The bpm being used being used by all heads, might be useful if you add other features that need bpm

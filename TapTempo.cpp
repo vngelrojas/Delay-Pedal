@@ -44,10 +44,9 @@ float TapTempo::getBPM()
   return 60000.0 / beatLengthMS;
 }
 
-float TapTempo::setBPM(float bpm)
+void TapTempo::setBPM(float bpm)
 {
   beatLengthMS = 60000 / bpm;
-  return 0.f;
 }
 
 bool TapTempo::onBeat()
