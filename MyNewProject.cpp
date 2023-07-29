@@ -23,6 +23,7 @@ static CrossFade cfade;           // Used to blend the wet/dry and maintain a co
 float MAX_FEEDBACK = 1.1f;        // Max value of feedback knob, maxFeedback=1 -> forever repeats but no selfoscillation, values over 1 allow runaway feedback fun
 bool onButtonWasPressed = false;  // Flag for turning on/off delays, replace with onButton.risingEdge()
 float SAMPLE_RATE = 48000.f;
+bool PASS_THROUGH = true;
 
 Parameter feedbackKnob;
 Parameter toneKnob;
@@ -44,7 +45,7 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
 {
     for(size_t i = 0; i < size; i++)
     {
-        // 
+        // Update control parameters
         ProcessControls();
         // Check for tempo change
         CheckTempo();
@@ -52,37 +53,35 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
         delay.setBPM(tapTempo.getBPM());       
 
 
-        ON_BUTTON.Debounce();
-        // Check if the button is pressed and was not previously pressed
-        if(ON_BUTTON.Pressed() && !onButtonWasPressed)
+        
+        if(PASS_THROUGH)
         {
-            onButtonWasPressed = true; // set the flag to indicate that the button was pressed
-            delay.stopAll();
-        }
+            out[0][i]  = out [1][i] = in[0][i];//filter; // this sends 'final_mix' to the left and right output
+            delay.clear();
 
-        // Check if the button was released
-        if(!ON_BUTTON.Pressed() && onButtonWasPressed)
+        }
+        else
         {
-            onButtonWasPressed = false; // reset the flag
+
+        
+            float finalMix = 0;            // The final float value that will be outputted
+            float allDelaySignals = 0;     // Summation of all delay signals
+            float nonConstInput = in[0][i];// Will store the a copy of input float value but non-const : cfade.SetPos requieres non-const  
+
+        
+
+            allDelaySignals = delay.process(in[0][i]);
+            float preFilter = allDelaySignals;
+            allDelaySignals = tone.process(allDelaySignals);
+            allDelaySignals = balance.Process(allDelaySignals,preFilter*tone.getFactor());
+
+
+
+            // Use a crossfade object to maintain a constant power while mixing the delayed/raw audio mix
+            cfade.SetPos(dryKnob.Process());
+            finalMix = cfade.Process(nonConstInput, allDelaySignals);
+            out[0][i]  = out [1][i] = finalMix;//filter; // this sends 'final_mix' to the left and right output
         }
-
-        float finalMix = 0;            // The final float value that will be outputted
-	    float allDelaySignals = 0;     // Summation of all delay signals
-        float nonConstInput = in[0][i];// Will store the a copy of input float value but non-const : cfade.SetPos requieres non-const  
-
-    
-
-        allDelaySignals = delay.process(in[0][i]);
-        float preFilter = allDelaySignals;
-        allDelaySignals = tone.process(allDelaySignals);
-        allDelaySignals = balance.Process(allDelaySignals,preFilter*tone.getFactor());
-
-
-
-		// Use a crossfade object to maintain a constant power while mixing the delayed/raw audio mix
-		cfade.SetPos(dryKnob.Process());
-		finalMix = cfade.Process(nonConstInput, allDelaySignals);
-		out[0][i]  = out [1][i] = finalMix;//filter; // this sends 'final_mix' to the left and right output
     }
 }
 
@@ -187,12 +186,18 @@ void ProcessControls()
     tone.setFreq(toneKnob.Process());
     float tempoFromKnob = timeKnob.Process();
 
+    ON_BUTTON.Debounce();
+    if(ON_BUTTON.RisingEdge())
+    {
+        PASS_THROUGH = !PASS_THROUGH;
+    }
+
     // Only update the delay time from the knob if it falls within + or - the current bpm to prevent extreme jumps in bpm. 
     // For example, you tap a bpm of 200 but the knob is at bpm 50, when you move the knob nothing will change until it reaches 200 bpm.
     // Once the knob reaches current bpm, it is free to change it up or down 
-    if( tempoFromKnob > tapTempo.getBPM() - 0.75f &&  tempoFromKnob < tapTempo.getBPM() + 0.75f )
+    if( tempoFromKnob > tapTempo.getBPM() - 1 &&  tempoFromKnob < tapTempo.getBPM() + 1 )
         tapTempo.setBPM(tempoFromKnob);
-
+    
     for(int i = 0; i < 4;i++)
     {
         headSwitches[i].Debounce();
