@@ -63,3 +63,17 @@ void Delayy::toggleHead(const int& headNumber)
     else
         delayHeadOn[headNumber] = !delayHeadOn[headNumber];
 }
+
+void Delayy::clear()
+{
+    for (int i = 0; i < NUM_OF_DELAY_HEADS ; i++)
+    {
+        delayHeads[i].feedback = 0;
+        delayHeads[i].process(0);
+    }
+    
+}
+float Delayy::getBPM()
+{
+    return bpm;
+}

@@ -22,6 +22,7 @@ static CrossFade cfade;           // Used to blend the wet/dry and maintain a co
 
 float MAX_FEEDBACK = 1.1f;        // Max value of feedback knob, maxFeedback=1 -> forever repeats but no selfoscillation, values over 1 allow runaway feedback fun
 bool onButtonWasPressed = false;  // Flag for turning on/off delays, replace with onButton.risingEdge()
+float SAMPLE_RATE = 48000.f;
 
 Parameter feedbackKnob;
 Parameter toneKnob;
@@ -101,7 +102,7 @@ int main(void)
     InitHeadButtons();
 
 
-    //set blocksize.
+    //set blocksize and sample rate
     hw.SetAudioBlockSize(4);
     hw.SetAudioSampleRate(SaiHandle::Config::SampleRate::SAI_48KHZ);
 
@@ -109,9 +110,6 @@ int main(void)
     cfade.Init();
     // Sets crossfade to maintain constant power, which will maintain a constant volume as we go from full dry to full wet on the mix control
     cfade.SetCurve(CROSSFADE_CPOW);
-
-    // Start callback
-    hw.StartAudio(AudioCallback);
 
 
     //KNOB INIT************************************************************************
@@ -144,16 +142,16 @@ int main(void)
     dry.Init(hw.adc.GetPtr(3),hw.AudioSampleRate());
     dryKnob.Init(dry,0,1,Parameter::LINEAR);
 
+    hw.adc.Start();
     //*******************************************************************************
 
 
-    balance.Init(48000);
-    hw.adc.Start();
-    
-
     // Init the delay object with the globally scoped delayMems array
     initDelay();
-  
+    // Init the balance object
+    balance.Init(SAMPLE_RATE);
+    // Start callback
+    hw.StartAudio(AudioCallback);
 
     while(1) 
     {
@@ -165,15 +163,12 @@ int main(void)
 
 void CheckTempo()
 {
-    
     bool tap = false;
     TEMPO_BUTTON.Debounce();
     if(TEMPO_BUTTON.RisingEdge())
         tap = true;
 
     tapTempo.update(tap);
-
-    
 }
 
 void InitHeadButtons()
@@ -191,19 +186,18 @@ void ProcessControls()
     delay.setFeedback(feedbackKnob.Process());
     tone.setFreq(toneKnob.Process());
     float tempoFromKnob = timeKnob.Process();
-    
-    if( tempoFromKnob > tapTempo.getBPM() - 1 &&  tempoFromKnob < tapTempo.getBPM() + 1 )
-    {
-        delay.setBPM(tempoFromKnob);
+
+    // Only update the delay time from the knob if it falls within + or - the current bpm to prevent extreme jumps in bpm. 
+    // For example, you tap a bpm of 200 but the knob is at bpm 50, when you move the knob nothing will change until it reaches 200 bpm.
+    // Once the knob reaches current bpm, it is free to change it up or down 
+    if( tempoFromKnob > tapTempo.getBPM() - 0.75f &&  tempoFromKnob < tapTempo.getBPM() + 0.75f )
         tapTempo.setBPM(tempoFromKnob);
-    }
 
     for(int i = 0; i < 4;i++)
     {
         headSwitches[i].Debounce();
         if(headSwitches[i].RisingEdge())
         {            
-            hw.PrintLine("time knob val: %f tap val: %f",timeKnob.Process(),tapTempo.getBPM());
             delay.toggleHead(i);
         }
     }
@@ -216,13 +210,6 @@ void initDelay()
         delayMems[i].Init();
         delay.delayHeads[i].delay = &delayMems[i];
     }
-
-    // Set the BPM at start up to the current value of knob
-    // float initBPM = toneKnob.Process();
-    // delay.setBPM(initBPM);
-    // tapTempo.update(true);
-    // tapTempo.setBPM(initBPM);
-        
 }
 
 

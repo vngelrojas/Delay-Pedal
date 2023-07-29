@@ -76,9 +76,14 @@ class Delayy
         /**
          * @brief Get the current bpm of delay
          * 
-         * @return float 
+         * @return BPM 
          */
         float getBPM();
+        /**
+         * @brief Clears the delay signals 
+         * 
+         */
+        void clear();
     private:
         bool delayHeadOn[NUM_OF_DELAY_HEADS]; // Each delay head will be turned on/off independently
         float bpm;                            // The bpm being used being used by all heads, might be useful if you add other features that need bpm
