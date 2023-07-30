@@ -20,4 +20,4 @@ SYSTEM_FILES_DIR = $(LIBDAISY_DIR)/core
 include $(SYSTEM_FILES_DIR)/Makefile
 
 #print floats
-LDFLAGS += -u _printf_float
+#LDFLAGS += -u _printf_float
