@@ -21,3 +21,4 @@ i.e if BPM is tapped to 200 and time knob is at 30, moving the time knob will do
 ![Breadboard_project](https://i.imgur.com/JZHSYPE.jpg)
 
 Picture above is current state of project. I plan to clean up the wiring soon.
+Demos video coming soon.
