@@ -30,6 +30,8 @@ Parameter toneKnob;
 Parameter timeKnob;
 Parameter dryKnob;
 
+Switch ON_SWITCH;
+
 // Sets the delays when there is a change
 void CheckTempo();
 // Initialize buttons for the delay heads to the pins we want
@@ -99,6 +101,7 @@ int main(void)
     TEMPO_BUTTON.Init(hw.GetPin(25),1000);
     // Init the head on/off buttons
     InitHeadButtons();
+    //ON_SWITCH.Init(hw.GetPin(19),1000,Switch::TYPE_TOGGLE,Switch::POLARITY_NORMAL,Switch::PULL_UP);
 
 
     //set blocksize and sample rate
@@ -152,6 +155,7 @@ int main(void)
     // Start callback
     hw.StartAudio(AudioCallback);
 
+
     while(1) 
     {
         //Not sure why the delay, taken from the Daisy petal MultiDelay.cpp example
@@ -191,6 +195,11 @@ void ProcessControls()
     {
         PASS_THROUGH = !PASS_THROUGH;
     }
+    // ON_SWITCH.Debounce();
+    // if(ON_SWITCH.Pressed())
+    // {
+    //     PASS_THROUGH = !PASS_THROUGH;
+    // }
 
     // Only update the delay time from the knob if it falls within + or - the current bpm to prevent extreme jumps in bpm. 
     // For example, you tap a bpm of 200 but the knob is at bpm 50, when you move the knob nothing will change until it reaches 200 bpm.
