@@ -18,4 +18,4 @@ There are currently 4 paramater knobs.
 There is also a tap tempo button that averages out the taps to have a smooth bpm change.
 The time knob will only change BPM when it reaches the current BPM 
 i.e if BPM is tapped to 200 and time knob is at 30, moving the time knob will do nothing until it reaches 200 BPM
-# Delay-Pedal
+![Breadboard_project](https://i.imgur.com/JZHSYPE.jpg)
