@@ -19,3 +19,5 @@ There is also a tap tempo button that averages out the taps to have a smooth bpm
 The time knob will only change BPM when it reaches the current BPM 
 i.e if BPM is tapped to 200 and time knob is at 30, moving the time knob will do nothing until it reaches 200 BPM
 ![Breadboard_project](https://i.imgur.com/JZHSYPE.jpg)
+
+Picture above is current state of project. I plan to clean up the wiring soon.
