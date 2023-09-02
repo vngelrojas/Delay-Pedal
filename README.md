@@ -1,6 +1,6 @@
 # Delay Pedal
 # Demo
-[![Demo of project video](https://img.youtube.com/vi/eirttpUBLN4?si=UKXyMQmXHuAcM_gg/0.jpg)](https://youtube.com/shorts/eirttpUBLN4?si=UKXyMQmXHuAcM_gg)
+[![Demo of project video]](https://youtube.com/shorts/eirttpUBLN4?si=UKXyMQmXHuAcM_gg)
 ## Description
 Selectrable 4 Head delay with Echorec timing
 
